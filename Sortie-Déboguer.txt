@@ -1,0 +1,40 @@
+﻿'GRBSolutionInc.exe' (CLR v4.0.30319: DefaultDomain) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: DefaultDomain) : Chargé 'G:\GRBSolutionInc\bin\x64\Release\GRBSolutionInc.exe'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+Les symboles du module 'GRBSolutionInc.exe' n'ont pas été chargés.
+
+1. Utilisez une configuration de build Débogage ou désactivez l'option 'Activer Uniquement mon code'. 
+2. Vérifiez les paramètres 'Symboles' sous les options de débogage.'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.resources\v4.0_4.0.0.0_fr_b77a5c561934e089\System.Data.resources.dll'. Le module a été généré sans symboles.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Outlook\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Outlook.dll'. Le module a été généré sans symboles.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\assembly\GAC_MSIL\office\15.0.0.0__71e9bce111e9429c\office.dll'. Le module a été généré sans symboles.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'Anonymously Hosted DynamicMethods Assembly'. 
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Dynamic\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Dynamic.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll'. 
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_fr_b77a5c561934e089\mscorlib.resources.dll'. Le module a été généré sans symboles.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_64\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_64\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_64\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.Wrapper.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'GRBSolutionInc.exe' (CLR v4.0.30319: GRBSolutionInc.exe) : Chargé 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms.resources\v4.0_4.0.0.0_fr_b77a5c561934e089\System.Windows.Forms.resources.dll'. Le module a été généré sans symboles.
+Le thread 0x1bbc s'est arrêté avec le code 0 (0x0).
+Le thread 0x11e8 s'est arrêté avec le code 0 (0x0).
+Le thread 0x373c s'est arrêté avec le code 0 (0x0).
+Le thread 0x41b4 s'est arrêté avec le code 0 (0x0).
+Le thread 0x4b80 s'est arrêté avec le code 0 (0x0).
+Le thread 0x342c s'est arrêté avec le code 0 (0x0).
+Le thread 0x3d14 s'est arrêté avec le code 0 (0x0).
+Le thread 0x3500 s'est arrêté avec le code 0 (0x0).
+Le thread 0x11d4 s'est arrêté avec le code 0 (0x0).
+Le thread 0x4690 s'est arrêté avec le code 0 (0x0).
+Le thread 0x297c s'est arrêté avec le code 0 (0x0).
+Le thread 0x34d0 s'est arrêté avec le code 0 (0x0).
+Le thread 0x42b4 s'est arrêté avec le code 0 (0x0).
+Le programme '[9596] GRBSolutionInc.exe' s'est arrêté avec le code -1 (0xffffffff).
