@@ -29,16 +29,16 @@ namespace ControleurServeur
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CatalogueElec));
             txtTauxChange = new System.Windows.Forms.TextBox();
             lvwfournisseur = new System.Windows.Forms.ListView();
-            Fournisseur = new System.Windows.Forms.ColumnHeader();
-            PersRess = new System.Windows.Forms.ColumnHeader();
-            Date = new System.Windows.Forms.ColumnHeader();
-            Par = new System.Windows.Forms.ColumnHeader();
-            Valide = new System.Windows.Forms.ColumnHeader();
-            PrixListe = new System.Windows.Forms.ColumnHeader();
-            Escompte = new System.Windows.Forms.ColumnHeader();
-            PrixNet = new System.Windows.Forms.ColumnHeader();
-            PrixSP = new System.Windows.Forms.ColumnHeader();
-            Quoter = new System.Windows.Forms.ColumnHeader();
+            Fournisseur = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            PersRess = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            Par = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            Valide = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            PrixListe = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            Escompte = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            PrixNet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            PrixSP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            Quoter = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             cmdAddFrs = new System.Windows.Forms.Button();
             cmdSuppFrs = new System.Windows.Forms.Button();
             cmdModifFrs = new System.Windows.Forms.Button();
@@ -139,22 +139,21 @@ namespace ControleurServeur
             // txtTauxChange
             // 
             txtTauxChange.AcceptsReturn = true;
-            txtTauxChange.BackColor = System.Drawing.Color.Black;
-            txtTauxChange.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtTauxChange.BackColor = System.Drawing.SystemColors.Control;
+            txtTauxChange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtTauxChange.Cursor = System.Windows.Forms.Cursors.IBeam;
             txtTauxChange.ForeColor = System.Drawing.Color.White;
-            txtTauxChange.Location = new System.Drawing.Point(241, 213);
+            txtTauxChange.Location = new System.Drawing.Point(241, 210);
             txtTauxChange.MaxLength = 0;
             txtTauxChange.Name = "txtTauxChange";
             txtTauxChange.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtTauxChange.Size = new System.Drawing.Size(57, 20);
+            txtTauxChange.Size = new System.Drawing.Size(57, 22);
             txtTauxChange.TabIndex = 80;
             txtTauxChange.Visible = false;
             // 
             // lvwfournisseur
             // 
             lvwfournisseur.BackColor = System.Drawing.Color.Black;
-            lvwfournisseur.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lvwfournisseur.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             Fournisseur,
             PersRess,
@@ -220,51 +219,48 @@ namespace ControleurServeur
             // 
             // cmdAddFrs
             // 
-            cmdAddFrs.BackColor = System.Drawing.Color.Black;
-            cmdAddFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdAddFrs.ForeColor = System.Drawing.Color.White;
+            cmdAddFrs.BackColor = System.Drawing.SystemColors.Control;
+            cmdAddFrs.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdAddFrs.Location = new System.Drawing.Point(357, 213);
             cmdAddFrs.Name = "cmdAddFrs";
             cmdAddFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
             cmdAddFrs.Size = new System.Drawing.Size(73, 25);
             cmdAddFrs.TabIndex = 66;
             cmdAddFrs.Text = "&Ajouter";
-            cmdAddFrs.UseVisualStyleBackColor = true;
+            cmdAddFrs.UseVisualStyleBackColor = false;
             cmdAddFrs.Click += new System.EventHandler(cmdAddFrs_Click);
             // 
             // cmdSuppFrs
             // 
-            cmdSuppFrs.BackColor = System.Drawing.Color.Black;
-            cmdSuppFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdSuppFrs.ForeColor = System.Drawing.Color.White;
+            cmdSuppFrs.BackColor = System.Drawing.SystemColors.Control;
+            cmdSuppFrs.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdSuppFrs.Location = new System.Drawing.Point(436, 213);
             cmdSuppFrs.Name = "cmdSuppFrs";
             cmdSuppFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
             cmdSuppFrs.Size = new System.Drawing.Size(73, 25);
             cmdSuppFrs.TabIndex = 69;
             cmdSuppFrs.Text = "&Supprimer";
-            cmdSuppFrs.UseVisualStyleBackColor = true;
+            cmdSuppFrs.UseVisualStyleBackColor = false;
             cmdSuppFrs.Click += new System.EventHandler(cmdSuppFrs_Click);
             // 
             // cmdModifFrs
             // 
-            cmdModifFrs.BackColor = System.Drawing.Color.Black;
-            cmdModifFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdModifFrs.ForeColor = System.Drawing.Color.White;
+            cmdModifFrs.BackColor = System.Drawing.SystemColors.Control;
+            cmdModifFrs.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdModifFrs.Location = new System.Drawing.Point(516, 213);
             cmdModifFrs.Name = "cmdModifFrs";
             cmdModifFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
             cmdModifFrs.Size = new System.Drawing.Size(73, 25);
             cmdModifFrs.TabIndex = 70;
             cmdModifFrs.Text = "&Modifier";
-            cmdModifFrs.UseVisualStyleBackColor = true;
+            cmdModifFrs.UseVisualStyleBackColor = false;
             cmdModifFrs.Click += new System.EventHandler(cmdModifFrs_Click);
             // 
             // chkquoter
             // 
             chkquoter.BackColor = System.Drawing.Color.Black;
             chkquoter.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            chkquoter.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            chkquoter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             chkquoter.ForeColor = System.Drawing.Color.White;
             chkquoter.Location = new System.Drawing.Point(8, 104);
             chkquoter.Name = "chkquoter";
@@ -277,8 +273,7 @@ namespace ControleurServeur
             // optUSA
             // 
             optUSA.BackColor = System.Drawing.Color.Black;
-            optUSA.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            optUSA.ForeColor = System.Drawing.Color.White;
+            optUSA.ForeColor = System.Drawing.Color.WhiteSmoke;
             optUSA.Location = new System.Drawing.Point(241, 109);
             optUSA.Name = "optUSA";
             optUSA.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -286,14 +281,13 @@ namespace ControleurServeur
             optUSA.TabIndex = 63;
             optUSA.TabStop = true;
             optUSA.Text = "USA";
-            optUSA.UseVisualStyleBackColor = true;
+            optUSA.UseVisualStyleBackColor = false;
             // 
             // optCAN
             // 
             optCAN.BackColor = System.Drawing.Color.Black;
             optCAN.Checked = true;
-            optCAN.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            optCAN.ForeColor = System.Drawing.Color.White;
+            optCAN.ForeColor = System.Drawing.Color.WhiteSmoke;
             optCAN.Location = new System.Drawing.Point(193, 109);
             optCAN.Name = "optCAN";
             optCAN.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -301,71 +295,71 @@ namespace ControleurServeur
             optCAN.TabIndex = 62;
             optCAN.TabStop = true;
             optCAN.Text = "CAN";
-            optCAN.UseVisualStyleBackColor = true;
+            optCAN.UseVisualStyleBackColor = false;
             // 
             // txtPrixList
             // 
             txtPrixList.AcceptsReturn = true;
-            txtPrixList.BackColor = System.Drawing.Color.Black;
-            txtPrixList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtPrixList.BackColor = System.Drawing.SystemColors.Control;
+            txtPrixList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtPrixList.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtPrixList.ForeColor = System.Drawing.Color.White;
+            txtPrixList.ForeColor = System.Drawing.SystemColors.ControlText;
             txtPrixList.Location = new System.Drawing.Point(88, 133);
             txtPrixList.MaxLength = 0;
             txtPrixList.Name = "txtPrixList";
             txtPrixList.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtPrixList.Size = new System.Drawing.Size(73, 20);
+            txtPrixList.Size = new System.Drawing.Size(73, 22);
             txtPrixList.TabIndex = 55;
             // 
             // txtPrixNet
             // 
             txtPrixNet.AcceptsReturn = true;
-            txtPrixNet.BackColor = System.Drawing.Color.Black;
-            txtPrixNet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtPrixNet.BackColor = System.Drawing.SystemColors.Control;
+            txtPrixNet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtPrixNet.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtPrixNet.ForeColor = System.Drawing.Color.White;
+            txtPrixNet.ForeColor = System.Drawing.SystemColors.ControlText;
             txtPrixNet.Location = new System.Drawing.Point(88, 181);
             txtPrixNet.MaxLength = 0;
             txtPrixNet.Name = "txtPrixNet";
             txtPrixNet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtPrixNet.Size = new System.Drawing.Size(57, 20);
+            txtPrixNet.Size = new System.Drawing.Size(57, 22);
             txtPrixNet.TabIndex = 59;
             // 
             // txtPrixSpecial
             // 
             txtPrixSpecial.AcceptsReturn = true;
-            txtPrixSpecial.BackColor = System.Drawing.Color.Black;
-            txtPrixSpecial.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtPrixSpecial.BackColor = System.Drawing.SystemColors.Control;
+            txtPrixSpecial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtPrixSpecial.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtPrixSpecial.ForeColor = System.Drawing.Color.White;
+            txtPrixSpecial.ForeColor = System.Drawing.SystemColors.ControlText;
             txtPrixSpecial.Location = new System.Drawing.Point(88, 205);
             txtPrixSpecial.MaxLength = 0;
             txtPrixSpecial.Name = "txtPrixSpecial";
             txtPrixSpecial.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtPrixSpecial.Size = new System.Drawing.Size(57, 20);
+            txtPrixSpecial.Size = new System.Drawing.Size(57, 22);
             txtPrixSpecial.TabIndex = 61;
             // 
             // mskValide
             // 
-            mskValide.BackColor = System.Drawing.Color.Black;
-            mskValide.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            mskValide.ForeColor = System.Drawing.Color.White;
+            mskValide.BackColor = System.Drawing.SystemColors.Control;
+            mskValide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            mskValide.ForeColor = System.Drawing.SystemColors.ControlText;
             mskValide.Location = new System.Drawing.Point(104, 80);
             mskValide.Name = "mskValide";
             mskValide.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            mskValide.Size = new System.Drawing.Size(81, 20);
+            mskValide.Size = new System.Drawing.Size(81, 22);
             mskValide.TabIndex = 52;
             mskValide.TabStop = false;
             // 
             // mskEscompte
             // 
-            mskEscompte.BackColor = System.Drawing.Color.Black;
-            mskEscompte.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            mskEscompte.ForeColor = System.Drawing.Color.White;
+            mskEscompte.BackColor = System.Drawing.SystemColors.Control;
+            mskEscompte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            mskEscompte.ForeColor = System.Drawing.SystemColors.ControlText;
             mskEscompte.Location = new System.Drawing.Point(88, 157);
             mskEscompte.Name = "mskEscompte";
             mskEscompte.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            mskEscompte.Size = new System.Drawing.Size(57, 20);
+            mskEscompte.Size = new System.Drawing.Size(57, 22);
             mskEscompte.TabIndex = 57;
             mskEscompte.TabStop = false;
             // 
@@ -401,84 +395,84 @@ namespace ControleurServeur
             // chkBoite
             // 
             chkBoite.BackColor = System.Drawing.Color.Black;
-            chkBoite.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            chkBoite.ForeColor = System.Drawing.Color.White;
+            chkBoite.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            chkBoite.ForeColor = System.Drawing.Color.WhiteSmoke;
             chkBoite.Location = new System.Drawing.Point(8, 24);
             chkBoite.Name = "chkBoite";
             chkBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
             chkBoite.Size = new System.Drawing.Size(73, 17);
             chkBoite.TabIndex = 37;
             chkBoite.Text = "Par Boîte :";
-            chkBoite.UseVisualStyleBackColor = true;
+            chkBoite.UseVisualStyleBackColor = false;
             // 
             // txtQuantitéBoite
             // 
             txtQuantitéBoite.AcceptsReturn = true;
-            txtQuantitéBoite.BackColor = System.Drawing.Color.Black;
-            txtQuantitéBoite.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtQuantitéBoite.BackColor = System.Drawing.SystemColors.Control;
+            txtQuantitéBoite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtQuantitéBoite.Cursor = System.Windows.Forms.Cursors.IBeam;
             txtQuantitéBoite.Enabled = false;
-            txtQuantitéBoite.ForeColor = System.Drawing.Color.White;
+            txtQuantitéBoite.ForeColor = System.Drawing.SystemColors.ControlText;
             txtQuantitéBoite.Location = new System.Drawing.Point(88, 24);
             txtQuantitéBoite.MaxLength = 0;
             txtQuantitéBoite.Name = "txtQuantitéBoite";
             txtQuantitéBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtQuantitéBoite.Size = new System.Drawing.Size(41, 20);
+            txtQuantitéBoite.Size = new System.Drawing.Size(41, 22);
             txtQuantitéBoite.TabIndex = 38;
             // 
             // txtQuantiteMinimum
             // 
             txtQuantiteMinimum.AcceptsReturn = true;
-            txtQuantiteMinimum.BackColor = System.Drawing.Color.Black;
-            txtQuantiteMinimum.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtQuantiteMinimum.BackColor = System.Drawing.SystemColors.Control;
+            txtQuantiteMinimum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtQuantiteMinimum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtQuantiteMinimum.ForeColor = System.Drawing.Color.White;
+            txtQuantiteMinimum.ForeColor = System.Drawing.SystemColors.ControlText;
             txtQuantiteMinimum.Location = new System.Drawing.Point(88, 72);
             txtQuantiteMinimum.MaxLength = 0;
             txtQuantiteMinimum.Name = "txtQuantiteMinimum";
             txtQuantiteMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtQuantiteMinimum.Size = new System.Drawing.Size(41, 20);
+            txtQuantiteMinimum.Size = new System.Drawing.Size(41, 22);
             txtQuantiteMinimum.TabIndex = 42;
             // 
             // txtQuantiteStock
             // 
             txtQuantiteStock.AcceptsReturn = true;
-            txtQuantiteStock.BackColor = System.Drawing.Color.Black;
-            txtQuantiteStock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtQuantiteStock.BackColor = System.Drawing.SystemColors.Control;
+            txtQuantiteStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtQuantiteStock.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtQuantiteStock.ForeColor = System.Drawing.Color.White;
+            txtQuantiteStock.ForeColor = System.Drawing.SystemColors.ControlText;
             txtQuantiteStock.Location = new System.Drawing.Point(88, 48);
             txtQuantiteStock.MaxLength = 0;
             txtQuantiteStock.Name = "txtQuantiteStock";
             txtQuantiteStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtQuantiteStock.Size = new System.Drawing.Size(41, 20);
+            txtQuantiteStock.Size = new System.Drawing.Size(41, 22);
             txtQuantiteStock.TabIndex = 40;
             // 
             // chkMinimum
             // 
             chkMinimum.BackColor = System.Drawing.Color.Black;
-            chkMinimum.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            chkMinimum.ForeColor = System.Drawing.Color.White;
+            chkMinimum.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            chkMinimum.ForeColor = System.Drawing.Color.WhiteSmoke;
             chkMinimum.Location = new System.Drawing.Point(8, 72);
             chkMinimum.Name = "chkMinimum";
             chkMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             chkMinimum.Size = new System.Drawing.Size(73, 17);
             chkMinimum.TabIndex = 41;
             chkMinimum.Text = "Minimum :";
-            chkMinimum.UseVisualStyleBackColor = true;
+            chkMinimum.UseVisualStyleBackColor = false;
             // 
             // txtQuantiteCommande
             // 
             txtQuantiteCommande.AcceptsReturn = true;
-            txtQuantiteCommande.BackColor = System.Drawing.Color.Black;
-            txtQuantiteCommande.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtQuantiteCommande.BackColor = System.Drawing.SystemColors.Control;
+            txtQuantiteCommande.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtQuantiteCommande.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtQuantiteCommande.ForeColor = System.Drawing.Color.White;
+            txtQuantiteCommande.ForeColor = System.Drawing.SystemColors.ControlText;
             txtQuantiteCommande.Location = new System.Drawing.Point(88, 96);
             txtQuantiteCommande.MaxLength = 0;
             txtQuantiteCommande.Name = "txtQuantiteCommande";
             txtQuantiteCommande.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtQuantiteCommande.Size = new System.Drawing.Size(41, 20);
+            txtQuantiteCommande.Size = new System.Drawing.Size(41, 22);
             txtQuantiteCommande.TabIndex = 44;
             // 
             // Label5
@@ -521,23 +515,22 @@ namespace ControleurServeur
             // txtCategorie
             // 
             txtCategorie.AcceptsReturn = true;
-            txtCategorie.BackColor = System.Drawing.Color.Black;
+            txtCategorie.BackColor = System.Drawing.SystemColors.Control;
             txtCategorie.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtCategorie.ForeColor = System.Drawing.Color.White;
+            txtCategorie.ForeColor = System.Drawing.SystemColors.ControlText;
             txtCategorie.Location = new System.Drawing.Point(355, 17);
             txtCategorie.MaxLength = 0;
             txtCategorie.Name = "txtCategorie";
             txtCategorie.ReadOnly = true;
             txtCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtCategorie.Size = new System.Drawing.Size(153, 20);
+            txtCategorie.Size = new System.Drawing.Size(153, 22);
             txtCategorie.TabIndex = 90;
             // 
             // cmdRechercherManufacturier
             // 
             cmdRechercherManufacturier.AutoSize = true;
-            cmdRechercherManufacturier.BackColor = System.Drawing.Color.Black;
-            cmdRechercherManufacturier.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercherManufacturier.ForeColor = System.Drawing.Color.White;
+            cmdRechercherManufacturier.BackColor = System.Drawing.SystemColors.Control;
+            cmdRechercherManufacturier.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdRechercherManufacturier.Image = ((System.Drawing.Image)(resources.GetObject("cmdRechercherManufacturier.Image")));
             cmdRechercherManufacturier.Location = new System.Drawing.Point(242, 57);
             cmdRechercherManufacturier.Name = "cmdRechercherManufacturier";
@@ -545,21 +538,21 @@ namespace ControleurServeur
             cmdRechercherManufacturier.Size = new System.Drawing.Size(25, 25);
             cmdRechercherManufacturier.TabIndex = 95;
             cmdRechercherManufacturier.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            cmdRechercherManufacturier.UseVisualStyleBackColor = true;
+            cmdRechercherManufacturier.UseVisualStyleBackColor = false;
             cmdRechercherManufacturier.Click += new System.EventHandler(cmdRechercherManufacturier_Click);
             // 
             // chkInventaire
             // 
             chkInventaire.BackColor = System.Drawing.Color.Black;
-            chkInventaire.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            chkInventaire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             chkInventaire.ForeColor = System.Drawing.Color.White;
-            chkInventaire.Location = new System.Drawing.Point(546, 121);
+            chkInventaire.Location = new System.Drawing.Point(535, 121);
             chkInventaire.Name = "chkInventaire";
             chkInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            chkInventaire.Size = new System.Drawing.Size(145, 17);
+            chkInventaire.Size = new System.Drawing.Size(156, 22);
             chkInventaire.TabIndex = 112;
             chkInventaire.Text = "Présent dans l\'inventaire";
-            chkInventaire.UseVisualStyleBackColor = true;
+            chkInventaire.UseVisualStyleBackColor = false;
             // 
             // fraQuantité
             // 
@@ -572,7 +565,8 @@ namespace ControleurServeur
             fraQuantité.Controls.Add(txtQuantiteCommande);
             fraQuantité.Controls.Add(Label5);
             fraQuantité.Controls.Add(Label11);
-            fraQuantité.ForeColor = System.Drawing.Color.White;
+            fraQuantité.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            fraQuantité.ForeColor = System.Drawing.Color.WhiteSmoke;
             fraQuantité.Location = new System.Drawing.Point(546, 137);
             fraQuantité.Name = "fraQuantité";
             fraQuantité.Padding = new System.Windows.Forms.Padding(0);
@@ -584,13 +578,13 @@ namespace ControleurServeur
             // 
             // cmbLocalisation
             // 
-            cmbLocalisation.BackColor = System.Drawing.Color.Black;
+            cmbLocalisation.BackColor = System.Drawing.SystemColors.Control;
             cmbLocalisation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmbLocalisation.ForeColor = System.Drawing.Color.White;
-            cmbLocalisation.Location = new System.Drawing.Point(434, 220);
+            cmbLocalisation.ForeColor = System.Drawing.SystemColors.ControlText;
+            cmbLocalisation.Location = new System.Drawing.Point(434, 217);
             cmbLocalisation.Name = "cmbLocalisation";
             cmbLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbLocalisation.Size = new System.Drawing.Size(105, 21);
+            cmbLocalisation.Size = new System.Drawing.Size(105, 22);
             cmbLocalisation.TabIndex = 116;
             cmbLocalisation.SelectedIndexChanged += new System.EventHandler(cmbLocalisation_SelectedIndexChanged);
             // 
@@ -621,32 +615,31 @@ namespace ControleurServeur
             // 
             // cmbfrs
             // 
-            cmbfrs.BackColor = System.Drawing.Color.Black;
+            cmbfrs.BackColor = System.Drawing.SystemColors.Control;
             cmbfrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmbfrs.ForeColor = System.Drawing.Color.White;
+            cmbfrs.ForeColor = System.Drawing.SystemColors.ControlText;
             cmbfrs.Location = new System.Drawing.Point(104, 32);
             cmbfrs.Name = "cmbfrs";
             cmbfrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbfrs.Size = new System.Drawing.Size(185, 21);
+            cmbfrs.Size = new System.Drawing.Size(185, 22);
             cmbfrs.TabIndex = 48;
             cmbfrs.SelectedIndexChanged += new System.EventHandler(cmbfrs_SelectedIndexChanged);
             // 
             // cmbPersRess
             // 
-            cmbPersRess.BackColor = System.Drawing.Color.Black;
+            cmbPersRess.BackColor = System.Drawing.SystemColors.Control;
             cmbPersRess.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmbPersRess.ForeColor = System.Drawing.Color.White;
+            cmbPersRess.ForeColor = System.Drawing.SystemColors.ControlText;
             cmbPersRess.Location = new System.Drawing.Point(104, 56);
             cmbPersRess.Name = "cmbPersRess";
             cmbPersRess.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbPersRess.Size = new System.Drawing.Size(145, 21);
+            cmbPersRess.Size = new System.Drawing.Size(145, 22);
             cmbPersRess.TabIndex = 50;
             // 
             // optSpain
             // 
             optSpain.BackColor = System.Drawing.Color.Black;
-            optSpain.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            optSpain.ForeColor = System.Drawing.Color.White;
+            optSpain.ForeColor = System.Drawing.Color.WhiteSmoke;
             optSpain.Location = new System.Drawing.Point(289, 109);
             optSpain.Name = "optSpain";
             optSpain.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -654,7 +647,7 @@ namespace ControleurServeur
             optSpain.TabIndex = 64;
             optSpain.TabStop = true;
             optSpain.Text = "SPA";
-            optSpain.UseVisualStyleBackColor = true;
+            optSpain.UseVisualStyleBackColor = false;
             // 
             // lblDevise2
             // 
@@ -693,6 +686,8 @@ namespace ControleurServeur
             // 
             // imgSpain
             // 
+            imgSpain.BackgroundImage = global::ControleurServeur.Properties.Resources.Flgcan;
+            imgSpain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             imgSpain.Location = new System.Drawing.Point(209, 133);
             imgSpain.Name = "imgSpain";
             imgSpain.Size = new System.Drawing.Size(112, 71);
@@ -866,19 +861,19 @@ namespace ControleurServeur
             txtLocalisation.Name = "txtLocalisation";
             txtLocalisation.ReadOnly = true;
             txtLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtLocalisation.Size = new System.Drawing.Size(105, 20);
+            txtLocalisation.Size = new System.Drawing.Size(105, 22);
             txtLocalisation.TabIndex = 117;
             txtLocalisation.Text = "Text1";
             // 
             // txtDescriptionFR
             // 
-            txtDescriptionFR.BackColor = System.Drawing.Color.Black;
+            txtDescriptionFR.BackColor = System.Drawing.SystemColors.Control;
             txtDescriptionFR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            txtDescriptionFR.ForeColor = System.Drawing.Color.White;
+            txtDescriptionFR.ForeColor = System.Drawing.SystemColors.ControlText;
             txtDescriptionFR.Location = new System.Drawing.Point(354, 57);
             txtDescriptionFR.Name = "txtDescriptionFR";
             txtDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtDescriptionFR.Size = new System.Drawing.Size(305, 21);
+            txtDescriptionFR.Size = new System.Drawing.Size(305, 22);
             txtDescriptionFR.TabIndex = 97;
             txtDescriptionFR.SelectedIndexChanged += new System.EventHandler(txtDescriptionFR_SelectedIndexChanged);
             // 
@@ -886,52 +881,51 @@ namespace ControleurServeur
             // 
             cmdTotal.AutoSize = true;
             cmdTotal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            cmdTotal.BackColor = System.Drawing.Color.Black;
-            cmdTotal.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdTotal.ForeColor = System.Drawing.Color.White;
+            cmdTotal.BackColor = System.Drawing.SystemColors.Control;
+            cmdTotal.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdTotal.Location = new System.Drawing.Point(10, 217);
             cmdTotal.Name = "cmdTotal";
             cmdTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdTotal.Size = new System.Drawing.Size(45, 22);
+            cmdTotal.Size = new System.Drawing.Size(41, 24);
             cmdTotal.TabIndex = 118;
             cmdTotal.Text = "Total";
-            cmdTotal.UseVisualStyleBackColor = true;
+            cmdTotal.UseVisualStyleBackColor = false;
             cmdTotal.Click += new System.EventHandler(cmdTotal_Click);
             // 
             // cmdRechercheJob
             // 
             cmdRechercheJob.AutoSize = true;
             cmdRechercheJob.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            cmdRechercheJob.BackColor = System.Drawing.Color.Black;
-            cmdRechercheJob.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercheJob.ForeColor = System.Drawing.Color.White;
+            cmdRechercheJob.BackColor = System.Drawing.SystemColors.Control;
+            cmdRechercheJob.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdRechercheJob.Location = new System.Drawing.Point(55, 218);
             cmdRechercheJob.Name = "cmdRechercheJob";
             cmdRechercheJob.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercheJob.Size = new System.Drawing.Size(163, 22);
+            cmdRechercheJob.Size = new System.Drawing.Size(160, 24);
             cmdRechercheJob.TabIndex = 119;
             cmdRechercheJob.Text = "Recherche dans jobs / soums";
-            cmdRechercheJob.UseVisualStyleBackColor = true;
+            cmdRechercheJob.UseVisualStyleBackColor = false;
             cmdRechercheJob.Click += new System.EventHandler(cmdRechercheJob_Click);
             // 
             // cmdRechercheAchat
             // 
             cmdRechercheAchat.AutoSize = true;
             cmdRechercheAchat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            cmdRechercheAchat.BackColor = System.Drawing.Color.Black;
-            cmdRechercheAchat.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercheAchat.ForeColor = System.Drawing.Color.White;
+            cmdRechercheAchat.BackColor = System.Drawing.SystemColors.Control;
+            cmdRechercheAchat.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdRechercheAchat.Location = new System.Drawing.Point(222, 217);
             cmdRechercheAchat.Name = "cmdRechercheAchat";
             cmdRechercheAchat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercheAchat.Size = new System.Drawing.Size(135, 22);
+            cmdRechercheAchat.Size = new System.Drawing.Size(129, 24);
             cmdRechercheAchat.TabIndex = 134;
             cmdRechercheAchat.Text = "Recherche dans achats";
-            cmdRechercheAchat.UseVisualStyleBackColor = true;
+            cmdRechercheAchat.UseVisualStyleBackColor = false;
             cmdRechercheAchat.Click += new System.EventHandler(cmdRechercheAchat_Click);
             // 
             // Image1
             // 
+            Image1.BackgroundImage = global::ControleurServeur.Properties.Resources.drapeauGRB;
+            Image1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             Image1.ErrorImage = global::ControleurServeur.Properties.Resources.Home;
             Image1.InitialImage = global::ControleurServeur.Properties.Resources.Home;
             Image1.Location = new System.Drawing.Point(380, 23);
@@ -977,7 +971,6 @@ namespace ControleurServeur
             // lvwCategorie
             // 
             lvwCategorie.BackColor = System.Drawing.Color.Black;
-            lvwCategorie.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lvwCategorie.ForeColor = System.Drawing.Color.White;
             lvwCategorie.GridLines = true;
             lvwCategorie.HideSelection = false;
@@ -993,9 +986,8 @@ namespace ControleurServeur
             // 
             // CmdRecherchecategorie
             // 
-            CmdRecherchecategorie.BackColor = System.Drawing.Color.Black;
-            CmdRecherchecategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            CmdRecherchecategorie.ForeColor = System.Drawing.Color.White;
+            CmdRecherchecategorie.BackColor = System.Drawing.SystemColors.Control;
+            CmdRecherchecategorie.ForeColor = System.Drawing.SystemColors.ControlText;
             CmdRecherchecategorie.Image = ((System.Drawing.Image)(resources.GetObject("CmdRecherchecategorie.Image")));
             CmdRecherchecategorie.Location = new System.Drawing.Point(666, 17);
             CmdRecherchecategorie.Name = "CmdRecherchecategorie";
@@ -1003,13 +995,12 @@ namespace ControleurServeur
             CmdRecherchecategorie.Size = new System.Drawing.Size(25, 25);
             CmdRecherchecategorie.TabIndex = 135;
             CmdRecherchecategorie.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            CmdRecherchecategorie.UseVisualStyleBackColor = true;
+            CmdRecherchecategorie.UseVisualStyleBackColor = false;
             CmdRecherchecategorie.Click += new System.EventHandler(cmdRechercheCategorie_Click);
             // 
             // lvwRechercheAchat
             // 
             lvwRechercheAchat.BackColor = System.Drawing.Color.Black;
-            lvwRechercheAchat.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lvwRechercheAchat.ForeColor = System.Drawing.Color.Cyan;
             lvwRechercheAchat.FullRowSelect = true;
             lvwRechercheAchat.GridLines = true;
@@ -1027,7 +1018,6 @@ namespace ControleurServeur
             // lvwRechercheJob
             // 
             lvwRechercheJob.BackColor = System.Drawing.Color.Black;
-            lvwRechercheJob.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lvwRechercheJob.ForeColor = System.Drawing.Color.White;
             lvwRechercheJob.FullRowSelect = true;
             lvwRechercheJob.GridLines = true;
@@ -1075,7 +1065,6 @@ namespace ControleurServeur
             // lvwFabricant
             // 
             lvwFabricant.BackColor = System.Drawing.Color.Black;
-            lvwFabricant.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lvwFabricant.ForeColor = System.Drawing.Color.White;
             lvwFabricant.GridLines = true;
             lvwFabricant.HideSelection = false;
@@ -1092,7 +1081,6 @@ namespace ControleurServeur
             // lvwPieces
             // 
             lvwPieces.BackColor = System.Drawing.Color.Black;
-            lvwPieces.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lvwPieces.ForeColor = System.Drawing.Color.White;
             lvwPieces.GridLines = true;
             lvwPieces.HideSelection = false;
@@ -1109,7 +1097,6 @@ namespace ControleurServeur
             // lvwDescription
             // 
             lvwDescription.BackColor = System.Drawing.Color.Black;
-            lvwDescription.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             lvwDescription.ForeColor = System.Drawing.Color.White;
             lvwDescription.GridLines = true;
             lvwDescription.HideSelection = false;
@@ -1126,9 +1113,8 @@ namespace ControleurServeur
             // cmdRechercherPiece
             // 
             cmdRechercherPiece.AutoSize = true;
-            cmdRechercherPiece.BackColor = System.Drawing.Color.Black;
-            cmdRechercherPiece.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercherPiece.ForeColor = System.Drawing.Color.White;
+            cmdRechercherPiece.BackColor = System.Drawing.SystemColors.Control;
+            cmdRechercherPiece.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdRechercherPiece.Image = ((System.Drawing.Image)(resources.GetObject("cmdRechercherPiece.Image")));
             cmdRechercherPiece.Location = new System.Drawing.Point(242, 113);
             cmdRechercherPiece.Name = "cmdRechercherPiece";
@@ -1136,21 +1122,20 @@ namespace ControleurServeur
             cmdRechercherPiece.Size = new System.Drawing.Size(25, 25);
             cmdRechercherPiece.TabIndex = 105;
             cmdRechercherPiece.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            cmdRechercherPiece.UseVisualStyleBackColor = true;
+            cmdRechercherPiece.UseVisualStyleBackColor = false;
             cmdRechercherPiece.Click += new System.EventHandler(cmdRechercherPiece_Click);
             // 
             // cmdChangerCategorie
             // 
-            cmdChangerCategorie.BackColor = System.Drawing.Color.Black;
-            cmdChangerCategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdChangerCategorie.ForeColor = System.Drawing.Color.White;
+            cmdChangerCategorie.BackColor = System.Drawing.SystemColors.Control;
+            cmdChangerCategorie.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdChangerCategorie.Location = new System.Drawing.Point(538, 18);
             cmdChangerCategorie.Name = "cmdChangerCategorie";
             cmdChangerCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
             cmdChangerCategorie.Size = new System.Drawing.Size(121, 25);
             cmdChangerCategorie.TabIndex = 88;
             cmdChangerCategorie.Text = "Changer de catégorie";
-            cmdChangerCategorie.UseVisualStyleBackColor = true;
+            cmdChangerCategorie.UseVisualStyleBackColor = false;
             cmdChangerCategorie.Visible = false;
             cmdChangerCategorie.Click += new System.EventHandler(cmdChangerCategorie_Click);
             // 
@@ -1171,9 +1156,8 @@ namespace ControleurServeur
             // 
             // cmdRechercheDescrFR
             // 
-            cmdRechercheDescrFR.BackColor = System.Drawing.Color.Black;
-            cmdRechercheDescrFR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercheDescrFR.ForeColor = System.Drawing.Color.White;
+            cmdRechercheDescrFR.BackColor = System.Drawing.SystemColors.Control;
+            cmdRechercheDescrFR.ForeColor = System.Drawing.SystemColors.ControlText;
             cmdRechercheDescrFR.Image = ((System.Drawing.Image)(resources.GetObject("cmdRechercheDescrFR.Image")));
             cmdRechercheDescrFR.Location = new System.Drawing.Point(666, 57);
             cmdRechercheDescrFR.Name = "cmdRechercheDescrFR";
@@ -1181,22 +1165,21 @@ namespace ControleurServeur
             cmdRechercheDescrFR.Size = new System.Drawing.Size(25, 25);
             cmdRechercheDescrFR.TabIndex = 101;
             cmdRechercheDescrFR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            cmdRechercheDescrFR.UseVisualStyleBackColor = true;
+            cmdRechercheDescrFR.UseVisualStyleBackColor = false;
             cmdRechercheDescrFR.Click += new System.EventHandler(cmdRechercheDescrFR_Click);
             // 
             // txtTemps
             // 
             txtTemps.AcceptsReturn = true;
-            txtTemps.BackColor = System.Drawing.Color.Black;
-            txtTemps.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtTemps.BackColor = System.Drawing.Color.White;
             txtTemps.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtTemps.ForeColor = System.Drawing.Color.White;
+            txtTemps.ForeColor = System.Drawing.Color.Black;
             txtTemps.Location = new System.Drawing.Point(378, 129);
             txtTemps.MaxLength = 0;
             txtTemps.Name = "txtTemps";
             txtTemps.ReadOnly = true;
             txtTemps.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtTemps.Size = new System.Drawing.Size(49, 20);
+            txtTemps.Size = new System.Drawing.Size(49, 22);
             txtTemps.TabIndex = 121;
             // 
             // frafournisseur
@@ -1252,20 +1235,20 @@ namespace ControleurServeur
             cmbCategorie.Location = new System.Drawing.Point(354, 17);
             cmbCategorie.Name = "cmbCategorie";
             cmbCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbCategorie.Size = new System.Drawing.Size(169, 21);
+            cmbCategorie.Size = new System.Drawing.Size(169, 22);
             cmbCategorie.TabIndex = 91;
             cmbCategorie.Text = "cmbCategorie";
             cmbCategorie.SelectedIndexChanged += new System.EventHandler(cmbCategorie_SelectedIndexChanged_1);
             // 
             // cmbNoItem
             // 
-            cmbNoItem.BackColor = System.Drawing.Color.Black;
+            cmbNoItem.BackColor = System.Drawing.SystemColors.Control;
             cmbNoItem.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmbNoItem.ForeColor = System.Drawing.Color.White;
+            cmbNoItem.ForeColor = System.Drawing.SystemColors.ControlText;
             cmbNoItem.Location = new System.Drawing.Point(106, 113);
             cmbNoItem.Name = "cmbNoItem";
             cmbNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbNoItem.Size = new System.Drawing.Size(129, 21);
+            cmbNoItem.Size = new System.Drawing.Size(129, 22);
             cmbNoItem.TabIndex = 103;
             cmbNoItem.Visible = false;
             cmbNoItem.SelectedIndexChanged += new System.EventHandler(cmbNoItem_SelectedIndexChanged);
@@ -1333,23 +1316,22 @@ namespace ControleurServeur
             // txtPageCat
             // 
             txtPageCat.AcceptsReturn = true;
-            txtPageCat.BackColor = System.Drawing.Color.Black;
-            txtPageCat.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtPageCat.BackColor = System.Drawing.SystemColors.Control;
+            txtPageCat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtPageCat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtPageCat.ForeColor = System.Drawing.Color.White;
+            txtPageCat.ForeColor = System.Drawing.SystemColors.ControlText;
             txtPageCat.Location = new System.Drawing.Point(106, 185);
             txtPageCat.MaxLength = 9;
             txtPageCat.Name = "txtPageCat";
             txtPageCat.ReadOnly = true;
             txtPageCat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtPageCat.Size = new System.Drawing.Size(129, 20);
+            txtPageCat.Size = new System.Drawing.Size(129, 22);
             txtPageCat.TabIndex = 114;
             // 
             // txtComment
             // 
             txtComment.AcceptsReturn = true;
             txtComment.BackColor = System.Drawing.Color.Black;
-            txtComment.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             txtComment.Cursor = System.Windows.Forms.Cursors.IBeam;
             txtComment.ForeColor = System.Drawing.Color.White;
             txtComment.Location = new System.Drawing.Point(378, 161);
@@ -1357,50 +1339,50 @@ namespace ControleurServeur
             txtComment.Name = "txtComment";
             txtComment.ReadOnly = true;
             txtComment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtComment.Size = new System.Drawing.Size(161, 20);
+            txtComment.Size = new System.Drawing.Size(161, 22);
             txtComment.TabIndex = 111;
             // 
             // cmbFabricant
             // 
-            cmbFabricant.BackColor = System.Drawing.Color.Black;
+            cmbFabricant.BackColor = System.Drawing.SystemColors.Control;
             cmbFabricant.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmbFabricant.ForeColor = System.Drawing.Color.White;
+            cmbFabricant.ForeColor = System.Drawing.SystemColors.ControlText;
             cmbFabricant.Location = new System.Drawing.Point(106, 57);
             cmbFabricant.Name = "cmbFabricant";
             cmbFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbFabricant.Size = new System.Drawing.Size(129, 21);
+            cmbFabricant.Size = new System.Drawing.Size(129, 22);
             cmbFabricant.TabIndex = 93;
             cmbFabricant.SelectedIndexChanged += new System.EventHandler(cmbFabricant_SelectedIndexChanged);
             // 
             // txtFabricant
             // 
             txtFabricant.AcceptsReturn = true;
-            txtFabricant.BackColor = System.Drawing.Color.Black;
-            txtFabricant.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtFabricant.BackColor = System.Drawing.SystemColors.Control;
+            txtFabricant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtFabricant.Cursor = System.Windows.Forms.Cursors.IBeam;
             txtFabricant.Enabled = false;
-            txtFabricant.ForeColor = System.Drawing.Color.White;
+            txtFabricant.ForeColor = System.Drawing.SystemColors.ControlText;
             txtFabricant.Location = new System.Drawing.Point(105, 79);
             txtFabricant.MaxLength = 0;
             txtFabricant.Name = "txtFabricant";
             txtFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtFabricant.Size = new System.Drawing.Size(110, 20);
+            txtFabricant.Size = new System.Drawing.Size(110, 22);
             txtFabricant.TabIndex = 94;
             txtFabricant.Visible = false;
             // 
             // txtDescriptionEN
             // 
             txtDescriptionEN.AcceptsReturn = true;
-            txtDescriptionEN.BackColor = System.Drawing.Color.Black;
-            txtDescriptionEN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            txtDescriptionEN.BackColor = System.Drawing.SystemColors.Control;
+            txtDescriptionEN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             txtDescriptionEN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtDescriptionEN.ForeColor = System.Drawing.Color.White;
+            txtDescriptionEN.ForeColor = System.Drawing.SystemColors.ControlText;
             txtDescriptionEN.Location = new System.Drawing.Point(354, 89);
             txtDescriptionEN.MaxLength = 61;
             txtDescriptionEN.Name = "txtDescriptionEN";
             txtDescriptionEN.ReadOnly = true;
             txtDescriptionEN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtDescriptionEN.Size = new System.Drawing.Size(305, 20);
+            txtDescriptionEN.Size = new System.Drawing.Size(305, 22);
             txtDescriptionEN.TabIndex = 107;
             // 
             // txtNoItem
@@ -1414,7 +1396,7 @@ namespace ControleurServeur
             txtNoItem.Name = "txtNoItem";
             txtNoItem.ReadOnly = true;
             txtNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtNoItem.Size = new System.Drawing.Size(129, 20);
+            txtNoItem.Size = new System.Drawing.Size(129, 22);
             txtNoItem.TabIndex = 104;
             // 
             // _Label1_0
@@ -1430,20 +1412,23 @@ namespace ControleurServeur
             // 
             // txtNoItemGRB
             // 
-            txtNoItemGRB.BackColor = System.Drawing.Color.Black;
-            txtNoItemGRB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            txtNoItemGRB.ForeColor = System.Drawing.Color.White;
+            txtNoItemGRB.BackColor = System.Drawing.SystemColors.Control;
+            txtNoItemGRB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            txtNoItemGRB.ForeColor = System.Drawing.SystemColors.ControlText;
             txtNoItemGRB.Location = new System.Drawing.Point(105, 142);
             txtNoItemGRB.Name = "txtNoItemGRB";
-            txtNoItemGRB.Size = new System.Drawing.Size(130, 20);
+            txtNoItemGRB.Size = new System.Drawing.Size(130, 22);
             txtNoItemGRB.TabIndex = 138;
             // 
             // CatalogueElec
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            BackColor = System.Drawing.Color.Black;
+            BackgroundImage = global::ControleurServeur.Properties.Resources.drapeauGRB;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             ClientSize = new System.Drawing.Size(1312, 665);
             Controls.Add(txtNoItemGRB);
             Controls.Add(lvwfournisseur);
@@ -1496,20 +1481,15 @@ namespace ControleurServeur
             Controls.Add(txtDescriptionEN);
             Controls.Add(txtNoItem);
             Controls.Add(_Label1_0);
+            Cursor = System.Windows.Forms.Cursors.Default;
+            Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             ForeColor = System.Drawing.Color.White;
+            Icon = global::ControleurServeur.Properties.Resources.IconeApp;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "CatalogueElec";
-            MaximizeBox = false;
-            MinimizeBox = false;
-            BackColor = System.Drawing.Color.Black;
-            BackgroundImage = ControleurServeur.Properties.Resources.drapeauGRB;
-            BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            Cursor = System.Windows.Forms.Cursors.Default;
-            Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))); ForeColor = System.Drawing.Color.White;
-            Icon = ControleurServeur.Properties.Resources.IconeApp;
-            Text = "ControleurServeur." + Name;
             ShowInTaskbar = false;
+            Text = "ControleurServeur.CatalogueElec";
             Load += new System.EventHandler(FrmCatalogueElec_Load);
             fraQuantité.ResumeLayout(false);
             fraQuantité.PerformLayout();
@@ -1521,6 +1501,7 @@ namespace ControleurServeur
             frafournisseur.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
+
         }
         #endregion
         internal static System.Windows.Forms.TextBox txtTauxChange;
@@ -1534,8 +1515,8 @@ namespace ControleurServeur
         internal static System.Windows.Forms.TextBox txtPrixList;
         internal static System.Windows.Forms.TextBox txtPrixNet;
         internal static System.Windows.Forms.TextBox txtPrixSpecial;
-        internal static System.Windows.Forms.MaskedTextBox mskValide;
-        internal static System.Windows.Forms.MaskedTextBox mskEscompte;
+        internal static MaskedTextBox mskValide;
+        internal static MaskedTextBox mskEscompte;
         internal static System.Windows.Forms.Button cmdEnrFrs;
         internal static System.Windows.Forms.Button CmdAnul;
         internal static System.Windows.Forms.CheckBox chkBoite;
@@ -1560,9 +1541,9 @@ namespace ControleurServeur
         internal static System.Windows.Forms.Label lblDevise2;
         internal static System.Windows.Forms.Label lblDevise1;
         internal static System.Windows.Forms.Label _Label1_5;
-        internal static System.Windows.Forms.PictureBox imgSpain;
-        internal static System.Windows.Forms.PictureBox imgCanada;
-        internal static System.Windows.Forms.PictureBox imgEU;
+        internal static PictureBox imgSpain;
+        internal static PictureBox imgCanada;
+        internal static PictureBox imgEU;
         internal static System.Windows.Forms.Label _Label1_7;
         internal static System.Windows.Forms.Label _Label1_6;
         internal static System.Windows.Forms.Label _Label1_4;
@@ -1576,15 +1557,15 @@ namespace ControleurServeur
         internal static System.Windows.Forms.Label _Label1_20;
         internal static System.Windows.Forms.Label _Label1_2;
         internal static System.Windows.Forms.TextBox txtLocalisation;
-        internal static System.Windows.Forms.ComboBox txtDescriptionFR;
+        internal static ComboBox txtDescriptionFR;
         internal static System.Windows.Forms.Button cmdTotal;
         internal static System.Windows.Forms.Button cmdRechercheJob;
         internal static System.Windows.Forms.Button cmdRechercheAchat;
-        internal static System.Windows.Forms.PictureBox Image1;
+        internal static PictureBox Image1;
         internal static System.Windows.Forms.Label Label4;
         internal static System.Windows.Forms.Label _Label1_10;
         internal static System.Windows.Forms.Label _Label1_23;
-        internal static System.Windows.Forms.ToolTip ToolTip1;
+        internal static ToolTip ToolTip1;
         internal static System.Windows.Forms.ListView lvwCategorie;
         internal static System.Windows.Forms.Button CmdRecherchecategorie;
         internal static System.Windows.Forms.ListView lvwRechercheAchat;
@@ -1599,32 +1580,32 @@ namespace ControleurServeur
         internal static System.Windows.Forms.Button cmdDemande;
         internal static System.Windows.Forms.Button cmdRechercheDescrFR;
         internal static System.Windows.Forms.TextBox txtTemps;
-        internal static System.Windows.Forms.GroupBox frafournisseur;
-        internal static System.Windows.Forms.ComboBox cmbCategorie;
-        internal static System.Windows.Forms.ComboBox cmbNoItem;
+        internal static GroupBox frafournisseur;
+        internal static ComboBox cmbCategorie;
+        internal static ComboBox cmbNoItem;
         internal static System.Windows.Forms.Button CmdModif;
         internal static System.Windows.Forms.Button CmdFerme;
         internal static System.Windows.Forms.Button CmdSupp;
         internal static System.Windows.Forms.Button CmdAdd;
         internal static System.Windows.Forms.TextBox txtPageCat;
         internal static System.Windows.Forms.TextBox txtComment;
-        internal static System.Windows.Forms.ComboBox cmbFabricant;
+        internal static ComboBox cmbFabricant;
         internal static System.Windows.Forms.TextBox txtFabricant;
         internal static System.Windows.Forms.TextBox txtDescriptionEN;
         internal static System.Windows.Forms.TextBox txtNoItem;
         internal static System.Windows.Forms.Label _Label1_0;
         internal static System.Windows.Forms.TextBox txtNoItemGRB;
-        internal static System.Windows.Forms.ColumnHeader Fournisseur;
-        internal static System.Windows.Forms.ColumnHeader PersRess;
-        internal static System.Windows.Forms.ColumnHeader Date;
-        internal static System.Windows.Forms.ColumnHeader Par;
-        internal static System.Windows.Forms.ColumnHeader Valide;
-        internal static System.Windows.Forms.ColumnHeader PrixListe;
-        internal static System.Windows.Forms.ColumnHeader Escompte;
-        internal static System.Windows.Forms.ColumnHeader PrixNet;
-        internal static System.Windows.Forms.ColumnHeader PrixSP;
-        internal static System.Windows.Forms.ColumnHeader Quoter;
-        internal static System.Windows.Forms.TextBox NoItemGRB;
+        internal static ColumnHeader Fournisseur;
+        internal static ColumnHeader PersRess;
+        internal static ColumnHeader Date;
+        internal static ColumnHeader Par;
+        internal static ColumnHeader Valide;
+        internal static ColumnHeader PrixListe;
+        internal static ColumnHeader Escompte;
+        internal static ColumnHeader PrixNet;
+        internal static ColumnHeader PrixSP;
+        internal static ColumnHeader Quoter;
+        internal static  System.Windows.Forms.TextBox NoItemGRB;
         internal static string m_sSelectCategorie;
         internal static string m_sSelectFabricant;
         internal static string m_sSelectNoItem;
@@ -2567,7 +2548,7 @@ namespace ControleurServeur
                 Cursor.Current = Cursors.WaitCursor;
                 lvwRechercheJob.Items.Clear();
                 rstProjSoum = new Recordset();
-                rstProjSoum.Open("SELECT DISTINCT IDProjet, distinct (Qté) As QtéTotale FROM Projet_Pieces WHERE TRIM(NumItem) = '" + (txtNoItem.Text.Replace("'", "''")) + "' And Type = 'E' GROUP BY IDProjet", odbc, CursorTypeEnum.adOpenForwardOnly, LockTypeEnum.adLockReadOnly);
+                rstProjSoum.Open("SELECT  IDProjet, distinct (Qté) As QtéTotale FROM Projet_Pieces WHERE TRIM(NumItem) = '" + (txtNoItem.Text.Replace("'", "''")) + "' And Type = 'E' GROUP BY IDProjet", odbc, CursorTypeEnum.adOpenForwardOnly, LockTypeEnum.adLockReadOnly);
                 while (!rstProjSoum.EOF)
                 {
                     itmProjSoum = lvwRechercheJob.Items.Add("");
@@ -2577,7 +2558,7 @@ namespace ControleurServeur
                     rstProjSoum.MoveNext();
                 }
                 rstProjSoum.Close();
-                rstProjSoum.Open("SELECT DISTINCT IDSoumission, distinct (Qté) As QtéTotale FROM Soumission_Pieces WHERE TRIM(NumItem) = '" + (txtNoItem.Text.Replace("'", "''")) + "' And Type = 'E' GROUP BY IDSoumission", odbc, CursorTypeEnum.adOpenForwardOnly, LockTypeEnum.adLockReadOnly);
+                rstProjSoum.Open("SELECT  IDSoumission, distinct (Qté) As QtéTotale FROM Soumission_Pieces WHERE TRIM(NumItem) = '" + (txtNoItem.Text.Replace("'", "''")) + "' And Type = 'E' GROUP BY IDSoumission", odbc, CursorTypeEnum.adOpenForwardOnly, LockTypeEnum.adLockReadOnly);
                 while (!rstProjSoum.EOF)
                 {
                     itmProjSoum = lvwRechercheJob.Items.Add("");

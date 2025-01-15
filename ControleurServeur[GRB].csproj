@@ -16,7 +16,7 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>D:\ControleurServeur[GRB]_2_24_12_300_NET472\Publier\</PublishUrl>
+    <PublishUrl>C:\Users\pwaechter\Desktop\ControleurServeur-GRB-_2_24_12_300_NET472\Publier\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -1331,6 +1331,11 @@
     <Content Include="Default.aspx" />
     <Content Include="ico103.ico" />
     <Content Include="LogoForms.ico" />
+    <None Include="Resources\Flgusa02.ico" />
+    <None Include="Resources\Flgspain.ico" />
+    <None Include="Resources\Flgcan.ico" />
+    <None Include="Resources\ico121.ico" />
+    <None Include="Resources\print_pref.ico" />
     <None Include="Resources\SQLTime.ico" />
   </ItemGroup>
   <ItemGroup>

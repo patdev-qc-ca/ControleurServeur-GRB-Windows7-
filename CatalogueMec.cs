@@ -47,1669 +47,1685 @@ namespace ControleurServeur
             base.Dispose(Disposing);
         }
         private System.ComponentModel.IContainer components;
-        internal ToolTip ToolTip1;
-        internal ColumnHeader _lvwCategorie_ColumnHeader_1;
-        internal ListView lvwCategorie;
-        internal Button cmdRechercheCategorie;
-        internal ColumnHeader _lvwRechercheAchat_ColumnHeader_1;
-        internal ColumnHeader _lvwRechercheAchat_ColumnHeader_2;
-        internal ListView lvwRechercheAchat;
-        internal ColumnHeader _lvwRechercheJob_ColumnHeader_1;
-        internal ColumnHeader _lvwRechercheJob_ColumnHeader_2;
-        internal ListView lvwRechercheJob;
-        internal Button cmdRechercheJob;
-        internal Button cmdCopier;
-        internal Button cmdTotal;
-        internal Button cmdRechercheInventaire;
-        internal ColumnHeader _lvwFabricant_ColumnHeader_1;
-        internal ColumnHeader _lvwFabricant_ColumnHeader_2;
-        internal ColumnHeader _lvwFabricant_ColumnHeader_3;
-        internal ColumnHeader _lvwFabricant_ColumnHeader_4;
-        internal ListView lvwFabricant;
-        internal ColumnHeader _lvwPieces_ColumnHeader_1;
-        internal ColumnHeader _lvwPieces_ColumnHeader_2;
-        internal ColumnHeader _lvwPieces_ColumnHeader_3;
-        internal ColumnHeader _lvwPieces_ColumnHeader_4;
-        internal ListView lvwPieces;
-        internal Button cmdChangerCategorie;
-        internal Button cmdDemande;
-        internal ColumnHeader _lvwDescription_ColumnHeader_1;
-        internal ColumnHeader _lvwDescription_ColumnHeader_2;
-        internal ColumnHeader _lvwDescription_ColumnHeader_3;
-        internal ColumnHeader _lvwDescription_ColumnHeader_4;
-        internal ListView lvwDescription;
-        internal Button cmdRechercheDescrFR;
-        internal TextBox txtTauxChange;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_1;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_2;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_3;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_4;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_5;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_6;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_7;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_8;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_9;
-        internal ColumnHeader _lvwfournisseur_ColumnHeader_10;
-        internal ListView lvwfournisseur;
-        internal Button cmdAddFrs;
-        internal Button cmdSuppFrs;
-        internal Button cmdModifFrs;
-        internal CheckBox chkquoter;
-        internal RadioButton optUSA;
-        internal RadioButton optCAN;
-        internal TextBox txtPrixList;
-        internal TextBox txtPrixNet;
-        internal TextBox txtPrixSpecial;
-        internal MaskedTextBox mskValide;
-        internal MaskedTextBox mskEscompte;
-        internal Button cmdEnrFrs;
-        internal Button cmdAnnulFrs;
-        internal ComboBox cmbfrs;
-        internal ComboBox cmbPersRess;
-        internal RadioButton optSpain;
-        internal Label lblDevise1;
-        internal Label lblDevise2;
-        internal Label _Label1_5;
-        internal PictureBox imgCanada;
-        internal PictureBox imgEU;
-        internal Label _Label1_14;
-        internal Label _Label1_16;
-        internal Label _Label1_19;
-        internal Label _Label1_24;
-        internal Label _Label1_20;
-        internal Label _Label1_2;
-        internal Label _Label1_23;
-        internal PictureBox imgSpain;
-        internal GroupBox frafournisseur;
-        internal ComboBox cmbCategorie;
-        internal TextBox txtNoItemGRB;
-        internal ComboBox cmbNoItem;
-        internal Button CmdModif;
-        internal Button CmdFerme;
-        internal Button CmdSupp;
-        internal Button CmdAdd;
-        internal TextBox txtComment;
-        internal ComboBox cmbFabricant;
-        internal TextBox txtFabricant;
-        internal TextBox txtDescriptionEN;
-        internal TextBox txtDescriptionFR;
-        internal TextBox txtNoItem;
-        internal Button CmdAnul;
-        internal Button CmdEnr;
-        internal TextBox txtCategorie;
-        internal Button cmdRechercherPiece;
-        internal ComboBox cmbDescriptionFR;
-        internal Button cmdRechercherManufact;
-        internal CheckBox chkInventaire;
-        internal TextBox txtQuantiteCommande;
-        internal CheckBox chkMinimum;
-        internal TextBox txtQuantiteStock;
-        internal TextBox txtQuantiteMinimum;
-        internal TextBox txtQuantitéBoite;
-        internal CheckBox chkBoite;
-        internal Label Label11;
-        internal Label Label5;
-        internal GroupBox fraQuantité;
-        internal ComboBox cmbLocalisation;
-        internal TextBox txtLocalisation;
-        internal Button cmdRechercheAchat;
-        internal Label Label4;
-        internal Label Label2;
-        internal Label _Label1_25;
-        internal Label _Label1_6;
-        internal Label _Label1_4;
-        internal Label _Label1_3;
-        internal Label _Label1_1;
-        internal Label _Label1_0;
+        internal static ToolTip ToolTip1;
+        internal static ColumnHeader _lvwCategorie_ColumnHeader_1;
+        internal static ListView lvwCategorie;
+        internal static Button cmdRechercheCategorie;
+        internal static ColumnHeader _lvwRechercheAchat_ColumnHeader_1;
+        internal static ColumnHeader _lvwRechercheAchat_ColumnHeader_2;
+        internal static ListView lvwRechercheAchat;
+        internal static ColumnHeader _lvwRechercheJob_ColumnHeader_1;
+        internal static ColumnHeader _lvwRechercheJob_ColumnHeader_2;
+        internal static ListView lvwRechercheJob;
+        internal static Button cmdRechercheJob;
+        internal static Button cmdCopier;
+        internal static Button cmdTotal;
+        internal static Button cmdRechercheInventaire;
+        internal static ColumnHeader _lvwFabricant_ColumnHeader_1;
+        internal static ColumnHeader _lvwFabricant_ColumnHeader_2;
+        internal static ColumnHeader _lvwFabricant_ColumnHeader_3;
+        internal static ColumnHeader _lvwFabricant_ColumnHeader_4;
+        internal static ListView lvwFabricant;
+        internal static ColumnHeader _lvwPieces_ColumnHeader_1;
+        internal static ColumnHeader _lvwPieces_ColumnHeader_2;
+        internal static ColumnHeader _lvwPieces_ColumnHeader_3;
+        internal static ColumnHeader _lvwPieces_ColumnHeader_4;
+        internal static ListView lvwPieces;
+        internal static Button cmdChangerCategorie;
+        internal static Button cmdDemande;
+        internal static ColumnHeader _lvwDescription_ColumnHeader_1;
+        internal static ColumnHeader _lvwDescription_ColumnHeader_2;
+        internal static ColumnHeader _lvwDescription_ColumnHeader_3;
+        internal static ColumnHeader _lvwDescription_ColumnHeader_4;
+        internal static ListView lvwDescription;
+        internal static Button cmdRechercheDescrFR;
+        internal static TextBox txtTauxChange;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_1;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_2;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_3;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_4;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_5;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_6;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_7;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_8;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_9;
+        internal static ColumnHeader _lvwfournisseur_ColumnHeader_10;
+        internal static ListView lvwfournisseur;
+        internal static Button cmdAddFrs;
+        internal static Button cmdSuppFrs;
+        internal static Button cmdModifFrs;
+        internal static CheckBox chkquoter;
+        internal static RadioButton optUSA;
+        internal static RadioButton optCAN;
+        internal static TextBox txtPrixList;
+        internal static TextBox txtPrixNet;
+        internal static TextBox txtPrixSpecial;
+        internal static MaskedTextBox mskValide;
+        internal static MaskedTextBox mskEscompte;
+        internal static Button cmdEnrFrs;
+        internal static Button cmdAnnulFrs;
+        internal static ComboBox cmbfrs;
+        internal static ComboBox cmbPersRess;
+        internal static RadioButton optSpain;
+        internal static Label lblDevise1;
+        internal static Label lblDevise2;
+        internal static Label _Label1_5;
+        internal static PictureBox imgCanada;
+        internal static PictureBox imgEU;
+        internal static Label _Label1_14;
+        internal static Label _Label1_16;
+        internal static Label _Label1_19;
+        internal static Label _Label1_24;
+        internal static Label _Label1_20;
+        internal static Label _Label1_2;
+        internal static Label _Label1_23;
+        internal static PictureBox imgSpain;
+        internal static GroupBox frafournisseur;
+        internal static ComboBox cmbCategorie;
+        internal static TextBox txtNoItemGRB;
+        internal static ComboBox cmbNoItem;
+        internal static Button CmdModif;
+        internal static Button CmdFerme;
+        internal static Button CmdSupp;
+        internal static Button CmdAdd;
+        internal static TextBox txtComment;
+        internal static ComboBox cmbFabricant;
+        internal static TextBox txtFabricant;
+        internal static TextBox txtDescriptionEN;
+        internal static TextBox txtDescriptionFR;
+        internal static TextBox txtNoItem;
+        internal static Button CmdAnul;
+        internal static Button CmdEnr;
+        internal static TextBox txtCategorie;
+        internal static Button cmdRechercherPiece;
+        internal static ComboBox cmbDescriptionFR;
+        internal static Button cmdRechercherManufact;
+        internal static CheckBox chkInventaire;
+        internal static TextBox txtQuantiteCommande;
+        internal static CheckBox chkMinimum;
+        internal static TextBox txtQuantiteStock;
+        internal static TextBox txtQuantiteMinimum;
+        internal static TextBox txtQuantitéBoite;
+        internal static CheckBox chkBoite;
+        internal static Label Label11;
+        internal static Label Label5;
+        internal static GroupBox fraQuantité;
+        internal static ComboBox cmbLocalisation;
+        internal static TextBox txtLocalisation;
+        internal static Button cmdRechercheAchat;
+        internal static Label Label4;
+        internal static Label Label2;
+        internal static Label _Label1_25;
+        internal static Label _Label1_6;
+        internal static Label _Label1_4;
+        internal static Label _Label1_3;
+        internal static Label _Label1_1;
+        private System.Windows.Forms.Panel panel1;
+        internal static Label _Label1_0;
 
         [DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.lvwCategorie = new System.Windows.Forms.ListView();
-            this._lvwCategorie_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cmdRechercheCategorie = new System.Windows.Forms.Button();
-            this.lvwRechercheAchat = new System.Windows.Forms.ListView();
-            this._lvwRechercheAchat_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwRechercheAchat_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvwRechercheJob = new System.Windows.Forms.ListView();
-            this._lvwRechercheJob_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwRechercheJob_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cmdRechercheJob = new System.Windows.Forms.Button();
-            this.cmdCopier = new System.Windows.Forms.Button();
-            this.cmdTotal = new System.Windows.Forms.Button();
-            this.cmdRechercheInventaire = new System.Windows.Forms.Button();
-            this.lvwFabricant = new System.Windows.Forms.ListView();
-            this._lvwFabricant_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwFabricant_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwFabricant_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwFabricant_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lvwPieces = new System.Windows.Forms.ListView();
-            this._lvwPieces_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwPieces_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwPieces_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwPieces_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cmdChangerCategorie = new System.Windows.Forms.Button();
-            this.cmdDemande = new System.Windows.Forms.Button();
-            this.lvwDescription = new System.Windows.Forms.ListView();
-            this._lvwDescription_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwDescription_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwDescription_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwDescription_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cmdRechercheDescrFR = new System.Windows.Forms.Button();
-            this.frafournisseur = new System.Windows.Forms.GroupBox();
-            this.txtTauxChange = new System.Windows.Forms.TextBox();
-            this.lvwfournisseur = new System.Windows.Forms.ListView();
-            this._lvwfournisseur_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this._lvwfournisseur_ColumnHeader_10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cmdAddFrs = new System.Windows.Forms.Button();
-            this.cmdSuppFrs = new System.Windows.Forms.Button();
-            this.cmdModifFrs = new System.Windows.Forms.Button();
-            this.chkquoter = new System.Windows.Forms.CheckBox();
-            this.optUSA = new System.Windows.Forms.RadioButton();
-            this.optCAN = new System.Windows.Forms.RadioButton();
-            this.txtPrixList = new System.Windows.Forms.TextBox();
-            this.txtPrixNet = new System.Windows.Forms.TextBox();
-            this.txtPrixSpecial = new System.Windows.Forms.TextBox();
-            this.mskValide = new System.Windows.Forms.MaskedTextBox();
-            this.mskEscompte = new System.Windows.Forms.MaskedTextBox();
-            this.cmdEnrFrs = new System.Windows.Forms.Button();
-            this.cmdAnnulFrs = new System.Windows.Forms.Button();
-            this.cmbfrs = new System.Windows.Forms.ComboBox();
-            this.cmbPersRess = new System.Windows.Forms.ComboBox();
-            this.optSpain = new System.Windows.Forms.RadioButton();
-            this.lblDevise1 = new System.Windows.Forms.Label();
-            this.lblDevise2 = new System.Windows.Forms.Label();
-            this._Label1_5 = new System.Windows.Forms.Label();
-            this.imgCanada = new System.Windows.Forms.PictureBox();
-            this.imgEU = new System.Windows.Forms.PictureBox();
-            this._Label1_14 = new System.Windows.Forms.Label();
-            this._Label1_16 = new System.Windows.Forms.Label();
-            this._Label1_19 = new System.Windows.Forms.Label();
-            this._Label1_24 = new System.Windows.Forms.Label();
-            this._Label1_20 = new System.Windows.Forms.Label();
-            this._Label1_2 = new System.Windows.Forms.Label();
-            this._Label1_23 = new System.Windows.Forms.Label();
-            this.imgSpain = new System.Windows.Forms.PictureBox();
-            this.cmbCategorie = new System.Windows.Forms.ComboBox();
-            this.txtNoItemGRB = new System.Windows.Forms.TextBox();
-            this.cmbNoItem = new System.Windows.Forms.ComboBox();
-            this.CmdModif = new System.Windows.Forms.Button();
-            this.CmdFerme = new System.Windows.Forms.Button();
-            this.CmdSupp = new System.Windows.Forms.Button();
-            this.CmdAdd = new System.Windows.Forms.Button();
-            this.txtComment = new System.Windows.Forms.TextBox();
-            this.cmbFabricant = new System.Windows.Forms.ComboBox();
-            this.txtFabricant = new System.Windows.Forms.TextBox();
-            this.txtDescriptionEN = new System.Windows.Forms.TextBox();
-            this.txtDescriptionFR = new System.Windows.Forms.TextBox();
-            this.txtNoItem = new System.Windows.Forms.TextBox();
-            this.CmdAnul = new System.Windows.Forms.Button();
-            this.CmdEnr = new System.Windows.Forms.Button();
-            this.txtCategorie = new System.Windows.Forms.TextBox();
-            this.cmdRechercherPiece = new System.Windows.Forms.Button();
-            this.cmbDescriptionFR = new System.Windows.Forms.ComboBox();
-            this.cmdRechercherManufact = new System.Windows.Forms.Button();
-            this.chkInventaire = new System.Windows.Forms.CheckBox();
-            this.fraQuantité = new System.Windows.Forms.GroupBox();
-            this.txtQuantiteCommande = new System.Windows.Forms.TextBox();
-            this.chkMinimum = new System.Windows.Forms.CheckBox();
-            this.txtQuantiteStock = new System.Windows.Forms.TextBox();
-            this.txtQuantiteMinimum = new System.Windows.Forms.TextBox();
-            this.txtQuantitéBoite = new System.Windows.Forms.TextBox();
-            this.chkBoite = new System.Windows.Forms.CheckBox();
-            this.Label11 = new System.Windows.Forms.Label();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.cmbLocalisation = new System.Windows.Forms.ComboBox();
-            this.txtLocalisation = new System.Windows.Forms.TextBox();
-            this.cmdRechercheAchat = new System.Windows.Forms.Button();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.Label2 = new System.Windows.Forms.Label();
-            this._Label1_25 = new System.Windows.Forms.Label();
-            this._Label1_6 = new System.Windows.Forms.Label();
-            this._Label1_4 = new System.Windows.Forms.Label();
-            this._Label1_3 = new System.Windows.Forms.Label();
-            this._Label1_1 = new System.Windows.Forms.Label();
-            this._Label1_0 = new System.Windows.Forms.Label();
-            this.frafournisseur.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCanada)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSpain)).BeginInit();
-            this.fraQuantité.SuspendLayout();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            ToolTip1 = new System.Windows.Forms.ToolTip(components);
+            lvwCategorie = new System.Windows.Forms.ListView();
+            _lvwCategorie_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            cmdRechercheCategorie = new System.Windows.Forms.Button();
+            lvwRechercheAchat = new System.Windows.Forms.ListView();
+            _lvwRechercheAchat_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwRechercheAchat_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            lvwRechercheJob = new System.Windows.Forms.ListView();
+            _lvwRechercheJob_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwRechercheJob_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            cmdRechercheJob = new System.Windows.Forms.Button();
+            cmdCopier = new System.Windows.Forms.Button();
+            cmdTotal = new System.Windows.Forms.Button();
+            cmdRechercheInventaire = new System.Windows.Forms.Button();
+            lvwFabricant = new System.Windows.Forms.ListView();
+            _lvwFabricant_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwFabricant_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwFabricant_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwFabricant_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            lvwPieces = new System.Windows.Forms.ListView();
+            _lvwPieces_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwPieces_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwPieces_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwPieces_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            cmdChangerCategorie = new System.Windows.Forms.Button();
+            cmdDemande = new System.Windows.Forms.Button();
+            lvwDescription = new System.Windows.Forms.ListView();
+            _lvwDescription_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwDescription_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwDescription_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwDescription_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            cmdRechercheDescrFR = new System.Windows.Forms.Button();
+            frafournisseur = new System.Windows.Forms.GroupBox();
+            txtTauxChange = new System.Windows.Forms.TextBox();
+            lvwfournisseur = new System.Windows.Forms.ListView();
+            _lvwfournisseur_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            _lvwfournisseur_ColumnHeader_10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            cmdAddFrs = new System.Windows.Forms.Button();
+            cmdSuppFrs = new System.Windows.Forms.Button();
+            cmdModifFrs = new System.Windows.Forms.Button();
+            chkquoter = new System.Windows.Forms.CheckBox();
+            optUSA = new System.Windows.Forms.RadioButton();
+            optCAN = new System.Windows.Forms.RadioButton();
+            txtPrixList = new System.Windows.Forms.TextBox();
+            txtPrixNet = new System.Windows.Forms.TextBox();
+            txtPrixSpecial = new System.Windows.Forms.TextBox();
+            mskValide = new System.Windows.Forms.MaskedTextBox();
+            mskEscompte = new System.Windows.Forms.MaskedTextBox();
+            cmdEnrFrs = new System.Windows.Forms.Button();
+            cmdAnnulFrs = new System.Windows.Forms.Button();
+            cmbfrs = new System.Windows.Forms.ComboBox();
+            cmbPersRess = new System.Windows.Forms.ComboBox();
+            optSpain = new System.Windows.Forms.RadioButton();
+            lblDevise1 = new System.Windows.Forms.Label();
+            lblDevise2 = new System.Windows.Forms.Label();
+            _Label1_5 = new System.Windows.Forms.Label();
+            imgCanada = new System.Windows.Forms.PictureBox();
+            imgEU = new System.Windows.Forms.PictureBox();
+            _Label1_14 = new System.Windows.Forms.Label();
+            _Label1_16 = new System.Windows.Forms.Label();
+            _Label1_19 = new System.Windows.Forms.Label();
+            _Label1_24 = new System.Windows.Forms.Label();
+            _Label1_20 = new System.Windows.Forms.Label();
+            _Label1_2 = new System.Windows.Forms.Label();
+            _Label1_23 = new System.Windows.Forms.Label();
+            imgSpain = new System.Windows.Forms.PictureBox();
+            cmbCategorie = new System.Windows.Forms.ComboBox();
+            txtNoItemGRB = new System.Windows.Forms.TextBox();
+            cmbNoItem = new System.Windows.Forms.ComboBox();
+            CmdModif = new System.Windows.Forms.Button();
+            CmdFerme = new System.Windows.Forms.Button();
+            CmdSupp = new System.Windows.Forms.Button();
+            CmdAdd = new System.Windows.Forms.Button();
+            txtComment = new System.Windows.Forms.TextBox();
+            cmbFabricant = new System.Windows.Forms.ComboBox();
+            txtFabricant = new System.Windows.Forms.TextBox();
+            txtDescriptionEN = new System.Windows.Forms.TextBox();
+            txtDescriptionFR = new System.Windows.Forms.TextBox();
+            txtNoItem = new System.Windows.Forms.TextBox();
+            CmdAnul = new System.Windows.Forms.Button();
+            CmdEnr = new System.Windows.Forms.Button();
+            txtCategorie = new System.Windows.Forms.TextBox();
+            cmdRechercherPiece = new System.Windows.Forms.Button();
+            cmbDescriptionFR = new System.Windows.Forms.ComboBox();
+            cmdRechercherManufact = new System.Windows.Forms.Button();
+            chkInventaire = new System.Windows.Forms.CheckBox();
+            fraQuantité = new System.Windows.Forms.GroupBox();
+            txtQuantiteCommande = new System.Windows.Forms.TextBox();
+            chkMinimum = new System.Windows.Forms.CheckBox();
+            txtQuantiteStock = new System.Windows.Forms.TextBox();
+            txtQuantiteMinimum = new System.Windows.Forms.TextBox();
+            txtQuantitéBoite = new System.Windows.Forms.TextBox();
+            chkBoite = new System.Windows.Forms.CheckBox();
+            Label11 = new System.Windows.Forms.Label();
+            Label5 = new System.Windows.Forms.Label();
+            cmbLocalisation = new System.Windows.Forms.ComboBox();
+            txtLocalisation = new System.Windows.Forms.TextBox();
+            cmdRechercheAchat = new System.Windows.Forms.Button();
+            Label4 = new System.Windows.Forms.Label();
+            Label2 = new System.Windows.Forms.Label();
+            _Label1_25 = new System.Windows.Forms.Label();
+            _Label1_6 = new System.Windows.Forms.Label();
+            _Label1_4 = new System.Windows.Forms.Label();
+            _Label1_3 = new System.Windows.Forms.Label();
+            _Label1_1 = new System.Windows.Forms.Label();
+            _Label1_0 = new System.Windows.Forms.Label();
+            panel1 = new System.Windows.Forms.Panel();
+            frafournisseur.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(imgCanada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(imgEU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(imgSpain)).BeginInit();
+            fraQuantité.SuspendLayout();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // lvwCategorie
             // 
-            this.lvwCategorie.BackColor = System.Drawing.SystemColors.Window;
-            this.lvwCategorie.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this._lvwCategorie_ColumnHeader_1});
-            this.lvwCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lvwCategorie.FullRowSelect = true;
-            this.lvwCategorie.GridLines = true;
-            this.lvwCategorie.HideSelection = false;
-            this.lvwCategorie.Location = new System.Drawing.Point(232, 52);
-            this.lvwCategorie.Name = "lvwCategorie";
-            this.lvwCategorie.Size = new System.Drawing.Size(281, 129);
-            this.lvwCategorie.TabIndex = 82;
-            this.lvwCategorie.UseCompatibleStateImageBehavior = false;
-            this.lvwCategorie.View = System.Windows.Forms.View.Details;
-            this.lvwCategorie.Visible = false;
-            this.lvwCategorie.DoubleClick += new System.EventHandler(this.lvwCategorie_DoubleClick);
-            this.lvwCategorie.Leave += new System.EventHandler(this.lvwCategorie_Leave);
+            lvwCategorie.BackColor = System.Drawing.SystemColors.Window;
+            lvwCategorie.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            _lvwCategorie_ColumnHeader_1});
+            lvwCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
+            lvwCategorie.FullRowSelect = true;
+            lvwCategorie.GridLines = true;
+            lvwCategorie.HideSelection = false;
+            lvwCategorie.Location = new System.Drawing.Point(175, 498);
+            lvwCategorie.Name = "lvwCategorie";
+            lvwCategorie.Size = new System.Drawing.Size(281, 129);
+            lvwCategorie.TabIndex = 82;
+            lvwCategorie.UseCompatibleStateImageBehavior = false;
+            lvwCategorie.View = System.Windows.Forms.View.Details;
+            lvwCategorie.DoubleClick += new System.EventHandler(lvwCategorie_DoubleClick);
+            lvwCategorie.Leave += new System.EventHandler(lvwCategorie_Leave);
             // 
             // _lvwCategorie_ColumnHeader_1
             // 
-            this._lvwCategorie_ColumnHeader_1.Text = "Catégorie";
-            this._lvwCategorie_ColumnHeader_1.Width = 447;
+            _lvwCategorie_ColumnHeader_1.Text = "Catégorie";
+            _lvwCategorie_ColumnHeader_1.Width = 447;
             // 
             // cmdRechercheCategorie
             // 
-            this.cmdRechercheCategorie.BackColor = System.Drawing.Color.Black;
-            this.cmdRechercheCategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdRechercheCategorie.ForeColor = System.Drawing.Color.White;
-            this.cmdRechercheCategorie.Location = new System.Drawing.Point(688, 8);
-            this.cmdRechercheCategorie.Name = "cmdRechercheCategorie";
-            this.cmdRechercheCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdRechercheCategorie.Size = new System.Drawing.Size(25, 25);
-            this.cmdRechercheCategorie.TabIndex = 81;
-            this.cmdRechercheCategorie.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cmdRechercheCategorie.UseVisualStyleBackColor = true;
-            this.cmdRechercheCategorie.Click += new System.EventHandler(this.cmdRechercheCategorie_Click);
+            cmdRechercheCategorie.BackColor = System.Drawing.Color.Black;
+            cmdRechercheCategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdRechercheCategorie.ForeColor = System.Drawing.Color.White;
+            cmdRechercheCategorie.Location = new System.Drawing.Point(688, 8);
+            cmdRechercheCategorie.Name = "cmdRechercheCategorie";
+            cmdRechercheCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdRechercheCategorie.Size = new System.Drawing.Size(25, 25);
+            cmdRechercheCategorie.TabIndex = 81;
+            cmdRechercheCategorie.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            cmdRechercheCategorie.UseVisualStyleBackColor = true;
+            cmdRechercheCategorie.Click += new System.EventHandler(cmdRechercheCategorie_Click);
             // 
             // lvwRechercheAchat
             // 
-            this.lvwRechercheAchat.BackColor = System.Drawing.SystemColors.Window;
-            this.lvwRechercheAchat.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this._lvwRechercheAchat_ColumnHeader_1,
-            this._lvwRechercheAchat_ColumnHeader_2});
-            this.lvwRechercheAchat.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lvwRechercheAchat.FullRowSelect = true;
-            this.lvwRechercheAchat.GridLines = true;
-            this.lvwRechercheAchat.HideSelection = false;
-            this.lvwRechercheAchat.Location = new System.Drawing.Point(96, 40);
-            this.lvwRechercheAchat.Name = "lvwRechercheAchat";
-            this.lvwRechercheAchat.Size = new System.Drawing.Size(553, 129);
-            this.lvwRechercheAchat.TabIndex = 79;
-            this.lvwRechercheAchat.UseCompatibleStateImageBehavior = false;
-            this.lvwRechercheAchat.View = System.Windows.Forms.View.Details;
-            this.lvwRechercheAchat.Visible = false;
-            this.lvwRechercheAchat.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwRechercheAchat_ColumnClick);
-            this.lvwRechercheAchat.Leave += new System.EventHandler(this.lvwRechercheAchat_Leave);
+            lvwRechercheAchat.BackColor = System.Drawing.SystemColors.Window;
+            lvwRechercheAchat.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            _lvwRechercheAchat_ColumnHeader_1,
+            _lvwRechercheAchat_ColumnHeader_2});
+            lvwRechercheAchat.Dock = System.Windows.Forms.DockStyle.Top;
+            lvwRechercheAchat.ForeColor = System.Drawing.SystemColors.WindowText;
+            lvwRechercheAchat.FullRowSelect = true;
+            lvwRechercheAchat.GridLines = true;
+            lvwRechercheAchat.HideSelection = false;
+            lvwRechercheAchat.Location = new System.Drawing.Point(0, 234);
+            lvwRechercheAchat.Name = "lvwRechercheAchat";
+            lvwRechercheAchat.Size = new System.Drawing.Size(555, 129);
+            lvwRechercheAchat.TabIndex = 79;
+            lvwRechercheAchat.UseCompatibleStateImageBehavior = false;
+            lvwRechercheAchat.View = System.Windows.Forms.View.Details;
+            lvwRechercheAchat.Visible = false;
+            lvwRechercheAchat.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwRechercheAchat_ColumnClick);
+            lvwRechercheAchat.Leave += new System.EventHandler(lvwRechercheAchat_Leave);
             // 
             // _lvwRechercheAchat_ColumnHeader_1
             // 
-            this._lvwRechercheAchat_ColumnHeader_1.Text = "No. Job";
-            this._lvwRechercheAchat_ColumnHeader_1.Width = 170;
+            _lvwRechercheAchat_ColumnHeader_1.Text = "No. Job";
+            _lvwRechercheAchat_ColumnHeader_1.Width = 170;
             // 
             // _lvwRechercheAchat_ColumnHeader_2
             // 
-            this._lvwRechercheAchat_ColumnHeader_2.Text = "Nbre fois";
-            this._lvwRechercheAchat_ColumnHeader_2.Width = 170;
+            _lvwRechercheAchat_ColumnHeader_2.Text = "Nbre fois";
+            _lvwRechercheAchat_ColumnHeader_2.Width = 170;
             // 
             // lvwRechercheJob
             // 
-            this.lvwRechercheJob.BackColor = System.Drawing.SystemColors.Window;
-            this.lvwRechercheJob.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this._lvwRechercheJob_ColumnHeader_1,
-            this._lvwRechercheJob_ColumnHeader_2});
-            this.lvwRechercheJob.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lvwRechercheJob.FullRowSelect = true;
-            this.lvwRechercheJob.GridLines = true;
-            this.lvwRechercheJob.HideSelection = false;
-            this.lvwRechercheJob.Location = new System.Drawing.Point(104, 45);
-            this.lvwRechercheJob.Name = "lvwRechercheJob";
-            this.lvwRechercheJob.Size = new System.Drawing.Size(545, 129);
-            this.lvwRechercheJob.TabIndex = 15;
-            this.lvwRechercheJob.UseCompatibleStateImageBehavior = false;
-            this.lvwRechercheJob.View = System.Windows.Forms.View.Details;
-            this.lvwRechercheJob.Visible = false;
-            this.lvwRechercheJob.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwRechercheJob_ColumnClick);
-            this.lvwRechercheJob.Leave += new System.EventHandler(this.lvwRechercheJob_Leave);
+            lvwRechercheJob.BackColor = System.Drawing.SystemColors.Window;
+            lvwRechercheJob.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            _lvwRechercheJob_ColumnHeader_1,
+            _lvwRechercheJob_ColumnHeader_2});
+            lvwRechercheJob.Dock = System.Windows.Forms.DockStyle.Top;
+            lvwRechercheJob.ForeColor = System.Drawing.SystemColors.WindowText;
+            lvwRechercheJob.FullRowSelect = true;
+            lvwRechercheJob.GridLines = true;
+            lvwRechercheJob.HideSelection = false;
+            lvwRechercheJob.Location = new System.Drawing.Point(0, 363);
+            lvwRechercheJob.Name = "lvwRechercheJob";
+            lvwRechercheJob.Size = new System.Drawing.Size(555, 129);
+            lvwRechercheJob.TabIndex = 15;
+            lvwRechercheJob.UseCompatibleStateImageBehavior = false;
+            lvwRechercheJob.View = System.Windows.Forms.View.Details;
+            lvwRechercheJob.Visible = false;
+            lvwRechercheJob.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwRechercheJob_ColumnClick);
+            lvwRechercheJob.Leave += new System.EventHandler(lvwRechercheJob_Leave);
             // 
             // _lvwRechercheJob_ColumnHeader_1
             // 
-            this._lvwRechercheJob_ColumnHeader_1.Text = "No. Job";
-            this._lvwRechercheJob_ColumnHeader_1.Width = 170;
+            _lvwRechercheJob_ColumnHeader_1.Text = "No. Job";
+            _lvwRechercheJob_ColumnHeader_1.Width = 170;
             // 
             // _lvwRechercheJob_ColumnHeader_2
             // 
-            this._lvwRechercheJob_ColumnHeader_2.Text = "Nbre fois";
-            this._lvwRechercheJob_ColumnHeader_2.Width = 170;
+            _lvwRechercheJob_ColumnHeader_2.Text = "Nbre fois";
+            _lvwRechercheJob_ColumnHeader_2.Width = 170;
             // 
             // cmdRechercheJob
             // 
-            this.cmdRechercheJob.AutoSize = true;
-            this.cmdRechercheJob.BackColor = System.Drawing.Color.Black;
-            this.cmdRechercheJob.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdRechercheJob.Font = new System.Drawing.Font("Calibri", 8.25F);
-            this.cmdRechercheJob.ForeColor = System.Drawing.Color.White;
-            this.cmdRechercheJob.Location = new System.Drawing.Point(67, 201);
-            this.cmdRechercheJob.Name = "cmdRechercheJob";
-            this.cmdRechercheJob.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdRechercheJob.Size = new System.Drawing.Size(159, 24);
-            this.cmdRechercheJob.TabIndex = 38;
-            this.cmdRechercheJob.Text = "Recherche dans jobs / soums";
-            this.cmdRechercheJob.UseVisualStyleBackColor = true;
-            this.cmdRechercheJob.Click += new System.EventHandler(this.cmdRechercheJob_Click);
+            cmdRechercheJob.AutoSize = true;
+            cmdRechercheJob.BackColor = System.Drawing.Color.Black;
+            cmdRechercheJob.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdRechercheJob.Font = new System.Drawing.Font("Calibri", 8.25F);
+            cmdRechercheJob.ForeColor = System.Drawing.Color.White;
+            cmdRechercheJob.Location = new System.Drawing.Point(67, 201);
+            cmdRechercheJob.Name = "cmdRechercheJob";
+            cmdRechercheJob.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdRechercheJob.Size = new System.Drawing.Size(159, 24);
+            cmdRechercheJob.TabIndex = 38;
+            cmdRechercheJob.Text = "Recherche dans jobs / soums";
+            cmdRechercheJob.UseVisualStyleBackColor = true;
+            cmdRechercheJob.Click += new System.EventHandler(cmdRechercheJob_Click);
             // 
             // cmdCopier
             // 
-            this.cmdCopier.BackColor = System.Drawing.Color.Black;
-            this.cmdCopier.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdCopier.ForeColor = System.Drawing.Color.White;
-            this.cmdCopier.Location = new System.Drawing.Point(240, 400);
-            this.cmdCopier.Name = "cmdCopier";
-            this.cmdCopier.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdCopier.Size = new System.Drawing.Size(89, 33);
-            this.cmdCopier.TabIndex = 69;
-            this.cmdCopier.Text = "&Copier";
-            this.cmdCopier.UseVisualStyleBackColor = true;
-            this.cmdCopier.Click += new System.EventHandler(this.cmdCopier_Click);
+            cmdCopier.BackColor = System.Drawing.Color.Black;
+            cmdCopier.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdCopier.ForeColor = System.Drawing.Color.White;
+            cmdCopier.Location = new System.Drawing.Point(240, 400);
+            cmdCopier.Name = "cmdCopier";
+            cmdCopier.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdCopier.Size = new System.Drawing.Size(89, 33);
+            cmdCopier.TabIndex = 69;
+            cmdCopier.Text = "&Copier";
+            cmdCopier.UseVisualStyleBackColor = true;
+            cmdCopier.Click += new System.EventHandler(cmdCopier_Click);
             // 
             // cmdTotal
             // 
-            this.cmdTotal.AutoSize = true;
-            this.cmdTotal.BackColor = System.Drawing.Color.Black;
-            this.cmdTotal.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdTotal.Font = new System.Drawing.Font("Calibri", 8.25F);
-            this.cmdTotal.ForeColor = System.Drawing.Color.White;
-            this.cmdTotal.Location = new System.Drawing.Point(8, 201);
-            this.cmdTotal.Name = "cmdTotal";
-            this.cmdTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdTotal.Size = new System.Drawing.Size(57, 24);
-            this.cmdTotal.TabIndex = 37;
-            this.cmdTotal.Text = "Total";
-            this.cmdTotal.UseVisualStyleBackColor = true;
-            this.cmdTotal.Click += new System.EventHandler(this.cmdTotal_Click);
+            cmdTotal.AutoSize = true;
+            cmdTotal.BackColor = System.Drawing.Color.Black;
+            cmdTotal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdTotal.Font = new System.Drawing.Font("Calibri", 8.25F);
+            cmdTotal.ForeColor = System.Drawing.Color.White;
+            cmdTotal.Location = new System.Drawing.Point(8, 201);
+            cmdTotal.Name = "cmdTotal";
+            cmdTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdTotal.Size = new System.Drawing.Size(57, 24);
+            cmdTotal.TabIndex = 37;
+            cmdTotal.Text = "Total";
+            cmdTotal.UseVisualStyleBackColor = true;
+            cmdTotal.Click += new System.EventHandler(cmdTotal_Click);
             // 
             // cmdRechercheInventaire
             // 
-            this.cmdRechercheInventaire.BackColor = System.Drawing.Color.Black;
-            this.cmdRechercheInventaire.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdRechercheInventaire.ForeColor = System.Drawing.Color.White;
-            this.cmdRechercheInventaire.Location = new System.Drawing.Point(32, 400);
-            this.cmdRechercheInventaire.Name = "cmdRechercheInventaire";
-            this.cmdRechercheInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdRechercheInventaire.Size = new System.Drawing.Size(97, 33);
-            this.cmdRechercheInventaire.TabIndex = 67;
-            this.cmdRechercheInventaire.Text = "Inventaire";
-            this.cmdRechercheInventaire.UseVisualStyleBackColor = true;
-            this.cmdRechercheInventaire.Click += new System.EventHandler(this.cmdRechercheInventaire_Click);
+            cmdRechercheInventaire.BackColor = System.Drawing.Color.Black;
+            cmdRechercheInventaire.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdRechercheInventaire.ForeColor = System.Drawing.Color.White;
+            cmdRechercheInventaire.Location = new System.Drawing.Point(32, 400);
+            cmdRechercheInventaire.Name = "cmdRechercheInventaire";
+            cmdRechercheInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdRechercheInventaire.Size = new System.Drawing.Size(97, 33);
+            cmdRechercheInventaire.TabIndex = 67;
+            cmdRechercheInventaire.Text = "Inventaire";
+            cmdRechercheInventaire.UseVisualStyleBackColor = true;
+            cmdRechercheInventaire.Click += new System.EventHandler(cmdRechercheInventaire_Click);
             // 
             // lvwFabricant
             // 
-            this.lvwFabricant.BackColor = System.Drawing.SystemColors.Window;
-            this.lvwFabricant.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this._lvwFabricant_ColumnHeader_1,
-            this._lvwFabricant_ColumnHeader_2,
-            this._lvwFabricant_ColumnHeader_3,
-            this._lvwFabricant_ColumnHeader_4});
-            this.lvwFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lvwFabricant.FullRowSelect = true;
-            this.lvwFabricant.GridLines = true;
-            this.lvwFabricant.HideSelection = false;
-            this.lvwFabricant.Location = new System.Drawing.Point(104, 52);
-            this.lvwFabricant.Name = "lvwFabricant";
-            this.lvwFabricant.Size = new System.Drawing.Size(553, 129);
-            this.lvwFabricant.TabIndex = 4;
-            this.lvwFabricant.UseCompatibleStateImageBehavior = false;
-            this.lvwFabricant.View = System.Windows.Forms.View.Details;
-            this.lvwFabricant.Visible = false;
-            this.lvwFabricant.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwFabricant_ColumnClick);
-            this.lvwFabricant.DoubleClick += new System.EventHandler(this.lvwFabricant_DoubleClick);
-            this.lvwFabricant.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwFabricant_KeyDown);
-            this.lvwFabricant.Leave += new System.EventHandler(this.lvwFabricant_Leave);
+            lvwFabricant.BackColor = System.Drawing.SystemColors.Window;
+            lvwFabricant.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            _lvwFabricant_ColumnHeader_1,
+            _lvwFabricant_ColumnHeader_2,
+            _lvwFabricant_ColumnHeader_3,
+            _lvwFabricant_ColumnHeader_4});
+            lvwFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
+            lvwFabricant.FullRowSelect = true;
+            lvwFabricant.GridLines = true;
+            lvwFabricant.HideSelection = false;
+            lvwFabricant.Location = new System.Drawing.Point(32, 439);
+            lvwFabricant.Name = "lvwFabricant";
+            lvwFabricant.Size = new System.Drawing.Size(553, 129);
+            lvwFabricant.TabIndex = 4;
+            lvwFabricant.UseCompatibleStateImageBehavior = false;
+            lvwFabricant.View = System.Windows.Forms.View.Details;
+            lvwFabricant.Visible = false;
+            lvwFabricant.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwFabricant_ColumnClick);
+            lvwFabricant.DoubleClick += new System.EventHandler(lvwFabricant_DoubleClick);
+            lvwFabricant.KeyDown += new System.Windows.Forms.KeyEventHandler(lvwFabricant_KeyDown);
+            lvwFabricant.Leave += new System.EventHandler(lvwFabricant_Leave);
             // 
             // _lvwFabricant_ColumnHeader_1
             // 
-            this._lvwFabricant_ColumnHeader_1.Text = "Manufacturier";
-            this._lvwFabricant_ColumnHeader_1.Width = 140;
+            _lvwFabricant_ColumnHeader_1.Text = "Manufacturier";
+            _lvwFabricant_ColumnHeader_1.Width = 140;
             // 
             // _lvwFabricant_ColumnHeader_2
             // 
-            this._lvwFabricant_ColumnHeader_2.Text = "No. Pièce";
-            this._lvwFabricant_ColumnHeader_2.Width = 217;
+            _lvwFabricant_ColumnHeader_2.Text = "No. Pièce";
+            _lvwFabricant_ColumnHeader_2.Width = 217;
             // 
             // _lvwFabricant_ColumnHeader_3
             // 
-            this._lvwFabricant_ColumnHeader_3.Text = "Description française";
-            this._lvwFabricant_ColumnHeader_3.Width = 410;
+            _lvwFabricant_ColumnHeader_3.Text = "Description française";
+            _lvwFabricant_ColumnHeader_3.Width = 410;
             // 
             // _lvwFabricant_ColumnHeader_4
             // 
-            this._lvwFabricant_ColumnHeader_4.Text = "Description anglaise";
-            this._lvwFabricant_ColumnHeader_4.Width = 410;
+            _lvwFabricant_ColumnHeader_4.Text = "Description anglaise";
+            _lvwFabricant_ColumnHeader_4.Width = 410;
             // 
             // lvwPieces
             // 
-            this.lvwPieces.BackColor = System.Drawing.SystemColors.Window;
-            this.lvwPieces.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this._lvwPieces_ColumnHeader_1,
-            this._lvwPieces_ColumnHeader_2,
-            this._lvwPieces_ColumnHeader_3,
-            this._lvwPieces_ColumnHeader_4});
-            this.lvwPieces.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lvwPieces.FullRowSelect = true;
-            this.lvwPieces.GridLines = true;
-            this.lvwPieces.HideSelection = false;
-            this.lvwPieces.Location = new System.Drawing.Point(127, 56);
-            this.lvwPieces.Name = "lvwPieces";
-            this.lvwPieces.Size = new System.Drawing.Size(553, 129);
-            this.lvwPieces.TabIndex = 5;
-            this.lvwPieces.UseCompatibleStateImageBehavior = false;
-            this.lvwPieces.View = System.Windows.Forms.View.Details;
-            this.lvwPieces.Visible = false;
-            this.lvwPieces.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwPieces_ColumnClick);
-            this.lvwPieces.DoubleClick += new System.EventHandler(this.lvwPieces_DoubleClick);
-            this.lvwPieces.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwPieces_KeyDown);
-            this.lvwPieces.Leave += new System.EventHandler(this.lvwPieces_Leave);
+            lvwPieces.BackColor = System.Drawing.SystemColors.Window;
+            lvwPieces.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            _lvwPieces_ColumnHeader_1,
+            _lvwPieces_ColumnHeader_2,
+            _lvwPieces_ColumnHeader_3,
+            _lvwPieces_ColumnHeader_4});
+            lvwPieces.ForeColor = System.Drawing.SystemColors.WindowText;
+            lvwPieces.FullRowSelect = true;
+            lvwPieces.GridLines = true;
+            lvwPieces.HideSelection = false;
+            lvwPieces.Location = new System.Drawing.Point(32, 574);
+            lvwPieces.Name = "lvwPieces";
+            lvwPieces.Size = new System.Drawing.Size(553, 129);
+            lvwPieces.TabIndex = 5;
+            lvwPieces.UseCompatibleStateImageBehavior = false;
+            lvwPieces.View = System.Windows.Forms.View.Details;
+            lvwPieces.Visible = false;
+            lvwPieces.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwPieces_ColumnClick);
+            lvwPieces.DoubleClick += new System.EventHandler(lvwPieces_DoubleClick);
+            lvwPieces.KeyDown += new System.Windows.Forms.KeyEventHandler(lvwPieces_KeyDown);
+            lvwPieces.Leave += new System.EventHandler(lvwPieces_Leave);
             // 
             // _lvwPieces_ColumnHeader_1
             // 
-            this._lvwPieces_ColumnHeader_1.Text = "No Pièce";
-            this._lvwPieces_ColumnHeader_1.Width = 217;
+            _lvwPieces_ColumnHeader_1.Text = "No Pièce";
+            _lvwPieces_ColumnHeader_1.Width = 217;
             // 
             // _lvwPieces_ColumnHeader_2
             // 
-            this._lvwPieces_ColumnHeader_2.Text = "Manufacturier";
-            this._lvwPieces_ColumnHeader_2.Width = 140;
+            _lvwPieces_ColumnHeader_2.Text = "Manufacturier";
+            _lvwPieces_ColumnHeader_2.Width = 140;
             // 
             // _lvwPieces_ColumnHeader_3
             // 
-            this._lvwPieces_ColumnHeader_3.Text = "Description française";
-            this._lvwPieces_ColumnHeader_3.Width = 410;
+            _lvwPieces_ColumnHeader_3.Text = "Description française";
+            _lvwPieces_ColumnHeader_3.Width = 410;
             // 
             // _lvwPieces_ColumnHeader_4
             // 
-            this._lvwPieces_ColumnHeader_4.Text = "Description anglaise";
-            this._lvwPieces_ColumnHeader_4.Width = 410;
+            _lvwPieces_ColumnHeader_4.Text = "Description anglaise";
+            _lvwPieces_ColumnHeader_4.Width = 410;
             // 
             // cmdChangerCategorie
             // 
-            this.cmdChangerCategorie.BackColor = System.Drawing.Color.Black;
-            this.cmdChangerCategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdChangerCategorie.ForeColor = System.Drawing.Color.White;
-            this.cmdChangerCategorie.Location = new System.Drawing.Point(536, 32);
-            this.cmdChangerCategorie.Name = "cmdChangerCategorie";
-            this.cmdChangerCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdChangerCategorie.Size = new System.Drawing.Size(121, 25);
-            this.cmdChangerCategorie.TabIndex = 3;
-            this.cmdChangerCategorie.Text = "Changer de catégorie";
-            this.cmdChangerCategorie.UseVisualStyleBackColor = true;
-            this.cmdChangerCategorie.Click += new System.EventHandler(this.cmdChangerCategorie_Click);
+            cmdChangerCategorie.BackColor = System.Drawing.Color.Black;
+            cmdChangerCategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdChangerCategorie.ForeColor = System.Drawing.Color.White;
+            cmdChangerCategorie.Location = new System.Drawing.Point(536, 32);
+            cmdChangerCategorie.Name = "cmdChangerCategorie";
+            cmdChangerCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdChangerCategorie.Size = new System.Drawing.Size(121, 25);
+            cmdChangerCategorie.TabIndex = 3;
+            cmdChangerCategorie.Text = "Changer de catégorie";
+            cmdChangerCategorie.UseVisualStyleBackColor = true;
+            cmdChangerCategorie.Click += new System.EventHandler(cmdChangerCategorie_Click);
             // 
             // cmdDemande
             // 
-            this.cmdDemande.BackColor = System.Drawing.Color.Black;
-            this.cmdDemande.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdDemande.ForeColor = System.Drawing.Color.White;
-            this.cmdDemande.Location = new System.Drawing.Point(136, 400);
-            this.cmdDemande.Name = "cmdDemande";
-            this.cmdDemande.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdDemande.Size = new System.Drawing.Size(97, 33);
-            this.cmdDemande.TabIndex = 68;
-            this.cmdDemande.Text = "Demande de prix";
-            this.cmdDemande.UseVisualStyleBackColor = true;
-            this.cmdDemande.Click += new System.EventHandler(this.cmdDemande_Click);
+            cmdDemande.BackColor = System.Drawing.Color.Black;
+            cmdDemande.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdDemande.ForeColor = System.Drawing.Color.White;
+            cmdDemande.Location = new System.Drawing.Point(136, 400);
+            cmdDemande.Name = "cmdDemande";
+            cmdDemande.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdDemande.Size = new System.Drawing.Size(97, 33);
+            cmdDemande.TabIndex = 68;
+            cmdDemande.Text = "Demande de prix";
+            cmdDemande.UseVisualStyleBackColor = true;
+            cmdDemande.Click += new System.EventHandler(cmdDemande_Click);
             // 
             // lvwDescription
             // 
-            this.lvwDescription.BackColor = System.Drawing.SystemColors.Window;
-            this.lvwDescription.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this._lvwDescription_ColumnHeader_1,
-            this._lvwDescription_ColumnHeader_2,
-            this._lvwDescription_ColumnHeader_3,
-            this._lvwDescription_ColumnHeader_4});
-            this.lvwDescription.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lvwDescription.FullRowSelect = true;
-            this.lvwDescription.GridLines = true;
-            this.lvwDescription.HideSelection = false;
-            this.lvwDescription.Location = new System.Drawing.Point(104, 40);
-            this.lvwDescription.Name = "lvwDescription";
-            this.lvwDescription.Size = new System.Drawing.Size(553, 129);
-            this.lvwDescription.TabIndex = 6;
-            this.lvwDescription.UseCompatibleStateImageBehavior = false;
-            this.lvwDescription.View = System.Windows.Forms.View.Details;
-            this.lvwDescription.Visible = false;
-            this.lvwDescription.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwDescription_ColumnClick);
-            this.lvwDescription.DoubleClick += new System.EventHandler(this.lvwDescription_DoubleClick);
-            this.lvwDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwDescription_KeyDown);
-            this.lvwDescription.Leave += new System.EventHandler(this.lvwDescription_Leave);
+            lvwDescription.BackColor = System.Drawing.SystemColors.Window;
+            lvwDescription.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            _lvwDescription_ColumnHeader_1,
+            _lvwDescription_ColumnHeader_2,
+            _lvwDescription_ColumnHeader_3,
+            _lvwDescription_ColumnHeader_4});
+            lvwDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            lvwDescription.ForeColor = System.Drawing.SystemColors.WindowText;
+            lvwDescription.FullRowSelect = true;
+            lvwDescription.GridLines = true;
+            lvwDescription.HideSelection = false;
+            lvwDescription.Location = new System.Drawing.Point(0, 0);
+            lvwDescription.Name = "lvwDescription";
+            lvwDescription.Size = new System.Drawing.Size(555, 129);
+            lvwDescription.TabIndex = 6;
+            lvwDescription.UseCompatibleStateImageBehavior = false;
+            lvwDescription.View = System.Windows.Forms.View.Details;
+            lvwDescription.Visible = false;
+            lvwDescription.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwDescription_ColumnClick);
+            lvwDescription.DoubleClick += new System.EventHandler(lvwDescription_DoubleClick);
+            lvwDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(lvwDescription_KeyDown);
+            lvwDescription.Leave += new System.EventHandler(lvwDescription_Leave);
             // 
             // _lvwDescription_ColumnHeader_1
             // 
-            this._lvwDescription_ColumnHeader_1.Text = "Description française";
-            this._lvwDescription_ColumnHeader_1.Width = 410;
+            _lvwDescription_ColumnHeader_1.Text = "Description française";
+            _lvwDescription_ColumnHeader_1.Width = 410;
             // 
             // _lvwDescription_ColumnHeader_2
             // 
-            this._lvwDescription_ColumnHeader_2.Text = "Description anglais";
-            this._lvwDescription_ColumnHeader_2.Width = 410;
+            _lvwDescription_ColumnHeader_2.Text = "Description anglais";
+            _lvwDescription_ColumnHeader_2.Width = 410;
             // 
             // _lvwDescription_ColumnHeader_3
             // 
-            this._lvwDescription_ColumnHeader_3.Text = "Manufacturier";
-            this._lvwDescription_ColumnHeader_3.Width = 140;
+            _lvwDescription_ColumnHeader_3.Text = "Manufacturier";
+            _lvwDescription_ColumnHeader_3.Width = 140;
             // 
             // _lvwDescription_ColumnHeader_4
             // 
-            this._lvwDescription_ColumnHeader_4.Text = "NoItem";
-            this._lvwDescription_ColumnHeader_4.Width = 217;
+            _lvwDescription_ColumnHeader_4.Text = "NoItem";
+            _lvwDescription_ColumnHeader_4.Width = 217;
             // 
             // cmdRechercheDescrFR
             // 
-            this.cmdRechercheDescrFR.BackColor = System.Drawing.Color.Black;
-            this.cmdRechercheDescrFR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdRechercheDescrFR.ForeColor = System.Drawing.Color.White;
-            this.cmdRechercheDescrFR.Location = new System.Drawing.Point(688, 60);
-            this.cmdRechercheDescrFR.Name = "cmdRechercheDescrFR";
-            this.cmdRechercheDescrFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdRechercheDescrFR.Size = new System.Drawing.Size(25, 25);
-            this.cmdRechercheDescrFR.TabIndex = 9;
-            this.cmdRechercheDescrFR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cmdRechercheDescrFR.UseVisualStyleBackColor = true;
-            this.cmdRechercheDescrFR.Click += new System.EventHandler(this.cmdRechercheDescrFR_Click);
+            cmdRechercheDescrFR.BackColor = System.Drawing.Color.Black;
+            cmdRechercheDescrFR.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdRechercheDescrFR.ForeColor = System.Drawing.Color.White;
+            cmdRechercheDescrFR.Location = new System.Drawing.Point(688, 60);
+            cmdRechercheDescrFR.Name = "cmdRechercheDescrFR";
+            cmdRechercheDescrFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdRechercheDescrFR.Size = new System.Drawing.Size(25, 25);
+            cmdRechercheDescrFR.TabIndex = 9;
+            cmdRechercheDescrFR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            cmdRechercheDescrFR.UseVisualStyleBackColor = true;
+            cmdRechercheDescrFR.Click += new System.EventHandler(cmdRechercheDescrFR_Click);
             // 
             // frafournisseur
             // 
-            this.frafournisseur.BackColor = System.Drawing.Color.Black;
-            this.frafournisseur.Controls.Add(this.txtTauxChange);
-            this.frafournisseur.Controls.Add(this.lvwfournisseur);
-            this.frafournisseur.Controls.Add(this.cmdAddFrs);
-            this.frafournisseur.Controls.Add(this.cmdSuppFrs);
-            this.frafournisseur.Controls.Add(this.cmdModifFrs);
-            this.frafournisseur.Controls.Add(this.chkquoter);
-            this.frafournisseur.Controls.Add(this.optUSA);
-            this.frafournisseur.Controls.Add(this.optCAN);
-            this.frafournisseur.Controls.Add(this.txtPrixList);
-            this.frafournisseur.Controls.Add(this.txtPrixNet);
-            this.frafournisseur.Controls.Add(this.txtPrixSpecial);
-            this.frafournisseur.Controls.Add(this.mskValide);
-            this.frafournisseur.Controls.Add(this.mskEscompte);
-            this.frafournisseur.Controls.Add(this.cmdEnrFrs);
-            this.frafournisseur.Controls.Add(this.cmdAnnulFrs);
-            this.frafournisseur.Controls.Add(this.cmbfrs);
-            this.frafournisseur.Controls.Add(this.cmbPersRess);
-            this.frafournisseur.Controls.Add(this.optSpain);
-            this.frafournisseur.Controls.Add(this.lblDevise1);
-            this.frafournisseur.Controls.Add(this.lblDevise2);
-            this.frafournisseur.Controls.Add(this._Label1_5);
-            this.frafournisseur.Controls.Add(this.imgCanada);
-            this.frafournisseur.Controls.Add(this.imgEU);
-            this.frafournisseur.Controls.Add(this._Label1_14);
-            this.frafournisseur.Controls.Add(this._Label1_16);
-            this.frafournisseur.Controls.Add(this._Label1_19);
-            this.frafournisseur.Controls.Add(this._Label1_24);
-            this.frafournisseur.Controls.Add(this._Label1_20);
-            this.frafournisseur.Controls.Add(this._Label1_2);
-            this.frafournisseur.Controls.Add(this._Label1_23);
-            this.frafournisseur.Controls.Add(this.imgSpain);
-            this.frafournisseur.ForeColor = System.Drawing.Color.White;
-            this.frafournisseur.Location = new System.Drawing.Point(32, 232);
-            this.frafournisseur.Name = "frafournisseur";
-            this.frafournisseur.Padding = new System.Windows.Forms.Padding(0);
-            this.frafournisseur.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.frafournisseur.Size = new System.Drawing.Size(681, 161);
-            this.frafournisseur.TabIndex = 41;
-            this.frafournisseur.TabStop = false;
-            this.frafournisseur.Text = "Fournisseur";
+            frafournisseur.BackColor = System.Drawing.Color.Black;
+            frafournisseur.Controls.Add(txtTauxChange);
+            frafournisseur.Controls.Add(cmdAddFrs);
+            frafournisseur.Controls.Add(cmdSuppFrs);
+            frafournisseur.Controls.Add(cmdModifFrs);
+            frafournisseur.Controls.Add(chkquoter);
+            frafournisseur.Controls.Add(optUSA);
+            frafournisseur.Controls.Add(optCAN);
+            frafournisseur.Controls.Add(txtPrixList);
+            frafournisseur.Controls.Add(txtPrixNet);
+            frafournisseur.Controls.Add(txtPrixSpecial);
+            frafournisseur.Controls.Add(mskValide);
+            frafournisseur.Controls.Add(mskEscompte);
+            frafournisseur.Controls.Add(cmdEnrFrs);
+            frafournisseur.Controls.Add(cmdAnnulFrs);
+            frafournisseur.Controls.Add(cmbfrs);
+            frafournisseur.Controls.Add(cmbPersRess);
+            frafournisseur.Controls.Add(optSpain);
+            frafournisseur.Controls.Add(lblDevise1);
+            frafournisseur.Controls.Add(lblDevise2);
+            frafournisseur.Controls.Add(_Label1_5);
+            frafournisseur.Controls.Add(imgCanada);
+            frafournisseur.Controls.Add(imgEU);
+            frafournisseur.Controls.Add(_Label1_14);
+            frafournisseur.Controls.Add(_Label1_16);
+            frafournisseur.Controls.Add(_Label1_19);
+            frafournisseur.Controls.Add(_Label1_24);
+            frafournisseur.Controls.Add(_Label1_20);
+            frafournisseur.Controls.Add(_Label1_2);
+            frafournisseur.Controls.Add(_Label1_23);
+            frafournisseur.Controls.Add(imgSpain);
+            frafournisseur.ForeColor = System.Drawing.Color.White;
+            frafournisseur.Location = new System.Drawing.Point(32, 232);
+            frafournisseur.Name = "frafournisseur";
+            frafournisseur.Padding = new System.Windows.Forms.Padding(0);
+            frafournisseur.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            frafournisseur.Size = new System.Drawing.Size(681, 161);
+            frafournisseur.TabIndex = 41;
+            frafournisseur.TabStop = false;
+            frafournisseur.Text = "Fournisseur";
             // 
             // txtTauxChange
             // 
-            this.txtTauxChange.AcceptsReturn = true;
-            this.txtTauxChange.BackColor = System.Drawing.Color.Black;
-            this.txtTauxChange.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTauxChange.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtTauxChange.Location = new System.Drawing.Point(576, 128);
-            this.txtTauxChange.MaxLength = 0;
-            this.txtTauxChange.Name = "txtTauxChange";
-            this.txtTauxChange.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtTauxChange.Size = new System.Drawing.Size(57, 22);
-            this.txtTauxChange.TabIndex = 76;
-            this.txtTauxChange.Visible = false;
+            txtTauxChange.AcceptsReturn = true;
+            txtTauxChange.BackColor = System.Drawing.Color.Black;
+            txtTauxChange.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtTauxChange.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtTauxChange.Location = new System.Drawing.Point(576, 128);
+            txtTauxChange.MaxLength = 0;
+            txtTauxChange.Name = "txtTauxChange";
+            txtTauxChange.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtTauxChange.Size = new System.Drawing.Size(57, 22);
+            txtTauxChange.TabIndex = 76;
+            txtTauxChange.Visible = false;
             // 
             // lvwfournisseur
             // 
-            this.lvwfournisseur.BackColor = System.Drawing.SystemColors.Window;
-            this.lvwfournisseur.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this._lvwfournisseur_ColumnHeader_1,
-            this._lvwfournisseur_ColumnHeader_2,
-            this._lvwfournisseur_ColumnHeader_3,
-            this._lvwfournisseur_ColumnHeader_4,
-            this._lvwfournisseur_ColumnHeader_5,
-            this._lvwfournisseur_ColumnHeader_6,
-            this._lvwfournisseur_ColumnHeader_7,
-            this._lvwfournisseur_ColumnHeader_8,
-            this._lvwfournisseur_ColumnHeader_9,
-            this._lvwfournisseur_ColumnHeader_10});
-            this.lvwfournisseur.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lvwfournisseur.FullRowSelect = true;
-            this.lvwfournisseur.GridLines = true;
-            this.lvwfournisseur.HideSelection = false;
-            this.lvwfournisseur.Location = new System.Drawing.Point(8, 16);
-            this.lvwfournisseur.Name = "lvwfournisseur";
-            this.lvwfournisseur.Size = new System.Drawing.Size(665, 105);
-            this.lvwfournisseur.TabIndex = 42;
-            this.lvwfournisseur.UseCompatibleStateImageBehavior = false;
-            this.lvwfournisseur.View = System.Windows.Forms.View.Details;
-            this.lvwfournisseur.DoubleClick += new System.EventHandler(this.lvwFournisseur_DoubleClick);
-            this.lvwfournisseur.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwfournisseur_KeyDown);
+            lvwfournisseur.BackColor = System.Drawing.SystemColors.Window;
+            lvwfournisseur.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            _lvwfournisseur_ColumnHeader_1,
+            _lvwfournisseur_ColumnHeader_2,
+            _lvwfournisseur_ColumnHeader_3,
+            _lvwfournisseur_ColumnHeader_4,
+            _lvwfournisseur_ColumnHeader_5,
+            _lvwfournisseur_ColumnHeader_6,
+            _lvwfournisseur_ColumnHeader_7,
+            _lvwfournisseur_ColumnHeader_8,
+            _lvwfournisseur_ColumnHeader_9,
+            _lvwfournisseur_ColumnHeader_10});
+            lvwfournisseur.Dock = System.Windows.Forms.DockStyle.Top;
+            lvwfournisseur.ForeColor = System.Drawing.SystemColors.WindowText;
+            lvwfournisseur.FullRowSelect = true;
+            lvwfournisseur.GridLines = true;
+            lvwfournisseur.HideSelection = false;
+            lvwfournisseur.Location = new System.Drawing.Point(0, 129);
+            lvwfournisseur.Name = "lvwfournisseur";
+            lvwfournisseur.Size = new System.Drawing.Size(555, 105);
+            lvwfournisseur.TabIndex = 42;
+            lvwfournisseur.UseCompatibleStateImageBehavior = false;
+            lvwfournisseur.View = System.Windows.Forms.View.Details;
+            lvwfournisseur.DoubleClick += new System.EventHandler(lvwFournisseur_DoubleClick);
+            lvwfournisseur.KeyDown += new System.Windows.Forms.KeyEventHandler(lvwfournisseur_KeyDown);
             // 
             // _lvwfournisseur_ColumnHeader_1
             // 
-            this._lvwfournisseur_ColumnHeader_1.Text = "Fournisseur";
-            this._lvwfournisseur_ColumnHeader_1.Width = 236;
+            _lvwfournisseur_ColumnHeader_1.Text = "Fournisseur";
+            _lvwfournisseur_ColumnHeader_1.Width = 236;
             // 
             // _lvwfournisseur_ColumnHeader_2
             // 
-            this._lvwfournisseur_ColumnHeader_2.Text = "Pers. Ress.";
-            this._lvwfournisseur_ColumnHeader_2.Width = 133;
+            _lvwfournisseur_ColumnHeader_2.Text = "Pers. Ress.";
+            _lvwfournisseur_ColumnHeader_2.Width = 133;
             // 
             // _lvwfournisseur_ColumnHeader_3
             // 
-            this._lvwfournisseur_ColumnHeader_3.Text = "Date";
-            this._lvwfournisseur_ColumnHeader_3.Width = 117;
+            _lvwfournisseur_ColumnHeader_3.Text = "Date";
+            _lvwfournisseur_ColumnHeader_3.Width = 117;
             // 
             // _lvwfournisseur_ColumnHeader_4
             // 
-            this._lvwfournisseur_ColumnHeader_4.Text = "Par";
-            this._lvwfournisseur_ColumnHeader_4.Width = 54;
+            _lvwfournisseur_ColumnHeader_4.Text = "Par";
+            _lvwfournisseur_ColumnHeader_4.Width = 54;
             // 
             // _lvwfournisseur_ColumnHeader_5
             // 
-            this._lvwfournisseur_ColumnHeader_5.Text = "Valide";
-            this._lvwfournisseur_ColumnHeader_5.Width = 117;
+            _lvwfournisseur_ColumnHeader_5.Text = "Valide";
+            _lvwfournisseur_ColumnHeader_5.Width = 117;
             // 
             // _lvwfournisseur_ColumnHeader_6
             // 
-            this._lvwfournisseur_ColumnHeader_6.Text = "Prix listé";
-            this._lvwfournisseur_ColumnHeader_6.Width = 108;
+            _lvwfournisseur_ColumnHeader_6.Text = "Prix listé";
+            _lvwfournisseur_ColumnHeader_6.Width = 108;
             // 
             // _lvwfournisseur_ColumnHeader_7
             // 
-            this._lvwfournisseur_ColumnHeader_7.Text = "Escompte";
-            this._lvwfournisseur_ColumnHeader_7.Width = 105;
+            _lvwfournisseur_ColumnHeader_7.Text = "Escompte";
+            _lvwfournisseur_ColumnHeader_7.Width = 105;
             // 
             // _lvwfournisseur_ColumnHeader_8
             // 
-            this._lvwfournisseur_ColumnHeader_8.Text = "Prix net";
-            this._lvwfournisseur_ColumnHeader_8.Width = 108;
+            _lvwfournisseur_ColumnHeader_8.Text = "Prix net";
+            _lvwfournisseur_ColumnHeader_8.Width = 108;
             // 
             // _lvwfournisseur_ColumnHeader_9
             // 
-            this._lvwfournisseur_ColumnHeader_9.Text = "Prix spécial";
-            this._lvwfournisseur_ColumnHeader_9.Width = 115;
+            _lvwfournisseur_ColumnHeader_9.Text = "Prix spécial";
+            _lvwfournisseur_ColumnHeader_9.Width = 115;
             // 
             // _lvwfournisseur_ColumnHeader_10
             // 
-            this._lvwfournisseur_ColumnHeader_10.Text = "Quoter";
-            this._lvwfournisseur_ColumnHeader_10.Width = 80;
+            _lvwfournisseur_ColumnHeader_10.Text = "Quoter";
+            _lvwfournisseur_ColumnHeader_10.Width = 80;
             // 
             // cmdAddFrs
             // 
-            this.cmdAddFrs.BackColor = System.Drawing.Color.Black;
-            this.cmdAddFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdAddFrs.ForeColor = System.Drawing.Color.White;
-            this.cmdAddFrs.Location = new System.Drawing.Point(8, 128);
-            this.cmdAddFrs.Name = "cmdAddFrs";
-            this.cmdAddFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdAddFrs.Size = new System.Drawing.Size(73, 25);
-            this.cmdAddFrs.TabIndex = 62;
-            this.cmdAddFrs.Text = "&Ajouter";
-            this.cmdAddFrs.UseVisualStyleBackColor = true;
-            this.cmdAddFrs.Click += new System.EventHandler(this.cmdAddFrs_Click);
+            cmdAddFrs.BackColor = System.Drawing.Color.Black;
+            cmdAddFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdAddFrs.ForeColor = System.Drawing.Color.White;
+            cmdAddFrs.Location = new System.Drawing.Point(8, 128);
+            cmdAddFrs.Name = "cmdAddFrs";
+            cmdAddFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdAddFrs.Size = new System.Drawing.Size(73, 25);
+            cmdAddFrs.TabIndex = 62;
+            cmdAddFrs.Text = "&Ajouter";
+            cmdAddFrs.UseVisualStyleBackColor = true;
+            cmdAddFrs.Click += new System.EventHandler(cmdAddFrs_Click);
             // 
             // cmdSuppFrs
             // 
-            this.cmdSuppFrs.BackColor = System.Drawing.Color.Black;
-            this.cmdSuppFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdSuppFrs.ForeColor = System.Drawing.Color.White;
-            this.cmdSuppFrs.Location = new System.Drawing.Point(88, 128);
-            this.cmdSuppFrs.Name = "cmdSuppFrs";
-            this.cmdSuppFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdSuppFrs.Size = new System.Drawing.Size(73, 25);
-            this.cmdSuppFrs.TabIndex = 65;
-            this.cmdSuppFrs.Text = "&Supprimer";
-            this.cmdSuppFrs.UseVisualStyleBackColor = true;
-            this.cmdSuppFrs.Click += new System.EventHandler(this.cmdSuppFrs_Click);
+            cmdSuppFrs.BackColor = System.Drawing.Color.Black;
+            cmdSuppFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdSuppFrs.ForeColor = System.Drawing.Color.White;
+            cmdSuppFrs.Location = new System.Drawing.Point(88, 128);
+            cmdSuppFrs.Name = "cmdSuppFrs";
+            cmdSuppFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdSuppFrs.Size = new System.Drawing.Size(73, 25);
+            cmdSuppFrs.TabIndex = 65;
+            cmdSuppFrs.Text = "&Supprimer";
+            cmdSuppFrs.UseVisualStyleBackColor = true;
+            cmdSuppFrs.Click += new System.EventHandler(cmdSuppFrs_Click);
             // 
             // cmdModifFrs
             // 
-            this.cmdModifFrs.BackColor = System.Drawing.Color.Black;
-            this.cmdModifFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdModifFrs.ForeColor = System.Drawing.Color.White;
-            this.cmdModifFrs.Location = new System.Drawing.Point(168, 128);
-            this.cmdModifFrs.Name = "cmdModifFrs";
-            this.cmdModifFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdModifFrs.Size = new System.Drawing.Size(73, 25);
-            this.cmdModifFrs.TabIndex = 66;
-            this.cmdModifFrs.Text = "&Modifier";
-            this.cmdModifFrs.UseVisualStyleBackColor = true;
-            this.cmdModifFrs.Click += new System.EventHandler(this.cmdModifFrs_Click);
+            cmdModifFrs.BackColor = System.Drawing.Color.Black;
+            cmdModifFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdModifFrs.ForeColor = System.Drawing.Color.White;
+            cmdModifFrs.Location = new System.Drawing.Point(168, 128);
+            cmdModifFrs.Name = "cmdModifFrs";
+            cmdModifFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdModifFrs.Size = new System.Drawing.Size(73, 25);
+            cmdModifFrs.TabIndex = 66;
+            cmdModifFrs.Text = "&Modifier";
+            cmdModifFrs.UseVisualStyleBackColor = true;
+            cmdModifFrs.Click += new System.EventHandler(cmdModifFrs_Click);
             // 
             // chkquoter
             // 
-            this.chkquoter.BackColor = System.Drawing.Color.Black;
-            this.chkquoter.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkquoter.ForeColor = System.Drawing.Color.White;
-            this.chkquoter.Location = new System.Drawing.Point(8, 96);
-            this.chkquoter.Name = "chkquoter";
-            this.chkquoter.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chkquoter.Size = new System.Drawing.Size(89, 17);
-            this.chkquoter.TabIndex = 61;
-            this.chkquoter.Text = "Quoter :";
-            this.chkquoter.UseVisualStyleBackColor = true;
+            chkquoter.BackColor = System.Drawing.Color.Black;
+            chkquoter.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            chkquoter.ForeColor = System.Drawing.Color.White;
+            chkquoter.Location = new System.Drawing.Point(8, 96);
+            chkquoter.Name = "chkquoter";
+            chkquoter.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            chkquoter.Size = new System.Drawing.Size(89, 17);
+            chkquoter.TabIndex = 61;
+            chkquoter.Text = "Quoter :";
+            chkquoter.UseVisualStyleBackColor = true;
             // 
             // optUSA
             // 
-            this.optUSA.BackColor = System.Drawing.Color.Black;
-            this.optUSA.ForeColor = System.Drawing.Color.White;
-            this.optUSA.Location = new System.Drawing.Point(576, 24);
-            this.optUSA.Name = "optUSA";
-            this.optUSA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.optUSA.Size = new System.Drawing.Size(49, 17);
-            this.optUSA.TabIndex = 56;
-            this.optUSA.TabStop = true;
-            this.optUSA.Text = "USA";
-            this.optUSA.UseVisualStyleBackColor = true;
-            this.optUSA.CheckedChanged += new System.EventHandler(this.optUSA_CheckedChanged);
+            optUSA.BackColor = System.Drawing.Color.Black;
+            optUSA.ForeColor = System.Drawing.Color.White;
+            optUSA.Location = new System.Drawing.Point(576, 24);
+            optUSA.Name = "optUSA";
+            optUSA.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            optUSA.Size = new System.Drawing.Size(49, 17);
+            optUSA.TabIndex = 56;
+            optUSA.TabStop = true;
+            optUSA.Text = "USA";
+            optUSA.UseVisualStyleBackColor = true;
+            optUSA.CheckedChanged += new System.EventHandler(optUSA_CheckedChanged);
             // 
             // optCAN
             // 
-            this.optCAN.BackColor = System.Drawing.Color.Black;
-            this.optCAN.Checked = true;
-            this.optCAN.ForeColor = System.Drawing.Color.White;
-            this.optCAN.Location = new System.Drawing.Point(528, 24);
-            this.optCAN.Name = "optCAN";
-            this.optCAN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.optCAN.Size = new System.Drawing.Size(49, 17);
-            this.optCAN.TabIndex = 55;
-            this.optCAN.TabStop = true;
-            this.optCAN.Text = "CAN";
-            this.optCAN.UseVisualStyleBackColor = true;
-            this.optCAN.CheckedChanged += new System.EventHandler(this.optCAN_CheckedChanged);
+            optCAN.BackColor = System.Drawing.Color.Black;
+            optCAN.Checked = true;
+            optCAN.ForeColor = System.Drawing.Color.White;
+            optCAN.Location = new System.Drawing.Point(528, 24);
+            optCAN.Name = "optCAN";
+            optCAN.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            optCAN.Size = new System.Drawing.Size(49, 17);
+            optCAN.TabIndex = 55;
+            optCAN.TabStop = true;
+            optCAN.Text = "CAN";
+            optCAN.UseVisualStyleBackColor = true;
+            optCAN.CheckedChanged += new System.EventHandler(optCAN_CheckedChanged);
             // 
             // txtPrixList
             // 
-            this.txtPrixList.AcceptsReturn = true;
-            this.txtPrixList.BackColor = System.Drawing.Color.Black;
-            this.txtPrixList.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrixList.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtPrixList.Location = new System.Drawing.Point(424, 24);
-            this.txtPrixList.MaxLength = 0;
-            this.txtPrixList.Name = "txtPrixList";
-            this.txtPrixList.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPrixList.Size = new System.Drawing.Size(73, 22);
-            this.txtPrixList.TabIndex = 48;
-            this.txtPrixList.Leave += new System.EventHandler(this.txtPrixList_Leave);
+            txtPrixList.AcceptsReturn = true;
+            txtPrixList.BackColor = System.Drawing.Color.Black;
+            txtPrixList.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtPrixList.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtPrixList.Location = new System.Drawing.Point(424, 24);
+            txtPrixList.MaxLength = 0;
+            txtPrixList.Name = "txtPrixList";
+            txtPrixList.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtPrixList.Size = new System.Drawing.Size(73, 22);
+            txtPrixList.TabIndex = 48;
+            txtPrixList.Leave += new System.EventHandler(txtPrixList_Leave);
             // 
             // txtPrixNet
             // 
-            this.txtPrixNet.AcceptsReturn = true;
-            this.txtPrixNet.BackColor = System.Drawing.Color.Black;
-            this.txtPrixNet.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrixNet.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtPrixNet.Location = new System.Drawing.Point(424, 72);
-            this.txtPrixNet.MaxLength = 0;
-            this.txtPrixNet.Name = "txtPrixNet";
-            this.txtPrixNet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPrixNet.Size = new System.Drawing.Size(57, 22);
-            this.txtPrixNet.TabIndex = 52;
-            this.txtPrixNet.TextChanged += new System.EventHandler(this.txtPrixNet_TextChanged);
-            this.txtPrixNet.Enter += new System.EventHandler(this.txtPrixNet_Enter);
-            this.txtPrixNet.Leave += new System.EventHandler(this.txtPrixNet_Leave);
+            txtPrixNet.AcceptsReturn = true;
+            txtPrixNet.BackColor = System.Drawing.Color.Black;
+            txtPrixNet.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtPrixNet.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtPrixNet.Location = new System.Drawing.Point(424, 72);
+            txtPrixNet.MaxLength = 0;
+            txtPrixNet.Name = "txtPrixNet";
+            txtPrixNet.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtPrixNet.Size = new System.Drawing.Size(57, 22);
+            txtPrixNet.TabIndex = 52;
+            txtPrixNet.TextChanged += new System.EventHandler(txtPrixNet_TextChanged);
+            txtPrixNet.Enter += new System.EventHandler(txtPrixNet_Enter);
+            txtPrixNet.Leave += new System.EventHandler(txtPrixNet_Leave);
             // 
             // txtPrixSpecial
             // 
-            this.txtPrixSpecial.AcceptsReturn = true;
-            this.txtPrixSpecial.BackColor = System.Drawing.Color.Black;
-            this.txtPrixSpecial.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrixSpecial.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtPrixSpecial.Location = new System.Drawing.Point(424, 96);
-            this.txtPrixSpecial.MaxLength = 0;
-            this.txtPrixSpecial.Name = "txtPrixSpecial";
-            this.txtPrixSpecial.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPrixSpecial.Size = new System.Drawing.Size(57, 22);
-            this.txtPrixSpecial.TabIndex = 54;
-            this.txtPrixSpecial.TextChanged += new System.EventHandler(this.txtPrixSpecial_TextChanged);
-            this.txtPrixSpecial.Leave += new System.EventHandler(this.txtPrixSpecial_Leave);
+            txtPrixSpecial.AcceptsReturn = true;
+            txtPrixSpecial.BackColor = System.Drawing.Color.Black;
+            txtPrixSpecial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtPrixSpecial.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtPrixSpecial.Location = new System.Drawing.Point(424, 96);
+            txtPrixSpecial.MaxLength = 0;
+            txtPrixSpecial.Name = "txtPrixSpecial";
+            txtPrixSpecial.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtPrixSpecial.Size = new System.Drawing.Size(57, 22);
+            txtPrixSpecial.TabIndex = 54;
+            txtPrixSpecial.TextChanged += new System.EventHandler(txtPrixSpecial_TextChanged);
+            txtPrixSpecial.Leave += new System.EventHandler(txtPrixSpecial_Leave);
             // 
             // mskValide
             // 
-            this.mskValide.Location = new System.Drawing.Point(104, 72);
-            this.mskValide.Name = "mskValide";
-            this.mskValide.Size = new System.Drawing.Size(81, 22);
-            this.mskValide.TabIndex = 46;
+            mskValide.Location = new System.Drawing.Point(104, 72);
+            mskValide.Name = "mskValide";
+            mskValide.Size = new System.Drawing.Size(81, 22);
+            mskValide.TabIndex = 46;
             // 
             // mskEscompte
             // 
-            this.mskEscompte.Location = new System.Drawing.Point(424, 48);
-            this.mskEscompte.Name = "mskEscompte";
-            this.mskEscompte.Size = new System.Drawing.Size(57, 22);
-            this.mskEscompte.TabIndex = 50;
+            mskEscompte.Location = new System.Drawing.Point(424, 48);
+            mskEscompte.Name = "mskEscompte";
+            mskEscompte.Size = new System.Drawing.Size(57, 22);
+            mskEscompte.TabIndex = 50;
             // 
             // cmdEnrFrs
             // 
-            this.cmdEnrFrs.BackColor = System.Drawing.Color.Black;
-            this.cmdEnrFrs.ForeColor = System.Drawing.Color.White;
-            this.cmdEnrFrs.Location = new System.Drawing.Point(8, 128);
-            this.cmdEnrFrs.Name = "cmdEnrFrs";
-            this.cmdEnrFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdEnrFrs.Size = new System.Drawing.Size(73, 25);
-            this.cmdEnrFrs.TabIndex = 63;
-            this.cmdEnrFrs.Text = "&Enregistre";
-            this.cmdEnrFrs.UseVisualStyleBackColor = true;
-            this.cmdEnrFrs.Click += new System.EventHandler(this.cmdEnrFrs_Click);
+            cmdEnrFrs.BackColor = System.Drawing.Color.Black;
+            cmdEnrFrs.ForeColor = System.Drawing.Color.White;
+            cmdEnrFrs.Location = new System.Drawing.Point(8, 128);
+            cmdEnrFrs.Name = "cmdEnrFrs";
+            cmdEnrFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdEnrFrs.Size = new System.Drawing.Size(73, 25);
+            cmdEnrFrs.TabIndex = 63;
+            cmdEnrFrs.Text = "&Enregistre";
+            cmdEnrFrs.UseVisualStyleBackColor = true;
+            cmdEnrFrs.Click += new System.EventHandler(cmdEnrFrs_Click);
             // 
             // cmdAnnulFrs
             // 
-            this.cmdAnnulFrs.BackColor = System.Drawing.Color.Black;
-            this.cmdAnnulFrs.ForeColor = System.Drawing.Color.White;
-            this.cmdAnnulFrs.Location = new System.Drawing.Point(88, 128);
-            this.cmdAnnulFrs.Name = "cmdAnnulFrs";
-            this.cmdAnnulFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdAnnulFrs.Size = new System.Drawing.Size(73, 25);
-            this.cmdAnnulFrs.TabIndex = 64;
-            this.cmdAnnulFrs.Text = "A&nnuler";
-            this.cmdAnnulFrs.UseVisualStyleBackColor = true;
-            this.cmdAnnulFrs.Click += new System.EventHandler(this.cmdAnnulFrs_Click);
+            cmdAnnulFrs.BackColor = System.Drawing.Color.Black;
+            cmdAnnulFrs.ForeColor = System.Drawing.Color.White;
+            cmdAnnulFrs.Location = new System.Drawing.Point(88, 128);
+            cmdAnnulFrs.Name = "cmdAnnulFrs";
+            cmdAnnulFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdAnnulFrs.Size = new System.Drawing.Size(73, 25);
+            cmdAnnulFrs.TabIndex = 64;
+            cmdAnnulFrs.Text = "A&nnuler";
+            cmdAnnulFrs.UseVisualStyleBackColor = true;
+            cmdAnnulFrs.Click += new System.EventHandler(cmdAnnulFrs_Click);
             // 
             // cmbfrs
             // 
-            this.cmbfrs.BackColor = System.Drawing.SystemColors.Window;
-            this.cmbfrs.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbfrs.Location = new System.Drawing.Point(104, 24);
-            this.cmbfrs.Name = "cmbfrs";
-            this.cmbfrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbfrs.Size = new System.Drawing.Size(185, 22);
-            this.cmbfrs.TabIndex = 44;
-            this.cmbfrs.SelectedIndexChanged += new System.EventHandler(this.cmbfrs_SelectedIndexChanged);
+            cmbfrs.BackColor = System.Drawing.SystemColors.Window;
+            cmbfrs.ForeColor = System.Drawing.SystemColors.WindowText;
+            cmbfrs.Location = new System.Drawing.Point(104, 24);
+            cmbfrs.Name = "cmbfrs";
+            cmbfrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmbfrs.Size = new System.Drawing.Size(185, 22);
+            cmbfrs.TabIndex = 44;
+            cmbfrs.SelectedIndexChanged += new System.EventHandler(cmbfrs_SelectedIndexChanged);
             // 
             // cmbPersRess
             // 
-            this.cmbPersRess.BackColor = System.Drawing.SystemColors.Window;
-            this.cmbPersRess.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbPersRess.Location = new System.Drawing.Point(104, 48);
-            this.cmbPersRess.Name = "cmbPersRess";
-            this.cmbPersRess.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbPersRess.Size = new System.Drawing.Size(145, 22);
-            this.cmbPersRess.TabIndex = 45;
+            cmbPersRess.BackColor = System.Drawing.SystemColors.Window;
+            cmbPersRess.ForeColor = System.Drawing.SystemColors.WindowText;
+            cmbPersRess.Location = new System.Drawing.Point(104, 48);
+            cmbPersRess.Name = "cmbPersRess";
+            cmbPersRess.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmbPersRess.Size = new System.Drawing.Size(145, 22);
+            cmbPersRess.TabIndex = 45;
             // 
             // optSpain
             // 
-            this.optSpain.BackColor = System.Drawing.Color.Black;
-            this.optSpain.ForeColor = System.Drawing.Color.White;
-            this.optSpain.Location = new System.Drawing.Point(624, 24);
-            this.optSpain.Name = "optSpain";
-            this.optSpain.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.optSpain.Size = new System.Drawing.Size(49, 17);
-            this.optSpain.TabIndex = 57;
-            this.optSpain.TabStop = true;
-            this.optSpain.Text = "SPA";
-            this.optSpain.UseVisualStyleBackColor = true;
-            this.optSpain.CheckedChanged += new System.EventHandler(this.optSpain_CheckedChanged);
+            optSpain.BackColor = System.Drawing.Color.Black;
+            optSpain.ForeColor = System.Drawing.Color.White;
+            optSpain.Location = new System.Drawing.Point(624, 24);
+            optSpain.Name = "optSpain";
+            optSpain.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            optSpain.Size = new System.Drawing.Size(49, 17);
+            optSpain.TabIndex = 57;
+            optSpain.TabStop = true;
+            optSpain.Text = "SPA";
+            optSpain.UseVisualStyleBackColor = true;
+            optSpain.CheckedChanged += new System.EventHandler(optSpain_CheckedChanged);
             // 
             // lblDevise1
             // 
-            this.lblDevise1.BackColor = System.Drawing.Color.Black;
-            this.lblDevise1.ForeColor = System.Drawing.Color.White;
-            this.lblDevise1.Location = new System.Drawing.Point(520, 128);
-            this.lblDevise1.Name = "lblDevise1";
-            this.lblDevise1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblDevise1.Size = new System.Drawing.Size(57, 17);
-            this.lblDevise1.TabIndex = 78;
-            this.lblDevise1.Text = "1$ CAN =";
-            this.lblDevise1.Visible = false;
+            lblDevise1.BackColor = System.Drawing.Color.Black;
+            lblDevise1.ForeColor = System.Drawing.Color.White;
+            lblDevise1.Location = new System.Drawing.Point(520, 128);
+            lblDevise1.Name = "lblDevise1";
+            lblDevise1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            lblDevise1.Size = new System.Drawing.Size(57, 17);
+            lblDevise1.TabIndex = 78;
+            lblDevise1.Text = "1$ CAN =";
+            lblDevise1.Visible = false;
             // 
             // lblDevise2
             // 
-            this.lblDevise2.BackColor = System.Drawing.Color.Black;
-            this.lblDevise2.ForeColor = System.Drawing.Color.White;
-            this.lblDevise2.Location = new System.Drawing.Point(637, 128);
-            this.lblDevise2.Name = "lblDevise2";
-            this.lblDevise2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblDevise2.Size = new System.Drawing.Size(38, 17);
-            this.lblDevise2.TabIndex = 77;
-            this.lblDevise2.Text = "$ USA";
-            this.lblDevise2.Visible = false;
+            lblDevise2.BackColor = System.Drawing.Color.Black;
+            lblDevise2.ForeColor = System.Drawing.Color.White;
+            lblDevise2.Location = new System.Drawing.Point(637, 128);
+            lblDevise2.Name = "lblDevise2";
+            lblDevise2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            lblDevise2.Size = new System.Drawing.Size(38, 17);
+            lblDevise2.TabIndex = 77;
+            lblDevise2.Text = "$ USA";
+            lblDevise2.Visible = false;
             // 
             // _Label1_5
             // 
-            this._Label1_5.BackColor = System.Drawing.Color.Black;
-            this._Label1_5.ForeColor = System.Drawing.Color.White;
-            this._Label1_5.Location = new System.Drawing.Point(192, 72);
-            this._Label1_5.Name = "_Label1_5";
-            this._Label1_5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_5.Size = new System.Drawing.Size(65, 17);
-            this._Label1_5.TabIndex = 60;
-            this._Label1_5.Text = "AA-MM-JJ";
+            _Label1_5.BackColor = System.Drawing.Color.Black;
+            _Label1_5.ForeColor = System.Drawing.Color.White;
+            _Label1_5.Location = new System.Drawing.Point(192, 72);
+            _Label1_5.Name = "_Label1_5";
+            _Label1_5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_5.Size = new System.Drawing.Size(65, 17);
+            _Label1_5.TabIndex = 60;
+            _Label1_5.Text = "AA-MM-JJ";
             // 
             // imgCanada
             // 
-            this.imgCanada.Location = new System.Drawing.Point(544, 48);
-            this.imgCanada.Name = "imgCanada";
-            this.imgCanada.Size = new System.Drawing.Size(112, 71);
-            this.imgCanada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgCanada.TabIndex = 79;
-            this.imgCanada.TabStop = false;
-            this.imgCanada.Visible = false;
+            imgCanada.Location = new System.Drawing.Point(544, 48);
+            imgCanada.Name = "imgCanada";
+            imgCanada.Size = new System.Drawing.Size(112, 71);
+            imgCanada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            imgCanada.TabIndex = 79;
+            imgCanada.TabStop = false;
+            imgCanada.Visible = false;
             // 
             // imgEU
             // 
-            this.imgEU.Location = new System.Drawing.Point(544, 48);
-            this.imgEU.Name = "imgEU";
-            this.imgEU.Size = new System.Drawing.Size(112, 71);
-            this.imgEU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgEU.TabIndex = 80;
-            this.imgEU.TabStop = false;
-            this.imgEU.Visible = false;
+            imgEU.Location = new System.Drawing.Point(544, 48);
+            imgEU.Name = "imgEU";
+            imgEU.Size = new System.Drawing.Size(112, 71);
+            imgEU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            imgEU.TabIndex = 80;
+            imgEU.TabStop = false;
+            imgEU.Visible = false;
             // 
             // _Label1_14
             // 
-            this._Label1_14.BackColor = System.Drawing.Color.Black;
-            this._Label1_14.ForeColor = System.Drawing.Color.White;
-            this._Label1_14.Location = new System.Drawing.Point(8, 24);
-            this._Label1_14.Name = "_Label1_14";
-            this._Label1_14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_14.Size = new System.Drawing.Size(81, 17);
-            this._Label1_14.TabIndex = 43;
-            this._Label1_14.Text = "Distributeur :";
+            _Label1_14.BackColor = System.Drawing.Color.Black;
+            _Label1_14.ForeColor = System.Drawing.Color.White;
+            _Label1_14.Location = new System.Drawing.Point(8, 24);
+            _Label1_14.Name = "_Label1_14";
+            _Label1_14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_14.Size = new System.Drawing.Size(81, 17);
+            _Label1_14.TabIndex = 43;
+            _Label1_14.Text = "Distributeur :";
             // 
             // _Label1_16
             // 
-            this._Label1_16.BackColor = System.Drawing.Color.Black;
-            this._Label1_16.ForeColor = System.Drawing.Color.White;
-            this._Label1_16.Location = new System.Drawing.Point(344, 24);
-            this._Label1_16.Name = "_Label1_16";
-            this._Label1_16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_16.Size = new System.Drawing.Size(65, 17);
-            this._Label1_16.TabIndex = 47;
-            this._Label1_16.Text = "Prix Listé :";
+            _Label1_16.BackColor = System.Drawing.Color.Black;
+            _Label1_16.ForeColor = System.Drawing.Color.White;
+            _Label1_16.Location = new System.Drawing.Point(344, 24);
+            _Label1_16.Name = "_Label1_16";
+            _Label1_16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_16.Size = new System.Drawing.Size(65, 17);
+            _Label1_16.TabIndex = 47;
+            _Label1_16.Text = "Prix Listé :";
             // 
             // _Label1_19
             // 
-            this._Label1_19.BackColor = System.Drawing.Color.Black;
-            this._Label1_19.ForeColor = System.Drawing.Color.White;
-            this._Label1_19.Location = new System.Drawing.Point(344, 48);
-            this._Label1_19.Name = "_Label1_19";
-            this._Label1_19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_19.Size = new System.Drawing.Size(73, 17);
-            this._Label1_19.TabIndex = 49;
-            this._Label1_19.Text = "Escompte :";
+            _Label1_19.BackColor = System.Drawing.Color.Black;
+            _Label1_19.ForeColor = System.Drawing.Color.White;
+            _Label1_19.Location = new System.Drawing.Point(344, 48);
+            _Label1_19.Name = "_Label1_19";
+            _Label1_19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_19.Size = new System.Drawing.Size(73, 17);
+            _Label1_19.TabIndex = 49;
+            _Label1_19.Text = "Escompte :";
             // 
             // _Label1_24
             // 
-            this._Label1_24.BackColor = System.Drawing.Color.Black;
-            this._Label1_24.ForeColor = System.Drawing.Color.White;
-            this._Label1_24.Location = new System.Drawing.Point(8, 48);
-            this._Label1_24.Name = "_Label1_24";
-            this._Label1_24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_24.Size = new System.Drawing.Size(105, 17);
-            this._Label1_24.TabIndex = 58;
-            this._Label1_24.Text = "Pers. Ress :";
+            _Label1_24.BackColor = System.Drawing.Color.Black;
+            _Label1_24.ForeColor = System.Drawing.Color.White;
+            _Label1_24.Location = new System.Drawing.Point(8, 48);
+            _Label1_24.Name = "_Label1_24";
+            _Label1_24.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_24.Size = new System.Drawing.Size(105, 17);
+            _Label1_24.TabIndex = 58;
+            _Label1_24.Text = "Pers. Ress :";
             // 
             // _Label1_20
             // 
-            this._Label1_20.BackColor = System.Drawing.Color.Black;
-            this._Label1_20.ForeColor = System.Drawing.Color.White;
-            this._Label1_20.Location = new System.Drawing.Point(344, 72);
-            this._Label1_20.Name = "_Label1_20";
-            this._Label1_20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_20.Size = new System.Drawing.Size(73, 17);
-            this._Label1_20.TabIndex = 51;
-            this._Label1_20.Text = "Prix Net :";
+            _Label1_20.BackColor = System.Drawing.Color.Black;
+            _Label1_20.ForeColor = System.Drawing.Color.White;
+            _Label1_20.Location = new System.Drawing.Point(344, 72);
+            _Label1_20.Name = "_Label1_20";
+            _Label1_20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_20.Size = new System.Drawing.Size(73, 17);
+            _Label1_20.TabIndex = 51;
+            _Label1_20.Text = "Prix Net :";
             // 
             // _Label1_2
             // 
-            this._Label1_2.BackColor = System.Drawing.Color.Black;
-            this._Label1_2.ForeColor = System.Drawing.Color.White;
-            this._Label1_2.Location = new System.Drawing.Point(344, 96);
-            this._Label1_2.Name = "_Label1_2";
-            this._Label1_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_2.Size = new System.Drawing.Size(81, 17);
-            this._Label1_2.TabIndex = 53;
-            this._Label1_2.Text = "Prix Spécial :";
+            _Label1_2.BackColor = System.Drawing.Color.Black;
+            _Label1_2.ForeColor = System.Drawing.Color.White;
+            _Label1_2.Location = new System.Drawing.Point(344, 96);
+            _Label1_2.Name = "_Label1_2";
+            _Label1_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_2.Size = new System.Drawing.Size(81, 17);
+            _Label1_2.TabIndex = 53;
+            _Label1_2.Text = "Prix Spécial :";
             // 
             // _Label1_23
             // 
-            this._Label1_23.BackColor = System.Drawing.Color.Black;
-            this._Label1_23.ForeColor = System.Drawing.Color.White;
-            this._Label1_23.Location = new System.Drawing.Point(8, 72);
-            this._Label1_23.Name = "_Label1_23";
-            this._Label1_23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_23.Size = new System.Drawing.Size(97, 17);
-            this._Label1_23.TabIndex = 59;
-            this._Label1_23.Text = "Valide jusqu\'au :";
+            _Label1_23.BackColor = System.Drawing.Color.Black;
+            _Label1_23.ForeColor = System.Drawing.Color.White;
+            _Label1_23.Location = new System.Drawing.Point(8, 72);
+            _Label1_23.Name = "_Label1_23";
+            _Label1_23.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_23.Size = new System.Drawing.Size(97, 17);
+            _Label1_23.TabIndex = 59;
+            _Label1_23.Text = "Valide jusqu\'au :";
             // 
             // imgSpain
             // 
-            this.imgSpain.Location = new System.Drawing.Point(544, 48);
-            this.imgSpain.Name = "imgSpain";
-            this.imgSpain.Size = new System.Drawing.Size(112, 71);
-            this.imgSpain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgSpain.TabIndex = 81;
-            this.imgSpain.TabStop = false;
-            this.imgSpain.Visible = false;
+            imgSpain.Location = new System.Drawing.Point(544, 48);
+            imgSpain.Name = "imgSpain";
+            imgSpain.Size = new System.Drawing.Size(112, 71);
+            imgSpain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            imgSpain.TabIndex = 81;
+            imgSpain.TabStop = false;
+            imgSpain.Visible = false;
             // 
             // cmbCategorie
             // 
-            this.cmbCategorie.BackColor = System.Drawing.Color.Black;
-            this.cmbCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbCategorie.Location = new System.Drawing.Point(376, 8);
-            this.cmbCategorie.Name = "cmbCategorie";
-            this.cmbCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbCategorie.Size = new System.Drawing.Size(281, 22);
-            this.cmbCategorie.TabIndex = 0;
-            this.cmbCategorie.Text = "cmbCategorie";
-            this.cmbCategorie.SelectedIndexChanged += new System.EventHandler(this.cmbCategorie_SelectedIndexChanged);
+            cmbCategorie.BackColor = System.Drawing.Color.White;
+            cmbCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
+            cmbCategorie.Location = new System.Drawing.Point(376, 8);
+            cmbCategorie.Name = "cmbCategorie";
+            cmbCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmbCategorie.Size = new System.Drawing.Size(281, 22);
+            cmbCategorie.TabIndex = 0;
+            cmbCategorie.Text = "cmbCategorie";
+            cmbCategorie.SelectedIndexChanged += new System.EventHandler(cmbCategorie_SelectedIndexChanged);
             // 
             // txtNoItemGRB
             // 
-            this.txtNoItemGRB.AcceptsReturn = true;
-            this.txtNoItemGRB.BackColor = System.Drawing.Color.Black;
-            this.txtNoItemGRB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNoItemGRB.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtNoItemGRB.Location = new System.Drawing.Point(128, 152);
-            this.txtNoItemGRB.MaxLength = 0;
-            this.txtNoItemGRB.Name = "txtNoItemGRB";
-            this.txtNoItemGRB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtNoItemGRB.Size = new System.Drawing.Size(129, 22);
-            this.txtNoItemGRB.TabIndex = 24;
+            txtNoItemGRB.AcceptsReturn = true;
+            txtNoItemGRB.BackColor = System.Drawing.Color.White;
+            txtNoItemGRB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtNoItemGRB.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtNoItemGRB.Location = new System.Drawing.Point(128, 152);
+            txtNoItemGRB.MaxLength = 0;
+            txtNoItemGRB.Name = "txtNoItemGRB";
+            txtNoItemGRB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtNoItemGRB.Size = new System.Drawing.Size(129, 22);
+            txtNoItemGRB.TabIndex = 24;
             // 
             // cmbNoItem
             // 
-            this.cmbNoItem.BackColor = System.Drawing.Color.Black;
-            this.cmbNoItem.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmbNoItem.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbNoItem.Location = new System.Drawing.Point(128, 120);
-            this.cmbNoItem.Name = "cmbNoItem";
-            this.cmbNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbNoItem.Size = new System.Drawing.Size(129, 22);
-            this.cmbNoItem.TabIndex = 17;
-            this.cmbNoItem.Text = "cmbNoItem";
-            this.cmbNoItem.Visible = false;
-            this.cmbNoItem.SelectedIndexChanged += new System.EventHandler(this.cmbNoItem_SelectedIndexChanged);
+            cmbNoItem.BackColor = System.Drawing.Color.White;
+            cmbNoItem.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmbNoItem.ForeColor = System.Drawing.SystemColors.WindowText;
+            cmbNoItem.Location = new System.Drawing.Point(128, 120);
+            cmbNoItem.Name = "cmbNoItem";
+            cmbNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmbNoItem.Size = new System.Drawing.Size(129, 22);
+            cmbNoItem.TabIndex = 17;
+            cmbNoItem.Text = "cmbNoItem";
+            cmbNoItem.Visible = false;
+            cmbNoItem.SelectedIndexChanged += new System.EventHandler(cmbNoItem_SelectedIndexChanged);
             // 
             // CmdModif
             // 
-            this.CmdModif.BackColor = System.Drawing.Color.Black;
-            this.CmdModif.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CmdModif.ForeColor = System.Drawing.Color.White;
-            this.CmdModif.Location = new System.Drawing.Point(528, 400);
-            this.CmdModif.Name = "CmdModif";
-            this.CmdModif.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CmdModif.Size = new System.Drawing.Size(89, 33);
-            this.CmdModif.TabIndex = 74;
-            this.CmdModif.Text = "&Modifier";
-            this.CmdModif.UseVisualStyleBackColor = true;
-            this.CmdModif.Click += new System.EventHandler(this.CmdModif_Click);
+            CmdModif.BackColor = System.Drawing.Color.Black;
+            CmdModif.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            CmdModif.ForeColor = System.Drawing.Color.White;
+            CmdModif.Location = new System.Drawing.Point(528, 400);
+            CmdModif.Name = "CmdModif";
+            CmdModif.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            CmdModif.Size = new System.Drawing.Size(89, 33);
+            CmdModif.TabIndex = 74;
+            CmdModif.Text = "&Modifier";
+            CmdModif.UseVisualStyleBackColor = true;
+            CmdModif.Click += new System.EventHandler(CmdModif_Click);
             // 
             // CmdFerme
             // 
-            this.CmdFerme.BackColor = System.Drawing.Color.Black;
-            this.CmdFerme.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CmdFerme.ForeColor = System.Drawing.Color.White;
-            this.CmdFerme.Location = new System.Drawing.Point(624, 400);
-            this.CmdFerme.Name = "CmdFerme";
-            this.CmdFerme.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CmdFerme.Size = new System.Drawing.Size(89, 33);
-            this.CmdFerme.TabIndex = 75;
-            this.CmdFerme.Text = "&Fermer";
-            this.CmdFerme.UseVisualStyleBackColor = true;
-            this.CmdFerme.Click += new System.EventHandler(this.CmdFerme_Click);
+            CmdFerme.BackColor = System.Drawing.Color.Black;
+            CmdFerme.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            CmdFerme.ForeColor = System.Drawing.Color.White;
+            CmdFerme.Location = new System.Drawing.Point(624, 400);
+            CmdFerme.Name = "CmdFerme";
+            CmdFerme.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            CmdFerme.Size = new System.Drawing.Size(89, 33);
+            CmdFerme.TabIndex = 75;
+            CmdFerme.Text = "&Fermer";
+            CmdFerme.UseVisualStyleBackColor = true;
+            CmdFerme.Click += new System.EventHandler(CmdFerme_Click);
             // 
             // CmdSupp
             // 
-            this.CmdSupp.BackColor = System.Drawing.Color.Black;
-            this.CmdSupp.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CmdSupp.ForeColor = System.Drawing.Color.White;
-            this.CmdSupp.Location = new System.Drawing.Point(432, 400);
-            this.CmdSupp.Name = "CmdSupp";
-            this.CmdSupp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CmdSupp.Size = new System.Drawing.Size(89, 33);
-            this.CmdSupp.TabIndex = 72;
-            this.CmdSupp.Text = "&Supprimer";
-            this.CmdSupp.UseVisualStyleBackColor = true;
-            this.CmdSupp.Click += new System.EventHandler(this.CmdSupp_Click);
+            CmdSupp.BackColor = System.Drawing.Color.Black;
+            CmdSupp.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            CmdSupp.ForeColor = System.Drawing.Color.White;
+            CmdSupp.Location = new System.Drawing.Point(432, 400);
+            CmdSupp.Name = "CmdSupp";
+            CmdSupp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            CmdSupp.Size = new System.Drawing.Size(89, 33);
+            CmdSupp.TabIndex = 72;
+            CmdSupp.Text = "&Supprimer";
+            CmdSupp.UseVisualStyleBackColor = true;
+            CmdSupp.Click += new System.EventHandler(CmdSupp_Click);
             // 
             // CmdAdd
             // 
-            this.CmdAdd.BackColor = System.Drawing.Color.Black;
-            this.CmdAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CmdAdd.ForeColor = System.Drawing.Color.White;
-            this.CmdAdd.Location = new System.Drawing.Point(336, 400);
-            this.CmdAdd.Name = "CmdAdd";
-            this.CmdAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CmdAdd.Size = new System.Drawing.Size(89, 33);
-            this.CmdAdd.TabIndex = 71;
-            this.CmdAdd.Text = "&Ajouter";
-            this.CmdAdd.UseVisualStyleBackColor = true;
-            this.CmdAdd.Click += new System.EventHandler(this.CmdAdd_Click);
+            CmdAdd.BackColor = System.Drawing.Color.Black;
+            CmdAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            CmdAdd.ForeColor = System.Drawing.Color.White;
+            CmdAdd.Location = new System.Drawing.Point(336, 400);
+            CmdAdd.Name = "CmdAdd";
+            CmdAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            CmdAdd.Size = new System.Drawing.Size(89, 33);
+            CmdAdd.TabIndex = 71;
+            CmdAdd.Text = "&Ajouter";
+            CmdAdd.UseVisualStyleBackColor = true;
+            CmdAdd.Click += new System.EventHandler(CmdAdd_Click);
             // 
             // txtComment
             // 
-            this.txtComment.AcceptsReturn = true;
-            this.txtComment.BackColor = System.Drawing.Color.Black;
-            this.txtComment.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtComment.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtComment.Location = new System.Drawing.Point(376, 128);
-            this.txtComment.MaxLength = 100;
-            this.txtComment.Name = "txtComment";
-            this.txtComment.ReadOnly = true;
-            this.txtComment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtComment.Size = new System.Drawing.Size(305, 22);
-            this.txtComment.TabIndex = 25;
+            txtComment.AcceptsReturn = true;
+            txtComment.BackColor = System.Drawing.Color.White;
+            txtComment.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtComment.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtComment.Location = new System.Drawing.Point(376, 128);
+            txtComment.MaxLength = 100;
+            txtComment.Name = "txtComment";
+            txtComment.ReadOnly = true;
+            txtComment.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtComment.Size = new System.Drawing.Size(305, 22);
+            txtComment.TabIndex = 25;
             // 
             // cmbFabricant
             // 
-            this.cmbFabricant.BackColor = System.Drawing.Color.Black;
-            this.cmbFabricant.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmbFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbFabricant.Location = new System.Drawing.Point(128, 64);
-            this.cmbFabricant.Name = "cmbFabricant";
-            this.cmbFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbFabricant.Size = new System.Drawing.Size(129, 22);
-            this.cmbFabricant.TabIndex = 10;
-            this.cmbFabricant.Text = "cmbFabricant";
-            this.cmbFabricant.SelectedIndexChanged += new System.EventHandler(this.cmbFabricant_SelectedIndexChanged);
+            cmbFabricant.BackColor = System.Drawing.Color.White;
+            cmbFabricant.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmbFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
+            cmbFabricant.Location = new System.Drawing.Point(128, 64);
+            cmbFabricant.Name = "cmbFabricant";
+            cmbFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmbFabricant.Size = new System.Drawing.Size(129, 22);
+            cmbFabricant.TabIndex = 10;
+            cmbFabricant.Text = "cmbFabricant";
+            cmbFabricant.SelectedIndexChanged += new System.EventHandler(cmbFabricant_SelectedIndexChanged);
             // 
             // txtFabricant
             // 
-            this.txtFabricant.AcceptsReturn = true;
-            this.txtFabricant.BackColor = System.Drawing.Color.Black;
-            this.txtFabricant.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFabricant.Enabled = false;
-            this.txtFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtFabricant.Location = new System.Drawing.Point(128, 88);
-            this.txtFabricant.MaxLength = 0;
-            this.txtFabricant.Name = "txtFabricant";
-            this.txtFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtFabricant.Size = new System.Drawing.Size(129, 22);
-            this.txtFabricant.TabIndex = 8;
+            txtFabricant.AcceptsReturn = true;
+            txtFabricant.BackColor = System.Drawing.Color.White;
+            txtFabricant.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtFabricant.Enabled = false;
+            txtFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtFabricant.Location = new System.Drawing.Point(128, 88);
+            txtFabricant.MaxLength = 0;
+            txtFabricant.Name = "txtFabricant";
+            txtFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtFabricant.Size = new System.Drawing.Size(129, 22);
+            txtFabricant.TabIndex = 8;
             // 
             // txtDescriptionEN
             // 
-            this.txtDescriptionEN.AcceptsReturn = true;
-            this.txtDescriptionEN.BackColor = System.Drawing.Color.Black;
-            this.txtDescriptionEN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescriptionEN.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtDescriptionEN.Location = new System.Drawing.Point(376, 96);
-            this.txtDescriptionEN.MaxLength = 100;
-            this.txtDescriptionEN.Name = "txtDescriptionEN";
-            this.txtDescriptionEN.ReadOnly = true;
-            this.txtDescriptionEN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDescriptionEN.Size = new System.Drawing.Size(305, 22);
-            this.txtDescriptionEN.TabIndex = 21;
+            txtDescriptionEN.AcceptsReturn = true;
+            txtDescriptionEN.BackColor = System.Drawing.Color.White;
+            txtDescriptionEN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtDescriptionEN.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtDescriptionEN.Location = new System.Drawing.Point(376, 96);
+            txtDescriptionEN.MaxLength = 100;
+            txtDescriptionEN.Name = "txtDescriptionEN";
+            txtDescriptionEN.ReadOnly = true;
+            txtDescriptionEN.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtDescriptionEN.Size = new System.Drawing.Size(305, 22);
+            txtDescriptionEN.TabIndex = 21;
             // 
             // txtDescriptionFR
             // 
-            this.txtDescriptionFR.AcceptsReturn = true;
-            this.txtDescriptionFR.BackColor = System.Drawing.Color.Black;
-            this.txtDescriptionFR.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescriptionFR.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtDescriptionFR.Location = new System.Drawing.Point(376, 64);
-            this.txtDescriptionFR.MaxLength = 100;
-            this.txtDescriptionFR.Name = "txtDescriptionFR";
-            this.txtDescriptionFR.ReadOnly = true;
-            this.txtDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDescriptionFR.Size = new System.Drawing.Size(305, 22);
-            this.txtDescriptionFR.TabIndex = 14;
+            txtDescriptionFR.AcceptsReturn = true;
+            txtDescriptionFR.BackColor = System.Drawing.Color.White;
+            txtDescriptionFR.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtDescriptionFR.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtDescriptionFR.Location = new System.Drawing.Point(376, 64);
+            txtDescriptionFR.MaxLength = 100;
+            txtDescriptionFR.Name = "txtDescriptionFR";
+            txtDescriptionFR.ReadOnly = true;
+            txtDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtDescriptionFR.Size = new System.Drawing.Size(305, 22);
+            txtDescriptionFR.TabIndex = 14;
             // 
             // txtNoItem
             // 
-            this.txtNoItem.AcceptsReturn = true;
-            this.txtNoItem.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNoItem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNoItem.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtNoItem.Location = new System.Drawing.Point(128, 120);
-            this.txtNoItem.MaxLength = 0;
-            this.txtNoItem.Name = "txtNoItem";
-            this.txtNoItem.ReadOnly = true;
-            this.txtNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtNoItem.Size = new System.Drawing.Size(129, 22);
-            this.txtNoItem.TabIndex = 18;
-            this.txtNoItem.TextChanged += new System.EventHandler(this.txtNoItem_TextChanged);
+            txtNoItem.AcceptsReturn = true;
+            txtNoItem.BackColor = System.Drawing.SystemColors.Window;
+            txtNoItem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtNoItem.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtNoItem.Location = new System.Drawing.Point(128, 120);
+            txtNoItem.MaxLength = 0;
+            txtNoItem.Name = "txtNoItem";
+            txtNoItem.ReadOnly = true;
+            txtNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtNoItem.Size = new System.Drawing.Size(129, 22);
+            txtNoItem.TabIndex = 18;
+            txtNoItem.TextChanged += new System.EventHandler(txtNoItem_TextChanged);
             // 
             // CmdAnul
             // 
-            this.CmdAnul.BackColor = System.Drawing.Color.Black;
-            this.CmdAnul.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CmdAnul.ForeColor = System.Drawing.Color.White;
-            this.CmdAnul.Location = new System.Drawing.Point(432, 400);
-            this.CmdAnul.Name = "CmdAnul";
-            this.CmdAnul.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CmdAnul.Size = new System.Drawing.Size(89, 33);
-            this.CmdAnul.TabIndex = 73;
-            this.CmdAnul.Text = "A&nnuler";
-            this.CmdAnul.UseVisualStyleBackColor = true;
-            this.CmdAnul.Click += new System.EventHandler(this.CmdAnul_Click);
+            CmdAnul.BackColor = System.Drawing.Color.Black;
+            CmdAnul.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            CmdAnul.ForeColor = System.Drawing.Color.White;
+            CmdAnul.Location = new System.Drawing.Point(432, 400);
+            CmdAnul.Name = "CmdAnul";
+            CmdAnul.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            CmdAnul.Size = new System.Drawing.Size(89, 33);
+            CmdAnul.TabIndex = 73;
+            CmdAnul.Text = "A&nnuler";
+            CmdAnul.UseVisualStyleBackColor = true;
+            CmdAnul.Click += new System.EventHandler(CmdAnul_Click);
             // 
             // CmdEnr
             // 
-            this.CmdEnr.BackColor = System.Drawing.Color.Black;
-            this.CmdEnr.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CmdEnr.ForeColor = System.Drawing.Color.White;
-            this.CmdEnr.Location = new System.Drawing.Point(336, 400);
-            this.CmdEnr.Name = "CmdEnr";
-            this.CmdEnr.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CmdEnr.Size = new System.Drawing.Size(89, 33);
-            this.CmdEnr.TabIndex = 70;
-            this.CmdEnr.Text = "&Enregistre";
-            this.CmdEnr.UseVisualStyleBackColor = true;
-            this.CmdEnr.Click += new System.EventHandler(this.CmdEnr_Click);
+            CmdEnr.BackColor = System.Drawing.Color.Black;
+            CmdEnr.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            CmdEnr.ForeColor = System.Drawing.Color.White;
+            CmdEnr.Location = new System.Drawing.Point(336, 400);
+            CmdEnr.Name = "CmdEnr";
+            CmdEnr.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            CmdEnr.Size = new System.Drawing.Size(89, 33);
+            CmdEnr.TabIndex = 70;
+            CmdEnr.Text = "&Enregistre";
+            CmdEnr.UseVisualStyleBackColor = true;
+            CmdEnr.Click += new System.EventHandler(CmdEnr_Click);
             // 
             // txtCategorie
             // 
-            this.txtCategorie.AcceptsReturn = true;
-            this.txtCategorie.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCategorie.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtCategorie.Location = new System.Drawing.Point(376, 8);
-            this.txtCategorie.MaxLength = 0;
-            this.txtCategorie.Name = "txtCategorie";
-            this.txtCategorie.ReadOnly = true;
-            this.txtCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCategorie.Size = new System.Drawing.Size(281, 22);
-            this.txtCategorie.TabIndex = 2;
+            txtCategorie.AcceptsReturn = true;
+            txtCategorie.BackColor = System.Drawing.SystemColors.Window;
+            txtCategorie.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtCategorie.Location = new System.Drawing.Point(376, 8);
+            txtCategorie.MaxLength = 0;
+            txtCategorie.Name = "txtCategorie";
+            txtCategorie.ReadOnly = true;
+            txtCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtCategorie.Size = new System.Drawing.Size(281, 22);
+            txtCategorie.TabIndex = 2;
             // 
             // cmdRechercherPiece
             // 
-            this.cmdRechercherPiece.BackColor = System.Drawing.Color.Black;
-            this.cmdRechercherPiece.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdRechercherPiece.ForeColor = System.Drawing.Color.White;
-            this.cmdRechercherPiece.Location = new System.Drawing.Point(264, 120);
-            this.cmdRechercherPiece.Name = "cmdRechercherPiece";
-            this.cmdRechercherPiece.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdRechercherPiece.Size = new System.Drawing.Size(25, 25);
-            this.cmdRechercherPiece.TabIndex = 19;
-            this.cmdRechercherPiece.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cmdRechercherPiece.UseVisualStyleBackColor = true;
-            this.cmdRechercherPiece.Click += new System.EventHandler(this.cmdRechercherPiece_Click);
+            cmdRechercherPiece.BackColor = System.Drawing.Color.Black;
+            cmdRechercherPiece.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdRechercherPiece.ForeColor = System.Drawing.Color.White;
+            cmdRechercherPiece.Location = new System.Drawing.Point(264, 120);
+            cmdRechercherPiece.Name = "cmdRechercherPiece";
+            cmdRechercherPiece.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdRechercherPiece.Size = new System.Drawing.Size(25, 25);
+            cmdRechercherPiece.TabIndex = 19;
+            cmdRechercherPiece.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            cmdRechercherPiece.UseVisualStyleBackColor = true;
+            cmdRechercherPiece.Click += new System.EventHandler(cmdRechercherPiece_Click);
             // 
             // cmbDescriptionFR
             // 
-            this.cmbDescriptionFR.BackColor = System.Drawing.SystemColors.Window;
-            this.cmbDescriptionFR.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbDescriptionFR.Location = new System.Drawing.Point(376, 64);
-            this.cmbDescriptionFR.Name = "cmbDescriptionFR";
-            this.cmbDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbDescriptionFR.Size = new System.Drawing.Size(305, 22);
-            this.cmbDescriptionFR.TabIndex = 13;
-            this.cmbDescriptionFR.SelectedIndexChanged += new System.EventHandler(this.cmbDescriptionFR_SelectedIndexChanged);
+            cmbDescriptionFR.BackColor = System.Drawing.SystemColors.Window;
+            cmbDescriptionFR.ForeColor = System.Drawing.SystemColors.WindowText;
+            cmbDescriptionFR.Location = new System.Drawing.Point(376, 64);
+            cmbDescriptionFR.Name = "cmbDescriptionFR";
+            cmbDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmbDescriptionFR.Size = new System.Drawing.Size(305, 22);
+            cmbDescriptionFR.TabIndex = 13;
+            cmbDescriptionFR.SelectedIndexChanged += new System.EventHandler(cmbDescriptionFR_SelectedIndexChanged);
             // 
             // cmdRechercherManufact
             // 
-            this.cmdRechercherManufact.BackColor = System.Drawing.Color.Black;
-            this.cmdRechercherManufact.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdRechercherManufact.ForeColor = System.Drawing.Color.White;
-            this.cmdRechercherManufact.Location = new System.Drawing.Point(264, 64);
-            this.cmdRechercherManufact.Name = "cmdRechercherManufact";
-            this.cmdRechercherManufact.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdRechercherManufact.Size = new System.Drawing.Size(25, 25);
-            this.cmdRechercherManufact.TabIndex = 11;
-            this.cmdRechercherManufact.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cmdRechercherManufact.UseVisualStyleBackColor = true;
-            this.cmdRechercherManufact.Click += new System.EventHandler(this.cmdRechercherManufact_Click);
+            cmdRechercherManufact.BackColor = System.Drawing.Color.Black;
+            cmdRechercherManufact.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdRechercherManufact.ForeColor = System.Drawing.Color.White;
+            cmdRechercherManufact.Location = new System.Drawing.Point(264, 64);
+            cmdRechercherManufact.Name = "cmdRechercherManufact";
+            cmdRechercherManufact.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdRechercherManufact.Size = new System.Drawing.Size(25, 25);
+            cmdRechercherManufact.TabIndex = 11;
+            cmdRechercherManufact.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            cmdRechercherManufact.UseVisualStyleBackColor = true;
+            cmdRechercherManufact.Click += new System.EventHandler(cmdRechercherManufact_Click);
             // 
             // chkInventaire
             // 
-            this.chkInventaire.BackColor = System.Drawing.Color.Black;
-            this.chkInventaire.ForeColor = System.Drawing.Color.White;
-            this.chkInventaire.Location = new System.Drawing.Point(376, 152);
-            this.chkInventaire.Name = "chkInventaire";
-            this.chkInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chkInventaire.Size = new System.Drawing.Size(89, 25);
-            this.chkInventaire.TabIndex = 26;
-            this.chkInventaire.Text = "Présent dans l\'inventaire";
-            this.chkInventaire.UseVisualStyleBackColor = true;
-            this.chkInventaire.CheckStateChanged += new System.EventHandler(this.chkInventaire_CheckStateChanged);
+            chkInventaire.BackColor = System.Drawing.Color.Black;
+            chkInventaire.ForeColor = System.Drawing.Color.White;
+            chkInventaire.Location = new System.Drawing.Point(376, 152);
+            chkInventaire.Name = "chkInventaire";
+            chkInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            chkInventaire.Size = new System.Drawing.Size(89, 25);
+            chkInventaire.TabIndex = 26;
+            chkInventaire.Text = "Présent dans l\'inventaire";
+            chkInventaire.UseVisualStyleBackColor = true;
+            chkInventaire.CheckStateChanged += new System.EventHandler(chkInventaire_CheckStateChanged);
             // 
             // fraQuantité
             // 
-            this.fraQuantité.BackColor = System.Drawing.Color.Black;
-            this.fraQuantité.Controls.Add(this.txtQuantiteCommande);
-            this.fraQuantité.Controls.Add(this.chkMinimum);
-            this.fraQuantité.Controls.Add(this.txtQuantiteStock);
-            this.fraQuantité.Controls.Add(this.txtQuantiteMinimum);
-            this.fraQuantité.Controls.Add(this.txtQuantitéBoite);
-            this.fraQuantité.Controls.Add(this.chkBoite);
-            this.fraQuantité.Controls.Add(this.Label11);
-            this.fraQuantité.Controls.Add(this.Label5);
-            this.fraQuantité.ForeColor = System.Drawing.Color.White;
-            this.fraQuantité.Location = new System.Drawing.Point(480, 152);
-            this.fraQuantité.Name = "fraQuantité";
-            this.fraQuantité.Padding = new System.Windows.Forms.Padding(0);
-            this.fraQuantité.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fraQuantité.Size = new System.Drawing.Size(233, 65);
-            this.fraQuantité.TabIndex = 28;
-            this.fraQuantité.TabStop = false;
-            this.fraQuantité.Text = "Quantité";
+            fraQuantité.BackColor = System.Drawing.Color.Black;
+            fraQuantité.Controls.Add(txtQuantiteCommande);
+            fraQuantité.Controls.Add(chkMinimum);
+            fraQuantité.Controls.Add(txtQuantiteStock);
+            fraQuantité.Controls.Add(txtQuantiteMinimum);
+            fraQuantité.Controls.Add(txtQuantitéBoite);
+            fraQuantité.Controls.Add(chkBoite);
+            fraQuantité.Controls.Add(Label11);
+            fraQuantité.Controls.Add(Label5);
+            fraQuantité.ForeColor = System.Drawing.Color.White;
+            fraQuantité.Location = new System.Drawing.Point(480, 152);
+            fraQuantité.Name = "fraQuantité";
+            fraQuantité.Padding = new System.Windows.Forms.Padding(0);
+            fraQuantité.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            fraQuantité.Size = new System.Drawing.Size(233, 65);
+            fraQuantité.TabIndex = 28;
+            fraQuantité.TabStop = false;
+            fraQuantité.Text = "Quantité";
             // 
             // txtQuantiteCommande
             // 
-            this.txtQuantiteCommande.AcceptsReturn = true;
-            this.txtQuantiteCommande.BackColor = System.Drawing.SystemColors.Window;
-            this.txtQuantiteCommande.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtQuantiteCommande.Enabled = false;
-            this.txtQuantiteCommande.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtQuantiteCommande.Location = new System.Drawing.Point(192, 40);
-            this.txtQuantiteCommande.MaxLength = 0;
-            this.txtQuantiteCommande.Name = "txtQuantiteCommande";
-            this.txtQuantiteCommande.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtQuantiteCommande.Size = new System.Drawing.Size(33, 22);
-            this.txtQuantiteCommande.TabIndex = 36;
-            this.txtQuantiteCommande.Leave += new System.EventHandler(this.txtQuantiteCommande_Leave);
+            txtQuantiteCommande.AcceptsReturn = true;
+            txtQuantiteCommande.BackColor = System.Drawing.SystemColors.Window;
+            txtQuantiteCommande.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtQuantiteCommande.Enabled = false;
+            txtQuantiteCommande.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtQuantiteCommande.Location = new System.Drawing.Point(192, 40);
+            txtQuantiteCommande.MaxLength = 0;
+            txtQuantiteCommande.Name = "txtQuantiteCommande";
+            txtQuantiteCommande.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtQuantiteCommande.Size = new System.Drawing.Size(33, 22);
+            txtQuantiteCommande.TabIndex = 36;
+            txtQuantiteCommande.Leave += new System.EventHandler(txtQuantiteCommande_Leave);
             // 
             // chkMinimum
             // 
-            this.chkMinimum.BackColor = System.Drawing.Color.Black;
-            this.chkMinimum.ForeColor = System.Drawing.Color.White;
-            this.chkMinimum.Location = new System.Drawing.Point(120, 16);
-            this.chkMinimum.Name = "chkMinimum";
-            this.chkMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chkMinimum.Size = new System.Drawing.Size(74, 17);
-            this.chkMinimum.TabIndex = 31;
-            this.chkMinimum.Text = "Minimum :";
-            this.chkMinimum.UseVisualStyleBackColor = true;
-            this.chkMinimum.CheckStateChanged += new System.EventHandler(this.chkMinimum_CheckStateChanged);
+            chkMinimum.BackColor = System.Drawing.Color.Black;
+            chkMinimum.ForeColor = System.Drawing.Color.White;
+            chkMinimum.Location = new System.Drawing.Point(120, 16);
+            chkMinimum.Name = "chkMinimum";
+            chkMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            chkMinimum.Size = new System.Drawing.Size(74, 17);
+            chkMinimum.TabIndex = 31;
+            chkMinimum.Text = "Minimum :";
+            chkMinimum.UseVisualStyleBackColor = true;
+            chkMinimum.CheckStateChanged += new System.EventHandler(chkMinimum_CheckStateChanged);
             // 
             // txtQuantiteStock
             // 
-            this.txtQuantiteStock.AcceptsReturn = true;
-            this.txtQuantiteStock.BackColor = System.Drawing.SystemColors.Window;
-            this.txtQuantiteStock.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtQuantiteStock.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtQuantiteStock.Location = new System.Drawing.Point(80, 40);
-            this.txtQuantiteStock.MaxLength = 0;
-            this.txtQuantiteStock.Name = "txtQuantiteStock";
-            this.txtQuantiteStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtQuantiteStock.Size = new System.Drawing.Size(33, 22);
-            this.txtQuantiteStock.TabIndex = 33;
-            this.txtQuantiteStock.Leave += new System.EventHandler(this.txtQuantiteStock_Leave);
+            txtQuantiteStock.AcceptsReturn = true;
+            txtQuantiteStock.BackColor = System.Drawing.SystemColors.Window;
+            txtQuantiteStock.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtQuantiteStock.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtQuantiteStock.Location = new System.Drawing.Point(80, 40);
+            txtQuantiteStock.MaxLength = 0;
+            txtQuantiteStock.Name = "txtQuantiteStock";
+            txtQuantiteStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtQuantiteStock.Size = new System.Drawing.Size(33, 22);
+            txtQuantiteStock.TabIndex = 33;
+            txtQuantiteStock.Leave += new System.EventHandler(txtQuantiteStock_Leave);
             // 
             // txtQuantiteMinimum
             // 
-            this.txtQuantiteMinimum.AcceptsReturn = true;
-            this.txtQuantiteMinimum.BackColor = System.Drawing.SystemColors.Window;
-            this.txtQuantiteMinimum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtQuantiteMinimum.Enabled = false;
-            this.txtQuantiteMinimum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtQuantiteMinimum.Location = new System.Drawing.Point(192, 16);
-            this.txtQuantiteMinimum.MaxLength = 0;
-            this.txtQuantiteMinimum.Name = "txtQuantiteMinimum";
-            this.txtQuantiteMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtQuantiteMinimum.Size = new System.Drawing.Size(33, 22);
-            this.txtQuantiteMinimum.TabIndex = 32;
-            this.txtQuantiteMinimum.Leave += new System.EventHandler(this.txtQuantiteMinimum_Leave);
+            txtQuantiteMinimum.AcceptsReturn = true;
+            txtQuantiteMinimum.BackColor = System.Drawing.SystemColors.Window;
+            txtQuantiteMinimum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtQuantiteMinimum.Enabled = false;
+            txtQuantiteMinimum.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtQuantiteMinimum.Location = new System.Drawing.Point(192, 16);
+            txtQuantiteMinimum.MaxLength = 0;
+            txtQuantiteMinimum.Name = "txtQuantiteMinimum";
+            txtQuantiteMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtQuantiteMinimum.Size = new System.Drawing.Size(33, 22);
+            txtQuantiteMinimum.TabIndex = 32;
+            txtQuantiteMinimum.Leave += new System.EventHandler(txtQuantiteMinimum_Leave);
             // 
             // txtQuantitéBoite
             // 
-            this.txtQuantitéBoite.AcceptsReturn = true;
-            this.txtQuantitéBoite.BackColor = System.Drawing.SystemColors.Window;
-            this.txtQuantitéBoite.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtQuantitéBoite.Enabled = false;
-            this.txtQuantitéBoite.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtQuantitéBoite.Location = new System.Drawing.Point(80, 16);
-            this.txtQuantitéBoite.MaxLength = 0;
-            this.txtQuantitéBoite.Name = "txtQuantitéBoite";
-            this.txtQuantitéBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtQuantitéBoite.Size = new System.Drawing.Size(33, 22);
-            this.txtQuantitéBoite.TabIndex = 30;
-            this.txtQuantitéBoite.Leave += new System.EventHandler(this.txtQuantitéBoite_Leave);
+            txtQuantitéBoite.AcceptsReturn = true;
+            txtQuantitéBoite.BackColor = System.Drawing.SystemColors.Window;
+            txtQuantitéBoite.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtQuantitéBoite.Enabled = false;
+            txtQuantitéBoite.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtQuantitéBoite.Location = new System.Drawing.Point(80, 16);
+            txtQuantitéBoite.MaxLength = 0;
+            txtQuantitéBoite.Name = "txtQuantitéBoite";
+            txtQuantitéBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtQuantitéBoite.Size = new System.Drawing.Size(33, 22);
+            txtQuantitéBoite.TabIndex = 30;
+            txtQuantitéBoite.Leave += new System.EventHandler(txtQuantitéBoite_Leave);
             // 
             // chkBoite
             // 
-            this.chkBoite.BackColor = System.Drawing.Color.Black;
-            this.chkBoite.ForeColor = System.Drawing.Color.White;
-            this.chkBoite.Location = new System.Drawing.Point(8, 16);
-            this.chkBoite.Name = "chkBoite";
-            this.chkBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chkBoite.Size = new System.Drawing.Size(73, 17);
-            this.chkBoite.TabIndex = 29;
-            this.chkBoite.Text = "Par Boîte :";
-            this.chkBoite.UseVisualStyleBackColor = true;
-            this.chkBoite.CheckStateChanged += new System.EventHandler(this.chkBoite_CheckStateChanged);
+            chkBoite.BackColor = System.Drawing.Color.Black;
+            chkBoite.ForeColor = System.Drawing.Color.White;
+            chkBoite.Location = new System.Drawing.Point(8, 16);
+            chkBoite.Name = "chkBoite";
+            chkBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            chkBoite.Size = new System.Drawing.Size(73, 17);
+            chkBoite.TabIndex = 29;
+            chkBoite.Text = "Par Boîte :";
+            chkBoite.UseVisualStyleBackColor = true;
+            chkBoite.CheckStateChanged += new System.EventHandler(chkBoite_CheckStateChanged);
             // 
             // Label11
             // 
-            this.Label11.BackColor = System.Drawing.Color.Black;
-            this.Label11.ForeColor = System.Drawing.Color.White;
-            this.Label11.Location = new System.Drawing.Point(120, 40);
-            this.Label11.Name = "Label11";
-            this.Label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label11.Size = new System.Drawing.Size(73, 17);
-            this.Label11.TabIndex = 35;
-            this.Label11.Text = "À commander :";
+            Label11.BackColor = System.Drawing.Color.Black;
+            Label11.ForeColor = System.Drawing.Color.White;
+            Label11.Location = new System.Drawing.Point(120, 40);
+            Label11.Name = "Label11";
+            Label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            Label11.Size = new System.Drawing.Size(73, 17);
+            Label11.TabIndex = 35;
+            Label11.Text = "À commander :";
             // 
             // Label5
             // 
-            this.Label5.BackColor = System.Drawing.Color.Black;
-            this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(8, 40);
-            this.Label5.Name = "Label5";
-            this.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label5.Size = new System.Drawing.Size(73, 17);
-            this.Label5.TabIndex = 34;
-            this.Label5.Text = "Stock :";
+            Label5.BackColor = System.Drawing.Color.Black;
+            Label5.ForeColor = System.Drawing.Color.White;
+            Label5.Location = new System.Drawing.Point(8, 40);
+            Label5.Name = "Label5";
+            Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            Label5.Size = new System.Drawing.Size(73, 17);
+            Label5.TabIndex = 34;
+            Label5.Text = "Stock :";
             // 
             // cmbLocalisation
             // 
-            this.cmbLocalisation.BackColor = System.Drawing.SystemColors.Window;
-            this.cmbLocalisation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmbLocalisation.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbLocalisation.Location = new System.Drawing.Point(368, 200);
-            this.cmbLocalisation.Name = "cmbLocalisation";
-            this.cmbLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbLocalisation.Size = new System.Drawing.Size(105, 22);
-            this.cmbLocalisation.TabIndex = 39;
-            this.cmbLocalisation.SelectedIndexChanged += new System.EventHandler(this.cmbLocalisation_SelectedIndexChanged);
+            cmbLocalisation.BackColor = System.Drawing.SystemColors.Window;
+            cmbLocalisation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmbLocalisation.ForeColor = System.Drawing.SystemColors.WindowText;
+            cmbLocalisation.Location = new System.Drawing.Point(368, 200);
+            cmbLocalisation.Name = "cmbLocalisation";
+            cmbLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmbLocalisation.Size = new System.Drawing.Size(105, 22);
+            cmbLocalisation.TabIndex = 39;
+            cmbLocalisation.SelectedIndexChanged += new System.EventHandler(cmbLocalisation_SelectedIndexChanged);
             // 
             // txtLocalisation
             // 
-            this.txtLocalisation.AcceptsReturn = true;
-            this.txtLocalisation.BackColor = System.Drawing.SystemColors.Window;
-            this.txtLocalisation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLocalisation.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtLocalisation.Location = new System.Drawing.Point(368, 200);
-            this.txtLocalisation.MaxLength = 0;
-            this.txtLocalisation.Name = "txtLocalisation";
-            this.txtLocalisation.ReadOnly = true;
-            this.txtLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtLocalisation.Size = new System.Drawing.Size(105, 22);
-            this.txtLocalisation.TabIndex = 40;
-            this.txtLocalisation.Text = "Text1";
+            txtLocalisation.AcceptsReturn = true;
+            txtLocalisation.BackColor = System.Drawing.SystemColors.Window;
+            txtLocalisation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            txtLocalisation.ForeColor = System.Drawing.SystemColors.WindowText;
+            txtLocalisation.Location = new System.Drawing.Point(368, 200);
+            txtLocalisation.MaxLength = 0;
+            txtLocalisation.Name = "txtLocalisation";
+            txtLocalisation.ReadOnly = true;
+            txtLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtLocalisation.Size = new System.Drawing.Size(105, 22);
+            txtLocalisation.TabIndex = 40;
+            txtLocalisation.Text = "Text1";
             // 
             // cmdRechercheAchat
             // 
-            this.cmdRechercheAchat.BackColor = System.Drawing.Color.Black;
-            this.cmdRechercheAchat.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cmdRechercheAchat.Font = new System.Drawing.Font("Calibri", 8.25F);
-            this.cmdRechercheAchat.ForeColor = System.Drawing.Color.White;
-            this.cmdRechercheAchat.Location = new System.Drawing.Point(222, 201);
-            this.cmdRechercheAchat.Name = "cmdRechercheAchat";
-            this.cmdRechercheAchat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmdRechercheAchat.Size = new System.Drawing.Size(127, 24);
-            this.cmdRechercheAchat.TabIndex = 80;
-            this.cmdRechercheAchat.Text = "Recherche dans achats";
-            this.cmdRechercheAchat.UseVisualStyleBackColor = true;
-            this.cmdRechercheAchat.Click += new System.EventHandler(this.cmdRechercheAchat_Click);
+            cmdRechercheAchat.BackColor = System.Drawing.Color.Black;
+            cmdRechercheAchat.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            cmdRechercheAchat.Font = new System.Drawing.Font("Calibri", 8.25F);
+            cmdRechercheAchat.ForeColor = System.Drawing.Color.White;
+            cmdRechercheAchat.Location = new System.Drawing.Point(222, 201);
+            cmdRechercheAchat.Name = "cmdRechercheAchat";
+            cmdRechercheAchat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            cmdRechercheAchat.Size = new System.Drawing.Size(127, 24);
+            cmdRechercheAchat.TabIndex = 80;
+            cmdRechercheAchat.Text = "Recherche dans achats";
+            cmdRechercheAchat.UseVisualStyleBackColor = true;
+            cmdRechercheAchat.Click += new System.EventHandler(cmdRechercheAchat_Click);
             // 
             // Label4
             // 
-            this.Label4.BackColor = System.Drawing.Color.Black;
-            this.Label4.ForeColor = System.Drawing.Color.White;
-            this.Label4.Location = new System.Drawing.Point(368, 184);
-            this.Label4.Name = "Label4";
-            this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label4.Size = new System.Drawing.Size(65, 17);
-            this.Label4.TabIndex = 27;
-            this.Label4.Text = "Localisation :";
+            Label4.BackColor = System.Drawing.Color.Black;
+            Label4.ForeColor = System.Drawing.Color.White;
+            Label4.Location = new System.Drawing.Point(368, 184);
+            Label4.Name = "Label4";
+            Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            Label4.Size = new System.Drawing.Size(65, 17);
+            Label4.TabIndex = 27;
+            Label4.Text = "Localisation :";
             // 
             // Label2
             // 
-            this.Label2.BackColor = System.Drawing.Color.Black;
-            this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(256, 8);
-            this.Label2.Name = "Label2";
-            this.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Label2.Size = new System.Drawing.Size(121, 17);
-            this.Label2.TabIndex = 1;
-            this.Label2.Text = "Catégorie de pièce :";
+            Label2.BackColor = System.Drawing.Color.Black;
+            Label2.ForeColor = System.Drawing.Color.White;
+            Label2.Location = new System.Drawing.Point(256, 8);
+            Label2.Name = "Label2";
+            Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            Label2.Size = new System.Drawing.Size(121, 17);
+            Label2.TabIndex = 1;
+            Label2.Text = "Catégorie de pièce :";
             // 
             // _Label1_25
             // 
-            this._Label1_25.BackColor = System.Drawing.Color.Black;
-            this._Label1_25.ForeColor = System.Drawing.Color.White;
-            this._Label1_25.Location = new System.Drawing.Point(32, 152);
-            this._Label1_25.Name = "_Label1_25";
-            this._Label1_25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_25.Size = new System.Drawing.Size(113, 17);
-            this._Label1_25.TabIndex = 23;
-            this._Label1_25.Text = "Pièce GRB :";
+            _Label1_25.BackColor = System.Drawing.Color.Black;
+            _Label1_25.ForeColor = System.Drawing.Color.White;
+            _Label1_25.Location = new System.Drawing.Point(32, 152);
+            _Label1_25.Name = "_Label1_25";
+            _Label1_25.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_25.Size = new System.Drawing.Size(113, 17);
+            _Label1_25.TabIndex = 23;
+            _Label1_25.Text = "Pièce GRB :";
             // 
             // _Label1_6
             // 
-            this._Label1_6.BackColor = System.Drawing.Color.Black;
-            this._Label1_6.ForeColor = System.Drawing.Color.White;
-            this._Label1_6.Location = new System.Drawing.Point(296, 128);
-            this._Label1_6.Name = "_Label1_6";
-            this._Label1_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_6.Size = new System.Drawing.Size(81, 17);
-            this._Label1_6.TabIndex = 22;
-            this._Label1_6.Text = "Commentaire :";
+            _Label1_6.BackColor = System.Drawing.Color.Black;
+            _Label1_6.ForeColor = System.Drawing.Color.White;
+            _Label1_6.Location = new System.Drawing.Point(296, 128);
+            _Label1_6.Name = "_Label1_6";
+            _Label1_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_6.Size = new System.Drawing.Size(81, 17);
+            _Label1_6.TabIndex = 22;
+            _Label1_6.Text = "Commentaire :";
             // 
             // _Label1_4
             // 
-            this._Label1_4.BackColor = System.Drawing.Color.Black;
-            this._Label1_4.ForeColor = System.Drawing.Color.White;
-            this._Label1_4.Location = new System.Drawing.Point(296, 96);
-            this._Label1_4.Name = "_Label1_4";
-            this._Label1_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_4.Size = new System.Drawing.Size(73, 17);
-            this._Label1_4.TabIndex = 20;
-            this._Label1_4.Text = "Desc. EN :";
+            _Label1_4.BackColor = System.Drawing.Color.Black;
+            _Label1_4.ForeColor = System.Drawing.Color.White;
+            _Label1_4.Location = new System.Drawing.Point(296, 96);
+            _Label1_4.Name = "_Label1_4";
+            _Label1_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_4.Size = new System.Drawing.Size(73, 17);
+            _Label1_4.TabIndex = 20;
+            _Label1_4.Text = "Desc. EN :";
             // 
             // _Label1_3
             // 
-            this._Label1_3.BackColor = System.Drawing.Color.Black;
-            this._Label1_3.ForeColor = System.Drawing.Color.White;
-            this._Label1_3.Location = new System.Drawing.Point(296, 64);
-            this._Label1_3.Name = "_Label1_3";
-            this._Label1_3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_3.Size = new System.Drawing.Size(73, 17);
-            this._Label1_3.TabIndex = 12;
-            this._Label1_3.Text = "Desc. FR :";
+            _Label1_3.BackColor = System.Drawing.Color.Black;
+            _Label1_3.ForeColor = System.Drawing.Color.White;
+            _Label1_3.Location = new System.Drawing.Point(296, 64);
+            _Label1_3.Name = "_Label1_3";
+            _Label1_3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_3.Size = new System.Drawing.Size(73, 17);
+            _Label1_3.TabIndex = 12;
+            _Label1_3.Text = "Desc. FR :";
             // 
             // _Label1_1
             // 
-            this._Label1_1.BackColor = System.Drawing.Color.Black;
-            this._Label1_1.ForeColor = System.Drawing.Color.White;
-            this._Label1_1.Location = new System.Drawing.Point(32, 64);
-            this._Label1_1.Name = "_Label1_1";
-            this._Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_1.Size = new System.Drawing.Size(89, 17);
-            this._Label1_1.TabIndex = 7;
-            this._Label1_1.Text = "Manufacturier :";
+            _Label1_1.BackColor = System.Drawing.Color.Black;
+            _Label1_1.ForeColor = System.Drawing.Color.White;
+            _Label1_1.Location = new System.Drawing.Point(32, 64);
+            _Label1_1.Name = "_Label1_1";
+            _Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_1.Size = new System.Drawing.Size(89, 17);
+            _Label1_1.TabIndex = 7;
+            _Label1_1.Text = "Manufacturier :";
             // 
             // _Label1_0
             // 
-            this._Label1_0.BackColor = System.Drawing.Color.Black;
-            this._Label1_0.ForeColor = System.Drawing.Color.White;
-            this._Label1_0.Location = new System.Drawing.Point(32, 120);
-            this._Label1_0.Name = "_Label1_0";
-            this._Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._Label1_0.Size = new System.Drawing.Size(73, 17);
-            this._Label1_0.TabIndex = 16;
-            this._Label1_0.Text = "Pièce :";
+            _Label1_0.BackColor = System.Drawing.Color.Black;
+            _Label1_0.ForeColor = System.Drawing.Color.White;
+            _Label1_0.Location = new System.Drawing.Point(32, 120);
+            _Label1_0.Name = "_Label1_0";
+            _Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            _Label1_0.Size = new System.Drawing.Size(73, 17);
+            _Label1_0.TabIndex = 16;
+            _Label1_0.Text = "Pièce :";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(lvwRechercheJob);
+            panel1.Controls.Add(lvwRechercheAchat);
+            panel1.Controls.Add(lvwfournisseur);
+            panel1.Controls.Add(lvwCategorie);
+            panel1.Controls.Add(lvwDescription);
+            panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            panel1.Location = new System.Drawing.Point(774, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(555, 709);
+            panel1.TabIndex = 82;
             // 
             // CatalogueMec
             // 
-            this.AcceptButton = this.CmdEnr;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::ControleurServeur.Properties.Resources.drapeauGRB;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(733, 441);
-            this.Controls.Add(this.lvwCategorie);
-            this.Controls.Add(this.cmdRechercheCategorie);
-            this.Controls.Add(this.lvwRechercheAchat);
-            this.Controls.Add(this.lvwRechercheJob);
-            this.Controls.Add(this.cmdRechercheJob);
-            this.Controls.Add(this.cmdCopier);
-            this.Controls.Add(this.cmdTotal);
-            this.Controls.Add(this.cmdRechercheInventaire);
-            this.Controls.Add(this.lvwFabricant);
-            this.Controls.Add(this.lvwPieces);
-            this.Controls.Add(this.cmdChangerCategorie);
-            this.Controls.Add(this.cmdDemande);
-            this.Controls.Add(this.lvwDescription);
-            this.Controls.Add(this.cmdRechercheDescrFR);
-            this.Controls.Add(this.frafournisseur);
-            this.Controls.Add(this.cmbCategorie);
-            this.Controls.Add(this.txtNoItemGRB);
-            this.Controls.Add(this.cmbNoItem);
-            this.Controls.Add(this.CmdModif);
-            this.Controls.Add(this.CmdFerme);
-            this.Controls.Add(this.CmdSupp);
-            this.Controls.Add(this.CmdAdd);
-            this.Controls.Add(this.txtComment);
-            this.Controls.Add(this.cmbFabricant);
-            this.Controls.Add(this.txtFabricant);
-            this.Controls.Add(this.txtDescriptionEN);
-            this.Controls.Add(this.txtDescriptionFR);
-            this.Controls.Add(this.txtNoItem);
-            this.Controls.Add(this.CmdAnul);
-            this.Controls.Add(this.CmdEnr);
-            this.Controls.Add(this.txtCategorie);
-            this.Controls.Add(this.cmdRechercherPiece);
-            this.Controls.Add(this.cmbDescriptionFR);
-            this.Controls.Add(this.cmdRechercherManufact);
-            this.Controls.Add(this.chkInventaire);
-            this.Controls.Add(this.fraQuantité);
-            this.Controls.Add(this.cmbLocalisation);
-            this.Controls.Add(this.txtLocalisation);
-            this.Controls.Add(this.cmdRechercheAchat);
-            this.Controls.Add(this.Label4);
-            this.Controls.Add(this.Label2);
-            this.Controls.Add(this._Label1_25);
-            this.Controls.Add(this._Label1_6);
-            this.Controls.Add(this._Label1_4);
-            this.Controls.Add(this._Label1_3);
-            this.Controls.Add(this._Label1_1);
-            this.Controls.Add(this._Label1_0);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.White;
-            this.Icon = global::ControleurServeur.Properties.Resources.IconeApp;
-            this.Location = new System.Drawing.Point(97, 68);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "CatalogueMec";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ControleurServeur.CatalogueMec";
-            this.Load += new System.EventHandler(this.FrCatalogueMec_Load);
-            this.Click += new System.EventHandler(this.FrCatalogueMec_Click);
-            this.frafournisseur.ResumeLayout(false);
-            this.frafournisseur.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCanada)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSpain)).EndInit();
-            this.fraQuantité.ResumeLayout(false);
-            this.fraQuantité.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = CmdEnr;
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.Black;
+            BackgroundImage = global::ControleurServeur.Properties.Resources.drapeauGRB;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            ClientSize = new System.Drawing.Size(1329, 709);
+            Controls.Add(panel1);
+            Controls.Add(cmdRechercheCategorie);
+            Controls.Add(cmdRechercheJob);
+            Controls.Add(cmdCopier);
+            Controls.Add(cmdTotal);
+            Controls.Add(cmdRechercheInventaire);
+            Controls.Add(lvwFabricant);
+            Controls.Add(lvwPieces);
+            Controls.Add(cmdChangerCategorie);
+            Controls.Add(cmdDemande);
+            Controls.Add(cmdRechercheDescrFR);
+            Controls.Add(frafournisseur);
+            Controls.Add(cmbCategorie);
+            Controls.Add(txtNoItemGRB);
+            Controls.Add(cmbNoItem);
+            Controls.Add(CmdModif);
+            Controls.Add(CmdFerme);
+            Controls.Add(CmdSupp);
+            Controls.Add(CmdAdd);
+            Controls.Add(txtComment);
+            Controls.Add(cmbFabricant);
+            Controls.Add(txtFabricant);
+            Controls.Add(txtDescriptionEN);
+            Controls.Add(txtDescriptionFR);
+            Controls.Add(txtNoItem);
+            Controls.Add(CmdAnul);
+            Controls.Add(CmdEnr);
+            Controls.Add(txtCategorie);
+            Controls.Add(cmdRechercherPiece);
+            Controls.Add(cmbDescriptionFR);
+            Controls.Add(cmdRechercherManufact);
+            Controls.Add(chkInventaire);
+            Controls.Add(fraQuantité);
+            Controls.Add(cmbLocalisation);
+            Controls.Add(txtLocalisation);
+            Controls.Add(cmdRechercheAchat);
+            Controls.Add(Label4);
+            Controls.Add(Label2);
+            Controls.Add(_Label1_25);
+            Controls.Add(_Label1_6);
+            Controls.Add(_Label1_4);
+            Controls.Add(_Label1_3);
+            Controls.Add(_Label1_1);
+            Controls.Add(_Label1_0);
+            Cursor = System.Windows.Forms.Cursors.Default;
+            Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ForeColor = System.Drawing.Color.White;
+            Icon = global::ControleurServeur.Properties.Resources.IconeApp;
+            Location = new System.Drawing.Point(97, 68);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "CatalogueMec";
+            RightToLeft = System.Windows.Forms.RightToLeft.No;
+            ShowInTaskbar = false;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "ControleurServeur.CatalogueMec";
+            Load += new System.EventHandler(FrCatalogueMec_Load);
+            Click += new System.EventHandler(FrCatalogueMec_Click);
+            frafournisseur.ResumeLayout(false);
+            frafournisseur.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(imgCanada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(imgEU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(imgSpain)).EndInit();
+            fraQuantité.ResumeLayout(false);
+            fraQuantité.PerformLayout();
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
 
         }
         #endregion
@@ -1944,6 +1960,7 @@ namespace ControleurServeur
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "MontrerControles", ex); }
         }
+
         private void RemplirComboPersRess()
         {
             try
@@ -1953,7 +1970,7 @@ namespace ControleurServeur
                cmbPersRess.Items.Clear();
                 rstContactFRS = new ADODB.Recordset();
                 rstContact = new ADODB.Recordset();
-                rstContactFRS.Open("SELECT * FROM ContactFRS WHERE NoFRS = " + (cmbfrs,cmbfrs.SelectedIndex), odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                rstContactFRS.Open("SELECT * FROM ContactFRS WHERE NoFRS = " + cmbfrs.Text.Split('-')[0], odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 while (!rstContactFRS.EOF)
                 {
                     rstContact.Open(Operators.ConcatenateObject("SELECT NomContact, IDContact FROM Contact WHERE IDContact = ", rstContactFRS.Fields["NoContact"].Value), odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
@@ -3010,11 +3027,12 @@ namespace ControleurServeur
                 Cursor.Current = Cursors.WaitCursor;
                lvwRechercheJob.Items.Clear();
                 rstProjSoum = new ADODB.Recordset();
-                rstProjSoum.Open("SELECT DISTINCT IDProjet, SUM(Qté) As QtéTotale FROM Projet_Pieces WHERE TRIM(NumItem) = '" + Strings.Trim(Strings.Replace(txtNoItem.Text, "'", "''")) + "' And Type = 'M' GROUP BY IDProjet", odbc, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly);
+                rstProjSoum.Open("SELECT DISTINCT IDProjet, Qté As QtéTotale FROM Projet_Pieces WHERE TRIM(NumItem) = '" + Strings.Trim(Strings.Replace(txtNoItem.Text, "'", "''")) + "' And Type = 'M' GROUP BY IDProjet", odbc, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly);
                 while (!rstProjSoum.EOF)
                 {
                     itmProjSoum =lvwRechercheJob.Items.Add(string.Empty);
                     itmProjSoum.Text = Conversions.ToString(rstProjSoum.Fields["IDProjet"].Value);
+
                     if (itmProjSoum.SubItems.Count > I_COL_JOB_QUANTITE)
                     {
                         itmProjSoum.SubItems[I_COL_JOB_QUANTITE].Text = Conversions.ToString(rstProjSoum.Fields["QtéTotale"].Value);
@@ -4900,13 +4918,15 @@ namespace ControleurServeur
         {
             try
             {
+                Program.fournisseurs.Clear();
                 ADODB.Recordset rstPieceFRS;
                cmbfrs.Items.Clear();
                 rstPieceFRS = new ADODB.Recordset();
                 rstPieceFRS.Open("SELECT * FROM Fournisseur WHERE Supprimé= 0   ORDER BY NomFournisseur", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 while (!rstPieceFRS.EOF)
                 {
-                   cmbfrs.Items.Add(new ListItem($"{rstPieceFRS.Fields["NomFournisseur"].Value}", $"{ rstPieceFRS.Fields["IDFRS"].Value}"));
+                    Program.fournisseurs.Add(new ListItem($"{rstPieceFRS.Fields["NomFournisseur"].Value}", $"{rstPieceFRS.Fields["IDFRS"].Value}"));
+                   cmbfrs.Items.Add($"{ rstPieceFRS.Fields["IDFRS"].Value}-{rstPieceFRS.Fields["NomFournisseur"].Value}");
                     rstPieceFRS.MoveNext();
                 }
                 rstPieceFRS.Close();

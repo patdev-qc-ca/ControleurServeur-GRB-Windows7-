@@ -10,6 +10,9 @@ using ADODB;
 using Microsoft.CodeAnalysis.Emit;
 using Stripe;
 using System.Collections.Generic;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using CheckBox = System.Windows.Forms.CheckBox;
+using Stripe.Climate;
 namespace ControleurServeur
 {
     internal class InventaireElec : Form
@@ -47,8 +50,9 @@ namespace ControleurServeur
         private LinkLabel linkLabel5;
         private LinkLabel linkLabel6;
         private LinkLabel linkLabel7;
-        private GroupBox groupBox2;
-        private GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private ComboBox txtNoProjet;
         internal Label lblTitre;
 
         [DebuggerStepThrough()]
@@ -75,10 +79,10 @@ namespace ControleurServeur
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtNoProjet = new System.Windows.Forms.ComboBox();
             this.mskDateDebut = new System.Windows.Forms.MaskedTextBox();
             this.mskDateFin = new System.Windows.Forms.MaskedTextBox();
             this.txtNoPiece = new System.Windows.Forms.TextBox();
-            this.txtNoProjet = new System.Windows.Forms.TextBox();
             this.Label15 = new System.Windows.Forms.Label();
             this.Label12 = new System.Windows.Forms.Label();
             this.cmdAfficherHistorique = new System.Windows.Forms.Button();
@@ -104,7 +108,7 @@ namespace ControleurServeur
             this._chkChoix_0.Size = new System.Drawing.Size(59, 19);
             this._chkChoix_0.TabIndex = 3;
             this._chkChoix_0.Text = "Projet";
-            this._chkChoix_0.UseVisualStyleBackColor = true;
+            this._chkChoix_0.UseVisualStyleBackColor = false;
             // 
             // lvwHistorique
             // 
@@ -115,6 +119,7 @@ namespace ControleurServeur
             this._lvwHistorique_ColumnHeader_3,
             this._lvwHistorique_ColumnHeader_4,
             this._lvwHistorique_ColumnHeader_5});
+            this.lvwHistorique.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvwHistorique.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwHistorique.ForeColor = System.Drawing.Color.White;
             this.lvwHistorique.FullRowSelect = true;
@@ -122,11 +127,12 @@ namespace ControleurServeur
             this.lvwHistorique.HideSelection = false;
             this.lvwHistorique.Location = new System.Drawing.Point(0, 0);
             this.lvwHistorique.Name = "lvwHistorique";
-            this.lvwHistorique.Size = new System.Drawing.Size(924, 547);
+            this.lvwHistorique.Size = new System.Drawing.Size(1044, 587);
             this.lvwHistorique.TabIndex = 15;
             this.lvwHistorique.UseCompatibleStateImageBehavior = false;
             this.lvwHistorique.View = System.Windows.Forms.View.Details;
             this.lvwHistorique.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwHistorique_ColumnClick);
+            this.lvwHistorique.SelectedIndexChanged += new System.EventHandler(this.lvwHistorique_SelectedIndexChanged);
             this.lvwHistorique.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwHistorique_KeyDown);
             // 
             // _lvwHistorique_ColumnHeader_1
@@ -175,30 +181,35 @@ namespace ControleurServeur
             this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(0, 652);
+            this.panel1.Location = new System.Drawing.Point(0, 672);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(924, 56);
+            this.panel1.Size = new System.Drawing.Size(1044, 36);
             this.panel1.TabIndex = 19;
             // 
             // groupBox2
             // 
+            this.groupBox2.BackgroundImage = global::ControleurServeur.Properties.Resources.print_pref;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox2.Controls.Add(this.linkLabel7);
             this.groupBox2.Controls.Add(this.linkLabel6);
             this.groupBox2.Controls.Add(this.linkLabel5);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(3, 13);
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(422, 39);
+            this.groupBox2.Size = new System.Drawing.Size(461, 36);
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Impression";
+            this.groupBox2.Text = "         Impression";
+            this.groupBox2.Visible = false;
             // 
             // linkLabel7
             // 
             this.linkLabel7.AutoSize = true;
+            this.linkLabel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.linkLabel7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel7.LinkColor = System.Drawing.Color.White;
-            this.linkLabel7.Location = new System.Drawing.Point(10, 15);
+            this.linkLabel7.Location = new System.Drawing.Point(59, 18);
             this.linkLabel7.Name = "linkLabel7";
             this.linkLabel7.Size = new System.Drawing.Size(122, 15);
             this.linkLabel7.TabIndex = 23;
@@ -209,9 +220,10 @@ namespace ControleurServeur
             // linkLabel6
             // 
             this.linkLabel6.AutoSize = true;
+            this.linkLabel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.linkLabel6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel6.LinkColor = System.Drawing.Color.White;
-            this.linkLabel6.Location = new System.Drawing.Point(138, 15);
+            this.linkLabel6.Location = new System.Drawing.Point(181, 18);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(145, 15);
             this.linkLabel6.TabIndex = 24;
@@ -222,9 +234,10 @@ namespace ControleurServeur
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.linkLabel5.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel5.LinkColor = System.Drawing.Color.White;
-            this.linkLabel5.Location = new System.Drawing.Point(289, 15);
+            this.linkLabel5.Location = new System.Drawing.Point(326, 18);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(132, 15);
             this.linkLabel5.TabIndex = 25;
@@ -234,23 +247,29 @@ namespace ControleurServeur
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::ControleurServeur.Properties.Resources.ico121;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.linkLabel2);
             this.groupBox1.Controls.Add(this.linkLabel3);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(428, 13);
+            this.groupBox1.Location = new System.Drawing.Point(465, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(420, 39);
+            this.groupBox1.Size = new System.Drawing.Size(513, 36);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Exportation vers Excel";
+            this.groupBox1.Tag = " ";
+            this.groupBox1.Text = "       Exportation vers Excel";
+            this.groupBox1.Visible = false;
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.linkLabel1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Lime;
-            this.linkLabel1.Location = new System.Drawing.Point(17, 14);
+            this.linkLabel1.Location = new System.Drawing.Point(119, 18);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(126, 15);
             this.linkLabel1.TabIndex = 19;
@@ -261,9 +280,10 @@ namespace ControleurServeur
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.linkLabel2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.Lime;
-            this.linkLabel2.Location = new System.Drawing.Point(149, 14);
+            this.linkLabel2.Location = new System.Drawing.Point(245, 18);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(137, 15);
             this.linkLabel2.TabIndex = 20;
@@ -274,9 +294,10 @@ namespace ControleurServeur
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.linkLabel3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkColor = System.Drawing.Color.Lime;
-            this.linkLabel3.Location = new System.Drawing.Point(291, 14);
+            this.linkLabel3.Location = new System.Drawing.Point(382, 18);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(128, 15);
             this.linkLabel3.TabIndex = 21;
@@ -286,16 +307,17 @@ namespace ControleurServeur
             // 
             // linkLabel4
             // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)
+            this.linkLabel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.linkLabel4.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel4.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel4.Location = new System.Drawing.Point(854, 22);
+            this.linkLabel4.Location = new System.Drawing.Point(978, 0);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(66, 23);
+            this.linkLabel4.Size = new System.Drawing.Size(66, 36);
             this.linkLabel4.TabIndex = 22;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "Fermer";
+            this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // panel2
@@ -304,10 +326,10 @@ namespace ControleurServeur
             this.panel2.BackgroundImage = global::ControleurServeur.Properties.Resources.drapeauGRB;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.txtNoProjet);
             this.panel2.Controls.Add(this.mskDateDebut);
             this.panel2.Controls.Add(this.mskDateFin);
             this.panel2.Controls.Add(this.txtNoPiece);
-            this.panel2.Controls.Add(this.txtNoProjet);
             this.panel2.Controls.Add(this.Label15);
             this.panel2.Controls.Add(this.lblTitre);
             this.panel2.Controls.Add(this.Label12);
@@ -319,15 +341,25 @@ namespace ControleurServeur
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(924, 85);
+            this.panel2.Size = new System.Drawing.Size(1044, 85);
             this.panel2.TabIndex = 20;
+            // 
+            // txtNoProjet
+            // 
+            this.txtNoProjet.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNoProjet.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtNoProjet.FormattingEnabled = true;
+            this.txtNoProjet.Location = new System.Drawing.Point(109, 54);
+            this.txtNoProjet.Name = "txtNoProjet";
+            this.txtNoProjet.Size = new System.Drawing.Size(304, 22);
+            this.txtNoProjet.TabIndex = 17;
             // 
             // mskDateDebut
             // 
             this.mskDateDebut.AllowPromptAsInput = false;
-            this.mskDateDebut.BackColor = System.Drawing.Color.Black;
+            this.mskDateDebut.BackColor = System.Drawing.SystemColors.Control;
             this.mskDateDebut.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskDateDebut.ForeColor = System.Drawing.Color.White;
+            this.mskDateDebut.ForeColor = System.Drawing.SystemColors.ControlText;
             this.mskDateDebut.Location = new System.Drawing.Point(660, 52);
             this.mskDateDebut.Name = "mskDateDebut";
             this.mskDateDebut.Size = new System.Drawing.Size(65, 22);
@@ -336,9 +368,9 @@ namespace ControleurServeur
             // mskDateFin
             // 
             this.mskDateFin.AllowPromptAsInput = false;
-            this.mskDateFin.BackColor = System.Drawing.Color.Black;
+            this.mskDateFin.BackColor = System.Drawing.SystemColors.Control;
             this.mskDateFin.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskDateFin.ForeColor = System.Drawing.Color.White;
+            this.mskDateFin.ForeColor = System.Drawing.SystemColors.ControlText;
             this.mskDateFin.Location = new System.Drawing.Point(762, 53);
             this.mskDateFin.Name = "mskDateFin";
             this.mskDateFin.Size = new System.Drawing.Size(65, 22);
@@ -347,30 +379,16 @@ namespace ControleurServeur
             // txtNoPiece
             // 
             this.txtNoPiece.AcceptsReturn = true;
-            this.txtNoPiece.BackColor = System.Drawing.Color.Black;
+            this.txtNoPiece.BackColor = System.Drawing.SystemColors.Control;
             this.txtNoPiece.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNoPiece.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoPiece.ForeColor = System.Drawing.Color.White;
+            this.txtNoPiece.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtNoPiece.Location = new System.Drawing.Point(419, 53);
             this.txtNoPiece.MaxLength = 0;
             this.txtNoPiece.Name = "txtNoPiece";
             this.txtNoPiece.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtNoPiece.Size = new System.Drawing.Size(185, 23);
             this.txtNoPiece.TabIndex = 6;
-            // 
-            // txtNoProjet
-            // 
-            this.txtNoProjet.AcceptsReturn = true;
-            this.txtNoProjet.BackColor = System.Drawing.Color.Black;
-            this.txtNoProjet.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNoProjet.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoProjet.ForeColor = System.Drawing.Color.White;
-            this.txtNoProjet.Location = new System.Drawing.Point(235, 53);
-            this.txtNoProjet.MaxLength = 0;
-            this.txtNoProjet.Name = "txtNoProjet";
-            this.txtNoProjet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtNoProjet.Size = new System.Drawing.Size(161, 23);
-            this.txtNoProjet.TabIndex = 2;
             // 
             // Label15
             // 
@@ -398,17 +416,17 @@ namespace ControleurServeur
             // 
             // cmdAfficherHistorique
             // 
-            this.cmdAfficherHistorique.BackColor = System.Drawing.Color.Black;
+            this.cmdAfficherHistorique.BackColor = System.Drawing.SystemColors.Control;
             this.cmdAfficherHistorique.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmdAfficherHistorique.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAfficherHistorique.ForeColor = System.Drawing.Color.White;
+            this.cmdAfficherHistorique.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cmdAfficherHistorique.Location = new System.Drawing.Point(844, 46);
             this.cmdAfficherHistorique.Name = "cmdAfficherHistorique";
             this.cmdAfficherHistorique.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cmdAfficherHistorique.Size = new System.Drawing.Size(68, 25);
             this.cmdAfficherHistorique.TabIndex = 14;
             this.cmdAfficherHistorique.Text = "Afficher";
-            this.cmdAfficherHistorique.UseVisualStyleBackColor = true;
+            this.cmdAfficherHistorique.UseVisualStyleBackColor = false;
             this.cmdAfficherHistorique.Click += new System.EventHandler(this.cmdAfficherHistorique_Click);
             // 
             // _chkChoix_1
@@ -423,7 +441,7 @@ namespace ControleurServeur
             this._chkChoix_1.Size = new System.Drawing.Size(55, 19);
             this._chkChoix_1.TabIndex = 4;
             this._chkChoix_1.Text = "Pièce";
-            this._chkChoix_1.UseVisualStyleBackColor = true;
+            this._chkChoix_1.UseVisualStyleBackColor = false;
             // 
             // _chkChoix_2
             // 
@@ -437,7 +455,7 @@ namespace ControleurServeur
             this._chkChoix_2.Size = new System.Drawing.Size(51, 19);
             this._chkChoix_2.TabIndex = 7;
             this._chkChoix_2.Text = "Date";
-            this._chkChoix_2.UseVisualStyleBackColor = true;
+            this._chkChoix_2.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -445,7 +463,7 @@ namespace ControleurServeur
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 85);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(924, 567);
+            this.panel3.Size = new System.Drawing.Size(1044, 587);
             this.panel3.TabIndex = 21;
             // 
             // InventaireElec
@@ -456,7 +474,7 @@ namespace ControleurServeur
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::ControleurServeur.Properties.Resources.drapeauGRB;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(924, 708);
+            this.ClientSize = new System.Drawing.Size(1044, 708);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -465,7 +483,6 @@ namespace ControleurServeur
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = global::ControleurServeur.Properties.Resources.IconeApp;
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InventaireElec";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -474,7 +491,6 @@ namespace ControleurServeur
             this.Text = "ControleurServeur.InventaireElec";
             this.Load += new System.EventHandler(this.InventaireElec_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -485,15 +501,36 @@ namespace ControleurServeur
             this.ResumeLayout(false);
 
         }
+        private void enumNoPrjets()
+        {
+            try
+            {
+                ADODB.Recordset rstHist = new Recordset();
+                rstHist.Open("SELECT distinct [IDProjet] ,[IDSoumission],[description]  FROM [autogrb].[dbo].[ProjetElec]\r\n", odbc, CursorTypeEnum.adOpenDynamic, LockTypeEnum.adLockOptimistic);
+                //else { rstHist.Open("SELECT * FROM InventaireElecModif ORDER BY numid DESC", odbc, CursorTypeEnum.adOpenDynamic, LockTypeEnum.adLockOptimistic); }
+                lvwHistorique.Items.Clear();
+                while (!rstHist.EOF)
+                {
+                    txtNoProjet.Items.Add($"{rstHist.Fields[0].Value} ({rstHist.Fields[2].Value})");
+                    rstHist.MoveNext();
+                }
+                rstHist.Close();
+                rstHist = null;
+                return;
+            }
+            catch (Exception ex)
+            {
+                AfficherErreur("InventaireElec", "RemplirListViewFullHistorique", ex);
+            }
+
+        }
         private void lvwHistorique_KeyDown(object sender, KeyEventArgs e)
         {
-            throw new NotImplementedException();
         }
         #endregion
         internal Panel panel1;
         internal Panel panel2;
         internal TextBox txtNoPiece;
-        internal TextBox txtNoProjet;
         internal Label Label15;
         internal Label Label12;
         internal Button cmdAfficherHistorique;
@@ -503,7 +540,52 @@ namespace ControleurServeur
         public bool m_bAnnuleImpression;
         public ChoixImpressionInventaire.enumImpressionInventaire m_eTypeImpression;
         public bool m_typeImpressionExel;
+        private void RemplirListviewFullHistorique()
+        {
+            try
+            {
+                ADODB.Recordset rstHist = new Recordset();
+                rstHist.Open("SELECT [DATE],[QUANTITÉ],[USER], [DBO].[INVENTAIREELEC].NOITEM, DESCRIPTION, MANUFACTURIER, QTEBOITE, [PRIX LISTE], ESCOMPTE, [PRIX NET], COMMENTAIRES, LOCALISATION, " +
+                    "DEVISEMONÉTAIRE, QUANTITÉSTOCK, QUANTITÉCOMMANDÉE, MINIMUM, QUANTITÉMINIMUM, COMMANDE, NOPROJET, COMMANDEPARBOITE FROM INVENTAIREELEC " +
+                    "JOIN[DBO].[INVENTAIREELECMODIF] ON[DBO].[INVENTAIREELEC].NOITEM = [DBO].[INVENTAIREELECMODIF].NOITEM " +
+                    "order by[dbo].[InventaireElecModif].[IDProjet], [Date]", odbc, CursorTypeEnum.adOpenDynamic, LockTypeEnum.adLockOptimistic); 
+                //else { rstHist.Open("SELECT * FROM InventaireElecModif ORDER BY numid DESC", odbc, CursorTypeEnum.adOpenDynamic, LockTypeEnum.adLockOptimistic); }
+                lvwHistorique.Items.Clear();
+                lvwHistorique.Columns.Clear();
+                if (!rstHist.EOF)
+                {
+                    for (int x = 0; x < rstHist.Fields.Count; x++)
+                    {
+                        lvwHistorique.Columns.Add(rstHist.Fields[x].Name);
+                    }
+                    while (!rstHist.EOF)
+                    {
+                        ListViewItem itmHist = lvwHistorique.Items.Add(string.Empty);
+                        itmHist.Tag = (string)rstHist.Fields[3].Value;
+                        for (int x = 0; x < rstHist.Fields.Count; x++)
+                        {
+                            itmHist.SubItems.Insert(x, new ListViewItem.ListViewSubItem(null, $"{rstHist.Fields[x].Value}"));
+                            if (x == 12)
+                            {
+                                if (rstHist.Fields[12].Value is DBNull)
+                                {
+                                    itmHist.SubItems[12].Text = "$ CAD";
+                                }
+                            }
+                        }
+                        rstHist.MoveNext();
+                    }
+                }
+                rstHist.Close();
+                rstHist = null;
+                return;
+            }
+            catch (Exception ex)
+            {
+                AfficherErreur("InventaireElec", "RemplirListViewFullHistorique", ex);
+            }
 
+        }
         private void RemplirListViewHistorique()
         {
             try
@@ -587,7 +669,7 @@ namespace ControleurServeur
                 }
                 Cursor.Current = Cursors.WaitCursor;
                 if (_chkChoix_2.Checked | _chkChoix_1.Checked | _chkChoix_0.Checked) { RemplirListViewHistorique(); }
-                else { MessageBox.Show("Vous devez choisir au moins une option de recherche!", System.Windows.Forms.Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                else {                    RemplirListviewFullHistorique(); }
                 Cursor.Current = Cursors.Default;
             }
             catch (Exception ex)
@@ -597,9 +679,10 @@ namespace ControleurServeur
         }
         private void InventaireElec_Load(object eventSender, EventArgs eventArgs)
         {
+                Icon = Conteneur.ActiveForm.Icon;
             try
             {
-                Icon = Conteneur.ActiveForm.Icon;
+                enumNoPrjets();
             }
             catch (Exception ex)
             {
@@ -657,7 +740,6 @@ namespace ControleurServeur
                 AfficherErreur("InventaireElec", "cmdFermer_Click", ex);
             }
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Microsoft.Office.Interop.Excel.Application oXLApp;
@@ -847,7 +929,6 @@ namespace ControleurServeur
                 lvi.ShowDialog();
             }
         }
-
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             int nbpages = (lvwHistorique.Items.Count / 50) + 1;
@@ -882,7 +963,6 @@ namespace ControleurServeur
                 lvi.ShowDialog();
             }
         }
-
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             /* 
@@ -979,5 +1059,23 @@ namespace ControleurServeur
                 lvi.ShowDialog();
             }
         }
+        private void lvwHistorique_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvwHistorique.Items.Count > 0)
+            {
+                groupBox1.Visible = true;
+                groupBox2.Visible = true;
+            }
+            else
+            {
+                groupBox1.Visible = false;
+                groupBox2.Visible=false;
+            }
+        }
+        private void txtNoProjet_TextChanged(object sender, EventArgs e)
+        {
+            txtNoProjet.Text=txtNoProjet.Text.Trim().ToUpper();
+        }
+
     }
 }
