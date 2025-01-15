@@ -1,0 +1,1385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C15A9F4E-C2A1-4D69-8520-4FFDC7C19C17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ControleurServeur</RootNamespace>
+    <AssemblyName>ControleurServeur[GRB]</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>D:\ControleurServeur[GRB]_2_24_12_300_NET472\Publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <SupportUrl>https://production.grb.local/documentation/</SupportUrl>
+    <ErrorReportUrl>https://production.grb.local/bugs</ErrorReportUrl>
+    <TargetCulture>fr-CA</TargetCulture>
+    <ProductName>ControleurServeurGRB</ProductName>
+    <PublisherName>Patrice Waechter-Ebling</PublisherName>
+    <SuiteName>ControleurServeurs</SuiteName>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <DisallowUrlActivation>true</DisallowUrlActivation>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>300</ApplicationRevision>
+    <ApplicationVersion>2.24.12.300</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>MSB3277;MSB3245</NoWarn>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>MSB3277;MSB3245</NoWarn>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ControleurServeur.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoForms.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3DF51F2E9C9ECEF0441BB88680EE3C95015C4D9D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>MSB3277;MSB3245</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>MSB3277;MSB3245</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>MSB3277;MSB3245</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\x86\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>MSB3277;MSB3245</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://timestamp.digicert.com</ManifestTimestampUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=8.0.10.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNetCore.Cryptography.Internal.8.0.10\lib\net462\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation, Version=8.0.10.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNetCore.Cryptography.KeyDerivation.8.0.10\lib\net462\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNetCore.WebUtilities.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=4.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.Common.4.11.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=4.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.4.11.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic, Version=4.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.VisualBasic.4.11.0\lib\netstandard2.0\Microsoft.CodeAnalysis.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Relational.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational.Design, Version=1.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Relational.Design.1.1.6\lib\net451\Microsoft.EntityFrameworkCore.Relational.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer, Version=1.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.SqlServer.1.1.6\lib\net451\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer.Design, Version=1.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.SqlServer.Design.1.1.6\lib\net451\Microsoft.EntityFrameworkCore.SqlServer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=8.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Memory.8.0.1\lib\net462\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.Binder.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.3.1.32\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.8.0.2\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.8.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=2.2.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Net.Http.Headers.2.2.8\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Outlook.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Outlook.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Stripe.net, Version=47.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Stripe.net.47.0.0\lib\net461\Stripe.net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.8.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.Tracing.4.3.0\lib\net462\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Net.Security, Version=4.0.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Security.4.3.2\lib\net46\System.Net.Security.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=8.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Reflection.Metadata.8.0.1\lib\net462\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.OpenSsl, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.OpenSsl.5.0.0\lib\net461\System.Security.Cryptography.OpenSsl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.8.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.RegularExpressions.4.3.1\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Entity.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.RegularExpressions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Xml.ReaderWriter.4.3.1\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Achat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItemElec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItemMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfficherRapports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alarme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilanReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonCommande_Instruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogueElec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogueMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategorieClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixBonCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixCatalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixCategorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixCommentaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixContactFRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixDateImpressionFacturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixDateImpressionFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixDateImpressionReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixDateSommairePunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixDemande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixDistributionListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixDossier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixImpressionAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixImpressionFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixImpressionInventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixImpressionRetourMarchandise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixInventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixLocalisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixProjSoum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixPunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixQteBoite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixRetourMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixSortieMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixTransfertJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixVille.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentairesProjSoum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conteneur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseWizzard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseWizzard.Designer.cs">
+      <DependentUpon>DataBaseWizzard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemandePrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailTemps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DistList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionsDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportToOutLook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeuilleTemps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fournisseurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Groupes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpressionClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventaireComptableElectrique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventaireComptablMecanique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventaireElec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventaireMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventairePhysique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legende.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legende.Designer.cs">
+      <DependentUpon>Legende.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeDistribution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeDistribution.Designer.cs">
+      <DependentUpon>ListeDistribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjSoumElec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjSoumElec.Designer.cs">
+      <DependentUpon>ProjSoumElec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outils.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutilsIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotoProjSoum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjSoumElecTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjSoumMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjSoumMecTemps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Punch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PunchIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PunchIn.Designer.cs">
+      <DependentUpon>PunchIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PunchModifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PunchModifier.Designer.cs">
+      <DependentUpon>PunchModifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PunchOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PunchOut.Designer.cs">
+      <DependentUpon>PunchOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PunchSousControleSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PunchSousControleSimple.Designer.cs">
+      <DependentUpon>PunchSousControleSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceptionElec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceptionMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetourMarchandise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetourMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortieMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoumissionSectionElec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoumissionSectionMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchoniserPunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchoniserPunch.Designer.cs">
+      <DependentUpon>SynchoniserPunch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValiderSuppression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewApercuProjet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBackOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBonLivraison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBonTravail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCommandeParcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCommandeRecue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewConception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewContactEntreprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewContactSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewContactVille.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDemandePrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFabricationFermeture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFacturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFaxAnglais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFaxFrancais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFermeMecanique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFermeture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFeuilleTemps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFinFab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewInventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewListeAchats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewListeClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewListeContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewListeFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewListeInventaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewListePiece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewListeProjet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOutilsInOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOutilsMachinerie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProblemes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProgrammation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRetour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSommaireHeures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSommairePunchGRB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSoumissionElec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSoumissionMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTempsElec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTempsMec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizzardRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizzardRapport.Designer.cs">
+      <DependentUpon>WizzardRapport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Achat.resx">
+      <DependentUpon>Achat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItemElec.resx">
+      <DependentUpon>AddItemElec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItemMec.resx">
+      <DependentUpon>AddItemMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AfficherRapports.resx">
+      <DependentUpon>AfficherRapports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutAchat.resX">
+      <DependentUpon>AjoutAchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutDL.resX">
+      <DependentUpon>AjoutDL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alarme.resX">
+      <DependentUpon>Alarme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BilanReception.resx">
+      <DependentUpon>BilanReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonCommande.resX">
+      <DependentUpon>BonCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonCommande_Instruction.resX">
+      <DependentUpon>BonCommande_Instruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogueElec.resx">
+      <DependentUpon>CatalogueElec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogueMec.resx">
+      <DependentUpon>CatalogueMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategorieClient.resX">
+      <DependentUpon>CategorieClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cedule.resX">
+      <DependentUpon>Cedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixBonCommande.resX">
+      <DependentUpon>ChoixBonCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixCatalogue.resX">
+      <DependentUpon>ChoixCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixCategorie.resX">
+      <DependentUpon>ChoixCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixClient.resX">
+      <DependentUpon>ChoixClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixCommentaire.resX">
+      <DependentUpon>ChoixCommentaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixContactFRS.resX">
+      <DependentUpon>ChoixContactFRS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixDateImpressionFacturation.resX">
+      <DependentUpon>ChoixDateImpressionFacturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixDateImpressionFT.resX">
+      <DependentUpon>ChoixDateImpressionFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixDateImpressionReception.resX">
+      <DependentUpon>ChoixDateImpressionReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixDateSommairePunch.resX">
+      <DependentUpon>ChoixDateSommairePunch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixDemande.resX">
+      <DependentUpon>ChoixDemande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixDistributionListe.resX">
+      <DependentUpon>ChoixDistributionListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixDossier.resX">
+      <DependentUpon>ChoixDossier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixImpressionAchat.resX">
+      <DependentUpon>ChoixImpressionAchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixImpressionFT.resX">
+      <DependentUpon>ChoixImpressionFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixImpressionInventaire.resX">
+      <DependentUpon>ChoixImpressionInventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixImpressionRetourMarchandise.resX">
+      <DependentUpon>ChoixImpressionRetourMarchandise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixInventaire.resx">
+      <DependentUpon>ChoixInventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixLocalisation.resX">
+      <DependentUpon>ChoixLocalisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixProjSoum.resX">
+      <DependentUpon>ChoixProjSoum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixPunch.resX">
+      <DependentUpon>ChoixPunch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixQteBoite.resX">
+      <DependentUpon>ChoixQteBoite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixRetourMateriel.resX">
+      <DependentUpon>ChoixRetourMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixSortieMateriel.resX">
+      <DependentUpon>ChoixSortieMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixTransfertJob.resX">
+      <DependentUpon>ChoixTransfertJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixVille.resX">
+      <DependentUpon>ChoixVille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resX">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentairesProjSoum.resX">
+      <DependentUpon>CommentairesProjSoum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resX">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conteneur.fr-CA.resx">
+      <DependentUpon>Conteneur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conteneur.resx">
+      <DependentUpon>Conteneur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseWizzard.resx">
+      <DependentUpon>DataBaseWizzard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemandePrix.resx">
+      <DependentUpon>DemandePrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailTemps.resX">
+      <DependentUpon>DetailTemps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistList.resX">
+      <DependentUpon>DistList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employe.resx">
+      <DependentUpon>Employe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionsDL.resX">
+      <DependentUpon>ExceptionsDL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportToOutLook.resX">
+      <DependentUpon>ExportToOutLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturation.resX">
+      <DependentUpon>Facturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeuilleTemps.resX">
+      <DependentUpon>FeuilleTemps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseurs.resX">
+      <DependentUpon>Fournisseurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Groupes.resX">
+      <DependentUpon>Groupes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpressionClient.resx">
+      <DependentUpon>ImpressionClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceWeb.resx">
+      <DependentUpon>InterfaceWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventaireComptableElectrique.fr-CA.resx">
+      <DependentUpon>InventaireComptableElectrique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventaireComptableElectrique.resx">
+      <DependentUpon>InventaireComptableElectrique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventaireComptablMecanique.resx">
+      <DependentUpon>InventaireComptablMecanique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventaireElec.resX">
+      <DependentUpon>InventaireElec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventaireMec.resX">
+      <DependentUpon>InventaireMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventairePhysique.resx">
+      <DependentUpon>InventairePhysique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legende.resx">
+      <DependentUpon>Legende.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeDistribution.resx">
+      <DependentUpon>ListeDistribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPunch.resX">
+      <DependentUpon>LoginPunch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSQL.resx">
+      <DependentUpon>LoginSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModType.resX">
+      <DependentUpon>ModType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjSoumElec.resx">
+      <DependentUpon>ProjSoumElec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outils.resX">
+      <DependentUpon>Outils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutilsIO.resX">
+      <DependentUpon>OutilsIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoProjSoum.resx">
+      <DependentUpon>PhotoProjSoum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjSoumElecTemp.resx">
+      <DependentUpon>ProjSoumElecTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjSoumMec.resX">
+      <DependentUpon>ProjSoumMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjSoumMecTemps.resX">
+      <DependentUpon>ProjSoumMecTemps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Punch.resx">
+      <DependentUpon>Punch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PunchIn.resx">
+      <DependentUpon>PunchIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PunchModifier.resx">
+      <DependentUpon>PunchModifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PunchOut.resx">
+      <DependentUpon>PunchOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PunchSousControleSimple.resx">
+      <DependentUpon>PunchSousControleSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports.resX">
+      <DependentUpon>Rapports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceptionElec.resX">
+      <DependentUpon>ReceptionElec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceptionMec.resX">
+      <DependentUpon>ReceptionMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetourMarchandise.resX">
+      <DependentUpon>RetourMarchandise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetourMateriel.resX">
+      <DependentUpon>RetourMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortieMateriel.resX">
+      <DependentUpon>SortieMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoumissionSectionElec.resX">
+      <DependentUpon>SoumissionSectionElec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoumissionSectionMec.resX">
+      <DependentUpon>SoumissionSectionMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SynchoniserPunch.resx">
+      <DependentUpon>SynchoniserPunch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValiderSuppression.resX">
+      <DependentUpon>ValiderSuppression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendeur.resX">
+      <DependentUpon>Vendeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewApercuProjet.resx">
+      <DependentUpon>ViewApercuProjet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBackOrder.resx">
+      <DependentUpon>ViewBackOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBonLivraison.resx">
+      <DependentUpon>ViewBonLivraison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBonTravail.resx">
+      <DependentUpon>ViewBonTravail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewClients.resx">
+      <DependentUpon>ViewClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCommande.resx">
+      <DependentUpon>ViewCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCommandeParcel.resx">
+      <DependentUpon>ViewCommandeParcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCommandeRecue.resx">
+      <DependentUpon>ViewCommandeRecue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCommandeRecue.zu-ZA.resx">
+      <DependentUpon>ViewCommandeRecue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewConception.resx">
+      <DependentUpon>ViewConception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewContactEntreprise.resx">
+      <DependentUpon>ViewContactEntreprise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewContactSingle.resx">
+      <DependentUpon>ViewContactSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewContactVille.resx">
+      <DependentUpon>ViewContactVille.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDemandePrix.resx">
+      <DependentUpon>ViewDemandePrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFabricationFermeture.resx">
+      <DependentUpon>ViewFabricationFermeture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFacturation.resx">
+      <DependentUpon>ViewFacturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFaxAnglais.resx">
+      <DependentUpon>ViewFaxAnglais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFaxFrancais.resx">
+      <DependentUpon>ViewFaxFrancais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFermeMecanique.resx">
+      <DependentUpon>ViewFermeMecanique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFermeture.resx">
+      <DependentUpon>ViewFermeture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFeuilleTemps.resx">
+      <DependentUpon>ViewFeuilleTemps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFinFab.resx">
+      <DependentUpon>ViewFinFab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFournisseur.resx">
+      <DependentUpon>ViewFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewInventaire.resx">
+      <DependentUpon>ViewInventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewListeAchats.resx">
+      <DependentUpon>ViewListeAchats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewListeClient.resx">
+      <DependentUpon>ViewListeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewListeContact.resx">
+      <DependentUpon>ViewListeContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewListeFournisseur.resx">
+      <DependentUpon>ViewListeFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewListeInventaire.resx">
+      <DependentUpon>ViewListeInventaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewListePiece.resx">
+      <DependentUpon>ViewListePiece.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewListeProjet.resx">
+      <DependentUpon>ViewListeProjet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOutilsInOut.resx">
+      <DependentUpon>ViewOutilsInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOutilsMachinerie.resx">
+      <DependentUpon>ViewOutilsMachinerie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProblemes.resx">
+      <DependentUpon>ViewProblemes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProgrammation.resx">
+      <DependentUpon>ViewProgrammation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReception.resx">
+      <DependentUpon>ViewReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRetour.resx">
+      <DependentUpon>ViewRetour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSommaireHeures.resx">
+      <DependentUpon>ViewSommaireHeures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSommairePunchGRB.resx">
+      <DependentUpon>ViewSommairePunchGRB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSoumissionElec.resx">
+      <DependentUpon>ViewSoumissionElec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSoumissionMec.resx">
+      <DependentUpon>ViewSoumissionMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTempsElec.resx">
+      <DependentUpon>ViewTempsElec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTempsMec.resx">
+      <DependentUpon>ViewTempsMec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizzardRapport.resx">
+      <DependentUpon>WizzardRapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BackgroundImage.png" />
+    <Content Include="drapeauGRB.png" />
+    <Content Include="grb.ico" />
+    <Content Include="Default.aspx" />
+    <Content Include="ico103.ico" />
+    <Content Include="LogoForms.ico" />
+    <None Include="Resources\SQLTime.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOR">
+      <Guid>{00000300-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8.1 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
+  </Target>
+</Project>
