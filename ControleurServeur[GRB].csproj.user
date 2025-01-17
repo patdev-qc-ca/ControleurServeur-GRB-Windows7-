@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>C:\Users\grbadmin\Desktop\Solution GRB\ControleursServeurGRB\publier\|\\production.grb.local\D%24\Intranet\Setups\%40tester\|C:\Users\grbadmin\Desktop\publish\ControleurServeurGRB\|publish\</PublishUrlHistory>
-    <InstallUrlHistory />
-    <SupportUrlHistory />
+    <PublishUrlHistory>P:\repos\ControleurServeur[GRB]_2_24_12_300_NET472\Publier\|C:\Users\pwaechter\Desktop\ControleurServeur-GRB-_2_24_12_300_NET472\Publier\|C:\Users\grbadmin\Desktop\Solution GRB\ControleursServeurGRB\publier\|\\production.grb.local\D%24\Intranet\Setups\%40tester\|C:\Users\grbadmin\Desktop\publish\ControleurServeurGRB\</PublishUrlHistory>
+    <InstallUrlHistory>\\production.grb.local\Installer\ControleurGRB\|https://localhost/Installer/</InstallUrlHistory>
+    <SupportUrlHistory>https://production.grb.local/documentation/</SupportUrlHistory>
     <UpdateUrlHistory />
-    <BootstrapperUrlHistory />
-    <ErrorReportUrlHistory />
+    <BootstrapperUrlHistory>\\production.grb.local\Installer\OS</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>https://production.grb.local/bugs</ErrorReportUrlHistory>
     <FallbackCulture>fr-FR</FallbackCulture>
     <VerifyUploadedFiles>true</VerifyUploadedFiles>
   </PropertyGroup>

@@ -16,9 +16,9 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>C:\Users\pwaechter\Desktop\ControleurServeur-GRB-_2_24_12_300_NET472\Publier\</PublishUrl>
+    <PublishUrl>P:\repos\ControleurServeur[GRB]_2_24_12_300_NET472\Publier\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -26,22 +26,26 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
+    <InstallUrl>\\production.grb.local\Installer\ControleurGRB\</InstallUrl>
     <SupportUrl>https://production.grb.local/documentation/</SupportUrl>
     <ErrorReportUrl>https://production.grb.local/bugs</ErrorReportUrl>
     <TargetCulture>fr-CA</TargetCulture>
     <ProductName>ControleurServeurGRB</ProductName>
     <PublisherName>Patrice Waechter-Ebling</PublisherName>
     <SuiteName>ControleurServeurs</SuiteName>
+    <MinimumRequiredVersion>2.24.12.301</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <DisallowUrlActivation>true</DisallowUrlActivation>
     <TrustUrlParameters>true</TrustUrlParameters>
-    <ApplicationRevision>300</ApplicationRevision>
-    <ApplicationVersion>2.24.12.300</ApplicationVersion>
+    <ApplicationRevision>302</ApplicationRevision>
+    <ApplicationVersion>2.24.12.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Absolute</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>\\production.grb.local\Installer\OS</BootstrapperComponentsUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -1331,6 +1335,9 @@
     <Content Include="Default.aspx" />
     <Content Include="ico103.ico" />
     <Content Include="LogoForms.ico" />
+    <None Include="Resources\Calculs.ico" />
+    <None Include="Resources\00000236.ICO" />
+    <None Include="Resources\Binoculr.ico" />
     <None Include="Resources\Flgusa02.ico" />
     <None Include="Resources\Flgspain.ico" />
     <None Include="Resources\Flgcan.ico" />

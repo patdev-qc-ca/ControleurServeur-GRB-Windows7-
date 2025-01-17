@@ -15,6 +15,9 @@ using TextBox = System.Windows.Forms.TextBox;
 using Label = System.Windows.Forms.Label;
 using ListViewItem = System.Windows.Forms.ListViewItem;
 using System.Collections.Generic;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using ToolTip = System.Windows.Forms.ToolTip;
+using ComboBox = System.Windows.Forms.ComboBox;
 
 namespace ControleurServeur
 {
@@ -25,13 +28,13 @@ namespace ControleurServeur
         [DebuggerNonUserCode()]
         public CatalogueMec() : base()
         {
-           InitializeComponent();
+            InitializeComponent();
         }
 
         public CatalogueMec(string text1, string text2, string text3)
         {
-           InitializeComponent();
-            AfficherForm(text1, text2, text3);   
+            InitializeComponent();
+            AfficherForm(text1, text2, text3);
         }
 
         [DebuggerNonUserCode()]
@@ -41,1691 +44,1693 @@ namespace ControleurServeur
             {
                 if (!(components is null))
                 {
-                   components.Dispose();
+                    components.Dispose();
                 }
             }
             base.Dispose(Disposing);
         }
         private System.ComponentModel.IContainer components;
-        internal static ToolTip ToolTip1;
-        internal static ColumnHeader _lvwCategorie_ColumnHeader_1;
-        internal static ListView lvwCategorie;
-        internal static Button cmdRechercheCategorie;
-        internal static ColumnHeader _lvwRechercheAchat_ColumnHeader_1;
-        internal static ColumnHeader _lvwRechercheAchat_ColumnHeader_2;
-        internal static ListView lvwRechercheAchat;
-        internal static ColumnHeader _lvwRechercheJob_ColumnHeader_1;
-        internal static ColumnHeader _lvwRechercheJob_ColumnHeader_2;
-        internal static ListView lvwRechercheJob;
-        internal static Button cmdRechercheJob;
-        internal static Button cmdCopier;
-        internal static Button cmdTotal;
-        internal static Button cmdRechercheInventaire;
-        internal static ColumnHeader _lvwFabricant_ColumnHeader_1;
-        internal static ColumnHeader _lvwFabricant_ColumnHeader_2;
-        internal static ColumnHeader _lvwFabricant_ColumnHeader_3;
-        internal static ColumnHeader _lvwFabricant_ColumnHeader_4;
-        internal static ListView lvwFabricant;
-        internal static ColumnHeader _lvwPieces_ColumnHeader_1;
-        internal static ColumnHeader _lvwPieces_ColumnHeader_2;
-        internal static ColumnHeader _lvwPieces_ColumnHeader_3;
-        internal static ColumnHeader _lvwPieces_ColumnHeader_4;
-        internal static ListView lvwPieces;
-        internal static Button cmdChangerCategorie;
-        internal static Button cmdDemande;
-        internal static ColumnHeader _lvwDescription_ColumnHeader_1;
-        internal static ColumnHeader _lvwDescription_ColumnHeader_2;
-        internal static ColumnHeader _lvwDescription_ColumnHeader_3;
-        internal static ColumnHeader _lvwDescription_ColumnHeader_4;
-        internal static ListView lvwDescription;
-        internal static Button cmdRechercheDescrFR;
-        internal static TextBox txtTauxChange;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_1;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_2;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_3;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_4;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_5;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_6;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_7;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_8;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_9;
-        internal static ColumnHeader _lvwfournisseur_ColumnHeader_10;
-        internal static ListView lvwfournisseur;
-        internal static Button cmdAddFrs;
-        internal static Button cmdSuppFrs;
-        internal static Button cmdModifFrs;
-        internal static CheckBox chkquoter;
-        internal static RadioButton optUSA;
-        internal static RadioButton optCAN;
-        internal static TextBox txtPrixList;
-        internal static TextBox txtPrixNet;
-        internal static TextBox txtPrixSpecial;
-        internal static MaskedTextBox mskValide;
-        internal static MaskedTextBox mskEscompte;
-        internal static Button cmdEnrFrs;
-        internal static Button cmdAnnulFrs;
-        internal static ComboBox cmbfrs;
-        internal static ComboBox cmbPersRess;
-        internal static RadioButton optSpain;
-        internal static Label lblDevise1;
-        internal static Label lblDevise2;
-        internal static Label _Label1_5;
-        internal static PictureBox imgCanada;
-        internal static PictureBox imgEU;
-        internal static Label _Label1_14;
-        internal static Label _Label1_16;
-        internal static Label _Label1_19;
-        internal static Label _Label1_24;
-        internal static Label _Label1_20;
-        internal static Label _Label1_2;
-        internal static Label _Label1_23;
-        internal static PictureBox imgSpain;
-        internal static GroupBox frafournisseur;
-        internal static ComboBox cmbCategorie;
-        internal static TextBox txtNoItemGRB;
-        internal static ComboBox cmbNoItem;
-        internal static Button CmdModif;
-        internal static Button CmdFerme;
-        internal static Button CmdSupp;
-        internal static Button CmdAdd;
-        internal static TextBox txtComment;
-        internal static ComboBox cmbFabricant;
-        internal static TextBox txtFabricant;
-        internal static TextBox txtDescriptionEN;
-        internal static TextBox txtDescriptionFR;
-        internal static TextBox txtNoItem;
-        internal static Button CmdAnul;
-        internal static Button CmdEnr;
-        internal static TextBox txtCategorie;
-        internal static Button cmdRechercherPiece;
-        internal static ComboBox cmbDescriptionFR;
-        internal static Button cmdRechercherManufact;
-        internal static CheckBox chkInventaire;
-        internal static TextBox txtQuantiteCommande;
-        internal static CheckBox chkMinimum;
-        internal static TextBox txtQuantiteStock;
-        internal static TextBox txtQuantiteMinimum;
-        internal static TextBox txtQuantitéBoite;
-        internal static CheckBox chkBoite;
-        internal static Label Label11;
-        internal static Label Label5;
-        internal static GroupBox fraQuantité;
-        internal static ComboBox cmbLocalisation;
-        internal static TextBox txtLocalisation;
-        internal static Button cmdRechercheAchat;
-        internal static Label Label4;
-        internal static Label Label2;
-        internal static Label _Label1_25;
-        internal static Label _Label1_6;
-        internal static Label _Label1_4;
-        internal static Label _Label1_3;
-        internal static Label _Label1_1;
-        private System.Windows.Forms.Panel panel1;
-        internal static Label _Label1_0;
+        internal ToolTip ToolTip1;
+        internal ColumnHeader _lvwCategorie_ColumnHeader_1;
+        internal ListView lvwCategorie;
+        internal Button cmdRechercheCategorie;
+        internal ColumnHeader _lvwRechercheAchat_ColumnHeader_1;
+        internal ColumnHeader _lvwRechercheAchat_ColumnHeader_2;
+        internal ListView lvwRechercheAchat;
+        internal ColumnHeader _lvwRechercheJob_ColumnHeader_1;
+        internal ColumnHeader _lvwRechercheJob_ColumnHeader_2;
+        internal ListView lvwRechercheJob;
+        internal Button cmdRechercheJob;
+        internal Button cmdCopier;
+        internal Button cmdTotal;
+        internal Button cmdRechercheInventaire;
+        internal ColumnHeader _lvwFabricant_ColumnHeader_1;
+        internal ColumnHeader _lvwFabricant_ColumnHeader_2;
+        internal ColumnHeader _lvwFabricant_ColumnHeader_3;
+        internal ColumnHeader _lvwFabricant_ColumnHeader_4;
+        internal ListView lvwFabricant;
+        internal ColumnHeader _lvwPieces_ColumnHeader_1;
+        internal ColumnHeader _lvwPieces_ColumnHeader_2;
+        internal ColumnHeader _lvwPieces_ColumnHeader_3;
+        internal ColumnHeader _lvwPieces_ColumnHeader_4;
+        internal ListView lvwPieces;
+        internal Button cmdChangerCategorie;
+        internal Button cmdDemande;
+        internal ColumnHeader _lvwDescription_ColumnHeader_1;
+        internal ColumnHeader _lvwDescription_ColumnHeader_2;
+        internal ColumnHeader _lvwDescription_ColumnHeader_3;
+        internal ColumnHeader _lvwDescription_ColumnHeader_4;
+        internal ListView lvwDescription;
+        internal Button cmdRechercheDescrFR;
+        internal TextBox txtTauxChange;
+        internal Button cmdAddFrs;
+        internal Button cmdSuppFrs;
+        internal Button cmdModifFrs;
+        internal CheckBox chkquoter;
+        internal RadioButton optUSA;
+        internal RadioButton optCAN;
+        internal TextBox txtPrixList;
+        internal TextBox txtPrixNet;
+        internal TextBox txtPrixSpecial;
+        internal MaskedTextBox mskValide;
+        internal MaskedTextBox mskEscompte;
+        internal Button cmdEnrFrs;
+        internal Button cmdAnnulFrs;
+        internal ComboBox cmbfrs;
+        internal ComboBox cmbPersRess;
+        internal RadioButton optSpain;
+        internal Label lblDevise1;
+        internal Label lblDevise2;
+        internal Label _Label1_5;
+        internal PictureBox imgCanada;
+        internal PictureBox imgEU;
+        internal Label _Label1_14;
+        internal Label _Label1_16;
+        internal Label _Label1_19;
+        internal Label _Label1_24;
+        internal Label _Label1_20;
+        internal Label _Label1_2;
+        internal Label _Label1_23;
+        internal PictureBox imgSpain;
+        internal GroupBox frafournisseur;
+        internal ComboBox cmbCategorie;
+        internal TextBox txtNoItemGRB;
+        internal ComboBox cmbNoItem;
+        internal Button CmdModif;
+        internal Button CmdFerme;
+        internal Button CmdSupp;
+        internal Button CmdAdd;
+        internal TextBox txtComment;
+        internal ComboBox cmbFabricant;
+        internal TextBox txtFabricant;
+        internal TextBox txtDescriptionEN;
+        internal TextBox txtDescriptionFR;
+        internal TextBox txtNoItem;
+        internal Button CmdAnul;
+        internal Button CmdEnr;
+        internal TextBox txtCategorie;
+        internal Button cmdRechercherPiece;
+        internal ComboBox cmbDescriptionFR;
+        internal Button cmdRechercherManufact;
+        internal CheckBox chkInventaire;
+        internal TextBox txtQuantiteCommande;
+        internal CheckBox chkMinimum;
+        internal TextBox txtQuantiteStock;
+        internal TextBox txtQuantiteMinimum;
+        internal TextBox txtQuantitéBoite;
+        internal CheckBox chkBoite;
+        internal Label Label11;
+        internal Label Label5;
+        internal GroupBox fraQuantité;
+        internal ComboBox cmbLocalisation;
+        internal TextBox txtLocalisation;
+        internal Button cmdRechercheAchat;
+        internal Label Label4;
+        internal Label Label2;
+        internal Label _Label1_25;
+        internal Label _Label1_6;
+        internal Label _Label1_4;
+        internal Label _Label1_3;
+        internal Label _Label1_1;
+        internal ListView lvwfournisseur;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_1;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_2;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_3;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_4;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_5;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_6;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_7;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_8;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_9;
+        internal ColumnHeader _lvwfournisseur_ColumnHeader_10;
+        internal Label _Label1_0;
 
         [DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            ToolTip1 = new System.Windows.Forms.ToolTip(components);
-            lvwCategorie = new System.Windows.Forms.ListView();
-            _lvwCategorie_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            cmdRechercheCategorie = new System.Windows.Forms.Button();
-            lvwRechercheAchat = new System.Windows.Forms.ListView();
-            _lvwRechercheAchat_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwRechercheAchat_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            lvwRechercheJob = new System.Windows.Forms.ListView();
-            _lvwRechercheJob_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwRechercheJob_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            cmdRechercheJob = new System.Windows.Forms.Button();
-            cmdCopier = new System.Windows.Forms.Button();
-            cmdTotal = new System.Windows.Forms.Button();
-            cmdRechercheInventaire = new System.Windows.Forms.Button();
-            lvwFabricant = new System.Windows.Forms.ListView();
-            _lvwFabricant_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwFabricant_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwFabricant_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwFabricant_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            lvwPieces = new System.Windows.Forms.ListView();
-            _lvwPieces_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwPieces_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwPieces_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwPieces_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            cmdChangerCategorie = new System.Windows.Forms.Button();
-            cmdDemande = new System.Windows.Forms.Button();
-            lvwDescription = new System.Windows.Forms.ListView();
-            _lvwDescription_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwDescription_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwDescription_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwDescription_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            cmdRechercheDescrFR = new System.Windows.Forms.Button();
-            frafournisseur = new System.Windows.Forms.GroupBox();
-            txtTauxChange = new System.Windows.Forms.TextBox();
-            lvwfournisseur = new System.Windows.Forms.ListView();
-            _lvwfournisseur_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            _lvwfournisseur_ColumnHeader_10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            cmdAddFrs = new System.Windows.Forms.Button();
-            cmdSuppFrs = new System.Windows.Forms.Button();
-            cmdModifFrs = new System.Windows.Forms.Button();
-            chkquoter = new System.Windows.Forms.CheckBox();
-            optUSA = new System.Windows.Forms.RadioButton();
-            optCAN = new System.Windows.Forms.RadioButton();
-            txtPrixList = new System.Windows.Forms.TextBox();
-            txtPrixNet = new System.Windows.Forms.TextBox();
-            txtPrixSpecial = new System.Windows.Forms.TextBox();
-            mskValide = new System.Windows.Forms.MaskedTextBox();
-            mskEscompte = new System.Windows.Forms.MaskedTextBox();
-            cmdEnrFrs = new System.Windows.Forms.Button();
-            cmdAnnulFrs = new System.Windows.Forms.Button();
-            cmbfrs = new System.Windows.Forms.ComboBox();
-            cmbPersRess = new System.Windows.Forms.ComboBox();
-            optSpain = new System.Windows.Forms.RadioButton();
-            lblDevise1 = new System.Windows.Forms.Label();
-            lblDevise2 = new System.Windows.Forms.Label();
-            _Label1_5 = new System.Windows.Forms.Label();
-            imgCanada = new System.Windows.Forms.PictureBox();
-            imgEU = new System.Windows.Forms.PictureBox();
-            _Label1_14 = new System.Windows.Forms.Label();
-            _Label1_16 = new System.Windows.Forms.Label();
-            _Label1_19 = new System.Windows.Forms.Label();
-            _Label1_24 = new System.Windows.Forms.Label();
-            _Label1_20 = new System.Windows.Forms.Label();
-            _Label1_2 = new System.Windows.Forms.Label();
-            _Label1_23 = new System.Windows.Forms.Label();
-            imgSpain = new System.Windows.Forms.PictureBox();
-            cmbCategorie = new System.Windows.Forms.ComboBox();
-            txtNoItemGRB = new System.Windows.Forms.TextBox();
-            cmbNoItem = new System.Windows.Forms.ComboBox();
-            CmdModif = new System.Windows.Forms.Button();
-            CmdFerme = new System.Windows.Forms.Button();
-            CmdSupp = new System.Windows.Forms.Button();
-            CmdAdd = new System.Windows.Forms.Button();
-            txtComment = new System.Windows.Forms.TextBox();
-            cmbFabricant = new System.Windows.Forms.ComboBox();
-            txtFabricant = new System.Windows.Forms.TextBox();
-            txtDescriptionEN = new System.Windows.Forms.TextBox();
-            txtDescriptionFR = new System.Windows.Forms.TextBox();
-            txtNoItem = new System.Windows.Forms.TextBox();
-            CmdAnul = new System.Windows.Forms.Button();
-            CmdEnr = new System.Windows.Forms.Button();
-            txtCategorie = new System.Windows.Forms.TextBox();
-            cmdRechercherPiece = new System.Windows.Forms.Button();
-            cmbDescriptionFR = new System.Windows.Forms.ComboBox();
-            cmdRechercherManufact = new System.Windows.Forms.Button();
-            chkInventaire = new System.Windows.Forms.CheckBox();
-            fraQuantité = new System.Windows.Forms.GroupBox();
-            txtQuantiteCommande = new System.Windows.Forms.TextBox();
-            chkMinimum = new System.Windows.Forms.CheckBox();
-            txtQuantiteStock = new System.Windows.Forms.TextBox();
-            txtQuantiteMinimum = new System.Windows.Forms.TextBox();
-            txtQuantitéBoite = new System.Windows.Forms.TextBox();
-            chkBoite = new System.Windows.Forms.CheckBox();
-            Label11 = new System.Windows.Forms.Label();
-            Label5 = new System.Windows.Forms.Label();
-            cmbLocalisation = new System.Windows.Forms.ComboBox();
-            txtLocalisation = new System.Windows.Forms.TextBox();
-            cmdRechercheAchat = new System.Windows.Forms.Button();
-            Label4 = new System.Windows.Forms.Label();
-            Label2 = new System.Windows.Forms.Label();
-            _Label1_25 = new System.Windows.Forms.Label();
-            _Label1_6 = new System.Windows.Forms.Label();
-            _Label1_4 = new System.Windows.Forms.Label();
-            _Label1_3 = new System.Windows.Forms.Label();
-            _Label1_1 = new System.Windows.Forms.Label();
-            _Label1_0 = new System.Windows.Forms.Label();
-            panel1 = new System.Windows.Forms.Panel();
-            frafournisseur.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(imgCanada)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(imgEU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(imgSpain)).BeginInit();
-            fraQuantité.SuspendLayout();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CatalogueMec));
+            this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.lvwCategorie = new System.Windows.Forms.ListView();
+            this._lvwCategorie_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmdRechercheCategorie = new System.Windows.Forms.Button();
+            this.lvwRechercheAchat = new System.Windows.Forms.ListView();
+            this._lvwRechercheAchat_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwRechercheAchat_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvwRechercheJob = new System.Windows.Forms.ListView();
+            this._lvwRechercheJob_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwRechercheJob_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmdRechercheJob = new System.Windows.Forms.Button();
+            this.cmdCopier = new System.Windows.Forms.Button();
+            this.cmdTotal = new System.Windows.Forms.Button();
+            this.cmdRechercheInventaire = new System.Windows.Forms.Button();
+            this.lvwFabricant = new System.Windows.Forms.ListView();
+            this._lvwFabricant_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwFabricant_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwFabricant_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwFabricant_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvwPieces = new System.Windows.Forms.ListView();
+            this._lvwPieces_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwPieces_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwPieces_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwPieces_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmdChangerCategorie = new System.Windows.Forms.Button();
+            this.cmdDemande = new System.Windows.Forms.Button();
+            this.lvwDescription = new System.Windows.Forms.ListView();
+            this._lvwDescription_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwDescription_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwDescription_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwDescription_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmdRechercheDescrFR = new System.Windows.Forms.Button();
+            this.frafournisseur = new System.Windows.Forms.GroupBox();
+            this.txtTauxChange = new System.Windows.Forms.TextBox();
+            this.cmdAddFrs = new System.Windows.Forms.Button();
+            this.cmdSuppFrs = new System.Windows.Forms.Button();
+            this.cmdModifFrs = new System.Windows.Forms.Button();
+            this.chkquoter = new System.Windows.Forms.CheckBox();
+            this.optUSA = new System.Windows.Forms.RadioButton();
+            this.optCAN = new System.Windows.Forms.RadioButton();
+            this.txtPrixList = new System.Windows.Forms.TextBox();
+            this.txtPrixNet = new System.Windows.Forms.TextBox();
+            this.txtPrixSpecial = new System.Windows.Forms.TextBox();
+            this.mskValide = new System.Windows.Forms.MaskedTextBox();
+            this.mskEscompte = new System.Windows.Forms.MaskedTextBox();
+            this.cmdEnrFrs = new System.Windows.Forms.Button();
+            this.cmdAnnulFrs = new System.Windows.Forms.Button();
+            this.cmbfrs = new System.Windows.Forms.ComboBox();
+            this.cmbPersRess = new System.Windows.Forms.ComboBox();
+            this.optSpain = new System.Windows.Forms.RadioButton();
+            this.lblDevise1 = new System.Windows.Forms.Label();
+            this.lblDevise2 = new System.Windows.Forms.Label();
+            this._Label1_5 = new System.Windows.Forms.Label();
+            this.imgCanada = new System.Windows.Forms.PictureBox();
+            this.imgEU = new System.Windows.Forms.PictureBox();
+            this._Label1_14 = new System.Windows.Forms.Label();
+            this._Label1_16 = new System.Windows.Forms.Label();
+            this._Label1_19 = new System.Windows.Forms.Label();
+            this._Label1_24 = new System.Windows.Forms.Label();
+            this._Label1_20 = new System.Windows.Forms.Label();
+            this._Label1_2 = new System.Windows.Forms.Label();
+            this._Label1_23 = new System.Windows.Forms.Label();
+            this.imgSpain = new System.Windows.Forms.PictureBox();
+            this.lvwfournisseur = new System.Windows.Forms.ListView();
+            this._lvwfournisseur_ColumnHeader_1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._lvwfournisseur_ColumnHeader_10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmbCategorie = new System.Windows.Forms.ComboBox();
+            this.txtNoItemGRB = new System.Windows.Forms.TextBox();
+            this.cmbNoItem = new System.Windows.Forms.ComboBox();
+            this.CmdModif = new System.Windows.Forms.Button();
+            this.CmdFerme = new System.Windows.Forms.Button();
+            this.CmdSupp = new System.Windows.Forms.Button();
+            this.CmdAdd = new System.Windows.Forms.Button();
+            this.txtComment = new System.Windows.Forms.TextBox();
+            this.cmbFabricant = new System.Windows.Forms.ComboBox();
+            this.txtFabricant = new System.Windows.Forms.TextBox();
+            this.txtDescriptionEN = new System.Windows.Forms.TextBox();
+            this.txtDescriptionFR = new System.Windows.Forms.TextBox();
+            this.txtNoItem = new System.Windows.Forms.TextBox();
+            this.CmdAnul = new System.Windows.Forms.Button();
+            this.CmdEnr = new System.Windows.Forms.Button();
+            this.txtCategorie = new System.Windows.Forms.TextBox();
+            this.cmdRechercherPiece = new System.Windows.Forms.Button();
+            this.cmbDescriptionFR = new System.Windows.Forms.ComboBox();
+            this.cmdRechercherManufact = new System.Windows.Forms.Button();
+            this.chkInventaire = new System.Windows.Forms.CheckBox();
+            this.fraQuantité = new System.Windows.Forms.GroupBox();
+            this.txtQuantiteCommande = new System.Windows.Forms.TextBox();
+            this.chkMinimum = new System.Windows.Forms.CheckBox();
+            this.txtQuantiteStock = new System.Windows.Forms.TextBox();
+            this.txtQuantiteMinimum = new System.Windows.Forms.TextBox();
+            this.txtQuantitéBoite = new System.Windows.Forms.TextBox();
+            this.chkBoite = new System.Windows.Forms.CheckBox();
+            this.Label11 = new System.Windows.Forms.Label();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.cmbLocalisation = new System.Windows.Forms.ComboBox();
+            this.txtLocalisation = new System.Windows.Forms.TextBox();
+            this.cmdRechercheAchat = new System.Windows.Forms.Button();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.Label2 = new System.Windows.Forms.Label();
+            this._Label1_25 = new System.Windows.Forms.Label();
+            this._Label1_6 = new System.Windows.Forms.Label();
+            this._Label1_4 = new System.Windows.Forms.Label();
+            this._Label1_3 = new System.Windows.Forms.Label();
+            this._Label1_1 = new System.Windows.Forms.Label();
+            this._Label1_0 = new System.Windows.Forms.Label();
+            this.frafournisseur.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCanada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgEU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSpain)).BeginInit();
+            this.fraQuantité.SuspendLayout();
+            this.SuspendLayout();
             // 
             // lvwCategorie
             // 
-            lvwCategorie.BackColor = System.Drawing.SystemColors.Window;
-            lvwCategorie.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            _lvwCategorie_ColumnHeader_1});
-            lvwCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
-            lvwCategorie.FullRowSelect = true;
-            lvwCategorie.GridLines = true;
-            lvwCategorie.HideSelection = false;
-            lvwCategorie.Location = new System.Drawing.Point(175, 498);
-            lvwCategorie.Name = "lvwCategorie";
-            lvwCategorie.Size = new System.Drawing.Size(281, 129);
-            lvwCategorie.TabIndex = 82;
-            lvwCategorie.UseCompatibleStateImageBehavior = false;
-            lvwCategorie.View = System.Windows.Forms.View.Details;
-            lvwCategorie.DoubleClick += new System.EventHandler(lvwCategorie_DoubleClick);
-            lvwCategorie.Leave += new System.EventHandler(lvwCategorie_Leave);
+            this.lvwCategorie.BackColor = System.Drawing.SystemColors.Window;
+            this.lvwCategorie.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._lvwCategorie_ColumnHeader_1});
+            this.lvwCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lvwCategorie.FullRowSelect = true;
+            this.lvwCategorie.GridLines = true;
+            this.lvwCategorie.HideSelection = false;
+            this.lvwCategorie.Location = new System.Drawing.Point(121, 63);
+            this.lvwCategorie.Name = "lvwCategorie";
+            this.lvwCategorie.Size = new System.Drawing.Size(591, 112);
+            this.lvwCategorie.TabIndex = 82;
+            this.lvwCategorie.UseCompatibleStateImageBehavior = false;
+            this.lvwCategorie.View = System.Windows.Forms.View.Details;
+            this.lvwCategorie.Visible = false;
+            this.lvwCategorie.DoubleClick += new System.EventHandler(this.lvwCategorie_DoubleClick);
+            this.lvwCategorie.Leave += new System.EventHandler(this.lvwCategorie_Leave);
             // 
             // _lvwCategorie_ColumnHeader_1
             // 
-            _lvwCategorie_ColumnHeader_1.Text = "Catégorie";
-            _lvwCategorie_ColumnHeader_1.Width = 447;
+            this._lvwCategorie_ColumnHeader_1.Text = "Catégorie";
+            this._lvwCategorie_ColumnHeader_1.Width = 447;
             // 
             // cmdRechercheCategorie
             // 
-            cmdRechercheCategorie.BackColor = System.Drawing.Color.Black;
-            cmdRechercheCategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercheCategorie.ForeColor = System.Drawing.Color.White;
-            cmdRechercheCategorie.Location = new System.Drawing.Point(688, 8);
-            cmdRechercheCategorie.Name = "cmdRechercheCategorie";
-            cmdRechercheCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercheCategorie.Size = new System.Drawing.Size(25, 25);
-            cmdRechercheCategorie.TabIndex = 81;
-            cmdRechercheCategorie.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            cmdRechercheCategorie.UseVisualStyleBackColor = true;
-            cmdRechercheCategorie.Click += new System.EventHandler(cmdRechercheCategorie_Click);
+            this.cmdRechercheCategorie.BackColor = System.Drawing.Color.Black;
+            this.cmdRechercheCategorie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdRechercheCategorie.BackgroundImage")));
+            this.cmdRechercheCategorie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdRechercheCategorie.ForeColor = System.Drawing.Color.White;
+            this.cmdRechercheCategorie.Location = new System.Drawing.Point(688, 8);
+            this.cmdRechercheCategorie.Name = "cmdRechercheCategorie";
+            this.cmdRechercheCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdRechercheCategorie.Size = new System.Drawing.Size(25, 25);
+            this.cmdRechercheCategorie.TabIndex = 81;
+            this.cmdRechercheCategorie.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cmdRechercheCategorie.UseVisualStyleBackColor = true;
+            this.cmdRechercheCategorie.Click += new System.EventHandler(this.cmdRechercheCategorie_Click);
             // 
             // lvwRechercheAchat
             // 
-            lvwRechercheAchat.BackColor = System.Drawing.SystemColors.Window;
-            lvwRechercheAchat.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            _lvwRechercheAchat_ColumnHeader_1,
-            _lvwRechercheAchat_ColumnHeader_2});
-            lvwRechercheAchat.Dock = System.Windows.Forms.DockStyle.Top;
-            lvwRechercheAchat.ForeColor = System.Drawing.SystemColors.WindowText;
-            lvwRechercheAchat.FullRowSelect = true;
-            lvwRechercheAchat.GridLines = true;
-            lvwRechercheAchat.HideSelection = false;
-            lvwRechercheAchat.Location = new System.Drawing.Point(0, 234);
-            lvwRechercheAchat.Name = "lvwRechercheAchat";
-            lvwRechercheAchat.Size = new System.Drawing.Size(555, 129);
-            lvwRechercheAchat.TabIndex = 79;
-            lvwRechercheAchat.UseCompatibleStateImageBehavior = false;
-            lvwRechercheAchat.View = System.Windows.Forms.View.Details;
-            lvwRechercheAchat.Visible = false;
-            lvwRechercheAchat.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwRechercheAchat_ColumnClick);
-            lvwRechercheAchat.Leave += new System.EventHandler(lvwRechercheAchat_Leave);
+            this.lvwRechercheAchat.BackColor = System.Drawing.SystemColors.Window;
+            this.lvwRechercheAchat.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._lvwRechercheAchat_ColumnHeader_1,
+            this._lvwRechercheAchat_ColumnHeader_2});
+            this.lvwRechercheAchat.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lvwRechercheAchat.FullRowSelect = true;
+            this.lvwRechercheAchat.GridLines = true;
+            this.lvwRechercheAchat.HideSelection = false;
+            this.lvwRechercheAchat.Location = new System.Drawing.Point(119, 63);
+            this.lvwRechercheAchat.Name = "lvwRechercheAchat";
+            this.lvwRechercheAchat.Size = new System.Drawing.Size(591, 112);
+            this.lvwRechercheAchat.TabIndex = 79;
+            this.lvwRechercheAchat.UseCompatibleStateImageBehavior = false;
+            this.lvwRechercheAchat.View = System.Windows.Forms.View.Details;
+            this.lvwRechercheAchat.Visible = false;
+            this.lvwRechercheAchat.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwRechercheAchat_ColumnClick);
+            this.lvwRechercheAchat.Leave += new System.EventHandler(this.lvwRechercheAchat_Leave);
             // 
             // _lvwRechercheAchat_ColumnHeader_1
             // 
-            _lvwRechercheAchat_ColumnHeader_1.Text = "No. Job";
-            _lvwRechercheAchat_ColumnHeader_1.Width = 170;
+            this._lvwRechercheAchat_ColumnHeader_1.Text = "No. Job";
+            this._lvwRechercheAchat_ColumnHeader_1.Width = 170;
             // 
             // _lvwRechercheAchat_ColumnHeader_2
             // 
-            _lvwRechercheAchat_ColumnHeader_2.Text = "Nbre fois";
-            _lvwRechercheAchat_ColumnHeader_2.Width = 170;
+            this._lvwRechercheAchat_ColumnHeader_2.Text = "Nbre fois";
+            this._lvwRechercheAchat_ColumnHeader_2.Width = 170;
             // 
             // lvwRechercheJob
             // 
-            lvwRechercheJob.BackColor = System.Drawing.SystemColors.Window;
-            lvwRechercheJob.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            _lvwRechercheJob_ColumnHeader_1,
-            _lvwRechercheJob_ColumnHeader_2});
-            lvwRechercheJob.Dock = System.Windows.Forms.DockStyle.Top;
-            lvwRechercheJob.ForeColor = System.Drawing.SystemColors.WindowText;
-            lvwRechercheJob.FullRowSelect = true;
-            lvwRechercheJob.GridLines = true;
-            lvwRechercheJob.HideSelection = false;
-            lvwRechercheJob.Location = new System.Drawing.Point(0, 363);
-            lvwRechercheJob.Name = "lvwRechercheJob";
-            lvwRechercheJob.Size = new System.Drawing.Size(555, 129);
-            lvwRechercheJob.TabIndex = 15;
-            lvwRechercheJob.UseCompatibleStateImageBehavior = false;
-            lvwRechercheJob.View = System.Windows.Forms.View.Details;
-            lvwRechercheJob.Visible = false;
-            lvwRechercheJob.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwRechercheJob_ColumnClick);
-            lvwRechercheJob.Leave += new System.EventHandler(lvwRechercheJob_Leave);
+            this.lvwRechercheJob.BackColor = System.Drawing.SystemColors.Window;
+            this.lvwRechercheJob.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._lvwRechercheJob_ColumnHeader_1,
+            this._lvwRechercheJob_ColumnHeader_2});
+            this.lvwRechercheJob.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lvwRechercheJob.FullRowSelect = true;
+            this.lvwRechercheJob.GridLines = true;
+            this.lvwRechercheJob.HideSelection = false;
+            this.lvwRechercheJob.Location = new System.Drawing.Point(119, 63);
+            this.lvwRechercheJob.Name = "lvwRechercheJob";
+            this.lvwRechercheJob.Size = new System.Drawing.Size(591, 112);
+            this.lvwRechercheJob.TabIndex = 15;
+            this.lvwRechercheJob.UseCompatibleStateImageBehavior = false;
+            this.lvwRechercheJob.View = System.Windows.Forms.View.Details;
+            this.lvwRechercheJob.Visible = false;
+            this.lvwRechercheJob.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwRechercheJob_ColumnClick);
+            this.lvwRechercheJob.Leave += new System.EventHandler(this.lvwRechercheJob_Leave);
             // 
             // _lvwRechercheJob_ColumnHeader_1
             // 
-            _lvwRechercheJob_ColumnHeader_1.Text = "No. Job";
-            _lvwRechercheJob_ColumnHeader_1.Width = 170;
+            this._lvwRechercheJob_ColumnHeader_1.Text = "No. Job";
+            this._lvwRechercheJob_ColumnHeader_1.Width = 170;
             // 
             // _lvwRechercheJob_ColumnHeader_2
             // 
-            _lvwRechercheJob_ColumnHeader_2.Text = "Nbre fois";
-            _lvwRechercheJob_ColumnHeader_2.Width = 170;
+            this._lvwRechercheJob_ColumnHeader_2.Text = "Nbre fois";
+            this._lvwRechercheJob_ColumnHeader_2.Width = 170;
             // 
             // cmdRechercheJob
             // 
-            cmdRechercheJob.AutoSize = true;
-            cmdRechercheJob.BackColor = System.Drawing.Color.Black;
-            cmdRechercheJob.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercheJob.Font = new System.Drawing.Font("Calibri", 8.25F);
-            cmdRechercheJob.ForeColor = System.Drawing.Color.White;
-            cmdRechercheJob.Location = new System.Drawing.Point(67, 201);
-            cmdRechercheJob.Name = "cmdRechercheJob";
-            cmdRechercheJob.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercheJob.Size = new System.Drawing.Size(159, 24);
-            cmdRechercheJob.TabIndex = 38;
-            cmdRechercheJob.Text = "Recherche dans jobs / soums";
-            cmdRechercheJob.UseVisualStyleBackColor = true;
-            cmdRechercheJob.Click += new System.EventHandler(cmdRechercheJob_Click);
+            this.cmdRechercheJob.AutoSize = true;
+            this.cmdRechercheJob.BackColor = System.Drawing.Color.Black;
+            this.cmdRechercheJob.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdRechercheJob.Font = new System.Drawing.Font("Calibri", 8.25F);
+            this.cmdRechercheJob.ForeColor = System.Drawing.Color.White;
+            this.cmdRechercheJob.Location = new System.Drawing.Point(67, 201);
+            this.cmdRechercheJob.Name = "cmdRechercheJob";
+            this.cmdRechercheJob.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdRechercheJob.Size = new System.Drawing.Size(159, 24);
+            this.cmdRechercheJob.TabIndex = 38;
+            this.cmdRechercheJob.Text = "Recherche dans jobs / soums";
+            this.cmdRechercheJob.UseVisualStyleBackColor = true;
+            this.cmdRechercheJob.Click += new System.EventHandler(this.cmdRechercheJob_Click);
             // 
             // cmdCopier
             // 
-            cmdCopier.BackColor = System.Drawing.Color.Black;
-            cmdCopier.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdCopier.ForeColor = System.Drawing.Color.White;
-            cmdCopier.Location = new System.Drawing.Point(240, 400);
-            cmdCopier.Name = "cmdCopier";
-            cmdCopier.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdCopier.Size = new System.Drawing.Size(89, 33);
-            cmdCopier.TabIndex = 69;
-            cmdCopier.Text = "&Copier";
-            cmdCopier.UseVisualStyleBackColor = true;
-            cmdCopier.Click += new System.EventHandler(cmdCopier_Click);
+            this.cmdCopier.BackColor = System.Drawing.Color.Black;
+            this.cmdCopier.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdCopier.ForeColor = System.Drawing.Color.White;
+            this.cmdCopier.Location = new System.Drawing.Point(240, 400);
+            this.cmdCopier.Name = "cmdCopier";
+            this.cmdCopier.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdCopier.Size = new System.Drawing.Size(89, 33);
+            this.cmdCopier.TabIndex = 69;
+            this.cmdCopier.Text = "&Copier";
+            this.cmdCopier.UseVisualStyleBackColor = true;
+            this.cmdCopier.Click += new System.EventHandler(this.cmdCopier_Click);
             // 
             // cmdTotal
             // 
-            cmdTotal.AutoSize = true;
-            cmdTotal.BackColor = System.Drawing.Color.Black;
-            cmdTotal.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdTotal.Font = new System.Drawing.Font("Calibri", 8.25F);
-            cmdTotal.ForeColor = System.Drawing.Color.White;
-            cmdTotal.Location = new System.Drawing.Point(8, 201);
-            cmdTotal.Name = "cmdTotal";
-            cmdTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdTotal.Size = new System.Drawing.Size(57, 24);
-            cmdTotal.TabIndex = 37;
-            cmdTotal.Text = "Total";
-            cmdTotal.UseVisualStyleBackColor = true;
-            cmdTotal.Click += new System.EventHandler(cmdTotal_Click);
+            this.cmdTotal.AutoSize = true;
+            this.cmdTotal.BackColor = System.Drawing.Color.Black;
+            this.cmdTotal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdTotal.Font = new System.Drawing.Font("Calibri", 8.25F);
+            this.cmdTotal.ForeColor = System.Drawing.Color.White;
+            this.cmdTotal.Location = new System.Drawing.Point(8, 201);
+            this.cmdTotal.Name = "cmdTotal";
+            this.cmdTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdTotal.Size = new System.Drawing.Size(57, 24);
+            this.cmdTotal.TabIndex = 37;
+            this.cmdTotal.Text = "Total";
+            this.cmdTotal.UseVisualStyleBackColor = true;
+            this.cmdTotal.Click += new System.EventHandler(this.cmdTotal_Click);
             // 
             // cmdRechercheInventaire
             // 
-            cmdRechercheInventaire.BackColor = System.Drawing.Color.Black;
-            cmdRechercheInventaire.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercheInventaire.ForeColor = System.Drawing.Color.White;
-            cmdRechercheInventaire.Location = new System.Drawing.Point(32, 400);
-            cmdRechercheInventaire.Name = "cmdRechercheInventaire";
-            cmdRechercheInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercheInventaire.Size = new System.Drawing.Size(97, 33);
-            cmdRechercheInventaire.TabIndex = 67;
-            cmdRechercheInventaire.Text = "Inventaire";
-            cmdRechercheInventaire.UseVisualStyleBackColor = true;
-            cmdRechercheInventaire.Click += new System.EventHandler(cmdRechercheInventaire_Click);
+            this.cmdRechercheInventaire.BackColor = System.Drawing.Color.Black;
+            this.cmdRechercheInventaire.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdRechercheInventaire.ForeColor = System.Drawing.Color.White;
+            this.cmdRechercheInventaire.Location = new System.Drawing.Point(32, 400);
+            this.cmdRechercheInventaire.Name = "cmdRechercheInventaire";
+            this.cmdRechercheInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdRechercheInventaire.Size = new System.Drawing.Size(97, 33);
+            this.cmdRechercheInventaire.TabIndex = 67;
+            this.cmdRechercheInventaire.Text = "Inventaire";
+            this.cmdRechercheInventaire.UseVisualStyleBackColor = true;
+            this.cmdRechercheInventaire.Click += new System.EventHandler(this.cmdRechercheInventaire_Click);
             // 
             // lvwFabricant
             // 
-            lvwFabricant.BackColor = System.Drawing.SystemColors.Window;
-            lvwFabricant.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            _lvwFabricant_ColumnHeader_1,
-            _lvwFabricant_ColumnHeader_2,
-            _lvwFabricant_ColumnHeader_3,
-            _lvwFabricant_ColumnHeader_4});
-            lvwFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
-            lvwFabricant.FullRowSelect = true;
-            lvwFabricant.GridLines = true;
-            lvwFabricant.HideSelection = false;
-            lvwFabricant.Location = new System.Drawing.Point(32, 439);
-            lvwFabricant.Name = "lvwFabricant";
-            lvwFabricant.Size = new System.Drawing.Size(553, 129);
-            lvwFabricant.TabIndex = 4;
-            lvwFabricant.UseCompatibleStateImageBehavior = false;
-            lvwFabricant.View = System.Windows.Forms.View.Details;
-            lvwFabricant.Visible = false;
-            lvwFabricant.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwFabricant_ColumnClick);
-            lvwFabricant.DoubleClick += new System.EventHandler(lvwFabricant_DoubleClick);
-            lvwFabricant.KeyDown += new System.Windows.Forms.KeyEventHandler(lvwFabricant_KeyDown);
-            lvwFabricant.Leave += new System.EventHandler(lvwFabricant_Leave);
+            this.lvwFabricant.BackColor = System.Drawing.SystemColors.Window;
+            this.lvwFabricant.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._lvwFabricant_ColumnHeader_1,
+            this._lvwFabricant_ColumnHeader_2,
+            this._lvwFabricant_ColumnHeader_3,
+            this._lvwFabricant_ColumnHeader_4});
+            this.lvwFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lvwFabricant.FullRowSelect = true;
+            this.lvwFabricant.GridLines = true;
+            this.lvwFabricant.HideSelection = false;
+            this.lvwFabricant.Location = new System.Drawing.Point(121, 63);
+            this.lvwFabricant.Name = "lvwFabricant";
+            this.lvwFabricant.Size = new System.Drawing.Size(591, 112);
+            this.lvwFabricant.TabIndex = 4;
+            this.lvwFabricant.UseCompatibleStateImageBehavior = false;
+            this.lvwFabricant.View = System.Windows.Forms.View.Details;
+            this.lvwFabricant.Visible = false;
+            this.lvwFabricant.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwFabricant_ColumnClick);
+            this.lvwFabricant.DoubleClick += new System.EventHandler(this.lvwFabricant_DoubleClick);
+            this.lvwFabricant.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwFabricant_KeyDown);
+            this.lvwFabricant.Leave += new System.EventHandler(this.lvwFabricant_Leave);
             // 
             // _lvwFabricant_ColumnHeader_1
             // 
-            _lvwFabricant_ColumnHeader_1.Text = "Manufacturier";
-            _lvwFabricant_ColumnHeader_1.Width = 140;
+            this._lvwFabricant_ColumnHeader_1.Text = "Manufacturier";
+            this._lvwFabricant_ColumnHeader_1.Width = 140;
             // 
             // _lvwFabricant_ColumnHeader_2
             // 
-            _lvwFabricant_ColumnHeader_2.Text = "No. Pièce";
-            _lvwFabricant_ColumnHeader_2.Width = 217;
+            this._lvwFabricant_ColumnHeader_2.Text = "No. Pièce";
+            this._lvwFabricant_ColumnHeader_2.Width = 217;
             // 
             // _lvwFabricant_ColumnHeader_3
             // 
-            _lvwFabricant_ColumnHeader_3.Text = "Description française";
-            _lvwFabricant_ColumnHeader_3.Width = 410;
+            this._lvwFabricant_ColumnHeader_3.Text = "Description française";
+            this._lvwFabricant_ColumnHeader_3.Width = 410;
             // 
             // _lvwFabricant_ColumnHeader_4
             // 
-            _lvwFabricant_ColumnHeader_4.Text = "Description anglaise";
-            _lvwFabricant_ColumnHeader_4.Width = 410;
+            this._lvwFabricant_ColumnHeader_4.Text = "Description anglaise";
+            this._lvwFabricant_ColumnHeader_4.Width = 410;
             // 
             // lvwPieces
             // 
-            lvwPieces.BackColor = System.Drawing.SystemColors.Window;
-            lvwPieces.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            _lvwPieces_ColumnHeader_1,
-            _lvwPieces_ColumnHeader_2,
-            _lvwPieces_ColumnHeader_3,
-            _lvwPieces_ColumnHeader_4});
-            lvwPieces.ForeColor = System.Drawing.SystemColors.WindowText;
-            lvwPieces.FullRowSelect = true;
-            lvwPieces.GridLines = true;
-            lvwPieces.HideSelection = false;
-            lvwPieces.Location = new System.Drawing.Point(32, 574);
-            lvwPieces.Name = "lvwPieces";
-            lvwPieces.Size = new System.Drawing.Size(553, 129);
-            lvwPieces.TabIndex = 5;
-            lvwPieces.UseCompatibleStateImageBehavior = false;
-            lvwPieces.View = System.Windows.Forms.View.Details;
-            lvwPieces.Visible = false;
-            lvwPieces.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwPieces_ColumnClick);
-            lvwPieces.DoubleClick += new System.EventHandler(lvwPieces_DoubleClick);
-            lvwPieces.KeyDown += new System.Windows.Forms.KeyEventHandler(lvwPieces_KeyDown);
-            lvwPieces.Leave += new System.EventHandler(lvwPieces_Leave);
+            this.lvwPieces.BackColor = System.Drawing.SystemColors.Window;
+            this.lvwPieces.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._lvwPieces_ColumnHeader_1,
+            this._lvwPieces_ColumnHeader_2,
+            this._lvwPieces_ColumnHeader_3,
+            this._lvwPieces_ColumnHeader_4});
+            this.lvwPieces.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lvwPieces.FullRowSelect = true;
+            this.lvwPieces.GridLines = true;
+            this.lvwPieces.HideSelection = false;
+            this.lvwPieces.Location = new System.Drawing.Point(119, 62);
+            this.lvwPieces.Name = "lvwPieces";
+            this.lvwPieces.Size = new System.Drawing.Size(591, 112);
+            this.lvwPieces.TabIndex = 5;
+            this.lvwPieces.UseCompatibleStateImageBehavior = false;
+            this.lvwPieces.View = System.Windows.Forms.View.Details;
+            this.lvwPieces.Visible = false;
+            this.lvwPieces.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwPieces_ColumnClick);
+            this.lvwPieces.DoubleClick += new System.EventHandler(this.lvwPieces_DoubleClick);
+            this.lvwPieces.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwPieces_KeyDown);
+            this.lvwPieces.Leave += new System.EventHandler(this.lvwPieces_Leave);
             // 
             // _lvwPieces_ColumnHeader_1
             // 
-            _lvwPieces_ColumnHeader_1.Text = "No Pièce";
-            _lvwPieces_ColumnHeader_1.Width = 217;
+            this._lvwPieces_ColumnHeader_1.Text = "No Pièce";
+            this._lvwPieces_ColumnHeader_1.Width = 217;
             // 
             // _lvwPieces_ColumnHeader_2
             // 
-            _lvwPieces_ColumnHeader_2.Text = "Manufacturier";
-            _lvwPieces_ColumnHeader_2.Width = 140;
+            this._lvwPieces_ColumnHeader_2.Text = "Manufacturier";
+            this._lvwPieces_ColumnHeader_2.Width = 140;
             // 
             // _lvwPieces_ColumnHeader_3
             // 
-            _lvwPieces_ColumnHeader_3.Text = "Description française";
-            _lvwPieces_ColumnHeader_3.Width = 410;
+            this._lvwPieces_ColumnHeader_3.Text = "Description française";
+            this._lvwPieces_ColumnHeader_3.Width = 410;
             // 
             // _lvwPieces_ColumnHeader_4
             // 
-            _lvwPieces_ColumnHeader_4.Text = "Description anglaise";
-            _lvwPieces_ColumnHeader_4.Width = 410;
+            this._lvwPieces_ColumnHeader_4.Text = "Description anglaise";
+            this._lvwPieces_ColumnHeader_4.Width = 410;
             // 
             // cmdChangerCategorie
             // 
-            cmdChangerCategorie.BackColor = System.Drawing.Color.Black;
-            cmdChangerCategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdChangerCategorie.ForeColor = System.Drawing.Color.White;
-            cmdChangerCategorie.Location = new System.Drawing.Point(536, 32);
-            cmdChangerCategorie.Name = "cmdChangerCategorie";
-            cmdChangerCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdChangerCategorie.Size = new System.Drawing.Size(121, 25);
-            cmdChangerCategorie.TabIndex = 3;
-            cmdChangerCategorie.Text = "Changer de catégorie";
-            cmdChangerCategorie.UseVisualStyleBackColor = true;
-            cmdChangerCategorie.Click += new System.EventHandler(cmdChangerCategorie_Click);
+            this.cmdChangerCategorie.BackColor = System.Drawing.Color.Black;
+            this.cmdChangerCategorie.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdChangerCategorie.ForeColor = System.Drawing.Color.White;
+            this.cmdChangerCategorie.Location = new System.Drawing.Point(536, 32);
+            this.cmdChangerCategorie.Name = "cmdChangerCategorie";
+            this.cmdChangerCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdChangerCategorie.Size = new System.Drawing.Size(121, 25);
+            this.cmdChangerCategorie.TabIndex = 3;
+            this.cmdChangerCategorie.Text = "Changer de catégorie";
+            this.cmdChangerCategorie.UseVisualStyleBackColor = true;
+            this.cmdChangerCategorie.Click += new System.EventHandler(this.cmdChangerCategorie_Click);
             // 
             // cmdDemande
             // 
-            cmdDemande.BackColor = System.Drawing.Color.Black;
-            cmdDemande.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdDemande.ForeColor = System.Drawing.Color.White;
-            cmdDemande.Location = new System.Drawing.Point(136, 400);
-            cmdDemande.Name = "cmdDemande";
-            cmdDemande.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdDemande.Size = new System.Drawing.Size(97, 33);
-            cmdDemande.TabIndex = 68;
-            cmdDemande.Text = "Demande de prix";
-            cmdDemande.UseVisualStyleBackColor = true;
-            cmdDemande.Click += new System.EventHandler(cmdDemande_Click);
+            this.cmdDemande.BackColor = System.Drawing.Color.Black;
+            this.cmdDemande.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdDemande.ForeColor = System.Drawing.Color.White;
+            this.cmdDemande.Location = new System.Drawing.Point(136, 400);
+            this.cmdDemande.Name = "cmdDemande";
+            this.cmdDemande.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdDemande.Size = new System.Drawing.Size(97, 33);
+            this.cmdDemande.TabIndex = 68;
+            this.cmdDemande.Text = "Demande de prix";
+            this.cmdDemande.UseVisualStyleBackColor = true;
+            this.cmdDemande.Click += new System.EventHandler(this.cmdDemande_Click);
             // 
             // lvwDescription
             // 
-            lvwDescription.BackColor = System.Drawing.SystemColors.Window;
-            lvwDescription.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            _lvwDescription_ColumnHeader_1,
-            _lvwDescription_ColumnHeader_2,
-            _lvwDescription_ColumnHeader_3,
-            _lvwDescription_ColumnHeader_4});
-            lvwDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            lvwDescription.ForeColor = System.Drawing.SystemColors.WindowText;
-            lvwDescription.FullRowSelect = true;
-            lvwDescription.GridLines = true;
-            lvwDescription.HideSelection = false;
-            lvwDescription.Location = new System.Drawing.Point(0, 0);
-            lvwDescription.Name = "lvwDescription";
-            lvwDescription.Size = new System.Drawing.Size(555, 129);
-            lvwDescription.TabIndex = 6;
-            lvwDescription.UseCompatibleStateImageBehavior = false;
-            lvwDescription.View = System.Windows.Forms.View.Details;
-            lvwDescription.Visible = false;
-            lvwDescription.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(lvwDescription_ColumnClick);
-            lvwDescription.DoubleClick += new System.EventHandler(lvwDescription_DoubleClick);
-            lvwDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(lvwDescription_KeyDown);
-            lvwDescription.Leave += new System.EventHandler(lvwDescription_Leave);
+            this.lvwDescription.BackColor = System.Drawing.SystemColors.Window;
+            this.lvwDescription.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._lvwDescription_ColumnHeader_1,
+            this._lvwDescription_ColumnHeader_2,
+            this._lvwDescription_ColumnHeader_3,
+            this._lvwDescription_ColumnHeader_4});
+            this.lvwDescription.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lvwDescription.FullRowSelect = true;
+            this.lvwDescription.GridLines = true;
+            this.lvwDescription.HideSelection = false;
+            this.lvwDescription.Location = new System.Drawing.Point(119, 62);
+            this.lvwDescription.Name = "lvwDescription";
+            this.lvwDescription.Size = new System.Drawing.Size(591, 112);
+            this.lvwDescription.TabIndex = 6;
+            this.lvwDescription.UseCompatibleStateImageBehavior = false;
+            this.lvwDescription.View = System.Windows.Forms.View.Details;
+            this.lvwDescription.Visible = false;
+            this.lvwDescription.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvwDescription_ColumnClick);
+            this.lvwDescription.DoubleClick += new System.EventHandler(this.lvwDescription_DoubleClick);
+            this.lvwDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lvwDescription_KeyDown);
+            this.lvwDescription.Leave += new System.EventHandler(this.lvwDescription_Leave);
             // 
             // _lvwDescription_ColumnHeader_1
             // 
-            _lvwDescription_ColumnHeader_1.Text = "Description française";
-            _lvwDescription_ColumnHeader_1.Width = 410;
+            this._lvwDescription_ColumnHeader_1.Text = "Description française";
+            this._lvwDescription_ColumnHeader_1.Width = 410;
             // 
             // _lvwDescription_ColumnHeader_2
             // 
-            _lvwDescription_ColumnHeader_2.Text = "Description anglais";
-            _lvwDescription_ColumnHeader_2.Width = 410;
+            this._lvwDescription_ColumnHeader_2.Text = "Description anglais";
+            this._lvwDescription_ColumnHeader_2.Width = 410;
             // 
             // _lvwDescription_ColumnHeader_3
             // 
-            _lvwDescription_ColumnHeader_3.Text = "Manufacturier";
-            _lvwDescription_ColumnHeader_3.Width = 140;
+            this._lvwDescription_ColumnHeader_3.Text = "Manufacturier";
+            this._lvwDescription_ColumnHeader_3.Width = 140;
             // 
             // _lvwDescription_ColumnHeader_4
             // 
-            _lvwDescription_ColumnHeader_4.Text = "NoItem";
-            _lvwDescription_ColumnHeader_4.Width = 217;
+            this._lvwDescription_ColumnHeader_4.Text = "NoItem";
+            this._lvwDescription_ColumnHeader_4.Width = 217;
             // 
             // cmdRechercheDescrFR
             // 
-            cmdRechercheDescrFR.BackColor = System.Drawing.Color.Black;
-            cmdRechercheDescrFR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercheDescrFR.ForeColor = System.Drawing.Color.White;
-            cmdRechercheDescrFR.Location = new System.Drawing.Point(688, 60);
-            cmdRechercheDescrFR.Name = "cmdRechercheDescrFR";
-            cmdRechercheDescrFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercheDescrFR.Size = new System.Drawing.Size(25, 25);
-            cmdRechercheDescrFR.TabIndex = 9;
-            cmdRechercheDescrFR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            cmdRechercheDescrFR.UseVisualStyleBackColor = true;
-            cmdRechercheDescrFR.Click += new System.EventHandler(cmdRechercheDescrFR_Click);
+            this.cmdRechercheDescrFR.BackColor = System.Drawing.Color.Black;
+            this.cmdRechercheDescrFR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdRechercheDescrFR.BackgroundImage")));
+            this.cmdRechercheDescrFR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdRechercheDescrFR.ForeColor = System.Drawing.Color.White;
+            this.cmdRechercheDescrFR.Location = new System.Drawing.Point(688, 60);
+            this.cmdRechercheDescrFR.Name = "cmdRechercheDescrFR";
+            this.cmdRechercheDescrFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdRechercheDescrFR.Size = new System.Drawing.Size(25, 25);
+            this.cmdRechercheDescrFR.TabIndex = 9;
+            this.cmdRechercheDescrFR.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cmdRechercheDescrFR.UseVisualStyleBackColor = true;
+            this.cmdRechercheDescrFR.Click += new System.EventHandler(this.cmdRechercheDescrFR_Click);
             // 
             // frafournisseur
             // 
-            frafournisseur.BackColor = System.Drawing.Color.Black;
-            frafournisseur.Controls.Add(txtTauxChange);
-            frafournisseur.Controls.Add(cmdAddFrs);
-            frafournisseur.Controls.Add(cmdSuppFrs);
-            frafournisseur.Controls.Add(cmdModifFrs);
-            frafournisseur.Controls.Add(chkquoter);
-            frafournisseur.Controls.Add(optUSA);
-            frafournisseur.Controls.Add(optCAN);
-            frafournisseur.Controls.Add(txtPrixList);
-            frafournisseur.Controls.Add(txtPrixNet);
-            frafournisseur.Controls.Add(txtPrixSpecial);
-            frafournisseur.Controls.Add(mskValide);
-            frafournisseur.Controls.Add(mskEscompte);
-            frafournisseur.Controls.Add(cmdEnrFrs);
-            frafournisseur.Controls.Add(cmdAnnulFrs);
-            frafournisseur.Controls.Add(cmbfrs);
-            frafournisseur.Controls.Add(cmbPersRess);
-            frafournisseur.Controls.Add(optSpain);
-            frafournisseur.Controls.Add(lblDevise1);
-            frafournisseur.Controls.Add(lblDevise2);
-            frafournisseur.Controls.Add(_Label1_5);
-            frafournisseur.Controls.Add(imgCanada);
-            frafournisseur.Controls.Add(imgEU);
-            frafournisseur.Controls.Add(_Label1_14);
-            frafournisseur.Controls.Add(_Label1_16);
-            frafournisseur.Controls.Add(_Label1_19);
-            frafournisseur.Controls.Add(_Label1_24);
-            frafournisseur.Controls.Add(_Label1_20);
-            frafournisseur.Controls.Add(_Label1_2);
-            frafournisseur.Controls.Add(_Label1_23);
-            frafournisseur.Controls.Add(imgSpain);
-            frafournisseur.ForeColor = System.Drawing.Color.White;
-            frafournisseur.Location = new System.Drawing.Point(32, 232);
-            frafournisseur.Name = "frafournisseur";
-            frafournisseur.Padding = new System.Windows.Forms.Padding(0);
-            frafournisseur.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            frafournisseur.Size = new System.Drawing.Size(681, 161);
-            frafournisseur.TabIndex = 41;
-            frafournisseur.TabStop = false;
-            frafournisseur.Text = "Fournisseur";
+            this.frafournisseur.BackColor = System.Drawing.Color.Black;
+            this.frafournisseur.Controls.Add(this.txtTauxChange);
+            this.frafournisseur.Controls.Add(this.lvwfournisseur);
+            this.frafournisseur.Controls.Add(this.cmdAddFrs);
+            this.frafournisseur.Controls.Add(this.cmdSuppFrs);
+            this.frafournisseur.Controls.Add(this.cmdModifFrs);
+            this.frafournisseur.Controls.Add(this.chkquoter);
+            this.frafournisseur.Controls.Add(this.optUSA);
+            this.frafournisseur.Controls.Add(this.optCAN);
+            this.frafournisseur.Controls.Add(this.txtPrixList);
+            this.frafournisseur.Controls.Add(this.txtPrixNet);
+            this.frafournisseur.Controls.Add(this.txtPrixSpecial);
+            this.frafournisseur.Controls.Add(this.mskValide);
+            this.frafournisseur.Controls.Add(this.mskEscompte);
+            this.frafournisseur.Controls.Add(this.cmdEnrFrs);
+            this.frafournisseur.Controls.Add(this.cmdAnnulFrs);
+            this.frafournisseur.Controls.Add(this.cmbfrs);
+            this.frafournisseur.Controls.Add(this.cmbPersRess);
+            this.frafournisseur.Controls.Add(this.optSpain);
+            this.frafournisseur.Controls.Add(this.lblDevise1);
+            this.frafournisseur.Controls.Add(this.lblDevise2);
+            this.frafournisseur.Controls.Add(this._Label1_5);
+            this.frafournisseur.Controls.Add(this.imgCanada);
+            this.frafournisseur.Controls.Add(this.imgEU);
+            this.frafournisseur.Controls.Add(this._Label1_14);
+            this.frafournisseur.Controls.Add(this._Label1_16);
+            this.frafournisseur.Controls.Add(this._Label1_19);
+            this.frafournisseur.Controls.Add(this._Label1_24);
+            this.frafournisseur.Controls.Add(this._Label1_20);
+            this.frafournisseur.Controls.Add(this._Label1_2);
+            this.frafournisseur.Controls.Add(this._Label1_23);
+            this.frafournisseur.Controls.Add(this.imgSpain);
+            this.frafournisseur.ForeColor = System.Drawing.Color.White;
+            this.frafournisseur.Location = new System.Drawing.Point(8, 231);
+            this.frafournisseur.Name = "frafournisseur";
+            this.frafournisseur.Padding = new System.Windows.Forms.Padding(0);
+            this.frafournisseur.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.frafournisseur.Size = new System.Drawing.Size(705, 161);
+            this.frafournisseur.TabIndex = 41;
+            this.frafournisseur.TabStop = false;
+            this.frafournisseur.Text = "Fournisseur";
             // 
             // txtTauxChange
             // 
-            txtTauxChange.AcceptsReturn = true;
-            txtTauxChange.BackColor = System.Drawing.Color.Black;
-            txtTauxChange.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtTauxChange.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtTauxChange.Location = new System.Drawing.Point(576, 128);
-            txtTauxChange.MaxLength = 0;
-            txtTauxChange.Name = "txtTauxChange";
-            txtTauxChange.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtTauxChange.Size = new System.Drawing.Size(57, 22);
-            txtTauxChange.TabIndex = 76;
-            txtTauxChange.Visible = false;
-            // 
-            // lvwfournisseur
-            // 
-            lvwfournisseur.BackColor = System.Drawing.SystemColors.Window;
-            lvwfournisseur.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            _lvwfournisseur_ColumnHeader_1,
-            _lvwfournisseur_ColumnHeader_2,
-            _lvwfournisseur_ColumnHeader_3,
-            _lvwfournisseur_ColumnHeader_4,
-            _lvwfournisseur_ColumnHeader_5,
-            _lvwfournisseur_ColumnHeader_6,
-            _lvwfournisseur_ColumnHeader_7,
-            _lvwfournisseur_ColumnHeader_8,
-            _lvwfournisseur_ColumnHeader_9,
-            _lvwfournisseur_ColumnHeader_10});
-            lvwfournisseur.Dock = System.Windows.Forms.DockStyle.Top;
-            lvwfournisseur.ForeColor = System.Drawing.SystemColors.WindowText;
-            lvwfournisseur.FullRowSelect = true;
-            lvwfournisseur.GridLines = true;
-            lvwfournisseur.HideSelection = false;
-            lvwfournisseur.Location = new System.Drawing.Point(0, 129);
-            lvwfournisseur.Name = "lvwfournisseur";
-            lvwfournisseur.Size = new System.Drawing.Size(555, 105);
-            lvwfournisseur.TabIndex = 42;
-            lvwfournisseur.UseCompatibleStateImageBehavior = false;
-            lvwfournisseur.View = System.Windows.Forms.View.Details;
-            lvwfournisseur.DoubleClick += new System.EventHandler(lvwFournisseur_DoubleClick);
-            lvwfournisseur.KeyDown += new System.Windows.Forms.KeyEventHandler(lvwfournisseur_KeyDown);
-            // 
-            // _lvwfournisseur_ColumnHeader_1
-            // 
-            _lvwfournisseur_ColumnHeader_1.Text = "Fournisseur";
-            _lvwfournisseur_ColumnHeader_1.Width = 236;
-            // 
-            // _lvwfournisseur_ColumnHeader_2
-            // 
-            _lvwfournisseur_ColumnHeader_2.Text = "Pers. Ress.";
-            _lvwfournisseur_ColumnHeader_2.Width = 133;
-            // 
-            // _lvwfournisseur_ColumnHeader_3
-            // 
-            _lvwfournisseur_ColumnHeader_3.Text = "Date";
-            _lvwfournisseur_ColumnHeader_3.Width = 117;
-            // 
-            // _lvwfournisseur_ColumnHeader_4
-            // 
-            _lvwfournisseur_ColumnHeader_4.Text = "Par";
-            _lvwfournisseur_ColumnHeader_4.Width = 54;
-            // 
-            // _lvwfournisseur_ColumnHeader_5
-            // 
-            _lvwfournisseur_ColumnHeader_5.Text = "Valide";
-            _lvwfournisseur_ColumnHeader_5.Width = 117;
-            // 
-            // _lvwfournisseur_ColumnHeader_6
-            // 
-            _lvwfournisseur_ColumnHeader_6.Text = "Prix listé";
-            _lvwfournisseur_ColumnHeader_6.Width = 108;
-            // 
-            // _lvwfournisseur_ColumnHeader_7
-            // 
-            _lvwfournisseur_ColumnHeader_7.Text = "Escompte";
-            _lvwfournisseur_ColumnHeader_7.Width = 105;
-            // 
-            // _lvwfournisseur_ColumnHeader_8
-            // 
-            _lvwfournisseur_ColumnHeader_8.Text = "Prix net";
-            _lvwfournisseur_ColumnHeader_8.Width = 108;
-            // 
-            // _lvwfournisseur_ColumnHeader_9
-            // 
-            _lvwfournisseur_ColumnHeader_9.Text = "Prix spécial";
-            _lvwfournisseur_ColumnHeader_9.Width = 115;
-            // 
-            // _lvwfournisseur_ColumnHeader_10
-            // 
-            _lvwfournisseur_ColumnHeader_10.Text = "Quoter";
-            _lvwfournisseur_ColumnHeader_10.Width = 80;
+            this.txtTauxChange.AcceptsReturn = true;
+            this.txtTauxChange.BackColor = System.Drawing.Color.Black;
+            this.txtTauxChange.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTauxChange.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtTauxChange.Location = new System.Drawing.Point(576, 128);
+            this.txtTauxChange.MaxLength = 0;
+            this.txtTauxChange.Name = "txtTauxChange";
+            this.txtTauxChange.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtTauxChange.Size = new System.Drawing.Size(57, 22);
+            this.txtTauxChange.TabIndex = 76;
             // 
             // cmdAddFrs
             // 
-            cmdAddFrs.BackColor = System.Drawing.Color.Black;
-            cmdAddFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdAddFrs.ForeColor = System.Drawing.Color.White;
-            cmdAddFrs.Location = new System.Drawing.Point(8, 128);
-            cmdAddFrs.Name = "cmdAddFrs";
-            cmdAddFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdAddFrs.Size = new System.Drawing.Size(73, 25);
-            cmdAddFrs.TabIndex = 62;
-            cmdAddFrs.Text = "&Ajouter";
-            cmdAddFrs.UseVisualStyleBackColor = true;
-            cmdAddFrs.Click += new System.EventHandler(cmdAddFrs_Click);
+            this.cmdAddFrs.BackColor = System.Drawing.Color.Black;
+            this.cmdAddFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdAddFrs.ForeColor = System.Drawing.Color.White;
+            this.cmdAddFrs.Location = new System.Drawing.Point(8, 128);
+            this.cmdAddFrs.Name = "cmdAddFrs";
+            this.cmdAddFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdAddFrs.Size = new System.Drawing.Size(73, 25);
+            this.cmdAddFrs.TabIndex = 62;
+            this.cmdAddFrs.Text = "&Ajouter";
+            this.cmdAddFrs.UseVisualStyleBackColor = true;
+            this.cmdAddFrs.Click += new System.EventHandler(this.cmdAddFrs_Click);
             // 
             // cmdSuppFrs
             // 
-            cmdSuppFrs.BackColor = System.Drawing.Color.Black;
-            cmdSuppFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdSuppFrs.ForeColor = System.Drawing.Color.White;
-            cmdSuppFrs.Location = new System.Drawing.Point(88, 128);
-            cmdSuppFrs.Name = "cmdSuppFrs";
-            cmdSuppFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdSuppFrs.Size = new System.Drawing.Size(73, 25);
-            cmdSuppFrs.TabIndex = 65;
-            cmdSuppFrs.Text = "&Supprimer";
-            cmdSuppFrs.UseVisualStyleBackColor = true;
-            cmdSuppFrs.Click += new System.EventHandler(cmdSuppFrs_Click);
+            this.cmdSuppFrs.BackColor = System.Drawing.Color.Black;
+            this.cmdSuppFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdSuppFrs.ForeColor = System.Drawing.Color.White;
+            this.cmdSuppFrs.Location = new System.Drawing.Point(88, 128);
+            this.cmdSuppFrs.Name = "cmdSuppFrs";
+            this.cmdSuppFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdSuppFrs.Size = new System.Drawing.Size(73, 25);
+            this.cmdSuppFrs.TabIndex = 65;
+            this.cmdSuppFrs.Text = "&Supprimer";
+            this.cmdSuppFrs.UseVisualStyleBackColor = true;
+            this.cmdSuppFrs.Click += new System.EventHandler(this.cmdSuppFrs_Click);
             // 
             // cmdModifFrs
             // 
-            cmdModifFrs.BackColor = System.Drawing.Color.Black;
-            cmdModifFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdModifFrs.ForeColor = System.Drawing.Color.White;
-            cmdModifFrs.Location = new System.Drawing.Point(168, 128);
-            cmdModifFrs.Name = "cmdModifFrs";
-            cmdModifFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdModifFrs.Size = new System.Drawing.Size(73, 25);
-            cmdModifFrs.TabIndex = 66;
-            cmdModifFrs.Text = "&Modifier";
-            cmdModifFrs.UseVisualStyleBackColor = true;
-            cmdModifFrs.Click += new System.EventHandler(cmdModifFrs_Click);
+            this.cmdModifFrs.BackColor = System.Drawing.Color.Black;
+            this.cmdModifFrs.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdModifFrs.ForeColor = System.Drawing.Color.White;
+            this.cmdModifFrs.Location = new System.Drawing.Point(168, 128);
+            this.cmdModifFrs.Name = "cmdModifFrs";
+            this.cmdModifFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdModifFrs.Size = new System.Drawing.Size(73, 25);
+            this.cmdModifFrs.TabIndex = 66;
+            this.cmdModifFrs.Text = "&Modifier";
+            this.cmdModifFrs.UseVisualStyleBackColor = true;
+            this.cmdModifFrs.Click += new System.EventHandler(this.cmdModifFrs_Click);
             // 
             // chkquoter
             // 
-            chkquoter.BackColor = System.Drawing.Color.Black;
-            chkquoter.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            chkquoter.ForeColor = System.Drawing.Color.White;
-            chkquoter.Location = new System.Drawing.Point(8, 96);
-            chkquoter.Name = "chkquoter";
-            chkquoter.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            chkquoter.Size = new System.Drawing.Size(89, 17);
-            chkquoter.TabIndex = 61;
-            chkquoter.Text = "Quoter :";
-            chkquoter.UseVisualStyleBackColor = true;
+            this.chkquoter.BackColor = System.Drawing.Color.Black;
+            this.chkquoter.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkquoter.ForeColor = System.Drawing.Color.White;
+            this.chkquoter.Location = new System.Drawing.Point(8, 96);
+            this.chkquoter.Name = "chkquoter";
+            this.chkquoter.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.chkquoter.Size = new System.Drawing.Size(89, 17);
+            this.chkquoter.TabIndex = 61;
+            this.chkquoter.Text = "Quoter :";
+            this.chkquoter.UseVisualStyleBackColor = true;
             // 
             // optUSA
             // 
-            optUSA.BackColor = System.Drawing.Color.Black;
-            optUSA.ForeColor = System.Drawing.Color.White;
-            optUSA.Location = new System.Drawing.Point(576, 24);
-            optUSA.Name = "optUSA";
-            optUSA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            optUSA.Size = new System.Drawing.Size(49, 17);
-            optUSA.TabIndex = 56;
-            optUSA.TabStop = true;
-            optUSA.Text = "USA";
-            optUSA.UseVisualStyleBackColor = true;
-            optUSA.CheckedChanged += new System.EventHandler(optUSA_CheckedChanged);
+            this.optUSA.BackColor = System.Drawing.Color.Black;
+            this.optUSA.ForeColor = System.Drawing.Color.White;
+            this.optUSA.Location = new System.Drawing.Point(576, 24);
+            this.optUSA.Name = "optUSA";
+            this.optUSA.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.optUSA.Size = new System.Drawing.Size(49, 17);
+            this.optUSA.TabIndex = 56;
+            this.optUSA.TabStop = true;
+            this.optUSA.Text = "USA";
+            this.optUSA.UseVisualStyleBackColor = true;
+            this.optUSA.CheckedChanged += new System.EventHandler(this.optUSA_CheckedChanged);
             // 
             // optCAN
             // 
-            optCAN.BackColor = System.Drawing.Color.Black;
-            optCAN.Checked = true;
-            optCAN.ForeColor = System.Drawing.Color.White;
-            optCAN.Location = new System.Drawing.Point(528, 24);
-            optCAN.Name = "optCAN";
-            optCAN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            optCAN.Size = new System.Drawing.Size(49, 17);
-            optCAN.TabIndex = 55;
-            optCAN.TabStop = true;
-            optCAN.Text = "CAN";
-            optCAN.UseVisualStyleBackColor = true;
-            optCAN.CheckedChanged += new System.EventHandler(optCAN_CheckedChanged);
+            this.optCAN.BackColor = System.Drawing.Color.Black;
+            this.optCAN.Checked = true;
+            this.optCAN.ForeColor = System.Drawing.Color.White;
+            this.optCAN.Location = new System.Drawing.Point(528, 24);
+            this.optCAN.Name = "optCAN";
+            this.optCAN.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.optCAN.Size = new System.Drawing.Size(49, 17);
+            this.optCAN.TabIndex = 55;
+            this.optCAN.TabStop = true;
+            this.optCAN.Text = "CAN";
+            this.optCAN.UseVisualStyleBackColor = true;
+            this.optCAN.CheckedChanged += new System.EventHandler(this.optCAN_CheckedChanged);
             // 
             // txtPrixList
             // 
-            txtPrixList.AcceptsReturn = true;
-            txtPrixList.BackColor = System.Drawing.Color.Black;
-            txtPrixList.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtPrixList.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtPrixList.Location = new System.Drawing.Point(424, 24);
-            txtPrixList.MaxLength = 0;
-            txtPrixList.Name = "txtPrixList";
-            txtPrixList.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtPrixList.Size = new System.Drawing.Size(73, 22);
-            txtPrixList.TabIndex = 48;
-            txtPrixList.Leave += new System.EventHandler(txtPrixList_Leave);
+            this.txtPrixList.AcceptsReturn = true;
+            this.txtPrixList.BackColor = System.Drawing.Color.White;
+            this.txtPrixList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrixList.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrixList.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtPrixList.Location = new System.Drawing.Point(424, 24);
+            this.txtPrixList.MaxLength = 0;
+            this.txtPrixList.Name = "txtPrixList";
+            this.txtPrixList.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPrixList.Size = new System.Drawing.Size(73, 15);
+            this.txtPrixList.TabIndex = 48;
+            this.txtPrixList.Leave += new System.EventHandler(this.txtPrixList_Leave);
             // 
             // txtPrixNet
             // 
-            txtPrixNet.AcceptsReturn = true;
-            txtPrixNet.BackColor = System.Drawing.Color.Black;
-            txtPrixNet.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtPrixNet.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtPrixNet.Location = new System.Drawing.Point(424, 72);
-            txtPrixNet.MaxLength = 0;
-            txtPrixNet.Name = "txtPrixNet";
-            txtPrixNet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtPrixNet.Size = new System.Drawing.Size(57, 22);
-            txtPrixNet.TabIndex = 52;
-            txtPrixNet.TextChanged += new System.EventHandler(txtPrixNet_TextChanged);
-            txtPrixNet.Enter += new System.EventHandler(txtPrixNet_Enter);
-            txtPrixNet.Leave += new System.EventHandler(txtPrixNet_Leave);
+            this.txtPrixNet.AcceptsReturn = true;
+            this.txtPrixNet.BackColor = System.Drawing.Color.White;
+            this.txtPrixNet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrixNet.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrixNet.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtPrixNet.Location = new System.Drawing.Point(424, 72);
+            this.txtPrixNet.MaxLength = 0;
+            this.txtPrixNet.Name = "txtPrixNet";
+            this.txtPrixNet.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPrixNet.Size = new System.Drawing.Size(57, 15);
+            this.txtPrixNet.TabIndex = 52;
+            this.txtPrixNet.TextChanged += new System.EventHandler(this.txtPrixNet_TextChanged);
+            this.txtPrixNet.Enter += new System.EventHandler(this.txtPrixNet_Enter);
+            this.txtPrixNet.Leave += new System.EventHandler(this.txtPrixNet_Leave);
             // 
             // txtPrixSpecial
             // 
-            txtPrixSpecial.AcceptsReturn = true;
-            txtPrixSpecial.BackColor = System.Drawing.Color.Black;
-            txtPrixSpecial.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtPrixSpecial.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtPrixSpecial.Location = new System.Drawing.Point(424, 96);
-            txtPrixSpecial.MaxLength = 0;
-            txtPrixSpecial.Name = "txtPrixSpecial";
-            txtPrixSpecial.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtPrixSpecial.Size = new System.Drawing.Size(57, 22);
-            txtPrixSpecial.TabIndex = 54;
-            txtPrixSpecial.TextChanged += new System.EventHandler(txtPrixSpecial_TextChanged);
-            txtPrixSpecial.Leave += new System.EventHandler(txtPrixSpecial_Leave);
+            this.txtPrixSpecial.AcceptsReturn = true;
+            this.txtPrixSpecial.BackColor = System.Drawing.Color.White;
+            this.txtPrixSpecial.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrixSpecial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrixSpecial.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtPrixSpecial.Location = new System.Drawing.Point(424, 96);
+            this.txtPrixSpecial.MaxLength = 0;
+            this.txtPrixSpecial.Name = "txtPrixSpecial";
+            this.txtPrixSpecial.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPrixSpecial.Size = new System.Drawing.Size(57, 15);
+            this.txtPrixSpecial.TabIndex = 54;
+            this.txtPrixSpecial.TextChanged += new System.EventHandler(this.txtPrixSpecial_TextChanged);
+            this.txtPrixSpecial.Leave += new System.EventHandler(this.txtPrixSpecial_Leave);
             // 
             // mskValide
             // 
-            mskValide.Location = new System.Drawing.Point(104, 72);
-            mskValide.Name = "mskValide";
-            mskValide.Size = new System.Drawing.Size(81, 22);
-            mskValide.TabIndex = 46;
+            this.mskValide.BackColor = System.Drawing.Color.White;
+            this.mskValide.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mskValide.Location = new System.Drawing.Point(104, 72);
+            this.mskValide.Name = "mskValide";
+            this.mskValide.Size = new System.Drawing.Size(81, 15);
+            this.mskValide.TabIndex = 46;
             // 
             // mskEscompte
             // 
-            mskEscompte.Location = new System.Drawing.Point(424, 48);
-            mskEscompte.Name = "mskEscompte";
-            mskEscompte.Size = new System.Drawing.Size(57, 22);
-            mskEscompte.TabIndex = 50;
+            this.mskEscompte.BackColor = System.Drawing.Color.White;
+            this.mskEscompte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mskEscompte.Location = new System.Drawing.Point(424, 48);
+            this.mskEscompte.Name = "mskEscompte";
+            this.mskEscompte.Size = new System.Drawing.Size(57, 15);
+            this.mskEscompte.TabIndex = 50;
             // 
             // cmdEnrFrs
             // 
-            cmdEnrFrs.BackColor = System.Drawing.Color.Black;
-            cmdEnrFrs.ForeColor = System.Drawing.Color.White;
-            cmdEnrFrs.Location = new System.Drawing.Point(8, 128);
-            cmdEnrFrs.Name = "cmdEnrFrs";
-            cmdEnrFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdEnrFrs.Size = new System.Drawing.Size(73, 25);
-            cmdEnrFrs.TabIndex = 63;
-            cmdEnrFrs.Text = "&Enregistre";
-            cmdEnrFrs.UseVisualStyleBackColor = true;
-            cmdEnrFrs.Click += new System.EventHandler(cmdEnrFrs_Click);
+            this.cmdEnrFrs.BackColor = System.Drawing.Color.Black;
+            this.cmdEnrFrs.ForeColor = System.Drawing.Color.White;
+            this.cmdEnrFrs.Location = new System.Drawing.Point(8, 128);
+            this.cmdEnrFrs.Name = "cmdEnrFrs";
+            this.cmdEnrFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdEnrFrs.Size = new System.Drawing.Size(73, 25);
+            this.cmdEnrFrs.TabIndex = 63;
+            this.cmdEnrFrs.Text = "&Enregistre";
+            this.cmdEnrFrs.UseVisualStyleBackColor = true;
+            this.cmdEnrFrs.Click += new System.EventHandler(this.cmdEnrFrs_Click);
             // 
             // cmdAnnulFrs
             // 
-            cmdAnnulFrs.BackColor = System.Drawing.Color.Black;
-            cmdAnnulFrs.ForeColor = System.Drawing.Color.White;
-            cmdAnnulFrs.Location = new System.Drawing.Point(88, 128);
-            cmdAnnulFrs.Name = "cmdAnnulFrs";
-            cmdAnnulFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdAnnulFrs.Size = new System.Drawing.Size(73, 25);
-            cmdAnnulFrs.TabIndex = 64;
-            cmdAnnulFrs.Text = "A&nnuler";
-            cmdAnnulFrs.UseVisualStyleBackColor = true;
-            cmdAnnulFrs.Click += new System.EventHandler(cmdAnnulFrs_Click);
+            this.cmdAnnulFrs.BackColor = System.Drawing.Color.Black;
+            this.cmdAnnulFrs.ForeColor = System.Drawing.Color.White;
+            this.cmdAnnulFrs.Location = new System.Drawing.Point(88, 128);
+            this.cmdAnnulFrs.Name = "cmdAnnulFrs";
+            this.cmdAnnulFrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdAnnulFrs.Size = new System.Drawing.Size(73, 25);
+            this.cmdAnnulFrs.TabIndex = 64;
+            this.cmdAnnulFrs.Text = "A&nnuler";
+            this.cmdAnnulFrs.UseVisualStyleBackColor = true;
+            this.cmdAnnulFrs.Click += new System.EventHandler(this.cmdAnnulFrs_Click);
             // 
             // cmbfrs
             // 
-            cmbfrs.BackColor = System.Drawing.SystemColors.Window;
-            cmbfrs.ForeColor = System.Drawing.SystemColors.WindowText;
-            cmbfrs.Location = new System.Drawing.Point(104, 24);
-            cmbfrs.Name = "cmbfrs";
-            cmbfrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbfrs.Size = new System.Drawing.Size(185, 22);
-            cmbfrs.TabIndex = 44;
-            cmbfrs.SelectedIndexChanged += new System.EventHandler(cmbfrs_SelectedIndexChanged);
+            this.cmbfrs.BackColor = System.Drawing.SystemColors.Window;
+            this.cmbfrs.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmbfrs.Location = new System.Drawing.Point(104, 24);
+            this.cmbfrs.Name = "cmbfrs";
+            this.cmbfrs.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbfrs.Size = new System.Drawing.Size(185, 22);
+            this.cmbfrs.TabIndex = 44;
+            this.cmbfrs.SelectedIndexChanged += new System.EventHandler(this.cmbfrs_SelectedIndexChanged);
             // 
             // cmbPersRess
             // 
-            cmbPersRess.BackColor = System.Drawing.SystemColors.Window;
-            cmbPersRess.ForeColor = System.Drawing.SystemColors.WindowText;
-            cmbPersRess.Location = new System.Drawing.Point(104, 48);
-            cmbPersRess.Name = "cmbPersRess";
-            cmbPersRess.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbPersRess.Size = new System.Drawing.Size(145, 22);
-            cmbPersRess.TabIndex = 45;
+            this.cmbPersRess.BackColor = System.Drawing.SystemColors.Window;
+            this.cmbPersRess.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmbPersRess.Location = new System.Drawing.Point(104, 48);
+            this.cmbPersRess.Name = "cmbPersRess";
+            this.cmbPersRess.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbPersRess.Size = new System.Drawing.Size(145, 22);
+            this.cmbPersRess.TabIndex = 45;
             // 
             // optSpain
             // 
-            optSpain.BackColor = System.Drawing.Color.Black;
-            optSpain.ForeColor = System.Drawing.Color.White;
-            optSpain.Location = new System.Drawing.Point(624, 24);
-            optSpain.Name = "optSpain";
-            optSpain.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            optSpain.Size = new System.Drawing.Size(49, 17);
-            optSpain.TabIndex = 57;
-            optSpain.TabStop = true;
-            optSpain.Text = "SPA";
-            optSpain.UseVisualStyleBackColor = true;
-            optSpain.CheckedChanged += new System.EventHandler(optSpain_CheckedChanged);
+            this.optSpain.BackColor = System.Drawing.Color.Black;
+            this.optSpain.ForeColor = System.Drawing.Color.White;
+            this.optSpain.Location = new System.Drawing.Point(624, 24);
+            this.optSpain.Name = "optSpain";
+            this.optSpain.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.optSpain.Size = new System.Drawing.Size(49, 17);
+            this.optSpain.TabIndex = 57;
+            this.optSpain.TabStop = true;
+            this.optSpain.Text = "SPA";
+            this.optSpain.UseVisualStyleBackColor = true;
+            this.optSpain.CheckedChanged += new System.EventHandler(this.optSpain_CheckedChanged);
             // 
             // lblDevise1
             // 
-            lblDevise1.BackColor = System.Drawing.Color.Black;
-            lblDevise1.ForeColor = System.Drawing.Color.White;
-            lblDevise1.Location = new System.Drawing.Point(520, 128);
-            lblDevise1.Name = "lblDevise1";
-            lblDevise1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            lblDevise1.Size = new System.Drawing.Size(57, 17);
-            lblDevise1.TabIndex = 78;
-            lblDevise1.Text = "1$ CAN =";
-            lblDevise1.Visible = false;
+            this.lblDevise1.BackColor = System.Drawing.Color.Black;
+            this.lblDevise1.ForeColor = System.Drawing.Color.White;
+            this.lblDevise1.Location = new System.Drawing.Point(520, 128);
+            this.lblDevise1.Name = "lblDevise1";
+            this.lblDevise1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblDevise1.Size = new System.Drawing.Size(57, 17);
+            this.lblDevise1.TabIndex = 78;
+            this.lblDevise1.Text = "1$ CAN =";
             // 
             // lblDevise2
             // 
-            lblDevise2.BackColor = System.Drawing.Color.Black;
-            lblDevise2.ForeColor = System.Drawing.Color.White;
-            lblDevise2.Location = new System.Drawing.Point(637, 128);
-            lblDevise2.Name = "lblDevise2";
-            lblDevise2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            lblDevise2.Size = new System.Drawing.Size(38, 17);
-            lblDevise2.TabIndex = 77;
-            lblDevise2.Text = "$ USA";
-            lblDevise2.Visible = false;
+            this.lblDevise2.BackColor = System.Drawing.Color.Black;
+            this.lblDevise2.ForeColor = System.Drawing.Color.White;
+            this.lblDevise2.Location = new System.Drawing.Point(637, 128);
+            this.lblDevise2.Name = "lblDevise2";
+            this.lblDevise2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblDevise2.Size = new System.Drawing.Size(38, 17);
+            this.lblDevise2.TabIndex = 77;
+            this.lblDevise2.Text = "$ USA";
             // 
             // _Label1_5
             // 
-            _Label1_5.BackColor = System.Drawing.Color.Black;
-            _Label1_5.ForeColor = System.Drawing.Color.White;
-            _Label1_5.Location = new System.Drawing.Point(192, 72);
-            _Label1_5.Name = "_Label1_5";
-            _Label1_5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_5.Size = new System.Drawing.Size(65, 17);
-            _Label1_5.TabIndex = 60;
-            _Label1_5.Text = "AA-MM-JJ";
+            this._Label1_5.BackColor = System.Drawing.Color.Black;
+            this._Label1_5.ForeColor = System.Drawing.Color.White;
+            this._Label1_5.Location = new System.Drawing.Point(192, 72);
+            this._Label1_5.Name = "_Label1_5";
+            this._Label1_5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_5.Size = new System.Drawing.Size(65, 17);
+            this._Label1_5.TabIndex = 60;
+            this._Label1_5.Text = "AA-MM-JJ";
             // 
             // imgCanada
             // 
-            imgCanada.Location = new System.Drawing.Point(544, 48);
-            imgCanada.Name = "imgCanada";
-            imgCanada.Size = new System.Drawing.Size(112, 71);
-            imgCanada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            imgCanada.TabIndex = 79;
-            imgCanada.TabStop = false;
-            imgCanada.Visible = false;
+            this.imgCanada.BackgroundImage = global::ControleurServeur.Properties.Resources.Flgcan;
+            this.imgCanada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgCanada.Location = new System.Drawing.Point(544, 47);
+            this.imgCanada.Name = "imgCanada";
+            this.imgCanada.Size = new System.Drawing.Size(112, 71);
+            this.imgCanada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCanada.TabIndex = 79;
+            this.imgCanada.TabStop = false;
             // 
             // imgEU
             // 
-            imgEU.Location = new System.Drawing.Point(544, 48);
-            imgEU.Name = "imgEU";
-            imgEU.Size = new System.Drawing.Size(112, 71);
-            imgEU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            imgEU.TabIndex = 80;
-            imgEU.TabStop = false;
-            imgEU.Visible = false;
+            this.imgEU.BackgroundImage = global::ControleurServeur.Properties.Resources.Flgusa02;
+            this.imgEU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.imgEU.Location = new System.Drawing.Point(544, 47);
+            this.imgEU.Name = "imgEU";
+            this.imgEU.Size = new System.Drawing.Size(112, 71);
+            this.imgEU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgEU.TabIndex = 80;
+            this.imgEU.TabStop = false;
             // 
             // _Label1_14
             // 
-            _Label1_14.BackColor = System.Drawing.Color.Black;
-            _Label1_14.ForeColor = System.Drawing.Color.White;
-            _Label1_14.Location = new System.Drawing.Point(8, 24);
-            _Label1_14.Name = "_Label1_14";
-            _Label1_14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_14.Size = new System.Drawing.Size(81, 17);
-            _Label1_14.TabIndex = 43;
-            _Label1_14.Text = "Distributeur :";
+            this._Label1_14.BackColor = System.Drawing.Color.Black;
+            this._Label1_14.ForeColor = System.Drawing.Color.White;
+            this._Label1_14.Location = new System.Drawing.Point(8, 24);
+            this._Label1_14.Name = "_Label1_14";
+            this._Label1_14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_14.Size = new System.Drawing.Size(81, 17);
+            this._Label1_14.TabIndex = 43;
+            this._Label1_14.Text = "Distributeur :";
             // 
             // _Label1_16
             // 
-            _Label1_16.BackColor = System.Drawing.Color.Black;
-            _Label1_16.ForeColor = System.Drawing.Color.White;
-            _Label1_16.Location = new System.Drawing.Point(344, 24);
-            _Label1_16.Name = "_Label1_16";
-            _Label1_16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_16.Size = new System.Drawing.Size(65, 17);
-            _Label1_16.TabIndex = 47;
-            _Label1_16.Text = "Prix Listé :";
+            this._Label1_16.BackColor = System.Drawing.Color.Black;
+            this._Label1_16.ForeColor = System.Drawing.Color.White;
+            this._Label1_16.Location = new System.Drawing.Point(344, 24);
+            this._Label1_16.Name = "_Label1_16";
+            this._Label1_16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_16.Size = new System.Drawing.Size(65, 17);
+            this._Label1_16.TabIndex = 47;
+            this._Label1_16.Text = "Prix Listé :";
             // 
             // _Label1_19
             // 
-            _Label1_19.BackColor = System.Drawing.Color.Black;
-            _Label1_19.ForeColor = System.Drawing.Color.White;
-            _Label1_19.Location = new System.Drawing.Point(344, 48);
-            _Label1_19.Name = "_Label1_19";
-            _Label1_19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_19.Size = new System.Drawing.Size(73, 17);
-            _Label1_19.TabIndex = 49;
-            _Label1_19.Text = "Escompte :";
+            this._Label1_19.BackColor = System.Drawing.Color.Black;
+            this._Label1_19.ForeColor = System.Drawing.Color.White;
+            this._Label1_19.Location = new System.Drawing.Point(344, 48);
+            this._Label1_19.Name = "_Label1_19";
+            this._Label1_19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_19.Size = new System.Drawing.Size(73, 17);
+            this._Label1_19.TabIndex = 49;
+            this._Label1_19.Text = "Escompte :";
             // 
             // _Label1_24
             // 
-            _Label1_24.BackColor = System.Drawing.Color.Black;
-            _Label1_24.ForeColor = System.Drawing.Color.White;
-            _Label1_24.Location = new System.Drawing.Point(8, 48);
-            _Label1_24.Name = "_Label1_24";
-            _Label1_24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_24.Size = new System.Drawing.Size(105, 17);
-            _Label1_24.TabIndex = 58;
-            _Label1_24.Text = "Pers. Ress :";
+            this._Label1_24.BackColor = System.Drawing.Color.Black;
+            this._Label1_24.ForeColor = System.Drawing.Color.White;
+            this._Label1_24.Location = new System.Drawing.Point(8, 48);
+            this._Label1_24.Name = "_Label1_24";
+            this._Label1_24.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_24.Size = new System.Drawing.Size(105, 17);
+            this._Label1_24.TabIndex = 58;
+            this._Label1_24.Text = "Pers. Ress :";
             // 
             // _Label1_20
             // 
-            _Label1_20.BackColor = System.Drawing.Color.Black;
-            _Label1_20.ForeColor = System.Drawing.Color.White;
-            _Label1_20.Location = new System.Drawing.Point(344, 72);
-            _Label1_20.Name = "_Label1_20";
-            _Label1_20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_20.Size = new System.Drawing.Size(73, 17);
-            _Label1_20.TabIndex = 51;
-            _Label1_20.Text = "Prix Net :";
+            this._Label1_20.BackColor = System.Drawing.Color.Black;
+            this._Label1_20.ForeColor = System.Drawing.Color.White;
+            this._Label1_20.Location = new System.Drawing.Point(344, 72);
+            this._Label1_20.Name = "_Label1_20";
+            this._Label1_20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_20.Size = new System.Drawing.Size(73, 17);
+            this._Label1_20.TabIndex = 51;
+            this._Label1_20.Text = "Prix Net :";
             // 
             // _Label1_2
             // 
-            _Label1_2.BackColor = System.Drawing.Color.Black;
-            _Label1_2.ForeColor = System.Drawing.Color.White;
-            _Label1_2.Location = new System.Drawing.Point(344, 96);
-            _Label1_2.Name = "_Label1_2";
-            _Label1_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_2.Size = new System.Drawing.Size(81, 17);
-            _Label1_2.TabIndex = 53;
-            _Label1_2.Text = "Prix Spécial :";
+            this._Label1_2.BackColor = System.Drawing.Color.Black;
+            this._Label1_2.ForeColor = System.Drawing.Color.White;
+            this._Label1_2.Location = new System.Drawing.Point(344, 96);
+            this._Label1_2.Name = "_Label1_2";
+            this._Label1_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_2.Size = new System.Drawing.Size(81, 17);
+            this._Label1_2.TabIndex = 53;
+            this._Label1_2.Text = "Prix Spécial :";
             // 
             // _Label1_23
             // 
-            _Label1_23.BackColor = System.Drawing.Color.Black;
-            _Label1_23.ForeColor = System.Drawing.Color.White;
-            _Label1_23.Location = new System.Drawing.Point(8, 72);
-            _Label1_23.Name = "_Label1_23";
-            _Label1_23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_23.Size = new System.Drawing.Size(97, 17);
-            _Label1_23.TabIndex = 59;
-            _Label1_23.Text = "Valide jusqu\'au :";
+            this._Label1_23.BackColor = System.Drawing.Color.Black;
+            this._Label1_23.ForeColor = System.Drawing.Color.White;
+            this._Label1_23.Location = new System.Drawing.Point(8, 72);
+            this._Label1_23.Name = "_Label1_23";
+            this._Label1_23.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_23.Size = new System.Drawing.Size(97, 17);
+            this._Label1_23.TabIndex = 59;
+            this._Label1_23.Text = "Valide jusqu\'au :";
             // 
             // imgSpain
             // 
-            imgSpain.Location = new System.Drawing.Point(544, 48);
-            imgSpain.Name = "imgSpain";
-            imgSpain.Size = new System.Drawing.Size(112, 71);
-            imgSpain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            imgSpain.TabIndex = 81;
-            imgSpain.TabStop = false;
-            imgSpain.Visible = false;
+            this.imgSpain.BackgroundImage = global::ControleurServeur.Properties.Resources.Flgspain;
+            this.imgSpain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.imgSpain.Location = new System.Drawing.Point(544, 48);
+            this.imgSpain.Name = "imgSpain";
+            this.imgSpain.Size = new System.Drawing.Size(112, 71);
+            this.imgSpain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgSpain.TabIndex = 81;
+            this.imgSpain.TabStop = false;
+            // 
+            // lvwfournisseur
+            // 
+            this.lvwfournisseur.BackColor = System.Drawing.SystemColors.Window;
+            this.lvwfournisseur.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this._lvwfournisseur_ColumnHeader_1,
+            this._lvwfournisseur_ColumnHeader_2,
+            this._lvwfournisseur_ColumnHeader_3,
+            this._lvwfournisseur_ColumnHeader_4,
+            this._lvwfournisseur_ColumnHeader_5,
+            this._lvwfournisseur_ColumnHeader_6,
+            this._lvwfournisseur_ColumnHeader_7,
+            this._lvwfournisseur_ColumnHeader_8,
+            this._lvwfournisseur_ColumnHeader_9,
+            this._lvwfournisseur_ColumnHeader_10});
+            this.lvwfournisseur.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lvwfournisseur.FullRowSelect = true;
+            this.lvwfournisseur.GridLines = true;
+            this.lvwfournisseur.HideSelection = false;
+            this.lvwfournisseur.Location = new System.Drawing.Point(6, 20);
+            this.lvwfournisseur.Name = "lvwfournisseur";
+            this.lvwfournisseur.Size = new System.Drawing.Size(691, 105);
+            this.lvwfournisseur.TabIndex = 83;
+            this.lvwfournisseur.UseCompatibleStateImageBehavior = false;
+            this.lvwfournisseur.View = System.Windows.Forms.View.Details;
+            // 
+            // _lvwfournisseur_ColumnHeader_1
+            // 
+            this._lvwfournisseur_ColumnHeader_1.Text = "Fournisseur";
+            this._lvwfournisseur_ColumnHeader_1.Width = 236;
+            // 
+            // _lvwfournisseur_ColumnHeader_2
+            // 
+            this._lvwfournisseur_ColumnHeader_2.Text = "Pers. Ress.";
+            this._lvwfournisseur_ColumnHeader_2.Width = 133;
+            // 
+            // _lvwfournisseur_ColumnHeader_3
+            // 
+            this._lvwfournisseur_ColumnHeader_3.Text = "Date";
+            this._lvwfournisseur_ColumnHeader_3.Width = 117;
+            // 
+            // _lvwfournisseur_ColumnHeader_4
+            // 
+            this._lvwfournisseur_ColumnHeader_4.Text = "Par";
+            this._lvwfournisseur_ColumnHeader_4.Width = 54;
+            // 
+            // _lvwfournisseur_ColumnHeader_5
+            // 
+            this._lvwfournisseur_ColumnHeader_5.Text = "Valide";
+            this._lvwfournisseur_ColumnHeader_5.Width = 117;
+            // 
+            // _lvwfournisseur_ColumnHeader_6
+            // 
+            this._lvwfournisseur_ColumnHeader_6.Text = "Prix listé";
+            this._lvwfournisseur_ColumnHeader_6.Width = 108;
+            // 
+            // _lvwfournisseur_ColumnHeader_7
+            // 
+            this._lvwfournisseur_ColumnHeader_7.Text = "Escompte";
+            this._lvwfournisseur_ColumnHeader_7.Width = 105;
+            // 
+            // _lvwfournisseur_ColumnHeader_8
+            // 
+            this._lvwfournisseur_ColumnHeader_8.Text = "Prix net";
+            this._lvwfournisseur_ColumnHeader_8.Width = 108;
+            // 
+            // _lvwfournisseur_ColumnHeader_9
+            // 
+            this._lvwfournisseur_ColumnHeader_9.Text = "Prix spécial";
+            this._lvwfournisseur_ColumnHeader_9.Width = 115;
+            // 
+            // _lvwfournisseur_ColumnHeader_10
+            // 
+            this._lvwfournisseur_ColumnHeader_10.Text = "Quoter";
+            this._lvwfournisseur_ColumnHeader_10.Width = 80;
             // 
             // cmbCategorie
             // 
-            cmbCategorie.BackColor = System.Drawing.Color.White;
-            cmbCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
-            cmbCategorie.Location = new System.Drawing.Point(376, 8);
-            cmbCategorie.Name = "cmbCategorie";
-            cmbCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbCategorie.Size = new System.Drawing.Size(281, 22);
-            cmbCategorie.TabIndex = 0;
-            cmbCategorie.Text = "cmbCategorie";
-            cmbCategorie.SelectedIndexChanged += new System.EventHandler(cmbCategorie_SelectedIndexChanged);
+            this.cmbCategorie.BackColor = System.Drawing.Color.White;
+            this.cmbCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmbCategorie.Location = new System.Drawing.Point(376, 8);
+            this.cmbCategorie.Name = "cmbCategorie";
+            this.cmbCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbCategorie.Size = new System.Drawing.Size(281, 22);
+            this.cmbCategorie.TabIndex = 0;
+            this.cmbCategorie.Text = "cmbCategorie";
+            this.cmbCategorie.SelectedIndexChanged += new System.EventHandler(this.cmbCategorie_SelectedIndexChanged);
             // 
             // txtNoItemGRB
             // 
-            txtNoItemGRB.AcceptsReturn = true;
-            txtNoItemGRB.BackColor = System.Drawing.Color.White;
-            txtNoItemGRB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtNoItemGRB.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtNoItemGRB.Location = new System.Drawing.Point(128, 152);
-            txtNoItemGRB.MaxLength = 0;
-            txtNoItemGRB.Name = "txtNoItemGRB";
-            txtNoItemGRB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtNoItemGRB.Size = new System.Drawing.Size(129, 22);
-            txtNoItemGRB.TabIndex = 24;
+            this.txtNoItemGRB.AcceptsReturn = true;
+            this.txtNoItemGRB.BackColor = System.Drawing.Color.White;
+            this.txtNoItemGRB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNoItemGRB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNoItemGRB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtNoItemGRB.Location = new System.Drawing.Point(128, 152);
+            this.txtNoItemGRB.MaxLength = 0;
+            this.txtNoItemGRB.Name = "txtNoItemGRB";
+            this.txtNoItemGRB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNoItemGRB.Size = new System.Drawing.Size(129, 15);
+            this.txtNoItemGRB.TabIndex = 24;
             // 
             // cmbNoItem
             // 
-            cmbNoItem.BackColor = System.Drawing.Color.White;
-            cmbNoItem.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmbNoItem.ForeColor = System.Drawing.SystemColors.WindowText;
-            cmbNoItem.Location = new System.Drawing.Point(128, 120);
-            cmbNoItem.Name = "cmbNoItem";
-            cmbNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbNoItem.Size = new System.Drawing.Size(129, 22);
-            cmbNoItem.TabIndex = 17;
-            cmbNoItem.Text = "cmbNoItem";
-            cmbNoItem.Visible = false;
-            cmbNoItem.SelectedIndexChanged += new System.EventHandler(cmbNoItem_SelectedIndexChanged);
+            this.cmbNoItem.BackColor = System.Drawing.Color.White;
+            this.cmbNoItem.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmbNoItem.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmbNoItem.Location = new System.Drawing.Point(128, 120);
+            this.cmbNoItem.Name = "cmbNoItem";
+            this.cmbNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbNoItem.Size = new System.Drawing.Size(129, 22);
+            this.cmbNoItem.TabIndex = 17;
+            this.cmbNoItem.Text = "cmbNoItem";
+            this.cmbNoItem.SelectedIndexChanged += new System.EventHandler(this.cmbNoItem_SelectedIndexChanged);
             // 
             // CmdModif
             // 
-            CmdModif.BackColor = System.Drawing.Color.Black;
-            CmdModif.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            CmdModif.ForeColor = System.Drawing.Color.White;
-            CmdModif.Location = new System.Drawing.Point(528, 400);
-            CmdModif.Name = "CmdModif";
-            CmdModif.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            CmdModif.Size = new System.Drawing.Size(89, 33);
-            CmdModif.TabIndex = 74;
-            CmdModif.Text = "&Modifier";
-            CmdModif.UseVisualStyleBackColor = true;
-            CmdModif.Click += new System.EventHandler(CmdModif_Click);
+            this.CmdModif.BackColor = System.Drawing.Color.Black;
+            this.CmdModif.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.CmdModif.ForeColor = System.Drawing.Color.White;
+            this.CmdModif.Location = new System.Drawing.Point(528, 400);
+            this.CmdModif.Name = "CmdModif";
+            this.CmdModif.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CmdModif.Size = new System.Drawing.Size(89, 33);
+            this.CmdModif.TabIndex = 74;
+            this.CmdModif.Text = "&Modifier";
+            this.CmdModif.UseVisualStyleBackColor = true;
+            this.CmdModif.Click += new System.EventHandler(this.CmdModif_Click);
             // 
             // CmdFerme
             // 
-            CmdFerme.BackColor = System.Drawing.Color.Black;
-            CmdFerme.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            CmdFerme.ForeColor = System.Drawing.Color.White;
-            CmdFerme.Location = new System.Drawing.Point(624, 400);
-            CmdFerme.Name = "CmdFerme";
-            CmdFerme.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            CmdFerme.Size = new System.Drawing.Size(89, 33);
-            CmdFerme.TabIndex = 75;
-            CmdFerme.Text = "&Fermer";
-            CmdFerme.UseVisualStyleBackColor = true;
-            CmdFerme.Click += new System.EventHandler(CmdFerme_Click);
+            this.CmdFerme.BackColor = System.Drawing.Color.Black;
+            this.CmdFerme.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.CmdFerme.ForeColor = System.Drawing.Color.White;
+            this.CmdFerme.Location = new System.Drawing.Point(624, 400);
+            this.CmdFerme.Name = "CmdFerme";
+            this.CmdFerme.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CmdFerme.Size = new System.Drawing.Size(89, 33);
+            this.CmdFerme.TabIndex = 75;
+            this.CmdFerme.Text = "&Fermer";
+            this.CmdFerme.UseVisualStyleBackColor = true;
+            this.CmdFerme.Click += new System.EventHandler(this.CmdFerme_Click);
             // 
             // CmdSupp
             // 
-            CmdSupp.BackColor = System.Drawing.Color.Black;
-            CmdSupp.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            CmdSupp.ForeColor = System.Drawing.Color.White;
-            CmdSupp.Location = new System.Drawing.Point(432, 400);
-            CmdSupp.Name = "CmdSupp";
-            CmdSupp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            CmdSupp.Size = new System.Drawing.Size(89, 33);
-            CmdSupp.TabIndex = 72;
-            CmdSupp.Text = "&Supprimer";
-            CmdSupp.UseVisualStyleBackColor = true;
-            CmdSupp.Click += new System.EventHandler(CmdSupp_Click);
+            this.CmdSupp.BackColor = System.Drawing.Color.Black;
+            this.CmdSupp.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.CmdSupp.ForeColor = System.Drawing.Color.White;
+            this.CmdSupp.Location = new System.Drawing.Point(432, 400);
+            this.CmdSupp.Name = "CmdSupp";
+            this.CmdSupp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CmdSupp.Size = new System.Drawing.Size(89, 33);
+            this.CmdSupp.TabIndex = 72;
+            this.CmdSupp.Text = "&Supprimer";
+            this.CmdSupp.UseVisualStyleBackColor = true;
+            this.CmdSupp.Click += new System.EventHandler(this.CmdSupp_Click);
             // 
             // CmdAdd
             // 
-            CmdAdd.BackColor = System.Drawing.Color.Black;
-            CmdAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            CmdAdd.ForeColor = System.Drawing.Color.White;
-            CmdAdd.Location = new System.Drawing.Point(336, 400);
-            CmdAdd.Name = "CmdAdd";
-            CmdAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            CmdAdd.Size = new System.Drawing.Size(89, 33);
-            CmdAdd.TabIndex = 71;
-            CmdAdd.Text = "&Ajouter";
-            CmdAdd.UseVisualStyleBackColor = true;
-            CmdAdd.Click += new System.EventHandler(CmdAdd_Click);
+            this.CmdAdd.BackColor = System.Drawing.Color.Black;
+            this.CmdAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.CmdAdd.ForeColor = System.Drawing.Color.White;
+            this.CmdAdd.Location = new System.Drawing.Point(336, 400);
+            this.CmdAdd.Name = "CmdAdd";
+            this.CmdAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CmdAdd.Size = new System.Drawing.Size(89, 33);
+            this.CmdAdd.TabIndex = 71;
+            this.CmdAdd.Text = "&Ajouter";
+            this.CmdAdd.UseVisualStyleBackColor = true;
+            this.CmdAdd.Click += new System.EventHandler(this.CmdAdd_Click);
             // 
             // txtComment
             // 
-            txtComment.AcceptsReturn = true;
-            txtComment.BackColor = System.Drawing.Color.White;
-            txtComment.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtComment.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtComment.Location = new System.Drawing.Point(376, 128);
-            txtComment.MaxLength = 100;
-            txtComment.Name = "txtComment";
-            txtComment.ReadOnly = true;
-            txtComment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtComment.Size = new System.Drawing.Size(305, 22);
-            txtComment.TabIndex = 25;
+            this.txtComment.AcceptsReturn = true;
+            this.txtComment.BackColor = System.Drawing.Color.White;
+            this.txtComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtComment.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtComment.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtComment.Location = new System.Drawing.Point(376, 128);
+            this.txtComment.MaxLength = 100;
+            this.txtComment.Name = "txtComment";
+            this.txtComment.ReadOnly = true;
+            this.txtComment.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtComment.Size = new System.Drawing.Size(305, 15);
+            this.txtComment.TabIndex = 25;
             // 
             // cmbFabricant
             // 
-            cmbFabricant.BackColor = System.Drawing.Color.White;
-            cmbFabricant.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmbFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
-            cmbFabricant.Location = new System.Drawing.Point(128, 64);
-            cmbFabricant.Name = "cmbFabricant";
-            cmbFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbFabricant.Size = new System.Drawing.Size(129, 22);
-            cmbFabricant.TabIndex = 10;
-            cmbFabricant.Text = "cmbFabricant";
-            cmbFabricant.SelectedIndexChanged += new System.EventHandler(cmbFabricant_SelectedIndexChanged);
+            this.cmbFabricant.BackColor = System.Drawing.Color.White;
+            this.cmbFabricant.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmbFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmbFabricant.Location = new System.Drawing.Point(128, 64);
+            this.cmbFabricant.Name = "cmbFabricant";
+            this.cmbFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbFabricant.Size = new System.Drawing.Size(129, 22);
+            this.cmbFabricant.TabIndex = 10;
+            this.cmbFabricant.Text = "cmbFabricant";
+            this.cmbFabricant.SelectedIndexChanged += new System.EventHandler(this.cmbFabricant_SelectedIndexChanged);
             // 
             // txtFabricant
             // 
-            txtFabricant.AcceptsReturn = true;
-            txtFabricant.BackColor = System.Drawing.Color.White;
-            txtFabricant.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtFabricant.Enabled = false;
-            txtFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtFabricant.Location = new System.Drawing.Point(128, 88);
-            txtFabricant.MaxLength = 0;
-            txtFabricant.Name = "txtFabricant";
-            txtFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtFabricant.Size = new System.Drawing.Size(129, 22);
-            txtFabricant.TabIndex = 8;
+            this.txtFabricant.AcceptsReturn = true;
+            this.txtFabricant.BackColor = System.Drawing.Color.White;
+            this.txtFabricant.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFabricant.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFabricant.Enabled = false;
+            this.txtFabricant.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtFabricant.Location = new System.Drawing.Point(128, 88);
+            this.txtFabricant.MaxLength = 0;
+            this.txtFabricant.Name = "txtFabricant";
+            this.txtFabricant.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtFabricant.Size = new System.Drawing.Size(129, 15);
+            this.txtFabricant.TabIndex = 8;
             // 
             // txtDescriptionEN
             // 
-            txtDescriptionEN.AcceptsReturn = true;
-            txtDescriptionEN.BackColor = System.Drawing.Color.White;
-            txtDescriptionEN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtDescriptionEN.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtDescriptionEN.Location = new System.Drawing.Point(376, 96);
-            txtDescriptionEN.MaxLength = 100;
-            txtDescriptionEN.Name = "txtDescriptionEN";
-            txtDescriptionEN.ReadOnly = true;
-            txtDescriptionEN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtDescriptionEN.Size = new System.Drawing.Size(305, 22);
-            txtDescriptionEN.TabIndex = 21;
+            this.txtDescriptionEN.AcceptsReturn = true;
+            this.txtDescriptionEN.BackColor = System.Drawing.Color.White;
+            this.txtDescriptionEN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDescriptionEN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescriptionEN.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtDescriptionEN.Location = new System.Drawing.Point(376, 96);
+            this.txtDescriptionEN.MaxLength = 100;
+            this.txtDescriptionEN.Name = "txtDescriptionEN";
+            this.txtDescriptionEN.ReadOnly = true;
+            this.txtDescriptionEN.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDescriptionEN.Size = new System.Drawing.Size(305, 15);
+            this.txtDescriptionEN.TabIndex = 21;
             // 
             // txtDescriptionFR
             // 
-            txtDescriptionFR.AcceptsReturn = true;
-            txtDescriptionFR.BackColor = System.Drawing.Color.White;
-            txtDescriptionFR.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtDescriptionFR.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtDescriptionFR.Location = new System.Drawing.Point(376, 64);
-            txtDescriptionFR.MaxLength = 100;
-            txtDescriptionFR.Name = "txtDescriptionFR";
-            txtDescriptionFR.ReadOnly = true;
-            txtDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtDescriptionFR.Size = new System.Drawing.Size(305, 22);
-            txtDescriptionFR.TabIndex = 14;
+            this.txtDescriptionFR.AcceptsReturn = true;
+            this.txtDescriptionFR.BackColor = System.Drawing.Color.White;
+            this.txtDescriptionFR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDescriptionFR.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescriptionFR.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtDescriptionFR.Location = new System.Drawing.Point(376, 64);
+            this.txtDescriptionFR.MaxLength = 100;
+            this.txtDescriptionFR.Name = "txtDescriptionFR";
+            this.txtDescriptionFR.ReadOnly = true;
+            this.txtDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDescriptionFR.Size = new System.Drawing.Size(305, 15);
+            this.txtDescriptionFR.TabIndex = 14;
             // 
             // txtNoItem
             // 
-            txtNoItem.AcceptsReturn = true;
-            txtNoItem.BackColor = System.Drawing.SystemColors.Window;
-            txtNoItem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtNoItem.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtNoItem.Location = new System.Drawing.Point(128, 120);
-            txtNoItem.MaxLength = 0;
-            txtNoItem.Name = "txtNoItem";
-            txtNoItem.ReadOnly = true;
-            txtNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtNoItem.Size = new System.Drawing.Size(129, 22);
-            txtNoItem.TabIndex = 18;
-            txtNoItem.TextChanged += new System.EventHandler(txtNoItem_TextChanged);
+            this.txtNoItem.AcceptsReturn = true;
+            this.txtNoItem.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNoItem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNoItem.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtNoItem.Location = new System.Drawing.Point(128, 120);
+            this.txtNoItem.MaxLength = 0;
+            this.txtNoItem.Name = "txtNoItem";
+            this.txtNoItem.ReadOnly = true;
+            this.txtNoItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNoItem.Size = new System.Drawing.Size(129, 22);
+            this.txtNoItem.TabIndex = 18;
+            this.txtNoItem.TextChanged += new System.EventHandler(this.txtNoItem_TextChanged);
             // 
             // CmdAnul
             // 
-            CmdAnul.BackColor = System.Drawing.Color.Black;
-            CmdAnul.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            CmdAnul.ForeColor = System.Drawing.Color.White;
-            CmdAnul.Location = new System.Drawing.Point(432, 400);
-            CmdAnul.Name = "CmdAnul";
-            CmdAnul.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            CmdAnul.Size = new System.Drawing.Size(89, 33);
-            CmdAnul.TabIndex = 73;
-            CmdAnul.Text = "A&nnuler";
-            CmdAnul.UseVisualStyleBackColor = true;
-            CmdAnul.Click += new System.EventHandler(CmdAnul_Click);
+            this.CmdAnul.BackColor = System.Drawing.Color.Black;
+            this.CmdAnul.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.CmdAnul.ForeColor = System.Drawing.Color.White;
+            this.CmdAnul.Location = new System.Drawing.Point(432, 400);
+            this.CmdAnul.Name = "CmdAnul";
+            this.CmdAnul.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CmdAnul.Size = new System.Drawing.Size(89, 33);
+            this.CmdAnul.TabIndex = 73;
+            this.CmdAnul.Text = "A&nnuler";
+            this.CmdAnul.UseVisualStyleBackColor = true;
+            this.CmdAnul.Click += new System.EventHandler(this.CmdAnul_Click);
             // 
             // CmdEnr
             // 
-            CmdEnr.BackColor = System.Drawing.Color.Black;
-            CmdEnr.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            CmdEnr.ForeColor = System.Drawing.Color.White;
-            CmdEnr.Location = new System.Drawing.Point(336, 400);
-            CmdEnr.Name = "CmdEnr";
-            CmdEnr.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            CmdEnr.Size = new System.Drawing.Size(89, 33);
-            CmdEnr.TabIndex = 70;
-            CmdEnr.Text = "&Enregistre";
-            CmdEnr.UseVisualStyleBackColor = true;
-            CmdEnr.Click += new System.EventHandler(CmdEnr_Click);
+            this.CmdEnr.BackColor = System.Drawing.Color.Black;
+            this.CmdEnr.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.CmdEnr.ForeColor = System.Drawing.Color.White;
+            this.CmdEnr.Location = new System.Drawing.Point(336, 400);
+            this.CmdEnr.Name = "CmdEnr";
+            this.CmdEnr.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CmdEnr.Size = new System.Drawing.Size(89, 33);
+            this.CmdEnr.TabIndex = 70;
+            this.CmdEnr.Text = "&Enregistre";
+            this.CmdEnr.UseVisualStyleBackColor = true;
+            this.CmdEnr.Click += new System.EventHandler(this.CmdEnr_Click);
             // 
             // txtCategorie
             // 
-            txtCategorie.AcceptsReturn = true;
-            txtCategorie.BackColor = System.Drawing.SystemColors.Window;
-            txtCategorie.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtCategorie.Location = new System.Drawing.Point(376, 8);
-            txtCategorie.MaxLength = 0;
-            txtCategorie.Name = "txtCategorie";
-            txtCategorie.ReadOnly = true;
-            txtCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtCategorie.Size = new System.Drawing.Size(281, 22);
-            txtCategorie.TabIndex = 2;
+            this.txtCategorie.AcceptsReturn = true;
+            this.txtCategorie.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCategorie.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCategorie.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtCategorie.Location = new System.Drawing.Point(376, 8);
+            this.txtCategorie.MaxLength = 0;
+            this.txtCategorie.Name = "txtCategorie";
+            this.txtCategorie.ReadOnly = true;
+            this.txtCategorie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCategorie.Size = new System.Drawing.Size(281, 22);
+            this.txtCategorie.TabIndex = 2;
             // 
             // cmdRechercherPiece
             // 
-            cmdRechercherPiece.BackColor = System.Drawing.Color.Black;
-            cmdRechercherPiece.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercherPiece.ForeColor = System.Drawing.Color.White;
-            cmdRechercherPiece.Location = new System.Drawing.Point(264, 120);
-            cmdRechercherPiece.Name = "cmdRechercherPiece";
-            cmdRechercherPiece.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercherPiece.Size = new System.Drawing.Size(25, 25);
-            cmdRechercherPiece.TabIndex = 19;
-            cmdRechercherPiece.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            cmdRechercherPiece.UseVisualStyleBackColor = true;
-            cmdRechercherPiece.Click += new System.EventHandler(cmdRechercherPiece_Click);
+            this.cmdRechercherPiece.BackColor = System.Drawing.Color.Black;
+            this.cmdRechercherPiece.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdRechercherPiece.BackgroundImage")));
+            this.cmdRechercherPiece.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdRechercherPiece.ForeColor = System.Drawing.Color.White;
+            this.cmdRechercherPiece.Location = new System.Drawing.Point(264, 120);
+            this.cmdRechercherPiece.Name = "cmdRechercherPiece";
+            this.cmdRechercherPiece.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdRechercherPiece.Size = new System.Drawing.Size(25, 25);
+            this.cmdRechercherPiece.TabIndex = 19;
+            this.cmdRechercherPiece.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cmdRechercherPiece.UseVisualStyleBackColor = true;
+            this.cmdRechercherPiece.Click += new System.EventHandler(this.cmdRechercherPiece_Click);
             // 
             // cmbDescriptionFR
             // 
-            cmbDescriptionFR.BackColor = System.Drawing.SystemColors.Window;
-            cmbDescriptionFR.ForeColor = System.Drawing.SystemColors.WindowText;
-            cmbDescriptionFR.Location = new System.Drawing.Point(376, 64);
-            cmbDescriptionFR.Name = "cmbDescriptionFR";
-            cmbDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbDescriptionFR.Size = new System.Drawing.Size(305, 22);
-            cmbDescriptionFR.TabIndex = 13;
-            cmbDescriptionFR.SelectedIndexChanged += new System.EventHandler(cmbDescriptionFR_SelectedIndexChanged);
+            this.cmbDescriptionFR.BackColor = System.Drawing.SystemColors.Window;
+            this.cmbDescriptionFR.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmbDescriptionFR.Location = new System.Drawing.Point(376, 64);
+            this.cmbDescriptionFR.Name = "cmbDescriptionFR";
+            this.cmbDescriptionFR.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbDescriptionFR.Size = new System.Drawing.Size(305, 22);
+            this.cmbDescriptionFR.TabIndex = 13;
+            this.cmbDescriptionFR.SelectedIndexChanged += new System.EventHandler(this.cmbDescriptionFR_SelectedIndexChanged);
             // 
             // cmdRechercherManufact
             // 
-            cmdRechercherManufact.BackColor = System.Drawing.Color.Black;
-            cmdRechercherManufact.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercherManufact.ForeColor = System.Drawing.Color.White;
-            cmdRechercherManufact.Location = new System.Drawing.Point(264, 64);
-            cmdRechercherManufact.Name = "cmdRechercherManufact";
-            cmdRechercherManufact.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercherManufact.Size = new System.Drawing.Size(25, 25);
-            cmdRechercherManufact.TabIndex = 11;
-            cmdRechercherManufact.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            cmdRechercherManufact.UseVisualStyleBackColor = true;
-            cmdRechercherManufact.Click += new System.EventHandler(cmdRechercherManufact_Click);
+            this.cmdRechercherManufact.BackColor = System.Drawing.Color.Black;
+            this.cmdRechercherManufact.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdRechercherManufact.BackgroundImage")));
+            this.cmdRechercherManufact.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdRechercherManufact.ForeColor = System.Drawing.Color.White;
+            this.cmdRechercherManufact.Location = new System.Drawing.Point(264, 64);
+            this.cmdRechercherManufact.Name = "cmdRechercherManufact";
+            this.cmdRechercherManufact.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdRechercherManufact.Size = new System.Drawing.Size(25, 25);
+            this.cmdRechercherManufact.TabIndex = 11;
+            this.cmdRechercherManufact.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cmdRechercherManufact.UseVisualStyleBackColor = true;
+            this.cmdRechercherManufact.Click += new System.EventHandler(this.cmdRechercherManufact_Click);
             // 
             // chkInventaire
             // 
-            chkInventaire.BackColor = System.Drawing.Color.Black;
-            chkInventaire.ForeColor = System.Drawing.Color.White;
-            chkInventaire.Location = new System.Drawing.Point(376, 152);
-            chkInventaire.Name = "chkInventaire";
-            chkInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            chkInventaire.Size = new System.Drawing.Size(89, 25);
-            chkInventaire.TabIndex = 26;
-            chkInventaire.Text = "Présent dans l\'inventaire";
-            chkInventaire.UseVisualStyleBackColor = true;
-            chkInventaire.CheckStateChanged += new System.EventHandler(chkInventaire_CheckStateChanged);
+            this.chkInventaire.BackColor = System.Drawing.Color.Black;
+            this.chkInventaire.ForeColor = System.Drawing.Color.White;
+            this.chkInventaire.Location = new System.Drawing.Point(321, 152);
+            this.chkInventaire.Name = "chkInventaire";
+            this.chkInventaire.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.chkInventaire.Size = new System.Drawing.Size(161, 25);
+            this.chkInventaire.TabIndex = 26;
+            this.chkInventaire.Text = "Présent dans l\'inventaire";
+            this.chkInventaire.UseVisualStyleBackColor = true;
+            this.chkInventaire.CheckStateChanged += new System.EventHandler(this.chkInventaire_CheckStateChanged);
             // 
             // fraQuantité
             // 
-            fraQuantité.BackColor = System.Drawing.Color.Black;
-            fraQuantité.Controls.Add(txtQuantiteCommande);
-            fraQuantité.Controls.Add(chkMinimum);
-            fraQuantité.Controls.Add(txtQuantiteStock);
-            fraQuantité.Controls.Add(txtQuantiteMinimum);
-            fraQuantité.Controls.Add(txtQuantitéBoite);
-            fraQuantité.Controls.Add(chkBoite);
-            fraQuantité.Controls.Add(Label11);
-            fraQuantité.Controls.Add(Label5);
-            fraQuantité.ForeColor = System.Drawing.Color.White;
-            fraQuantité.Location = new System.Drawing.Point(480, 152);
-            fraQuantité.Name = "fraQuantité";
-            fraQuantité.Padding = new System.Windows.Forms.Padding(0);
-            fraQuantité.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            fraQuantité.Size = new System.Drawing.Size(233, 65);
-            fraQuantité.TabIndex = 28;
-            fraQuantité.TabStop = false;
-            fraQuantité.Text = "Quantité";
+            this.fraQuantité.BackColor = System.Drawing.Color.Black;
+            this.fraQuantité.Controls.Add(this.txtQuantiteCommande);
+            this.fraQuantité.Controls.Add(this.chkMinimum);
+            this.fraQuantité.Controls.Add(this.txtQuantiteStock);
+            this.fraQuantité.Controls.Add(this.txtQuantiteMinimum);
+            this.fraQuantité.Controls.Add(this.txtQuantitéBoite);
+            this.fraQuantité.Controls.Add(this.chkBoite);
+            this.fraQuantité.Controls.Add(this.Label11);
+            this.fraQuantité.Controls.Add(this.Label5);
+            this.fraQuantité.ForeColor = System.Drawing.Color.White;
+            this.fraQuantité.Location = new System.Drawing.Point(480, 152);
+            this.fraQuantité.Name = "fraQuantité";
+            this.fraQuantité.Padding = new System.Windows.Forms.Padding(0);
+            this.fraQuantité.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fraQuantité.Size = new System.Drawing.Size(233, 65);
+            this.fraQuantité.TabIndex = 28;
+            this.fraQuantité.TabStop = false;
+            this.fraQuantité.Text = "Quantité";
             // 
             // txtQuantiteCommande
             // 
-            txtQuantiteCommande.AcceptsReturn = true;
-            txtQuantiteCommande.BackColor = System.Drawing.SystemColors.Window;
-            txtQuantiteCommande.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtQuantiteCommande.Enabled = false;
-            txtQuantiteCommande.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtQuantiteCommande.Location = new System.Drawing.Point(192, 40);
-            txtQuantiteCommande.MaxLength = 0;
-            txtQuantiteCommande.Name = "txtQuantiteCommande";
-            txtQuantiteCommande.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtQuantiteCommande.Size = new System.Drawing.Size(33, 22);
-            txtQuantiteCommande.TabIndex = 36;
-            txtQuantiteCommande.Leave += new System.EventHandler(txtQuantiteCommande_Leave);
+            this.txtQuantiteCommande.AcceptsReturn = true;
+            this.txtQuantiteCommande.BackColor = System.Drawing.SystemColors.Window;
+            this.txtQuantiteCommande.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQuantiteCommande.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQuantiteCommande.Enabled = false;
+            this.txtQuantiteCommande.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtQuantiteCommande.Location = new System.Drawing.Point(192, 40);
+            this.txtQuantiteCommande.MaxLength = 0;
+            this.txtQuantiteCommande.Name = "txtQuantiteCommande";
+            this.txtQuantiteCommande.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtQuantiteCommande.Size = new System.Drawing.Size(33, 15);
+            this.txtQuantiteCommande.TabIndex = 36;
+            this.txtQuantiteCommande.Leave += new System.EventHandler(this.txtQuantiteCommande_Leave);
             // 
             // chkMinimum
             // 
-            chkMinimum.BackColor = System.Drawing.Color.Black;
-            chkMinimum.ForeColor = System.Drawing.Color.White;
-            chkMinimum.Location = new System.Drawing.Point(120, 16);
-            chkMinimum.Name = "chkMinimum";
-            chkMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            chkMinimum.Size = new System.Drawing.Size(74, 17);
-            chkMinimum.TabIndex = 31;
-            chkMinimum.Text = "Minimum :";
-            chkMinimum.UseVisualStyleBackColor = true;
-            chkMinimum.CheckStateChanged += new System.EventHandler(chkMinimum_CheckStateChanged);
+            this.chkMinimum.BackColor = System.Drawing.Color.Black;
+            this.chkMinimum.ForeColor = System.Drawing.Color.White;
+            this.chkMinimum.Location = new System.Drawing.Point(120, 16);
+            this.chkMinimum.Name = "chkMinimum";
+            this.chkMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.chkMinimum.Size = new System.Drawing.Size(74, 17);
+            this.chkMinimum.TabIndex = 31;
+            this.chkMinimum.Text = "Minimum :";
+            this.chkMinimum.UseVisualStyleBackColor = true;
+            this.chkMinimum.CheckStateChanged += new System.EventHandler(this.chkMinimum_CheckStateChanged);
             // 
             // txtQuantiteStock
             // 
-            txtQuantiteStock.AcceptsReturn = true;
-            txtQuantiteStock.BackColor = System.Drawing.SystemColors.Window;
-            txtQuantiteStock.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtQuantiteStock.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtQuantiteStock.Location = new System.Drawing.Point(80, 40);
-            txtQuantiteStock.MaxLength = 0;
-            txtQuantiteStock.Name = "txtQuantiteStock";
-            txtQuantiteStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtQuantiteStock.Size = new System.Drawing.Size(33, 22);
-            txtQuantiteStock.TabIndex = 33;
-            txtQuantiteStock.Leave += new System.EventHandler(txtQuantiteStock_Leave);
+            this.txtQuantiteStock.AcceptsReturn = true;
+            this.txtQuantiteStock.BackColor = System.Drawing.SystemColors.Window;
+            this.txtQuantiteStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQuantiteStock.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQuantiteStock.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtQuantiteStock.Location = new System.Drawing.Point(80, 40);
+            this.txtQuantiteStock.MaxLength = 0;
+            this.txtQuantiteStock.Name = "txtQuantiteStock";
+            this.txtQuantiteStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtQuantiteStock.Size = new System.Drawing.Size(33, 15);
+            this.txtQuantiteStock.TabIndex = 33;
+            this.txtQuantiteStock.Leave += new System.EventHandler(this.txtQuantiteStock_Leave);
             // 
             // txtQuantiteMinimum
             // 
-            txtQuantiteMinimum.AcceptsReturn = true;
-            txtQuantiteMinimum.BackColor = System.Drawing.SystemColors.Window;
-            txtQuantiteMinimum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtQuantiteMinimum.Enabled = false;
-            txtQuantiteMinimum.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtQuantiteMinimum.Location = new System.Drawing.Point(192, 16);
-            txtQuantiteMinimum.MaxLength = 0;
-            txtQuantiteMinimum.Name = "txtQuantiteMinimum";
-            txtQuantiteMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtQuantiteMinimum.Size = new System.Drawing.Size(33, 22);
-            txtQuantiteMinimum.TabIndex = 32;
-            txtQuantiteMinimum.Leave += new System.EventHandler(txtQuantiteMinimum_Leave);
+            this.txtQuantiteMinimum.AcceptsReturn = true;
+            this.txtQuantiteMinimum.BackColor = System.Drawing.SystemColors.Window;
+            this.txtQuantiteMinimum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQuantiteMinimum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQuantiteMinimum.Enabled = false;
+            this.txtQuantiteMinimum.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtQuantiteMinimum.Location = new System.Drawing.Point(192, 16);
+            this.txtQuantiteMinimum.MaxLength = 0;
+            this.txtQuantiteMinimum.Name = "txtQuantiteMinimum";
+            this.txtQuantiteMinimum.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtQuantiteMinimum.Size = new System.Drawing.Size(33, 15);
+            this.txtQuantiteMinimum.TabIndex = 32;
+            this.txtQuantiteMinimum.Leave += new System.EventHandler(this.txtQuantiteMinimum_Leave);
             // 
             // txtQuantitéBoite
             // 
-            txtQuantitéBoite.AcceptsReturn = true;
-            txtQuantitéBoite.BackColor = System.Drawing.SystemColors.Window;
-            txtQuantitéBoite.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtQuantitéBoite.Enabled = false;
-            txtQuantitéBoite.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtQuantitéBoite.Location = new System.Drawing.Point(80, 16);
-            txtQuantitéBoite.MaxLength = 0;
-            txtQuantitéBoite.Name = "txtQuantitéBoite";
-            txtQuantitéBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtQuantitéBoite.Size = new System.Drawing.Size(33, 22);
-            txtQuantitéBoite.TabIndex = 30;
-            txtQuantitéBoite.Leave += new System.EventHandler(txtQuantitéBoite_Leave);
+            this.txtQuantitéBoite.AcceptsReturn = true;
+            this.txtQuantitéBoite.BackColor = System.Drawing.SystemColors.Window;
+            this.txtQuantitéBoite.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQuantitéBoite.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQuantitéBoite.Enabled = false;
+            this.txtQuantitéBoite.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtQuantitéBoite.Location = new System.Drawing.Point(80, 16);
+            this.txtQuantitéBoite.MaxLength = 0;
+            this.txtQuantitéBoite.Name = "txtQuantitéBoite";
+            this.txtQuantitéBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtQuantitéBoite.Size = new System.Drawing.Size(33, 15);
+            this.txtQuantitéBoite.TabIndex = 30;
+            this.txtQuantitéBoite.Leave += new System.EventHandler(this.txtQuantitéBoite_Leave);
             // 
             // chkBoite
             // 
-            chkBoite.BackColor = System.Drawing.Color.Black;
-            chkBoite.ForeColor = System.Drawing.Color.White;
-            chkBoite.Location = new System.Drawing.Point(8, 16);
-            chkBoite.Name = "chkBoite";
-            chkBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            chkBoite.Size = new System.Drawing.Size(73, 17);
-            chkBoite.TabIndex = 29;
-            chkBoite.Text = "Par Boîte :";
-            chkBoite.UseVisualStyleBackColor = true;
-            chkBoite.CheckStateChanged += new System.EventHandler(chkBoite_CheckStateChanged);
+            this.chkBoite.BackColor = System.Drawing.Color.Black;
+            this.chkBoite.ForeColor = System.Drawing.Color.White;
+            this.chkBoite.Location = new System.Drawing.Point(8, 16);
+            this.chkBoite.Name = "chkBoite";
+            this.chkBoite.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.chkBoite.Size = new System.Drawing.Size(73, 17);
+            this.chkBoite.TabIndex = 29;
+            this.chkBoite.Text = "Par Boîte :";
+            this.chkBoite.UseVisualStyleBackColor = true;
+            this.chkBoite.CheckStateChanged += new System.EventHandler(this.chkBoite_CheckStateChanged);
             // 
             // Label11
             // 
-            Label11.BackColor = System.Drawing.Color.Black;
-            Label11.ForeColor = System.Drawing.Color.White;
-            Label11.Location = new System.Drawing.Point(120, 40);
-            Label11.Name = "Label11";
-            Label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            Label11.Size = new System.Drawing.Size(73, 17);
-            Label11.TabIndex = 35;
-            Label11.Text = "À commander :";
+            this.Label11.BackColor = System.Drawing.Color.Black;
+            this.Label11.ForeColor = System.Drawing.Color.White;
+            this.Label11.Location = new System.Drawing.Point(120, 40);
+            this.Label11.Name = "Label11";
+            this.Label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label11.Size = new System.Drawing.Size(73, 17);
+            this.Label11.TabIndex = 35;
+            this.Label11.Text = "À commander :";
             // 
             // Label5
             // 
-            Label5.BackColor = System.Drawing.Color.Black;
-            Label5.ForeColor = System.Drawing.Color.White;
-            Label5.Location = new System.Drawing.Point(8, 40);
-            Label5.Name = "Label5";
-            Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            Label5.Size = new System.Drawing.Size(73, 17);
-            Label5.TabIndex = 34;
-            Label5.Text = "Stock :";
+            this.Label5.BackColor = System.Drawing.Color.Black;
+            this.Label5.ForeColor = System.Drawing.Color.White;
+            this.Label5.Location = new System.Drawing.Point(8, 40);
+            this.Label5.Name = "Label5";
+            this.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label5.Size = new System.Drawing.Size(73, 17);
+            this.Label5.TabIndex = 34;
+            this.Label5.Text = "Stock :";
             // 
             // cmbLocalisation
             // 
-            cmbLocalisation.BackColor = System.Drawing.SystemColors.Window;
-            cmbLocalisation.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmbLocalisation.ForeColor = System.Drawing.SystemColors.WindowText;
-            cmbLocalisation.Location = new System.Drawing.Point(368, 200);
-            cmbLocalisation.Name = "cmbLocalisation";
-            cmbLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmbLocalisation.Size = new System.Drawing.Size(105, 22);
-            cmbLocalisation.TabIndex = 39;
-            cmbLocalisation.SelectedIndexChanged += new System.EventHandler(cmbLocalisation_SelectedIndexChanged);
+            this.cmbLocalisation.BackColor = System.Drawing.SystemColors.Window;
+            this.cmbLocalisation.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmbLocalisation.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cmbLocalisation.Location = new System.Drawing.Point(368, 200);
+            this.cmbLocalisation.Name = "cmbLocalisation";
+            this.cmbLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbLocalisation.Size = new System.Drawing.Size(105, 22);
+            this.cmbLocalisation.TabIndex = 39;
+            this.cmbLocalisation.SelectedIndexChanged += new System.EventHandler(this.cmbLocalisation_SelectedIndexChanged);
             // 
             // txtLocalisation
             // 
-            txtLocalisation.AcceptsReturn = true;
-            txtLocalisation.BackColor = System.Drawing.SystemColors.Window;
-            txtLocalisation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtLocalisation.ForeColor = System.Drawing.SystemColors.WindowText;
-            txtLocalisation.Location = new System.Drawing.Point(368, 200);
-            txtLocalisation.MaxLength = 0;
-            txtLocalisation.Name = "txtLocalisation";
-            txtLocalisation.ReadOnly = true;
-            txtLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            txtLocalisation.Size = new System.Drawing.Size(105, 22);
-            txtLocalisation.TabIndex = 40;
-            txtLocalisation.Text = "Text1";
+            this.txtLocalisation.AcceptsReturn = true;
+            this.txtLocalisation.BackColor = System.Drawing.SystemColors.Window;
+            this.txtLocalisation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLocalisation.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtLocalisation.Location = new System.Drawing.Point(368, 200);
+            this.txtLocalisation.MaxLength = 0;
+            this.txtLocalisation.Name = "txtLocalisation";
+            this.txtLocalisation.ReadOnly = true;
+            this.txtLocalisation.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtLocalisation.Size = new System.Drawing.Size(105, 22);
+            this.txtLocalisation.TabIndex = 40;
+            this.txtLocalisation.Text = "Text1";
             // 
             // cmdRechercheAchat
             // 
-            cmdRechercheAchat.BackColor = System.Drawing.Color.Black;
-            cmdRechercheAchat.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            cmdRechercheAchat.Font = new System.Drawing.Font("Calibri", 8.25F);
-            cmdRechercheAchat.ForeColor = System.Drawing.Color.White;
-            cmdRechercheAchat.Location = new System.Drawing.Point(222, 201);
-            cmdRechercheAchat.Name = "cmdRechercheAchat";
-            cmdRechercheAchat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            cmdRechercheAchat.Size = new System.Drawing.Size(127, 24);
-            cmdRechercheAchat.TabIndex = 80;
-            cmdRechercheAchat.Text = "Recherche dans achats";
-            cmdRechercheAchat.UseVisualStyleBackColor = true;
-            cmdRechercheAchat.Click += new System.EventHandler(cmdRechercheAchat_Click);
+            this.cmdRechercheAchat.BackColor = System.Drawing.Color.Black;
+            this.cmdRechercheAchat.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdRechercheAchat.Font = new System.Drawing.Font("Calibri", 8.25F);
+            this.cmdRechercheAchat.ForeColor = System.Drawing.Color.White;
+            this.cmdRechercheAchat.Location = new System.Drawing.Point(222, 201);
+            this.cmdRechercheAchat.Name = "cmdRechercheAchat";
+            this.cmdRechercheAchat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmdRechercheAchat.Size = new System.Drawing.Size(127, 24);
+            this.cmdRechercheAchat.TabIndex = 80;
+            this.cmdRechercheAchat.Text = "Recherche dans achats";
+            this.cmdRechercheAchat.UseVisualStyleBackColor = true;
+            this.cmdRechercheAchat.Click += new System.EventHandler(this.cmdRechercheAchat_Click);
             // 
             // Label4
             // 
-            Label4.BackColor = System.Drawing.Color.Black;
-            Label4.ForeColor = System.Drawing.Color.White;
-            Label4.Location = new System.Drawing.Point(368, 184);
-            Label4.Name = "Label4";
-            Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            Label4.Size = new System.Drawing.Size(65, 17);
-            Label4.TabIndex = 27;
-            Label4.Text = "Localisation :";
+            this.Label4.BackColor = System.Drawing.Color.Black;
+            this.Label4.ForeColor = System.Drawing.Color.White;
+            this.Label4.Location = new System.Drawing.Point(368, 184);
+            this.Label4.Name = "Label4";
+            this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label4.Size = new System.Drawing.Size(65, 17);
+            this.Label4.TabIndex = 27;
+            this.Label4.Text = "Localisation :";
             // 
             // Label2
             // 
-            Label2.BackColor = System.Drawing.Color.Black;
-            Label2.ForeColor = System.Drawing.Color.White;
-            Label2.Location = new System.Drawing.Point(256, 8);
-            Label2.Name = "Label2";
-            Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            Label2.Size = new System.Drawing.Size(121, 17);
-            Label2.TabIndex = 1;
-            Label2.Text = "Catégorie de pièce :";
+            this.Label2.BackColor = System.Drawing.Color.Black;
+            this.Label2.ForeColor = System.Drawing.Color.White;
+            this.Label2.Location = new System.Drawing.Point(256, 8);
+            this.Label2.Name = "Label2";
+            this.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Label2.Size = new System.Drawing.Size(121, 17);
+            this.Label2.TabIndex = 1;
+            this.Label2.Text = "Catégorie de pièce :";
             // 
             // _Label1_25
             // 
-            _Label1_25.BackColor = System.Drawing.Color.Black;
-            _Label1_25.ForeColor = System.Drawing.Color.White;
-            _Label1_25.Location = new System.Drawing.Point(32, 152);
-            _Label1_25.Name = "_Label1_25";
-            _Label1_25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_25.Size = new System.Drawing.Size(113, 17);
-            _Label1_25.TabIndex = 23;
-            _Label1_25.Text = "Pièce GRB :";
+            this._Label1_25.BackColor = System.Drawing.Color.Black;
+            this._Label1_25.ForeColor = System.Drawing.Color.White;
+            this._Label1_25.Location = new System.Drawing.Point(32, 152);
+            this._Label1_25.Name = "_Label1_25";
+            this._Label1_25.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_25.Size = new System.Drawing.Size(113, 17);
+            this._Label1_25.TabIndex = 23;
+            this._Label1_25.Text = "Pièce GRB :";
             // 
             // _Label1_6
             // 
-            _Label1_6.BackColor = System.Drawing.Color.Black;
-            _Label1_6.ForeColor = System.Drawing.Color.White;
-            _Label1_6.Location = new System.Drawing.Point(296, 128);
-            _Label1_6.Name = "_Label1_6";
-            _Label1_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_6.Size = new System.Drawing.Size(81, 17);
-            _Label1_6.TabIndex = 22;
-            _Label1_6.Text = "Commentaire :";
+            this._Label1_6.BackColor = System.Drawing.Color.Black;
+            this._Label1_6.ForeColor = System.Drawing.Color.White;
+            this._Label1_6.Location = new System.Drawing.Point(296, 128);
+            this._Label1_6.Name = "_Label1_6";
+            this._Label1_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_6.Size = new System.Drawing.Size(81, 17);
+            this._Label1_6.TabIndex = 22;
+            this._Label1_6.Text = "Commentaire :";
             // 
             // _Label1_4
             // 
-            _Label1_4.BackColor = System.Drawing.Color.Black;
-            _Label1_4.ForeColor = System.Drawing.Color.White;
-            _Label1_4.Location = new System.Drawing.Point(296, 96);
-            _Label1_4.Name = "_Label1_4";
-            _Label1_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_4.Size = new System.Drawing.Size(73, 17);
-            _Label1_4.TabIndex = 20;
-            _Label1_4.Text = "Desc. EN :";
+            this._Label1_4.BackColor = System.Drawing.Color.Black;
+            this._Label1_4.ForeColor = System.Drawing.Color.White;
+            this._Label1_4.Location = new System.Drawing.Point(296, 96);
+            this._Label1_4.Name = "_Label1_4";
+            this._Label1_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_4.Size = new System.Drawing.Size(73, 17);
+            this._Label1_4.TabIndex = 20;
+            this._Label1_4.Text = "Desc. EN :";
             // 
             // _Label1_3
             // 
-            _Label1_3.BackColor = System.Drawing.Color.Black;
-            _Label1_3.ForeColor = System.Drawing.Color.White;
-            _Label1_3.Location = new System.Drawing.Point(296, 64);
-            _Label1_3.Name = "_Label1_3";
-            _Label1_3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_3.Size = new System.Drawing.Size(73, 17);
-            _Label1_3.TabIndex = 12;
-            _Label1_3.Text = "Desc. FR :";
+            this._Label1_3.BackColor = System.Drawing.Color.Black;
+            this._Label1_3.ForeColor = System.Drawing.Color.White;
+            this._Label1_3.Location = new System.Drawing.Point(296, 64);
+            this._Label1_3.Name = "_Label1_3";
+            this._Label1_3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_3.Size = new System.Drawing.Size(73, 17);
+            this._Label1_3.TabIndex = 12;
+            this._Label1_3.Text = "Desc. FR :";
             // 
             // _Label1_1
             // 
-            _Label1_1.BackColor = System.Drawing.Color.Black;
-            _Label1_1.ForeColor = System.Drawing.Color.White;
-            _Label1_1.Location = new System.Drawing.Point(32, 64);
-            _Label1_1.Name = "_Label1_1";
-            _Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_1.Size = new System.Drawing.Size(89, 17);
-            _Label1_1.TabIndex = 7;
-            _Label1_1.Text = "Manufacturier :";
+            this._Label1_1.BackColor = System.Drawing.Color.Black;
+            this._Label1_1.ForeColor = System.Drawing.Color.White;
+            this._Label1_1.Location = new System.Drawing.Point(32, 64);
+            this._Label1_1.Name = "_Label1_1";
+            this._Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_1.Size = new System.Drawing.Size(89, 17);
+            this._Label1_1.TabIndex = 7;
+            this._Label1_1.Text = "Manufacturier :";
             // 
             // _Label1_0
             // 
-            _Label1_0.BackColor = System.Drawing.Color.Black;
-            _Label1_0.ForeColor = System.Drawing.Color.White;
-            _Label1_0.Location = new System.Drawing.Point(32, 120);
-            _Label1_0.Name = "_Label1_0";
-            _Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            _Label1_0.Size = new System.Drawing.Size(73, 17);
-            _Label1_0.TabIndex = 16;
-            _Label1_0.Text = "Pièce :";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(lvwRechercheJob);
-            panel1.Controls.Add(lvwRechercheAchat);
-            panel1.Controls.Add(lvwfournisseur);
-            panel1.Controls.Add(lvwCategorie);
-            panel1.Controls.Add(lvwDescription);
-            panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            panel1.Location = new System.Drawing.Point(774, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(555, 709);
-            panel1.TabIndex = 82;
+            this._Label1_0.BackColor = System.Drawing.Color.Black;
+            this._Label1_0.ForeColor = System.Drawing.Color.White;
+            this._Label1_0.Location = new System.Drawing.Point(32, 120);
+            this._Label1_0.Name = "_Label1_0";
+            this._Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this._Label1_0.Size = new System.Drawing.Size(73, 17);
+            this._Label1_0.TabIndex = 16;
+            this._Label1_0.Text = "Pièce :";
             // 
             // CatalogueMec
             // 
-            AcceptButton = CmdEnr;
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.Color.Black;
-            BackgroundImage = global::ControleurServeur.Properties.Resources.drapeauGRB;
-            BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            ClientSize = new System.Drawing.Size(1329, 709);
-            Controls.Add(panel1);
-            Controls.Add(cmdRechercheCategorie);
-            Controls.Add(cmdRechercheJob);
-            Controls.Add(cmdCopier);
-            Controls.Add(cmdTotal);
-            Controls.Add(cmdRechercheInventaire);
-            Controls.Add(lvwFabricant);
-            Controls.Add(lvwPieces);
-            Controls.Add(cmdChangerCategorie);
-            Controls.Add(cmdDemande);
-            Controls.Add(cmdRechercheDescrFR);
-            Controls.Add(frafournisseur);
-            Controls.Add(cmbCategorie);
-            Controls.Add(txtNoItemGRB);
-            Controls.Add(cmbNoItem);
-            Controls.Add(CmdModif);
-            Controls.Add(CmdFerme);
-            Controls.Add(CmdSupp);
-            Controls.Add(CmdAdd);
-            Controls.Add(txtComment);
-            Controls.Add(cmbFabricant);
-            Controls.Add(txtFabricant);
-            Controls.Add(txtDescriptionEN);
-            Controls.Add(txtDescriptionFR);
-            Controls.Add(txtNoItem);
-            Controls.Add(CmdAnul);
-            Controls.Add(CmdEnr);
-            Controls.Add(txtCategorie);
-            Controls.Add(cmdRechercherPiece);
-            Controls.Add(cmbDescriptionFR);
-            Controls.Add(cmdRechercherManufact);
-            Controls.Add(chkInventaire);
-            Controls.Add(fraQuantité);
-            Controls.Add(cmbLocalisation);
-            Controls.Add(txtLocalisation);
-            Controls.Add(cmdRechercheAchat);
-            Controls.Add(Label4);
-            Controls.Add(Label2);
-            Controls.Add(_Label1_25);
-            Controls.Add(_Label1_6);
-            Controls.Add(_Label1_4);
-            Controls.Add(_Label1_3);
-            Controls.Add(_Label1_1);
-            Controls.Add(_Label1_0);
-            Cursor = System.Windows.Forms.Cursors.Default;
-            Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ForeColor = System.Drawing.Color.White;
-            Icon = global::ControleurServeur.Properties.Resources.IconeApp;
-            Location = new System.Drawing.Point(97, 68);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "CatalogueMec";
-            RightToLeft = System.Windows.Forms.RightToLeft.No;
-            ShowInTaskbar = false;
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "ControleurServeur.CatalogueMec";
-            Load += new System.EventHandler(FrCatalogueMec_Load);
-            Click += new System.EventHandler(FrCatalogueMec_Click);
-            frafournisseur.ResumeLayout(false);
-            frafournisseur.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(imgCanada)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(imgEU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(imgSpain)).EndInit();
-            fraQuantité.ResumeLayout(false);
-            fraQuantité.PerformLayout();
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AcceptButton = this.CmdEnr;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::ControleurServeur.Properties.Resources.drapeauGRB;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(723, 442);
+            this.Controls.Add(this.lvwRechercheAchat);
+            this.Controls.Add(this.lvwRechercheJob);
+            this.Controls.Add(this.lvwPieces);
+            this.Controls.Add(this.lvwDescription);
+            this.Controls.Add(this.lvwFabricant);
+            this.Controls.Add(this.cmdRechercheCategorie);
+            this.Controls.Add(this.lvwCategorie);
+            this.Controls.Add(this.cmdRechercheJob);
+            this.Controls.Add(this.cmdCopier);
+            this.Controls.Add(this.cmdTotal);
+            this.Controls.Add(this.cmdRechercheInventaire);
+            this.Controls.Add(this.cmdChangerCategorie);
+            this.Controls.Add(this.cmdDemande);
+            this.Controls.Add(this.cmdRechercheDescrFR);
+            this.Controls.Add(this.frafournisseur);
+            this.Controls.Add(this.cmbCategorie);
+            this.Controls.Add(this.txtNoItemGRB);
+            this.Controls.Add(this.cmbNoItem);
+            this.Controls.Add(this.CmdModif);
+            this.Controls.Add(this.CmdFerme);
+            this.Controls.Add(this.CmdSupp);
+            this.Controls.Add(this.CmdAdd);
+            this.Controls.Add(this.txtComment);
+            this.Controls.Add(this.cmbFabricant);
+            this.Controls.Add(this.txtFabricant);
+            this.Controls.Add(this.txtDescriptionEN);
+            this.Controls.Add(this.txtDescriptionFR);
+            this.Controls.Add(this.txtNoItem);
+            this.Controls.Add(this.CmdAnul);
+            this.Controls.Add(this.CmdEnr);
+            this.Controls.Add(this.txtCategorie);
+            this.Controls.Add(this.cmdRechercherPiece);
+            this.Controls.Add(this.cmbDescriptionFR);
+            this.Controls.Add(this.cmdRechercherManufact);
+            this.Controls.Add(this.chkInventaire);
+            this.Controls.Add(this.fraQuantité);
+            this.Controls.Add(this.cmbLocalisation);
+            this.Controls.Add(this.txtLocalisation);
+            this.Controls.Add(this.cmdRechercheAchat);
+            this.Controls.Add(this.Label4);
+            this.Controls.Add(this.Label2);
+            this.Controls.Add(this._Label1_25);
+            this.Controls.Add(this._Label1_6);
+            this.Controls.Add(this._Label1_4);
+            this.Controls.Add(this._Label1_3);
+            this.Controls.Add(this._Label1_1);
+            this.Controls.Add(this._Label1_0);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
+            this.Icon = global::ControleurServeur.Properties.Resources.IconeApp;
+            this.Location = new System.Drawing.Point(97, 68);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "CatalogueMec";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ControleurServeur.CatalogueMec";
+            this.Load += new System.EventHandler(this.FrCatalogueMec_Load);
+            this.Click += new System.EventHandler(this.FrCatalogueMec_Click);
+            this.frafournisseur.ResumeLayout(false);
+            this.frafournisseur.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCanada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgEU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSpain)).EndInit();
+            this.fraQuantité.ResumeLayout(false);
+            this.fraQuantité.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
         #endregion
@@ -1778,15 +1783,15 @@ namespace ControleurServeur
         {
             try
             {
-               cmbfrs.SelectedIndex = -1;
-               txtPrixSpecial.Text = string.Empty;
-               cmbPersRess.SelectedIndex = -1;
-               txtPrixList.Text = string.Empty;
-               mskEscompte.Text = string.Empty;
-               txtPrixNet.Text = string.Empty;
-               mskValide.Text = string.Empty;
-               chkquoter.CheckState = CheckState.Unchecked;
-               optCAN.Checked = true;
+                cmbfrs.SelectedIndex = -1;
+                txtPrixSpecial.Text = string.Empty;
+                cmbPersRess.SelectedIndex = -1;
+                txtPrixList.Text = string.Empty;
+                mskEscompte.Text = string.Empty;
+                txtPrixNet.Text = string.Empty;
+                mskValide.Text = string.Empty;
+                chkquoter.CheckState = CheckState.Unchecked;
+                optCAN.Checked = true;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "ViderChamps_frs", ex); }
@@ -1796,18 +1801,18 @@ namespace ControleurServeur
             try
             {
                 // Vide les champs pieces
-               txtNoItemGRB.Text = string.Empty;
-               txtDescriptionEN.Text = string.Empty;
-               txtComment.Text = string.Empty;
-               txtQuantitéBoite.Text = string.Empty;
-               txtQuantiteCommande.Text = string.Empty;
-               txtQuantiteMinimum.Text = string.Empty;
-               txtQuantiteStock.Text = string.Empty;
-               txtLocalisation.Text = string.Empty;
-               cmbLocalisation.SelectedIndex = -1;
-               chkBoite.CheckState = CheckState.Unchecked;
-               chkInventaire.CheckState = CheckState.Unchecked;
-               chkMinimum.CheckState = CheckState.Unchecked;
+                txtNoItemGRB.Text = string.Empty;
+                txtDescriptionEN.Text = string.Empty;
+                txtComment.Text = string.Empty;
+                txtQuantitéBoite.Text = string.Empty;
+                txtQuantiteCommande.Text = string.Empty;
+                txtQuantiteMinimum.Text = string.Empty;
+                txtQuantiteStock.Text = string.Empty;
+                txtLocalisation.Text = string.Empty;
+                cmbLocalisation.SelectedIndex = -1;
+                chkBoite.CheckState = CheckState.Unchecked;
+                chkInventaire.CheckState = CheckState.Unchecked;
+                chkMinimum.CheckState = CheckState.Unchecked;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "ViderChamps_piece", ex); }
@@ -1817,27 +1822,27 @@ namespace ControleurServeur
             try
             {
                 // Barre les champs
-               txtNoItem.ReadOnly = bLocked;
-               txtNoItemGRB.ReadOnly = bLocked;
-               txtDescriptionEN.ReadOnly = bLocked;
-               txtDescriptionFR.ReadOnly = bLocked;
-               txtComment.ReadOnly = bLocked;
-               frafournisseur.Enabled = bLocked;
-               chkInventaire.Enabled = !bLocked;
+                txtNoItem.ReadOnly = bLocked;
+                txtNoItemGRB.ReadOnly = bLocked;
+                txtDescriptionEN.ReadOnly = bLocked;
+                txtDescriptionFR.ReadOnly = bLocked;
+                txtComment.ReadOnly = bLocked;
+                frafournisseur.Enabled = bLocked;
+                chkInventaire.Enabled = !bLocked;
                 if (chkInventaire.Enabled == true)
                 {
                     if (chkInventaire.CheckState == CheckState.Checked)
                     {
-                       fraQuantité.Enabled = true;
+                        fraQuantité.Enabled = true;
                     }
                     else
                     {
-                       fraQuantité.Enabled = false;
+                        fraQuantité.Enabled = false;
                     }
                 }
                 else
                 {
-                   fraQuantité.Enabled = false;
+                    fraQuantité.Enabled = false;
                 }
                 return;
             }
@@ -1873,7 +1878,7 @@ namespace ControleurServeur
                 var bCopier = default(bool);
                 var bChangerCat = default(bool);
                 var bInventaire = default(bool);
-               m_eMode = eMode;
+                m_eMode = eMode;
                 switch (eMode)
                 {
                     case enumModeCatalogueMec.MODE_INACTIF:
@@ -1907,7 +1912,7 @@ namespace ControleurServeur
                             bCmdSuppFRS = true;
                             bCmdEnr = true;
                             bFabricant = true; // GLL 2017-10-10
-                           txtFabricant.Enabled = true; // GLL 2017-10-10
+                            txtFabricant.Enabled = true; // GLL 2017-10-10
                             bCmdAnnul = true;
                             bLvwFRS = true;
                             bCmdSearchDescr = true;
@@ -1923,39 +1928,39 @@ namespace ControleurServeur
                             break;
                         }
                 }
-               cmbCategorie.Visible = bTable;
-               txtCategorie.Visible = !bTable;
-               cmbDescriptionFR.Visible = bCmbDescFR;
-               txtDescriptionFR.Visible = !bCmbDescFR;
-               cmbFabricant.Visible = bFabricant;
-               txtFabricant.Visible = bFabricant;
-               cmbNoItem.Visible = bNoItem;
-               txtNoItem.Visible = !bNoItem;
-               cmbLocalisation.Visible = bLocalisation;
-               txtLocalisation.Visible = !bLocalisation;
-               frafournisseur.Enabled = bFraFRS;
-               lvwfournisseur.Visible = bLvwFRS;
-               cmdAddFrs.Visible = bCmdAddFRS;
-               cmdModifFrs.Visible = bCmdModifFRS;
-               cmdSuppFrs.Visible = bCmdSuppFRS;
-               cmdEnrFrs.Visible = bCmdEnrFRS;
-               cmdAnnulFrs.Visible = bCmdAnnulFRS;
-               CmdAdd.Visible = bCmdAdd;
-               CmdModif.Visible = bCmdModif;
-               CmdSupp.Visible = bCmdSupp;
-               CmdFerme.Visible = bCmdFermer;
-               CmdEnr.Visible = bCmdEnr;
-               CmdAnul.Visible = bCmdAnnul;
-               cmdDemande.Visible = bCmdDemande;
-               cmdCopier.Visible = bCopier;
-               cmdRechercheDescrFR.Enabled = bCmdSearchDescr;
-               cmdRechercherPiece.Enabled = bCmdSearchPiece;
-               cmdRechercherManufact.Enabled = bCmdSearchMan;
-               cmdChangerCategorie.Visible = bChangerCat;
-               cmdRechercheInventaire.Visible = bInventaire;
-               lblDevise1.Visible = false;
-               txtTauxChange.Visible = false;
-               lblDevise2.Visible = false;
+                cmbCategorie.Visible = bTable;
+                txtCategorie.Visible = !bTable;
+                cmbDescriptionFR.Visible = bCmbDescFR;
+                txtDescriptionFR.Visible = !bCmbDescFR;
+                cmbFabricant.Visible = bFabricant;
+                txtFabricant.Visible = bFabricant;
+                cmbNoItem.Visible = bNoItem;
+                txtNoItem.Visible = !bNoItem;
+                cmbLocalisation.Visible = bLocalisation;
+                txtLocalisation.Visible = !bLocalisation;
+                frafournisseur.Enabled = bFraFRS;
+                lvwfournisseur.Visible = bLvwFRS;
+                cmdAddFrs.Visible = bCmdAddFRS;
+                cmdModifFrs.Visible = bCmdModifFRS;
+                cmdSuppFrs.Visible = bCmdSuppFRS;
+                cmdEnrFrs.Visible = bCmdEnrFRS;
+                cmdAnnulFrs.Visible = bCmdAnnulFRS;
+                CmdAdd.Visible = bCmdAdd;
+                CmdModif.Visible = bCmdModif;
+                CmdSupp.Visible = bCmdSupp;
+                CmdFerme.Visible = bCmdFermer;
+                CmdEnr.Visible = bCmdEnr;
+                CmdAnul.Visible = bCmdAnnul;
+                cmdDemande.Visible = bCmdDemande;
+                cmdCopier.Visible = bCopier;
+                cmdRechercheDescrFR.Enabled = bCmdSearchDescr;
+                cmdRechercherPiece.Enabled = bCmdSearchPiece;
+                cmdRechercherManufact.Enabled = bCmdSearchMan;
+                cmdChangerCategorie.Visible = bChangerCat;
+                cmdRechercheInventaire.Visible = bInventaire;
+                lblDevise1.Visible = false;
+                txtTauxChange.Visible = false;
+                lblDevise2.Visible = false;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "MontrerControles", ex); }
@@ -1967,7 +1972,7 @@ namespace ControleurServeur
             {
                 ADODB.Recordset rstContact;
                 ADODB.Recordset rstContactFRS;
-               cmbPersRess.Items.Clear();
+                cmbPersRess.Items.Clear();
                 rstContactFRS = new ADODB.Recordset();
                 rstContact = new ADODB.Recordset();
                 rstContactFRS.Open("SELECT * FROM ContactFRS WHERE NoFRS = " + cmbfrs.Text.Split('-')[0], odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
@@ -1976,7 +1981,7 @@ namespace ControleurServeur
                     rstContact.Open(Operators.ConcatenateObject("SELECT NomContact, IDContact FROM Contact WHERE IDContact = ", rstContactFRS.Fields["NoContact"].Value), odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                     if (!rstContact.EOF)
                     {
-                       cmbPersRess.Items.Add(new ListItem($"{rstContact.Fields["NomContact"].Value}", $"{rstContact.Fields["IDContact"].Value}"));
+                        cmbPersRess.Items.Add(new ListItem($"{rstContact.Fields["NomContact"].Value}", $"{rstContact.Fields["IDContact"].Value}"));
                     }
                     rstContact.Close();
                     rstContactFRS.MoveNext();
@@ -1988,7 +1993,7 @@ namespace ControleurServeur
                     rstContact.Open("SELECT NomContact, IDContact FROM Contact WHERE Supprimé=0ORDER BY NomContact", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                     while (!rstContact.EOF)
                     {
-                       cmbPersRess.Items.Add(new ListItem($"{rstContact.Fields["NomContact"].Value}", $"{rstContact.Fields["IDContact"].Value}"));
+                        cmbPersRess.Items.Add(new ListItem($"{rstContact.Fields["NomContact"].Value}", $"{rstContact.Fields["IDContact"].Value}"));
                         rstContact.MoveNext();
                     }
                     rstContact.Close();
@@ -2006,11 +2011,11 @@ namespace ControleurServeur
                 {
                     if (chkBoite.CheckState == CheckState.Checked)
                     {
-                       txtQuantitéBoite.Enabled = true;
+                        txtQuantitéBoite.Enabled = true;
                     }
                     else
                     {
-                       txtQuantitéBoite.Enabled = false;
+                        txtQuantitéBoite.Enabled = false;
                     }
                 }
                 return;
@@ -2025,13 +2030,13 @@ namespace ControleurServeur
                 {
                     if (chkInventaire.CheckState == CheckState.Checked)
                     {
-                       fraQuantité.Enabled = true;
-                       cmbLocalisation.Enabled = true;
+                        fraQuantité.Enabled = true;
+                        cmbLocalisation.Enabled = true;
                     }
                     else
                     {
-                       fraQuantité.Enabled = false;
-                       cmbLocalisation.Enabled = false;
+                        fraQuantité.Enabled = false;
+                        cmbLocalisation.Enabled = false;
                     }
                 }
                 return;
@@ -2046,13 +2051,13 @@ namespace ControleurServeur
                 {
                     if (chkMinimum.CheckState == CheckState.Checked)
                     {
-                       txtQuantiteMinimum.Enabled = true;
-                       txtQuantiteCommande.Enabled = true;
+                        txtQuantiteMinimum.Enabled = true;
+                        txtQuantiteCommande.Enabled = true;
                     }
                     else
                     {
-                       txtQuantiteMinimum.Enabled = false;
-                       txtQuantiteCommande.Enabled = false;
+                        txtQuantiteMinimum.Enabled = false;
+                        txtQuantiteCommande.Enabled = false;
                     }
                 }
                 return;
@@ -2066,15 +2071,15 @@ namespace ControleurServeur
                 ADODB.Recordset rstCatMec;
                 string sNoItem;
                 short X;
-               txtDescriptionFR.Text =cmbDescriptionFR.Text;
+                txtDescriptionFR.Text = cmbDescriptionFR.Text;
                 if (m_bBloqueDescription == false)
                 {
                     var loopTo = (short)(cmbNoItem.Items.Count - 1);
                     for (X = 0; X <= loopTo; X++)
                     {
-                        if (cmbNoItem.Items[X].ToString() ==m_collPieceDescFR[cmbDescriptionFR.SelectedIndex + 1])
+                        if (cmbNoItem.Items[X].ToString() == m_collPieceDescFR[cmbDescriptionFR.SelectedIndex + 1])
                         {
-                           cmbNoItem.SelectedIndex = X;
+                            cmbNoItem.SelectedIndex = X;
                             break;
                         }
                     }
@@ -2090,8 +2095,8 @@ namespace ControleurServeur
                 if (cmbfrs.SelectedIndex != -1)
                 {
                     ListItem it = (ListItem)cmbfrs.Items[cmbfrs.SelectedIndex];
-                   cmbfrs.Tag = it.Value;
-                   RemplirComboPersRess();
+                    cmbfrs.Tag = it.Value;
+                    RemplirComboPersRess();
                 }
                 return;
             }
@@ -2101,7 +2106,7 @@ namespace ControleurServeur
         {
             try
             {
-               txtLocalisation.Text =cmbLocalisation.Text;
+                txtLocalisation.Text = cmbLocalisation.Text;
                 return;
             }
             catch (Exception ex)
@@ -2114,11 +2119,11 @@ namespace ControleurServeur
             try
             {
                 Cursor.Current = Cursors.WaitCursor;
-               m_bBloqueDescription = true;
+                m_bBloqueDescription = true;
                 AddItemMec addItem = new AddItemMec();
                 addItem.MdiParent = Conteneur.Mdi;
                 addItem.Show();
-               m_bBloqueDescription = false;
+                m_bBloqueDescription = false;
                 Cursor.Current = Cursors.Default;
                 return;
             }
@@ -2130,12 +2135,12 @@ namespace ControleurServeur
             {
                 if (cmbNoItem.Items.Count > 0)
                 {
-                   m_bAjout = true;
-                   BarrerChamps_piece(true);
-                   ViderChamps_frs();
-                   cmbfrs.Focus();
-                   MontrerControles(enumModeCatalogueMec.MODE_AJOUT_MODIF_FRS);
-                   AfficherDrapeau();
+                    m_bAjout = true;
+                    BarrerChamps_piece(true);
+                    ViderChamps_frs();
+                    cmbfrs.Focus();
+                    MontrerControles(enumModeCatalogueMec.MODE_AJOUT_MODIF_FRS);
+                    AfficherDrapeau();
                 }
                 return;
             }
@@ -2145,7 +2150,7 @@ namespace ControleurServeur
         {
             try
             {
-               MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
+                MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "cmdAnnulFrs_Click", ex); }
@@ -2154,19 +2159,19 @@ namespace ControleurServeur
         {
             try
             {
-               txtPrixNet.Enabled = true;
-               txtPrixSpecial.Enabled = true;
-               m_bBloqueDescription = true;
-               AfficherItem();
-               txtFabricant.Top = (int)Math.Round(TwipsToPixelsY * 1320d); // GLL 2017-10-10
-               cmbFabricant.Visible = true; // GLL 2017-10-10
-               m_bBloqueDescription = false;
-               m_bCopiePiece = false;
-               cmbFabricant.Visible = false;
-               cmbNoItem.Visible = false;
-               MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
-               BarrerChamps_piece(true);
-               m_sQteStockAvant = "";
+                txtPrixNet.Enabled = true;
+                txtPrixSpecial.Enabled = true;
+                m_bBloqueDescription = true;
+                AfficherItem();
+                txtFabricant.Top = (int)Math.Round(TwipsToPixelsY * 1320d); // GLL 2017-10-10
+                cmbFabricant.Visible = true; // GLL 2017-10-10
+                m_bBloqueDescription = false;
+                m_bCopiePiece = false;
+                cmbFabricant.Visible = false;
+                cmbNoItem.Visible = false;
+                MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
+                BarrerChamps_piece(true);
+                m_sQteStockAvant = "";
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "CmdAnul_Click", ex); }
@@ -2186,9 +2191,9 @@ namespace ControleurServeur
                 short X;
                 var sPieceModif = default(string);
                 string sLettre;
-                sNomFab =txtFabricant.Text;
-                sNoPiece =txtNoItem.Text;
-                if (m_bCopiePiece == true |m_bCopiePiece == false & (Strings.UCase(sNoPiece) ?? "") != (Strings.UCase(m_sNoItem) ?? ""))
+                sNomFab = txtFabricant.Text;
+                sNoPiece = txtNoItem.Text;
+                if (m_bCopiePiece == true | m_bCopiePiece == false & (Strings.UCase(sNoPiece) ?? "") != (Strings.UCase(m_sNoItem) ?? ""))
                 {
                     rstVerif = new ADODB.Recordset();
                     rstVerif.Open("SELECT * FROM CatalogueMec WHERE PIECE = '" + Strings.Replace(sNoPiece, "'", "''") + "'", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
@@ -2215,7 +2220,7 @@ namespace ControleurServeur
                 {
                     while (!rstItemFRS.EOF)
                     {
-                        rstItemFRS.Fields["PIECE"].Value =txtNoItem.Text;
+                        rstItemFRS.Fields["PIECE"].Value = txtNoItem.Text;
                         rstItemFRS.Update();
                         rstItemFRS.MoveNext();
                     }
@@ -2252,7 +2257,7 @@ namespace ControleurServeur
                 {
                     rstItem.AddNew();
                 }
-                rstItem.Fields["CATEGORIE"].Value =txtCategorie.Text;
+                rstItem.Fields["CATEGORIE"].Value = txtCategorie.Text;
                 rstItem.Fields["PIECE"].Value = sNoPiece;
                 for (X = 1; X <= sNoPiece.Length; X++)
                 {
@@ -2264,10 +2269,10 @@ namespace ControleurServeur
                 }
                 rstItem.Fields["PIECE_MODIF"].Value = sPieceModif;
                 rstItem.Fields["FABRICANT"].Value = sNomFab;
-                rstItem.Fields["PIECE_GRB"].Value =txtNoItemGRB.Text;
-                rstItem.Fields["DESC_EN"].Value =txtDescriptionEN.Text;
-                rstItem.Fields["DESC_FR"].Value =txtDescriptionFR.Text;
-                rstItem.Fields["COMMENTAIRE"].Value =txtComment.Text;
+                rstItem.Fields["PIECE_GRB"].Value = txtNoItemGRB.Text;
+                rstItem.Fields["DESC_EN"].Value = txtDescriptionEN.Text;
+                rstItem.Fields["DESC_FR"].Value = txtDescriptionFR.Text;
+                rstItem.Fields["COMMENTAIRE"].Value = txtComment.Text;
                 rstItem.Update();
                 rstItem.Close();
                 rstItem = null;
@@ -2286,13 +2291,13 @@ namespace ControleurServeur
                     {
                         rstInventaire.AddNew();
                     }
-                    rstInventaire.Fields["NoItem"].Value =txtNoItem.Text;
-                    rstInventaire.Fields["Description"].Value =txtDescriptionFR.Text;
+                    rstInventaire.Fields["NoItem"].Value = txtNoItem.Text;
+                    rstInventaire.Fields["Description"].Value = txtDescriptionFR.Text;
                     rstInventaire.Fields["Manufacturier"].Value = sNomFab;
                     if (chkBoite.CheckState == CheckState.Checked)
                     {
                         rstInventaire.Fields["CommandeParBoite"].Value = true;
-                        rstInventaire.Fields["QteBoite"].Value =txtQuantitéBoite.Text;
+                        rstInventaire.Fields["QteBoite"].Value = txtQuantitéBoite.Text;
                     }
                     else
                     {
@@ -2304,7 +2309,7 @@ namespace ControleurServeur
                     if (rstItemFRS.EOF)
                     {
                         rstItemFRS.AddNew();
-                        rstItemFRS.Fields["PIECE"].Value =txtNoItem.Text;
+                        rstItemFRS.Fields["PIECE"].Value = txtNoItem.Text;
                         rstItemFRS.Fields["IDFRS"].Value = 717;
                         rstItemFRS.Fields["Type"].Value = "M";
                         rstItemFRS.Fields["PERS_RESS"].Value = DBNull.Value;
@@ -2352,11 +2357,11 @@ namespace ControleurServeur
                     }
                     rstItemFRS.Close();
                     rstItemFRS = null;
-                    rstInventaire.Fields["Commentaires"].Value =txtComment.Text;
-                    rstInventaire.Fields["Localisation"].Value =cmbLocalisation.Text;
+                    rstInventaire.Fields["Commentaires"].Value = txtComment.Text;
+                    rstInventaire.Fields["Localisation"].Value = cmbLocalisation.Text;
                     if (!string.IsNullOrEmpty(Strings.Trim(txtQuantiteStock.Text)))
                     {
-                        rstInventaire.Fields["QuantitéStock"].Value =txtQuantiteStock.Text;
+                        rstInventaire.Fields["QuantitéStock"].Value = txtQuantiteStock.Text;
                     }
                     else
                     {
@@ -2367,7 +2372,7 @@ namespace ControleurServeur
                         rstInventaire.Fields["Minimum"].Value = true;
                         if (!string.IsNullOrEmpty(Strings.Trim(txtQuantiteMinimum.Text)))
                         {
-                            rstInventaire.Fields["QuantitéMinimum"].Value =txtQuantiteMinimum.Text;
+                            rstInventaire.Fields["QuantitéMinimum"].Value = txtQuantiteMinimum.Text;
                         }
                         else
                         {
@@ -2375,7 +2380,7 @@ namespace ControleurServeur
                         }
                         if (Conversions.ToBoolean(Strings.Trim(txtQuantiteCommande.Text)) == true)
                         {
-                            rstInventaire.Fields["Commande"].Value =txtQuantiteCommande.Text;
+                            rstInventaire.Fields["Commande"].Value = txtQuantiteCommande.Text;
                         }
                         else
                         {
@@ -2402,22 +2407,22 @@ namespace ControleurServeur
                 }
                 if (m_bCopiePiece == false)
                 {
-                    if ((txtQuantiteStock.Text ?? "") != (m_sQteStockAvant ?? "") | !string.IsNullOrEmpty(m_sQteStockAvant) &m_sQteStockAvant != "0" &chkInventaire.CheckState == CheckState.Unchecked)
+                    if ((txtQuantiteStock.Text ?? "") != (m_sQteStockAvant ?? "") | !string.IsNullOrEmpty(m_sQteStockAvant) & m_sQteStockAvant != "0" & chkInventaire.CheckState == CheckState.Unchecked)
                     {
                         if (string.IsNullOrEmpty(m_sQteStockAvant))
                         {
-                           m_sQteStockAvant = "0";
+                            m_sQteStockAvant = "0";
                         }
                         if (!IsNumeric(txtQuantiteStock.Text))
                         {
-                           txtQuantiteStock.Text = "0";
+                            txtQuantiteStock.Text = "0";
                         }
                         rstInvModif = new ADODB.Recordset();
                         rstInvModif.Open("SELECT * FROM InventaireMecModif", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                         rstInvModif.AddNew();
                         rstInvModif.Fields["Date"].Value = ConvertDate(DateTime.Today);
                         rstInvModif.Fields["IDProjet"].Value = Interaction.InputBox("Précisez l'ajustement d'inventaire");
-                        rstInvModif.Fields["NoItem"].Value =txtNoItem.Text;
+                        rstInvModif.Fields["NoItem"].Value = txtNoItem.Text;
                         if (chkInventaire.CheckState == CheckState.Checked)
                         {
                             rstInvModif.Fields["Quantité"].Value = double.Parse(txtQuantiteStock.Text) - double.Parse(m_sQteStockAvant);
@@ -2432,18 +2437,18 @@ namespace ControleurServeur
                         rstInvModif = null;
                     }
                 }
-                if ((Strings.UCase(sNoPiece) ?? "") != (Strings.UCase(m_sNoItem) ?? "") &m_bCopiePiece == false)
+                if ((Strings.UCase(sNoPiece) ?? "") != (Strings.UCase(m_sNoItem) ?? "") & m_bCopiePiece == false)
                 {
-                   ModifierNoItem(m_sNoItem, sNoPiece);
+                    ModifierNoItem(m_sNoItem, sNoPiece);
                 }
-               m_sQteStockAvant = "";
-               m_bRempliManuel = true;
-               m_sSelectNoItem = sNoPiece;
-               m_sSelectFabricant = sNomFab;
-               RemplirComboLocalisation();
-               RemplirComboFabricant();
-               MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
-               BarrerChamps_piece(true);
+                m_sQteStockAvant = "";
+                m_bRempliManuel = true;
+                m_sSelectNoItem = sNoPiece;
+                m_sSelectFabricant = sNomFab;
+                RemplirComboLocalisation();
+                RemplirComboFabricant();
+                MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
+                BarrerChamps_piece(true);
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "EnregistrerItem", ex); }
@@ -2461,16 +2466,16 @@ namespace ControleurServeur
                     if (m_bAnnulerCopie == false)
                     {
                         rstPiece = new ADODB.Recordset();
-                        rstPiece.Open("SELECT * FROM CatalogueMec WHERE PIECE = '" + Strings.Replace(cmbNoItem.Text, "'", "''") + "'", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
-                        rstPiece.Fields["CATEGORIE"].Value =m_sCategorieCopie;
+                        rstPiece.Open("SELECT * FROM CatalogueMec WHERE PIECE = '" + cmbNoItem.Text.Replace("'", "''") + "'", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                        rstPiece.Fields["CATEGORIE"].Value = m_sCategorieCopie;
                         rstPiece.Update();
                         rstPiece.Close();
                         rstPiece = null;
-                       ViderChamps_piece();
-                       m_sSelectFabricant =txtFabricant.Text;
-                       RemplirComboFabricant();
-                       MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
-                       BarrerChamps_piece(true);
+                        ViderChamps_piece();
+                        m_sSelectFabricant = txtFabricant.Text;
+                        RemplirComboFabricant();
+                        MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
+                        BarrerChamps_piece(true);
                     }
                 }
                 return;
@@ -2481,16 +2486,16 @@ namespace ControleurServeur
         {
             try
             {
-               m_bCopiePiece = true;
-               CmdModif_Click(CmdModif, new EventArgs());
-               chkInventaire.CheckState = CheckState.Unchecked;
-               chkBoite.CheckState = CheckState.Unchecked;
-               chkMinimum.CheckState = CheckState.Unchecked;
-               txtQuantitéBoite.Text = "";
-               txtQuantiteStock.Text = "";
-               txtQuantiteMinimum.Text = "";
-               txtQuantiteCommande.Text = "";
-               cmbLocalisation.Text = "";
+                m_bCopiePiece = true;
+                CmdModif_Click(CmdModif, new EventArgs());
+                chkInventaire.CheckState = CheckState.Unchecked;
+                chkBoite.CheckState = CheckState.Unchecked;
+                chkMinimum.CheckState = CheckState.Unchecked;
+                txtQuantitéBoite.Text = "";
+                txtQuantiteStock.Text = "";
+                txtQuantiteMinimum.Text = "";
+                txtQuantiteCommande.Text = "";
+                cmbLocalisation.Text = "";
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "cmdCopier_Click", ex); }
@@ -2504,7 +2509,7 @@ namespace ControleurServeur
                 dp.Show();
                 if (m_bDemandeAnnuler == false)
                 {
-                    ChoixDemande cd = new ChoixDemande(EnumCatalogue.MECANIQUE,m_eDemande);
+                    ChoixDemande cd = new ChoixDemande(EnumCatalogue.MECANIQUE, m_eDemande);
                     cd.Show();
                 }
                 return;
@@ -2517,9 +2522,9 @@ namespace ControleurServeur
             {
                 short X;
                 bool bContinuer;
-               txtFabricant.Top = (int)Math.Round(TwipsToPixelsY * 1320d);
-               cmbFabricant.Visible = false;
-                if ((Strings.UCase(txtNoItem.Text) ?? "") != (Strings.UCase(m_sNoItem) ?? "") &m_bCopiePiece == false)
+                txtFabricant.Top = (int)Math.Round(TwipsToPixelsY * 1320d);
+                cmbFabricant.Visible = false;
+                if ((Strings.UCase(txtNoItem.Text) ?? "") != (Strings.UCase(m_sNoItem) ?? "") & m_bCopiePiece == false)
                 {
                     if (Interaction.MsgBox("Le numéro de pièce sera modifié dans toutes les soumissions, les projets et les achats. " + "\n" + "Voulez-vous continuer ?", MsgBoxStyle.YesNo) == MsgBoxResult.Yes)
                     {
@@ -2536,23 +2541,23 @@ namespace ControleurServeur
                 }
                 if (bContinuer == true)
                 {
-                   EnregistrerItem();
+                    EnregistrerItem();
                     if (m_eMode == enumModeCatalogueMec.MODE_INACTIF)
                     {
-                       m_bCopiePiece = false;
+                        m_bCopiePiece = false;
                     }
-                   RemplirComboDescription();
-                   m_bBloqueDescription = true;
+                    RemplirComboDescription();
+                    m_bBloqueDescription = true;
                     for (X = 0; X <= (short)(cmbDescriptionFR.Items.Count - 1); X++)
                     {
 
                         if ((cmbDescriptionFR.Items[X].ToString() ?? "") == (txtDescriptionFR.Text ?? ""))
                         {
-                           cmbDescriptionFR.SelectedIndex = X;
+                            cmbDescriptionFR.SelectedIndex = X;
                             break;
                         }
                     }
-                   m_bBloqueDescription = false;
+                    m_bBloqueDescription = false;
                 }
                 return;
             }
@@ -2587,9 +2592,9 @@ namespace ControleurServeur
                 short X;
                 if (string.IsNullOrEmpty(Strings.Trim(txtPrixList.Text)) & string.IsNullOrEmpty(Strings.Trim(mskEscompte.Text)) & string.IsNullOrEmpty(Strings.Trim(txtPrixNet.Text)) & string.IsNullOrEmpty(Strings.Trim(txtPrixSpecial.Text)))
                 {
-                   txtPrixList.Text = "0";
-                   mskEscompte.Text = "0";
-                   txtPrixNet.Text = "0";
+                    txtPrixList.Text = "0";
+                    mskEscompte.Text = "0";
+                    txtPrixNet.Text = "0";
                 }
                 if (string.IsNullOrEmpty(Strings.Trim(txtPrixList.Text)))
                 {
@@ -2604,7 +2609,7 @@ namespace ControleurServeur
                     Interaction.MsgBox("Vous devez remplir le prix net ou le prix spécial!", MsgBoxStyle.OkOnly, "Erreur");
                     return;
                 }
-                if (optUSA.Checked == true |optSpain.Checked == true)
+                if (optUSA.Checked == true | optSpain.Checked == true)
                 {
                     if (!string.IsNullOrEmpty(Strings.Trim(txtTauxChange.Text)))
                     {
@@ -2622,11 +2627,11 @@ namespace ControleurServeur
                 }
                 if ((Strings.Trim(txtPrixNet.Text) ?? "") != (Strings.Trim(txtPrixList.Text) ?? "") & string.IsNullOrEmpty(Strings.Trim(txtPrixSpecial.Text)))
                 {
-                   CalculerPrixNet();
+                    CalculerPrixNet();
                 }
                 if (cmbfrs.SelectedIndex > -1)
                 {
-                   EnregistrerFRS();
+                    EnregistrerFRS();
                 }
                 else
                 {
@@ -2714,14 +2719,14 @@ namespace ControleurServeur
                 {
                     rstItemFRS.Open("SELECT * FROM PiecesFRS WHERE PIECE = '" + Strings.Replace(txtNoItem.Text, "'", "''") + "'", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                     rstItemFRS.AddNew();
-                   m_bAjout = false;
+                    m_bAjout = false;
                 }
                 else
                 {
-                    rstItemFRS.Open(Operators.ConcatenateObject("SELECT * FROM PiecesFRS WHERE noEnreg = ",lvwfournisseur.FocusedItem.Tag), odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                    rstItemFRS.Open(Operators.ConcatenateObject("SELECT * FROM PiecesFRS WHERE noEnreg = ", lvwfournisseur.FocusedItem.Tag), odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 }
-                rstItemFRS.Fields["PIECE"].Value =cmbNoItem.Text;
-                rstItemFRS.Fields["IDFRS"].Value =cmbfrs.Tag;
+                rstItemFRS.Fields["PIECE"].Value = cmbNoItem.Text;
+                rstItemFRS.Fields["IDFRS"].Value = cmbfrs.Tag;
                 rstItemFRS.Fields["Type"].Value = "M";
                 if (cmbPersRess.SelectedIndex > -1)
                 {
@@ -2732,14 +2737,14 @@ namespace ControleurServeur
                 {
                     rstItemFRS.Fields["PERS_RESS"].Value = DBNull.Value;
                 }
-                rstItemFRS.Fields["PRIX_LIST"].Value =txtPrixList.Text;
-                rstItemFRS.Fields["ESCOMPTE"].Value =mskEscompte.Text;
+                rstItemFRS.Fields["PRIX_LIST"].Value = txtPrixList.Text;
+                rstItemFRS.Fields["ESCOMPTE"].Value = mskEscompte.Text;
                 if (!string.IsNullOrEmpty(txtPrixSpecial.Text) | !string.IsNullOrEmpty(txtPrixNet.Text))
                 {
                     if (!string.IsNullOrEmpty(txtPrixNet.Text))
                     {
-                        rstItemFRS.Fields["PRIX_NET"].Value =txtPrixNet.Text;
-                        rstItemFRS.Fields["PrixReel"].Value =txtPrixNet.Text;
+                        rstItemFRS.Fields["PRIX_NET"].Value = txtPrixNet.Text;
+                        rstItemFRS.Fields["PrixReel"].Value = txtPrixNet.Text;
                     }
                     else
                     {
@@ -2747,8 +2752,8 @@ namespace ControleurServeur
                     }
                     if (!string.IsNullOrEmpty(txtPrixSpecial.Text))
                     {
-                        rstItemFRS.Fields["PRIX_SP"].Value =txtPrixSpecial.Text;
-                        rstItemFRS.Fields["PrixReel"].Value =txtPrixNet.Text;
+                        rstItemFRS.Fields["PRIX_SP"].Value = txtPrixSpecial.Text;
+                        rstItemFRS.Fields["PrixReel"].Value = txtPrixNet.Text;
                     }
                     else
                     {
@@ -2756,7 +2761,7 @@ namespace ControleurServeur
                     }
                 }
                 rstItemFRS.Fields["DATE"].Value = ConvertDate(DateTime.Today);
-                rstItemFRS.Fields["VALIDE"].Value =mskValide.Text;
+                rstItemFRS.Fields["VALIDE"].Value = mskValide.Text;
                 rstItemFRS.Fields["ENTRER_PAR"].Value = Conteneur.idInitiales.Text;
                 if ((int)chkquoter.CheckState == 1)
                 {
@@ -2781,23 +2786,23 @@ namespace ControleurServeur
                 rstItemFRS.Update();
                 rstItemFRS.Close();
                 rstItemFRS = null;
-                if (optUSA.Checked == true |optSpain.Checked == true)
+                if (optUSA.Checked == true | optSpain.Checked == true)
                 {
                     rstConfig = new ADODB.Recordset();
                     rstConfig.Open("SELECT TauxAmericain, TauxEspagnol FROM Config", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                     if (optUSA.Checked == true)
                     {
-                        rstConfig.Fields["TauxAmericain"].Value =txtTauxChange.Text;
+                        rstConfig.Fields["TauxAmericain"].Value = txtTauxChange.Text;
                     }
                     else
                     {
-                        rstConfig.Fields["TauxEspagnol"].Value =txtTauxChange.Text;
+                        rstConfig.Fields["TauxEspagnol"].Value = txtTauxChange.Text;
                     }
                     rstConfig.Update();
                     rstConfig.Close();
                     rstConfig = null;
                 }
-               MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
+                MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
                 ListItem it = (ListItem)cmbfrs.SelectedItem;
                 if (it.Value == "717")
                 {
@@ -2810,14 +2815,14 @@ namespace ControleurServeur
                             if (Conversions.ToBoolean(Operators.ConditionalCompareObjectEqual(rstInv.Fields["CommandeParBoite"].Value, true, false)))
                             {
                                 rstInv.Fields["Prix Liste"].Value = Operators.DivideObject(double.Parse(txtPrixList.Text), rstInv.Fields["QteBoite"].Value);
-                                rstInv.Fields["Escompte"].Value =mskEscompte.Text;
+                                rstInv.Fields["Escompte"].Value = mskEscompte.Text;
                                 rstInv.Fields["Prix net"].Value = Operators.DivideObject(double.Parse(txtPrixNet.Text), rstInv.Fields["QteBoite"].Value);
                             }
                             else
                             {
-                                rstInv.Fields["Prix Liste"].Value =txtPrixList.Text;
-                                rstInv.Fields["Escompte"].Value =mskEscompte.Text;
-                                rstInv.Fields["Prix net"].Value =txtPrixNet.Text;
+                                rstInv.Fields["Prix Liste"].Value = txtPrixList.Text;
+                                rstInv.Fields["Escompte"].Value = mskEscompte.Text;
+                                rstInv.Fields["Prix net"].Value = txtPrixNet.Text;
                             }
                         }
                         else if (Conversions.ToBoolean(Operators.ConditionalCompareObjectEqual(rstInv.Fields["CommandeParBoite"].Value, true, false)))
@@ -2828,16 +2833,16 @@ namespace ControleurServeur
                         }
                         else
                         {
-                            rstInv.Fields["Prix Liste"].Value =txtPrixSpecial.Text;
+                            rstInv.Fields["Prix Liste"].Value = txtPrixSpecial.Text;
                             rstInv.Fields["Escompte"].Value = "";
-                            rstInv.Fields["Prix net"].Value =txtPrixSpecial.Text;
+                            rstInv.Fields["Prix net"].Value = txtPrixSpecial.Text;
                         }
                         rstInv.Update();
                     }
                     rstInv.Close();
                     rstInv = null;
                 }
-               RemplirListViewFournisseur();
+                RemplirListViewFournisseur();
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "EnregistrerFRS", ex); }
@@ -2846,7 +2851,7 @@ namespace ControleurServeur
         {
             try
             {
-               Close();
+                Close();
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "CmdFerme_Click", ex); }
@@ -2857,11 +2862,11 @@ namespace ControleurServeur
             {
                 if (cmbNoItem.Items.Count > 0)
                 {
-                   MontrerControles(enumModeCatalogueMec.MODE_AJOUT_MODIF_MEC);
-                   txtFabricant.Top = (int)Math.Round(TwipsToPixelsY * 960d);
-                   cmbFabricant.Visible = false;
-                   m_sQteStockAvant =txtQuantiteStock.Text;
-                   BarrerChamps_piece(false);
+                    MontrerControles(enumModeCatalogueMec.MODE_AJOUT_MODIF_MEC);
+                    txtFabricant.Top = (int)Math.Round(TwipsToPixelsY * 960d);
+                    cmbFabricant.Visible = false;
+                    m_sQteStockAvant = txtQuantiteStock.Text;
+                    BarrerChamps_piece(false);
                 }
                 return;
             }
@@ -2873,7 +2878,7 @@ namespace ControleurServeur
             {
                 if (lvwfournisseur.Items.Count > 0)
                 {
-                   ModifierFournisseur();
+                    ModifierFournisseur();
                 }
                 return;
             }
@@ -2881,21 +2886,17 @@ namespace ControleurServeur
         }
         private void cmdRechercheCategorie_Click(object eventSender, EventArgs eventArgs)
         {
-            ADODB.Recordset rstcatalog;
-            string sDescription;
+            ADODB.Recordset rstcatalog= new ADODB.Recordset();
             ListViewItem itmDescription;
-            sDescription = Interaction.InputBox("Quelle est la catégorie à rechercher");
+             string sDescription = Interaction.InputBox("Quelle est la catégorie à rechercher");
             if (!string.IsNullOrEmpty(sDescription))
             {
-               lvwCategorie.Items.Clear();
+                lvwCategorie.Items.Clear();
                 sDescription = Strings.Replace(sDescription, "'", "''");
-                sDescription = "%" + sDescription + "%";
-                rstcatalog = new ADODB.Recordset();
-
-                rstcatalog.Open("SELECT DISTINCT CATEGORIE FROM CatalogueMec WHERE  Categorie LIKE '" + sDescription + "'  ORDER BY CATEGORIE", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                rstcatalog.Open("SELECT DISTINCT CATEGORIE FROM CatalogueMec WHERE  Categorie LIKE '%" + sDescription + "%'  ORDER BY CATEGORIE", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 while (!rstcatalog.EOF)
                 {
-                    itmDescription =lvwCategorie.Items.Add("");
+                    itmDescription = lvwCategorie.Items.Add("");
                     itmDescription.Tag = rstcatalog.Fields["CATEGORIE"].Value;
                     itmDescription.Text = Conversions.ToString(rstcatalog.Fields["CATEGORIE"].Value);
                     rstcatalog.MoveNext();
@@ -2904,8 +2905,8 @@ namespace ControleurServeur
                 rstcatalog = null;
                 if (lvwCategorie.Items.Count > 0)
                 {
-                   lvwCategorie.Visible = true;
-                   lvwCategorie.Focus();
+                    lvwCategorie.Visible = true;
+                    lvwCategorie.Focus();
                 }
                 else
                 {
@@ -2924,14 +2925,14 @@ namespace ControleurServeur
                 sDescription = Interaction.InputBox("Quelle est la description à rechercher");
                 if (!string.IsNullOrEmpty(sDescription))
                 {
-                   lvwDescription.Items.Clear();
+                    lvwDescription.Items.Clear();
                     sDescription = sDescription.Replace("'", "''");
                     sDescription = "%" + sDescription + "%";
                     rstDescription = new ADODB.Recordset();
                     rstDescription.Open("SELECT * FROM CatalogueMec WHERE DESC_FR LIKE '" + sDescription + "' OR DESC_EN LIKE '" + sDescription + "' ORDER BY DESC_FR, DESC_EN", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                     while (!rstDescription.EOF)
                     {
-                        itmDescription =lvwDescription.Items.Add(string.Empty);
+                        itmDescription = lvwDescription.Items.Add(string.Empty);
                         itmDescription.Tag = rstDescription.Fields["CATEGORIE"].Value;
 
                         if (!(rstDescription.Fields["DESC_FR"].Value is DBNull))
@@ -2996,8 +2997,8 @@ namespace ControleurServeur
                     rstDescription = null;
                     if (lvwDescription.Items.Count > 0)
                     {
-                       lvwDescription.Visible = true;
-                       lvwDescription.Focus();
+                        lvwDescription.Visible = true;
+                        lvwDescription.Focus();
                     }
                     else
                     {
@@ -3025,12 +3026,12 @@ namespace ControleurServeur
                 ADODB.Recordset rstProjSoum;
                 ListViewItem itmProjSoum;
                 Cursor.Current = Cursors.WaitCursor;
-               lvwRechercheJob.Items.Clear();
+                lvwRechercheJob.Items.Clear();
                 rstProjSoum = new ADODB.Recordset();
                 rstProjSoum.Open("SELECT DISTINCT IDProjet, Qté As QtéTotale FROM Projet_Pieces WHERE TRIM(NumItem) = '" + Strings.Trim(Strings.Replace(txtNoItem.Text, "'", "''")) + "' And Type = 'M' GROUP BY IDProjet", odbc, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly);
                 while (!rstProjSoum.EOF)
                 {
-                    itmProjSoum =lvwRechercheJob.Items.Add(string.Empty);
+                    itmProjSoum = lvwRechercheJob.Items.Add(string.Empty);
                     itmProjSoum.Text = Conversions.ToString(rstProjSoum.Fields["IDProjet"].Value);
 
                     if (itmProjSoum.SubItems.Count > I_COL_JOB_QUANTITE)
@@ -3047,7 +3048,7 @@ namespace ControleurServeur
                 rstProjSoum.Open("SELECT DISTINCT IDSoumission, SUM(Qté) As QtéTotale FROM Soumission_Pieces WHERE TRIM(NumItem) = '" + Strings.Trim(Strings.Replace(txtNoItem.Text, "'", "''")) + "' And Type = 'M' GROUP BY IDSoumission", odbc, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly);
                 while (!rstProjSoum.EOF)
                 {
-                    itmProjSoum =lvwRechercheJob.Items.Add(string.Empty);
+                    itmProjSoum = lvwRechercheJob.Items.Add(string.Empty);
                     itmProjSoum.Text = Conversions.ToString(rstProjSoum.Fields["IDSoumission"].Value);
                     if (itmProjSoum.SubItems.Count > I_COL_JOB_QUANTITE)
                     {
@@ -3064,8 +3065,8 @@ namespace ControleurServeur
                 Cursor.Current = Cursors.Default;
                 if (lvwRechercheJob.Items.Count > 0)
                 {
-                   lvwRechercheJob.Visible = true;
-                   lvwRechercheJob.Focus();
+                    lvwRechercheJob.Visible = true;
+                    lvwRechercheJob.Focus();
                 }
                 else
                 {
@@ -3082,12 +3083,12 @@ namespace ControleurServeur
                 ADODB.Recordset rstAchat;
                 ListViewItem itmAchat;
                 Cursor.Current = Cursors.WaitCursor;
-               lvwRechercheAchat.Items.Clear();
+                lvwRechercheAchat.Items.Clear();
                 rstAchat = new ADODB.Recordset();
                 rstAchat.Open("SELECT DISTINCT (IDAchat + '-' + RIGHT('00' & IndexAchat,3)) As NumeroAchat, SUM(Qté) As QtéTotale FROM Achat_Pieces WHERE TRIM(PIECE) = '" + Strings.Trim(Strings.Replace(txtNoItem.Text, "'", "''")) + "' GROUP BY (IDAchat + '-' + RIGHT('00' & IndexAchat,3))", odbc, ADODB.CursorTypeEnum.adOpenForwardOnly, ADODB.LockTypeEnum.adLockReadOnly);
                 while (!rstAchat.EOF)
                 {
-                    itmAchat =lvwRechercheAchat.Items.Add(string.Empty);
+                    itmAchat = lvwRechercheAchat.Items.Add(string.Empty);
                     itmAchat.Text = Conversions.ToString(rstAchat.Fields["NumeroAchat"].Value);
                     if (itmAchat.SubItems.Count > I_COL_ACHAT_QUANTITE)
                     {
@@ -3104,8 +3105,8 @@ namespace ControleurServeur
                 Cursor.Current = Cursors.Default;
                 if (lvwRechercheAchat.Items.Count > 0)
                 {
-                   lvwRechercheAchat.Visible = true;
-                   lvwRechercheAchat.Focus();
+                    lvwRechercheAchat.Visible = true;
+                    lvwRechercheAchat.Focus();
                 }
                 else
                 {
@@ -3126,12 +3127,12 @@ namespace ControleurServeur
                 sManufact = Strings.Replace(sManufact, "'", "''");
                 if (!string.IsNullOrEmpty(sManufact))
                 {
-                   lvwFabricant.Items.Clear();
+                    lvwFabricant.Items.Clear();
                     rstManufact = new ADODB.Recordset();
-                    rstManufact.Open("SELECT * FROM CatalogueMec WHERE FABRICANT like '%" + sManufact + "% ORDER BY FABRICANT", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                    rstManufact.Open("SELECT * FROM CatalogueMec WHERE FABRICANT like '%" + sManufact + "%' ORDER BY FABRICANT", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                     while (!rstManufact.EOF)
                     {
-                        itmManufact =lvwFabricant.Items.Add("");
+                        itmManufact = lvwFabricant.Items.Add("");
                         itmManufact.Tag = rstManufact.Fields["CATEGORIE"].Value;
                         itmManufact.Text = Conversions.ToString(rstManufact.Fields["FABRICANT"].Value);
                         if (itmManufact.SubItems.Count > I_COL_MAN_PIECE)
@@ -3188,15 +3189,18 @@ namespace ControleurServeur
                     rstManufact = null;
                     if (lvwFabricant.Items.Count > 0)
                     {
-                       lvwFabricant.Visible = true;
-                       lvwFabricant.Focus();
+                        lvwFabricant.Visible = true;
+                        lvwFabricant.Focus();
                     }
                     else
                     {
                         Interaction.MsgBox("Aucun enregistrement trouvé!");
+
                     }
                 }
+                
                 return;
+
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "cmdRechercherManufact_Click", ex); }
         }
@@ -3208,6 +3212,7 @@ namespace ControleurServeur
                 ADODB.Recordset rstTotal;
                 double dblTotalProj;
                 double dblTotalAchat;
+                double dbTotal = 0d; // sert pour l'émulation SUM(QTÉ)
                 sAnnee = Interaction.InputBox("Pour quelle année? (AAAA)");
                 if (Strings.Len(sAnnee) == 4)
                 {
@@ -3217,12 +3222,17 @@ namespace ControleurServeur
                         {
                             Cursor.Current = Cursors.WaitCursor;
                             rstTotal = new ADODB.Recordset();
-                            rstTotal.Open("SELECT SUM(Qté) As Total FROM Projet_Pieces " +
+                            rstTotal.Open("SELECT Qté FROM Projet_Pieces " +// sum ne marche pas sur un nvarchar en SQL
                                 "INNER JOIN ProjetMec ON Projet_Pieces.IDProjet = ProjetMec.IDProjet WHERE TRIM(NumItem) = '" + Strings.Trim(Strings.Replace(txtNoItem.Text, "'", "''")) + "' AND Type = 'M' AND Left(Creer, 4) = '" + sAnnee + "' AND RIGHT(Projet_Pieces.IDProjet,2) < '60'", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
-
-                            if (!(rstTotal.Fields["Total"].Value is DBNull))
+                            while (!rstTotal.EOF)
                             {
-                                dblTotalProj = double.Parse(rstTotal.Fields["Total"].Value);
+                                if(!(rstTotal.Fields is DBNull))
+                                {
+                                    dbTotal += double.Parse(rstTotal.Fields[0].Value);
+                                }
+                            }
+                            if (dbTotal > 0) { 
+                                dblTotalProj = dbTotal;
                             }
                             else
                             {
@@ -3232,10 +3242,17 @@ namespace ControleurServeur
                             rstTotal.Open("SELECT SUM(Qté) As Total FROM Achat_Pieces " +
                                 "INNER JOIN Achat ON Achat_Pieces.IDAchat = Achat.IDAchat AND Achat_Pieces.IndexAchat = Achat.IndexAchat" +
                                 " WHERE TRIM(PIECE) = '" + Strings.Trim(Strings.Replace(txtNoItem.Text, "'", "''")) + "' AND Left(DateAchat,4) = '" + sAnnee + "'", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
-
-                            if (!(rstTotal.Fields["Total"].Value is DBNull))
+                            dbTotal = 0d;
+                            while (!rstTotal.EOF)
                             {
-                                dblTotalAchat = double.Parse(rstTotal.Fields["Total"].Value);
+                                if (!(rstTotal.Fields is DBNull))
+                                {
+                                    dbTotal += double.Parse(rstTotal.Fields[0].Value);
+                                }
+                            }
+                            if (dbTotal > 0)
+                            {
+                                dblTotalAchat = dbTotal;
                             }
                             else
                             {
@@ -3268,11 +3285,11 @@ namespace ControleurServeur
         {
             try
             {
-               lvwDescription.Visible = false;
-               lvwFabricant.Visible = false;
-               lvwPieces.Visible = false;
-               lvwRechercheJob.Visible = false;
-               lvwRechercheAchat.Visible = false;
+                lvwDescription.Visible = true;
+                lvwFabricant.Visible = true;
+                lvwPieces.Visible = true;
+                lvwRechercheJob.Visible = true;
+                lvwRechercheAchat.Visible = true;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "Form_Click", ex); }
@@ -3281,11 +3298,11 @@ namespace ControleurServeur
         {
             try
             {
-               lvwDescription.Visible = false;
-               lvwFabricant.Visible = false;
-               lvwPieces.Visible = false;
-               lvwRechercheJob.Visible = false;
-               lvwRechercheAchat.Visible = false;
+                lvwDescription.Visible = true;
+                lvwFabricant.Visible = true;
+                lvwPieces.Visible = true;
+                lvwRechercheJob.Visible = true;
+                lvwRechercheAchat.Visible = true;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "aFournisseur_Click", ex); }
@@ -3294,11 +3311,11 @@ namespace ControleurServeur
         {
             try
             {
-               lvwDescription.Visible = false;
-               lvwFabricant.Visible = false;
-               lvwPieces.Visible = false;
-               lvwRechercheJob.Visible = false;
-               lvwRechercheAchat.Visible = false;
+                lvwDescription.Visible = true;
+                lvwFabricant.Visible = true;
+                lvwPieces.Visible = true;
+                lvwRechercheJob.Visible = true;
+                lvwRechercheAchat.Visible = true;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "aQuantité_Click", ex); }
@@ -3312,10 +3329,10 @@ namespace ControleurServeur
             if (lvwCategorie.Items.Count > 0)
             {
                 Cursor.Current = Cursors.WaitCursor;
-                itmDescription =lvwCategorie.FocusedItem;
-               cmbCategorie.Text =lvwCategorie.FocusedItem.Text;
-               cmbCategorie_SelectedIndexChanged(cmbCategorie, new EventArgs());
-               lvwCategorie.Visible = false;
+                itmDescription = lvwCategorie.FocusedItem;
+                cmbCategorie.Text = lvwCategorie.FocusedItem.Text;
+                cmbCategorie_SelectedIndexChanged(cmbCategorie, new EventArgs());
+                lvwCategorie.Visible = false;
                 Cursor.Current = Cursors.Default;
             }
             return;
@@ -3326,7 +3343,7 @@ namespace ControleurServeur
             {
                 if (lvwCategorie.Visible == true)
                 {
-                   lvwCategorie.Visible = false;
+                    lvwCategorie.Visible = false;
                 }
                 return;
             }
@@ -3340,7 +3357,7 @@ namespace ControleurServeur
             {
                 if (KeyCode == (int)Keys.Return)
                 {
-                   lvwDescription_DoubleClick(lvwDescription, new EventArgs());
+                    lvwDescription_DoubleClick(lvwDescription, new EventArgs());
                 }
                 return;
             }
@@ -3348,17 +3365,17 @@ namespace ControleurServeur
         }
         private void lvwFabricant_ColumnClick(object eventSender, ColumnClickEventArgs eventArgs)
         {
-            var ColumnHeader =lvwFabricant.Columns[eventArgs.Column];
+            var ColumnHeader = lvwFabricant.Columns[eventArgs.Column];
             try
             {
-               lvwFabricant.Sort();
+                lvwFabricant.Sort();
                 if (lvwFabricant.Sorting == SortOrder.Ascending)
                 {
-                   lvwFabricant.Sorting = SortOrder.Descending;
+                    lvwFabricant.Sorting = SortOrder.Descending;
                 }
                 else
                 {
-                   lvwFabricant.Sorting = SortOrder.Ascending;
+                    lvwFabricant.Sorting = SortOrder.Ascending;
                 }
                 return;
             }
@@ -3366,17 +3383,17 @@ namespace ControleurServeur
         }
         private void lvwDescription_ColumnClick(object eventSender, ColumnClickEventArgs eventArgs)
         {
-            var ColumnHeader =lvwDescription.Columns[eventArgs.Column];
+            var ColumnHeader = lvwDescription.Columns[eventArgs.Column];
             try
             {
-               lvwDescription.Sort();
+                lvwDescription.Sort();
                 if (lvwDescription.Sorting == SortOrder.Ascending)
                 {
-                   lvwDescription.Sorting = SortOrder.Descending;
+                    lvwDescription.Sorting = SortOrder.Descending;
                 }
                 else
                 {
-                   lvwDescription.Sorting = SortOrder.Ascending;
+                    lvwDescription.Sorting = SortOrder.Ascending;
                 }
                 return;
             }
@@ -3390,7 +3407,7 @@ namespace ControleurServeur
             {
                 if (KeyCode == (int)Keys.Return)
                 {
-                   lvwFabricant_DoubleClick(lvwFabricant, new EventArgs());
+                    lvwFabricant_DoubleClick(lvwFabricant, new EventArgs());
                 }
                 return;
             }
@@ -3398,17 +3415,17 @@ namespace ControleurServeur
         }
         private void lvwPieces_ColumnClick(object eventSender, ColumnClickEventArgs eventArgs)
         {
-            var ColumnHeader =lvwPieces.Columns[eventArgs.Column];
+            var ColumnHeader = lvwPieces.Columns[eventArgs.Column];
             try
             {
-               lvwPieces.Sort();
+                lvwPieces.Sort();
                 if (lvwPieces.Sorting == SortOrder.Ascending)
                 {
-                   lvwPieces.Sorting = SortOrder.Descending;
+                    lvwPieces.Sorting = SortOrder.Descending;
                 }
                 else
                 {
-                   lvwPieces.Sorting = SortOrder.Ascending;
+                    lvwPieces.Sorting = SortOrder.Ascending;
                 }
                 return;
             }
@@ -3422,7 +3439,7 @@ namespace ControleurServeur
             {
                 if (KeyCode == (int)Keys.Return)
                 {
-                   lvwPieces_DoubleClick(lvwPieces, new EventArgs());
+                    lvwPieces_DoubleClick(lvwPieces, new EventArgs());
                 }
                 return;
             }
@@ -3430,16 +3447,16 @@ namespace ControleurServeur
         }
         private void lvwRechercheJob_ColumnClick(object eventSender, ColumnClickEventArgs eventArgs)
         {
-            var ColumnHeader =lvwRechercheJob.Columns[eventArgs.Column];
+            var ColumnHeader = lvwRechercheJob.Columns[eventArgs.Column];
             try
             {
                 if (lvwRechercheJob.Sorting == SortOrder.Ascending)
                 {
-                   lvwRechercheJob.Sorting = SortOrder.Descending;
+                    lvwRechercheJob.Sorting = SortOrder.Descending;
                 }
                 else
                 {
-                   lvwRechercheJob.Sorting = SortOrder.Ascending;
+                    lvwRechercheJob.Sorting = SortOrder.Ascending;
                 }
                 return;
             }
@@ -3447,16 +3464,16 @@ namespace ControleurServeur
         }
         private void lvwRechercheAchat_ColumnClick(object eventSender, ColumnClickEventArgs eventArgs)
         {
-            var ColumnHeader =lvwRechercheAchat.Columns[eventArgs.Column];
+            var ColumnHeader = lvwRechercheAchat.Columns[eventArgs.Column];
             try
             {
                 if (lvwRechercheAchat.Sorting == SortOrder.Ascending)
                 {
-                   lvwRechercheAchat.Sorting = SortOrder.Descending;
+                    lvwRechercheAchat.Sorting = SortOrder.Descending;
                 }
                 else
                 {
-                   lvwRechercheAchat.Sorting = SortOrder.Ascending;
+                    lvwRechercheAchat.Sorting = SortOrder.Ascending;
                 }
                 return;
             }
@@ -3469,12 +3486,12 @@ namespace ControleurServeur
                 ListViewItem itmFabricant;
                 short X;
                 Cursor.Current = Cursors.WaitCursor;
-                itmFabricant =lvwFabricant.FocusedItem;
-               m_sSelectCategorie = Strings.Trim(Conversions.ToString(itmFabricant.Tag));
-               m_sSelectFabricant = Strings.Trim(itmFabricant.Text);
-               m_sSelectNoItem = Strings.Trim(itmFabricant.SubItems[I_COL_MAN_PIECE].Text);
-               RemplirComboCategorie();
-               lvwFabricant.Visible = false;
+                itmFabricant = lvwFabricant.FocusedItem;
+                m_sSelectCategorie = Strings.Trim(Conversions.ToString(itmFabricant.Tag));
+                m_sSelectFabricant = Strings.Trim(itmFabricant.Text);
+                m_sSelectNoItem = Strings.Trim(itmFabricant.SubItems[I_COL_MAN_PIECE].Text);
+                RemplirComboCategorie();
+                lvwFabricant.Visible = false;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "lvwFabricant_DblClick", ex); }
@@ -3488,20 +3505,20 @@ namespace ControleurServeur
                 Cursor.Current = Cursors.WaitCursor;
                 if (lvwDescription.Items.Count > 0)
                 {
-                    itmDescription =lvwDescription.FocusedItem;
+                    itmDescription = lvwDescription.FocusedItem;
                     if (m_eMode == enumModeCatalogueMec.MODE_INACTIF)
                     {
-                       m_sSelectCategorie = Strings.Trim(Conversions.ToString(itmDescription.Tag));
-                       m_sSelectFabricant = Strings.Trim(itmDescription.SubItems[I_COL_DES_FABRICANT].Text);
-                       m_sSelectNoItem = Strings.Trim(itmDescription.SubItems[I_COL_DES_PIECE].Text);
-                       RemplirComboCategorie();
+                        m_sSelectCategorie = Strings.Trim(Conversions.ToString(itmDescription.Tag));
+                        m_sSelectFabricant = Strings.Trim(itmDescription.SubItems[I_COL_DES_FABRICANT].Text);
+                        m_sSelectNoItem = Strings.Trim(itmDescription.SubItems[I_COL_DES_PIECE].Text);
+                        RemplirComboCategorie();
                     }
                     else
                     {
-                       txtDescriptionFR.Text = itmDescription.Text;
-                       txtDescriptionEN.Text = itmDescription.SubItems[I_COL_DES_DESCR_EN].Text;
+                        txtDescriptionFR.Text = itmDescription.Text;
+                        txtDescriptionEN.Text = itmDescription.SubItems[I_COL_DES_DESCR_EN].Text;
                     }
-                   lvwDescription.Visible = false;
+                    lvwDescription.Visible = false;
                     Cursor.Current = Cursors.Default;
                 }
                 return;
@@ -3517,7 +3534,7 @@ namespace ControleurServeur
 
                 if (cmbNoItem.Items.Count > 0)
                 {
-                    if (Interaction.MsgBox("Voulez-vous vraiment effacer la pièce " +txtNoItem.Text + "?", MsgBoxStyle.YesNo) == MsgBoxResult.Yes)
+                    if (Interaction.MsgBox("Voulez-vous vraiment effacer la pièce " + txtNoItem.Text + "?", MsgBoxStyle.YesNo) == MsgBoxResult.Yes)
                     {
 
 
@@ -3531,41 +3548,41 @@ namespace ControleurServeur
                         }
                         odbc.Execute("DELETE FROM CatalogueMec WHERE PIECE = '" + cmbNoItem.Text.Replace("'", "''") + "'", out sortie, -1);
                         odbc.Execute("DELETE FROM PiecesFRS WHERE PIECE = '" + cmbNoItem.Text.Replace("'", "''") + "'", out sortie, -1);
-                       m_bRempliManuel = true;
-                       m_sSelectNoItem = string.Empty;
+                        m_bRempliManuel = true;
+                        m_sSelectNoItem = string.Empty;
                         if (cmbNoItem.Items.Count > 1)
                         {
-                           m_sSelectFabricant =cmbFabricant.Text;
+                            m_sSelectFabricant = cmbFabricant.Text;
                         }
                         else
                         {
-                           m_sSelectFabricant = "";
+                            m_sSelectFabricant = "";
                         }
-                       RemplirComboFabricant();
+                        RemplirComboFabricant();
                         if (cmbFabricant.Items.Count == 0)
                         {
-                           cmbNoItem.Items.Clear();
-                           cmbCategorie.Items.RemoveAt(cmbCategorie.SelectedIndex);
+                            cmbNoItem.Items.Clear();
+                            cmbCategorie.Items.RemoveAt(cmbCategorie.SelectedIndex);
                             if (cmbCategorie.Items.Count > 0)
                             {
-                               cmbCategorie.SelectedIndex = 0;
+                                cmbCategorie.SelectedIndex = 0;
                             }
                             else
                             {
-                               ViderChamps_frs();
-                               lvwfournisseur.Items.Clear();
-                               ViderChamps_piece();
+                                ViderChamps_frs();
+                                lvwfournisseur.Items.Clear();
+                                ViderChamps_piece();
                             }
                         }
-                        sDescription =txtDescriptionFR.Text;
+                        sDescription = txtDescriptionFR.Text;
                         var loopTo = (short)(cmbDescriptionFR.Items.Count - 1);
                         for (X = 0; X <= loopTo; X++)
                         {
                             if ((cmbDescriptionFR.Items[X].ToString() ?? "") == (sDescription ?? ""))
                             {
-                               m_bBloqueDescription = true;
-                               cmbDescriptionFR.SelectedIndex = X;
-                               m_bBloqueDescription = false;
+                                m_bBloqueDescription = true;
+                                cmbDescriptionFR.SelectedIndex = X;
+                                m_bBloqueDescription = false;
                                 break;
                             }
                         }
@@ -3582,34 +3599,34 @@ namespace ControleurServeur
                 ADODB.Recordset rstItem;
                 ADODB.Recordset rstInventaire;
                 short X;
-               ViderChamps_piece();
+                ViderChamps_piece();
                 rstItem = new ADODB.Recordset();
                 rstItem.Open("SELECT * FROM CatalogueMec WHERE PIECE = '" + Strings.Replace(m_sNoItem, "'", "''") + "'", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 if (!rstItem.EOF)
                 {
                     if (!(rstItem.Fields["PIECE_GRB"].Value is DBNull))
                     {
-                       txtNoItemGRB.Text = Strings.Trim(Conversions.ToString(rstItem.Fields["PIECE_GRB"].Value));
+                        txtNoItemGRB.Text = Strings.Trim(Conversions.ToString(rstItem.Fields["PIECE_GRB"].Value));
                     }
                     else
                     {
-                       txtNoItemGRB.Text = string.Empty;
+                        txtNoItemGRB.Text = string.Empty;
                     }
                     if (!(rstItem.Fields["DESC_EN"].Value is DBNull))
                     {
-                       txtDescriptionEN.Text = Strings.Trim(Conversions.ToString(rstItem.Fields["DESC_EN"].Value));
+                        txtDescriptionEN.Text = Strings.Trim(Conversions.ToString(rstItem.Fields["DESC_EN"].Value));
                     }
                     else
                     {
-                       txtDescriptionEN.Text = string.Empty;
+                        txtDescriptionEN.Text = string.Empty;
                     }
                     if (!(rstItem.Fields["FABRICANT"].Value is DBNull))
                     {
-                       txtFabricant.Text = Strings.Trim(Conversions.ToString(rstItem.Fields["FABRICANT"].Value));
+                        txtFabricant.Text = Strings.Trim(Conversions.ToString(rstItem.Fields["FABRICANT"].Value));
                     }
                     else
                     {
-                       txtFabricant.Text = string.Empty;
+                        txtFabricant.Text = string.Empty;
                     }
                     if (!(rstItem.Fields["DESC_FR"].Value is DBNull))
                     {
@@ -3618,28 +3635,28 @@ namespace ControleurServeur
                         {
                             if (cmbDescriptionFR.Items[X].ToString() == rstItem.Fields["DESC_FR"].Value)
                             {
-                               cmbDescriptionFR.SelectedIndex = X;
+                                cmbDescriptionFR.SelectedIndex = X;
                                 break;
                             }
                         }
                     }
                     else if (cmbDescriptionFR.SelectedIndex == -1)
                     {
-                       cmbDescriptionFR_SelectedIndexChanged(cmbDescriptionFR, new EventArgs());
+                        cmbDescriptionFR_SelectedIndexChanged(cmbDescriptionFR, new EventArgs());
                     }
                     else
                     {
-                       cmbDescriptionFR.SelectedIndex = -1;
+                        cmbDescriptionFR.SelectedIndex = -1;
                     }
                     if (!(rstItem.Fields["COMMENTAIRE"].Value is DBNull))
                     {
-                       txtComment.Text = Strings.Trim(Conversions.ToString(rstItem.Fields["COMMENTAIRE"].Value));
+                        txtComment.Text = Strings.Trim(Conversions.ToString(rstItem.Fields["COMMENTAIRE"].Value));
                     }
                     else
                     {
-                       txtComment.Text = string.Empty;
+                        txtComment.Text = string.Empty;
                     }
-                   RemplirListViewFournisseur();
+                    RemplirListViewFournisseur();
                 }
                 else
                 {
@@ -3651,25 +3668,25 @@ namespace ControleurServeur
                 rstInventaire.Open("SELECT * FROM InventaireMec WHERE NoItem = '" + Strings.Replace(txtNoItem.Text, "'", "''") + "'", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 if (!rstInventaire.EOF)
                 {
-                   chkInventaire.CheckState = CheckState.Checked;
-                   chkBoite.CheckState = (CheckState)Math.Abs(Conversions.ToShort(rstInventaire.Fields["CommandeParBoite"].Value));
+                    chkInventaire.CheckState = CheckState.Checked;
+                    chkBoite.CheckState = (CheckState)Math.Abs(Conversions.ToShort(rstInventaire.Fields["CommandeParBoite"].Value));
                     if (chkBoite.CheckState == CheckState.Checked)
                     {
-                       txtQuantitéBoite.Text = Conversions.ToString(rstInventaire.Fields["QteBoite"].Value);
+                        txtQuantitéBoite.Text = Conversions.ToString(rstInventaire.Fields["QteBoite"].Value);
                     }
                     var loopTo1 = (short)(cmbLocalisation.Items.Count - 1);
                     for (X = 0; X <= loopTo1; X++)
                     {
                         if (cmbLocalisation.Items[X].ToString() == rstInventaire.Fields["Localisation"].Value)
                         {
-                           cmbLocalisation.SelectedIndex = X;
+                            cmbLocalisation.SelectedIndex = X;
                             break;
                         }
                     }
-                   txtQuantiteStock.Text = Conversions.ToString(rstInventaire.Fields["QuantitéStock"].Value);
-                   chkMinimum.CheckState = (CheckState)Math.Abs(Conversions.ToShort(rstInventaire.Fields["Minimum"].Value));
-                   txtQuantiteMinimum.Text = Conversions.ToString(rstInventaire.Fields["QuantitéMinimum"].Value);
-                   txtQuantiteCommande.Text = Conversions.ToString(rstInventaire.Fields["Commande"].Value);
+                    txtQuantiteStock.Text = Conversions.ToString(rstInventaire.Fields["QuantitéStock"].Value);
+                    chkMinimum.CheckState = (CheckState)Math.Abs(Conversions.ToShort(rstInventaire.Fields["Minimum"].Value));
+                    txtQuantiteMinimum.Text = Conversions.ToString(rstInventaire.Fields["QuantitéMinimum"].Value);
+                    txtQuantiteCommande.Text = Conversions.ToString(rstInventaire.Fields["Commande"].Value);
                 }
                 rstInventaire.Close();
                 rstInventaire = null;
@@ -3681,15 +3698,14 @@ namespace ControleurServeur
         {
             try
             {
-                ADODB.Recordset rstItemFRS;
+                ADODB.Recordset rstItemFRS = new ADODB.Recordset();
                 short X;
-                rstItemFRS = new ADODB.Recordset();
-                rstItemFRS.Open(Operators.ConcatenateObject("SELECT * FROM PiecesFRS WHERE NoEnreg = ",lvwfournisseur.FocusedItem.Tag), odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                rstItemFRS.Open("SELECT * FROM PiecesFRS WHERE NoEnreg = "+ lvwfournisseur.FocusedItem.Tag.ToString(), odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 for (X = 0; X <= (short)(cmbfrs.Items.Count - 1); X++)
                 {
                     if ((cmbfrs.Items[X].ToString() ?? "") == (lvwfournisseur.FocusedItem.Text ?? ""))
                     {
-                       cmbfrs.SelectedIndex = X;
+                        cmbfrs.SelectedIndex = X;
                         break;
                     }
                 }
@@ -3699,76 +3715,76 @@ namespace ControleurServeur
                     {
                         if (cmbPersRess.Items[X].ToString() == rstItemFRS.Fields["PERS_RESS"].Value)
                         {
-                           cmbPersRess.SelectedIndex = X;
+                            cmbPersRess.SelectedIndex = X;
                             break;
                         }
                     }
                 }
                 else
                 {
-                   cmbPersRess.SelectedIndex = -1;
+                    cmbPersRess.SelectedIndex = -1;
                 }
                 if (!(rstItemFRS.Fields["PRIX_LIST"].Value is DBNull))
                 {
-                   txtPrixList.Text = Conversions.ToString(rstItemFRS.Fields["PRIX_LIST"].Value);
+                    txtPrixList.Text = Conversions.ToString(rstItemFRS.Fields["PRIX_LIST"].Value);
                 }
                 else
                 {
-                   txtPrixList.Text = string.Empty;
+                    txtPrixList.Text = string.Empty;
                 }
                 if (!(rstItemFRS.Fields["ESCOMPTE"].Value is DBNull))
                 {
-                   mskEscompte.Text = Conversions.ToString(rstItemFRS.Fields["ESCOMPTE"].Value);
+                    mskEscompte.Text = Conversions.ToString(rstItemFRS.Fields["ESCOMPTE"].Value);
                 }
                 else
                 {
-                   mskEscompte.Text = string.Empty;
+                    mskEscompte.Text = string.Empty;
                 }
                 if (!(rstItemFRS.Fields["PRIX_NET"].Value is DBNull))
                 {
-                   txtPrixNet.Text = Conversions.ToString(rstItemFRS.Fields["PRIX_NET"].Value);
+                    txtPrixNet.Text = Conversions.ToString(rstItemFRS.Fields["PRIX_NET"].Value);
                 }
                 else
                 {
-                   txtPrixNet.Text = string.Empty;
+                    txtPrixNet.Text = string.Empty;
                 }
                 if (!(rstItemFRS.Fields["PRIX_SP"].Value is DBNull))
                 {
-                   txtPrixSpecial.Text = Conversions.ToString(rstItemFRS.Fields["PRIX_SP"].Value);
+                    txtPrixSpecial.Text = Conversions.ToString(rstItemFRS.Fields["PRIX_SP"].Value);
                 }
                 else
                 {
-                   txtPrixSpecial.Text = string.Empty;
+                    txtPrixSpecial.Text = string.Empty;
                 }
                 if (!(rstItemFRS.Fields["VALIDE"].Value is DBNull))
                 {
-                   mskValide.Text = Conversions.ToString(rstItemFRS.Fields["VALIDE"].Value);
+                    mskValide.Text = Conversions.ToString(rstItemFRS.Fields["VALIDE"].Value);
                 }
                 else
                 {
-                   mskValide.Text = string.Empty;
+                    mskValide.Text = string.Empty;
                 }
                 if (Conversions.ToBoolean(Operators.ConditionalCompareObjectEqual(rstItemFRS.Fields["quoter"].Value, true, false)))
                 {
-                   chkquoter.CheckState = CheckState.Checked;
+                    chkquoter.CheckState = CheckState.Checked;
                 }
                 else
                 {
-                   chkquoter.CheckState = CheckState.Unchecked;
+                    chkquoter.CheckState = CheckState.Unchecked;
                 }
                 if (Conversions.ToBoolean(Operators.ConditionalCompareObjectEqual(rstItemFRS.Fields["DeviseMonétaire"].Value, "CAN", false)))
                 {
-                   optCAN.Checked = true;
+                    optCAN.Checked = true;
                 }
                 else if (Conversions.ToBoolean(Operators.ConditionalCompareObjectEqual(rstItemFRS.Fields["DeviseMonétaire"].Value, "USA", false)))
                 {
-                   optUSA.Checked = true;
+                    optUSA.Checked = true;
                 }
                 else
                 {
-                   optSpain.Checked = true;
+                    optSpain.Checked = true;
                 }
-               AfficherDrapeau();
+                AfficherDrapeau();
                 rstItemFRS.Close();
                 rstItemFRS = null;
                 return;
@@ -3780,12 +3796,12 @@ namespace ControleurServeur
             try
             {
                 Cursor.Current = Cursors.WaitCursor;
-               txtNoItem.Text =cmbNoItem.Text;
-               m_sNoItem =txtNoItem.Text;
-               m_bBloqueDescription = true;
-               AfficherItem();
-               m_bBloqueDescription = false;
-               RemplirComboFRS();
+                txtNoItem.Text = cmbNoItem.Text;
+                m_sNoItem = txtNoItem.Text;
+                m_bBloqueDescription = true;
+                AfficherItem();
+                m_bBloqueDescription = false;
+                RemplirComboFRS();
                 Cursor.Current = Cursors.Default;
                 return;
             }
@@ -3796,23 +3812,23 @@ namespace ControleurServeur
             try
             {
                 Cursor.Current = Cursors.WaitCursor;
-               txtFabricant.Text =cmbFabricant.Text;
-               RemplirComboDescription();
-               m_bBloqueDescription = true;
+                txtFabricant.Text = cmbFabricant.Text;
+                RemplirComboDescription();
+                m_bBloqueDescription = true;
                 if (m_bRempliManuel == true)
                 {
-                   RemplirComboNoItem();
-                   m_bRempliManuel = false;
+                    RemplirComboNoItem();
+                    m_bRempliManuel = false;
                 }
                 else
                 {
-                   RemplirComboNoItem();
+                    RemplirComboNoItem();
                 }
-               m_bBloqueDescription = false;
+                m_bBloqueDescription = false;
                 Cursor.Current = Cursors.Default;
                 if (sChoisirTous == ")")
                 {
-                   RemplirComboCategorie();
+                    RemplirComboCategorie();
                 }
 
                 return;
@@ -3825,7 +3841,7 @@ namespace ControleurServeur
             {
                 if (lvwfournisseur.Items.Count > 0)
                 {
-                   SupprimerFournisseur();
+                    SupprimerFournisseur();
                 }
                 return;
             }
@@ -3835,14 +3851,14 @@ namespace ControleurServeur
         {
             try
             {
-               ActiverBoutonsGroupe();
-               m_bBloqueDescription = true;
-               m_collPieceDescFR = new List<String>();
-               BarrerChamps_piece(true);
-               MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
-               RemplirComboLocalisation();
-               RemplirComboCategorie();
-               m_bBloqueDescription = false;
+                ActiverBoutonsGroupe();
+                m_bBloqueDescription = true;
+                m_collPieceDescFR = new List<String>();
+                BarrerChamps_piece(true);
+                MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
+                RemplirComboLocalisation();
+                RemplirComboCategorie();
+                m_bBloqueDescription = false;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "Form_Load", ex); }
@@ -3851,13 +3867,13 @@ namespace ControleurServeur
         {
             try
             {
-               CmdAdd.Enabled = g_bModificationCatalogueMec;
-               CmdSupp.Enabled = g_bModificationCatalogueMec;
-               CmdModif.Enabled = g_bModificationCatalogueMec;
-               cmdAddFrs.Enabled = g_bModificationCatalogueMec;
-               cmdSuppFrs.Enabled = g_bModificationCatalogueMec;
-               cmdModifFrs.Enabled = g_bModificationCatalogueMec;
-               cmdDemande.Enabled = g_bModificationCatalogueMec;
+                CmdAdd.Enabled = g_bModificationCatalogueMec;
+                CmdSupp.Enabled = g_bModificationCatalogueMec;
+                CmdModif.Enabled = g_bModificationCatalogueMec;
+                cmdAddFrs.Enabled = g_bModificationCatalogueMec;
+                cmdSuppFrs.Enabled = g_bModificationCatalogueMec;
+                cmdModifFrs.Enabled = g_bModificationCatalogueMec;
+                cmdDemande.Enabled = g_bModificationCatalogueMec;
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "ActiverBoutonsGroupe", ex); }
@@ -3871,28 +3887,28 @@ namespace ControleurServeur
             sCategorie = Strings.Replace(cmbCategorie.Text, "'", "''");
             rstFabricant = new ADODB.Recordset();
             rstFabricant.Open("SELECT DISTINCT FABRICANT FROM CatalogueMec WHERE CATEGORIE = '" + sCategorie + "' ORDER BY FABRICANT", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
-           cmbFabricant.Items.Clear();
-           sChoisirTous = "";
-           cmbFabricant.Items.Add("-- CHOISIR TOUS --");
+            cmbFabricant.Items.Clear();
+            sChoisirTous = "";
+            cmbFabricant.Items.Add("-- CHOISIR TOUS --");
             if (!rstFabricant.EOF)
                 rstFabricant.MoveFirst();
             while (!rstFabricant.EOF)
             {
                 if (!(rstFabricant.Fields["Fabricant"].Value is DBNull))
                 {
-                   cmbFabricant.Items.Add(Strings.Trim(Conversions.ToString(rstFabricant.Fields["FABRICANT"].Value)));
+                    cmbFabricant.Items.Add(Strings.Trim(Conversions.ToString(rstFabricant.Fields["FABRICANT"].Value)));
                     if (string.IsNullOrEmpty(sChoisirTous))
                     {
-                       sChoisirTous = " AND (FABRICANT = '" + Strings.Trim(Conversions.ToString(rstFabricant.Fields["FABRICANT"].Value)) + "'";
+                        sChoisirTous = " AND (FABRICANT = '" + Strings.Trim(Conversions.ToString(rstFabricant.Fields["FABRICANT"].Value)) + "'";
                     }
                     else
                     {
-                       sChoisirTous =sChoisirTous + " OR FABRICANT = '" + Strings.Trim(Conversions.ToString(rstFabricant.Fields["FABRICANT"].Value)) + "'";
+                        sChoisirTous = sChoisirTous + " OR FABRICANT = '" + Strings.Trim(Conversions.ToString(rstFabricant.Fields["FABRICANT"].Value)) + "'";
                     }
                 }
                 rstFabricant.MoveNext();
             }
-           sChoisirTous =sChoisirTous + ")";
+            sChoisirTous = sChoisirTous + ")";
             rstFabricant.Close();
             rstFabricant = null;
             if (cmbFabricant.Items.Count > 0)
@@ -3904,143 +3920,215 @@ namespace ControleurServeur
                     {
                         if ((cmbFabricant.Items[X].ToString() ?? "") == (Strings.UCase(m_sSelectFabricant) ?? ""))
                         {
-                           cmbFabricant.SelectedIndex = X;
-                           m_sSelectFabricant = "";
+                            cmbFabricant.SelectedIndex = X;
+                            m_sSelectFabricant = "";
                             break;
                         }
                     }
                 }
                 else
                 {
-                   cmbFabricant.SelectedIndex = 0;
+                    cmbFabricant.SelectedIndex = 0;
                 }
             }
             else
             {
-               cmbNoItem.Items.Clear();
-               cmbDescriptionFR.Items.Clear();
+                cmbNoItem.Items.Clear();
+                cmbDescriptionFR.Items.Clear();
             }
             return;
         }
         private void cmdRechercherPiece_Click(object eventSender, EventArgs eventArgs)
         {
-            try
+            lvwPieces.Columns.Clear();
+            lvwPieces.Columns.Add("FABRICANT");
+            lvwPieces.Columns.Add("DESCR_FR");
+            lvwPieces.Columns.Add("DESCR_EN");
+            lvwPieces.Columns.Add("CATEGORIE");
+            ADODB.Recordset rd = new ADODB.Recordset();
+            Color lCouleur;
+            lvwPieces.Items.Clear();
+            lvwPieces.Visible = true;
+            string sPiece = Interaction.InputBox("Quelle est la pièce à rechercher?");
+            string sPieceModif = string.Empty;
+            if (!string.IsNullOrEmpty(sPiece))
             {
-                ADODB.Recordset rstPiece;
-                string sPiece;
-                ListViewItem itmPiece;
-                short X;
-                var sPieceModif = default(string);
-                sPiece = Interaction.InputBox("Quelle est la pièce à rechercher?");
-                if (!string.IsNullOrEmpty(sPiece))
+                string sLettre = sPiece;
+                for (int X = 1; X <= sPiece.Length; X++)
                 {
-                    string sLettre = sPiece;
-                    for (X = 1; X <= sPiece.Length; X++)
+                    if (sLettre[X] >= 48 & sLettre[X] <= 57 | sLettre[X] >= 65 & sLettre[X] <= 90 | sLettre[X] >= 97 & sLettre[X] <= 122)
                     {
-                        if (sLettre[X] >= 48 & sLettre[X] <= 57 | sLettre[X] >= 65 & sLettre[X] <= 90 | sLettre[X] >= 97 & sLettre[X] <= 122)
-                        {
-                            sPieceModif += sLettre;
-                        }
-                    }
-                   lvwPieces.Items.Clear();
-                    rstPiece = new ADODB.Recordset();
-                    rstPiece.Open("SELECT * FROM CatalogueMec WHERE  PIECE_MODIF like '%" + sPieceModif + "% ORDER BY PIECE", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
-                    while (!rstPiece.EOF)
-                    {
-                        itmPiece =lvwPieces.Items.Add(string.Empty);
-                        itmPiece.Text = Conversions.ToString(rstPiece.Fields["PIECE"].Value);
-                        if (!(rstPiece.Fields["FABRICANT"].Value is DBNull))
-                        {
-                            if (itmPiece.SubItems.Count > I_COL_PIECE_FABRICANT)
-                            {
-                                itmPiece.SubItems[I_COL_PIECE_FABRICANT].Text = Conversions.ToString(rstPiece.Fields["FABRICANT"].Value);
-                            }
-                            else
-                            {
-                                itmPiece.SubItems.Insert(I_COL_PIECE_FABRICANT, new ListViewItem.ListViewSubItem(null, Conversions.ToString(rstPiece.Fields["FABRICANT"].Value)));
-                            }
-                        }
-                        else if (itmPiece.SubItems.Count > I_COL_PIECE_FABRICANT)
-                        {
-                            itmPiece.SubItems[I_COL_PIECE_FABRICANT].Text = string.Empty;
-                        }
-                        else
-                        {
-                            itmPiece.SubItems.Insert(I_COL_PIECE_FABRICANT, new ListViewItem.ListViewSubItem(null, string.Empty));
-                        }
-                        if (!(rstPiece.Fields["DESC_FR"].Value is DBNull))
-                        {
-                            if (itmPiece.SubItems.Count > I_COL_PIECE_DESCR_FR)
-                            {
-                                itmPiece.SubItems[I_COL_PIECE_DESCR_FR].Text = Conversions.ToString(rstPiece.Fields["DESC_FR"].Value);
-                            }
-                            else
-                            {
-                                itmPiece.SubItems.Insert(I_COL_PIECE_DESCR_FR, new ListViewItem.ListViewSubItem(null, Conversions.ToString(rstPiece.Fields["DESC_FR"].Value)));
-                            }
-                        }
-                        else if (itmPiece.SubItems.Count > I_COL_PIECE_DESCR_FR)
-                        {
-                            itmPiece.SubItems[I_COL_PIECE_DESCR_FR].Text = string.Empty;
-                        }
-                        else
-                        {
-                            itmPiece.SubItems.Insert(I_COL_PIECE_DESCR_FR, new ListViewItem.ListViewSubItem(null, string.Empty));
-                        }
-
-                        if (!(rstPiece.Fields["DESC_EN"].Value is DBNull))
-                        {
-                            if (itmPiece.SubItems.Count > I_COL_PIECE_DESCR_EN)
-                            {
-                                itmPiece.SubItems[I_COL_PIECE_DESCR_EN].Text = Conversions.ToString(rstPiece.Fields["DESC_EN"].Value);
-                            }
-                            else
-                            {
-                                itmPiece.SubItems.Insert(I_COL_PIECE_DESCR_EN, new ListViewItem.ListViewSubItem(null, Conversions.ToString(rstPiece.Fields["DESC_EN"].Value)));
-                            }
-                        }
-                        else if (itmPiece.SubItems.Count > I_COL_PIECE_DESCR_EN)
-                        {
-                            itmPiece.SubItems[I_COL_PIECE_DESCR_EN].Text = string.Empty;
-                        }
-                        else
-                        {
-                            itmPiece.SubItems.Insert(I_COL_PIECE_DESCR_EN, new ListViewItem.ListViewSubItem(null, string.Empty));
-                        }
-                        itmPiece.Tag = rstPiece.Fields["CATEGORIE"].Value;
-                        rstPiece.MoveNext();
-                    }
-                    rstPiece.Close();
-                    rstPiece = null;
-                    if (lvwPieces.Items.Count > 0)
-                    {
-                       lvwPieces.Visible = true;
-                       lvwPieces.Focus();
-                    }
-                    else
-                    {
-                        Interaction.MsgBox("Aucun enregistrement trouvé!");
+                        sPieceModif += sLettre;
                     }
                 }
-                return;
             }
-            catch (Exception ex) { AfficherErreur("CatalogueMec", "cmdRechercherPiece_Click", ex); }
+                rd.Open("SELECT * FROM CatalogueMec WHERE  PIECE_MODIF like '%" + sPieceModif + "%' ORDER BY PIECE", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+            if (rd.EOF) return; ///pour pas planter par une erreur SQl avec champs vide vue que c le firstStart
+            while (!rd.EOF)
+            {
+                ListViewItem itm = lvwPieces.Items.Add(string.Empty);
+                if (rd.Fields["DeviseMonétaire"].Value == "CAN")
+                {
+                    lCouleur = (COLOR_ROUGE);
+                }
+                else
+                {
+                    lCouleur = (COLOR_BLEU);
+                }
+                itm.SubItems.Insert(0, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[0].Value}"));
+                if (rd.Fields[2].Value is DBNull)
+                {
+                    itm.SubItems.Insert(1, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[2].Value}"));
+                }
+                else
+                {
+                    itm.SubItems.Insert(1, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[1].Value}"));
+                    itm.ForeColor = (lCouleur);
+                }
+                itm.SubItems.Insert(2, new ListViewItem.ListViewSubItem(null, rd.Fields[3].Value));
+                itm.SubItems.Insert(3, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[4].Value}"));
+                itm.SubItems.Insert(4, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[5].Value}"));
+                if ($"{rd.Fields[6].Value}" == "0")
+                { itm.SubItems.Insert(5, new ListViewItem.ListViewSubItem(null, $"0.00$")); }
+                else
+                {
+                    itm.SubItems.Insert(5, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[6].Value}$"));
+                }
+                if (rd.Fields[7].Value == "0")
+                {
+                    itm.SubItems.Insert(6, new ListViewItem.ListViewSubItem(null, $"0.00%"));
+                }
+                else
+                {
+                    itm.SubItems.Insert(6, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[7].Value}%"));
+
+                }
+                itm.SubItems.Insert(7, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[8].Value}$"));
+                if (rd.Fields[8].Value == "0") { itm.SubItems.Insert(7, new ListViewItem.ListViewSubItem(null, $"0.00$")); }
+                itm.SubItems.Insert(8, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[9].Value}"));
+                if ((bool)rd.Fields[10].Value == true)
+                {
+                    itm.SubItems.Insert(9, new ListViewItem.ListViewSubItem(null, $"Oui"));
+
+                }
+                else
+                {
+                    itm.SubItems.Insert(9, new ListViewItem.ListViewSubItem(null, $"Non"));
+
+                }
+                itm.SubItems.Insert(10, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[12].Value}"));
+                rd.MoveNext();
+            }
+            rd.Close();
+            rd = null;
+            return;
+            /*       try
+                   {
+                       ADODB.Recordset rstPiece;
+                       string sPiece;
+                       ListViewItem itmPiece;
+                       short X;
+                       var sPieceModif = default();
+                      
+                            rstPiece = new ADODB.Recordset();
+                           rstPiece.Open("", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                           while (!rstPiece.EOF)
+                           {
+                               itmPiece = lvwPieces.Items.Add(string.Empty);
+                               itmPiece.Text = Conversions.ToString(rstPiece.Fields["PIECE"].Value);
+                               if (!(rstPiece.Fields["FABRICANT"].Value is DBNull))
+                               {
+                                   if (itmPiece.SubItems.Count > I_COL_PIECE_)
+                                   {
+                                       itmPiece.SubItems[I_COL_PIECE_FABRICANT].Text = Conversions.ToString(rstPiece.Fields["FABRICANT"].Value);
+                                   }
+                                   else
+                                   {
+                                       itmPiece.SubItems.Insert(I_COL_PIECE_FABRICANT, new ListViewItem.ListViewSubItem(null, Conversions.ToString(rstPiece.Fields["FABRICANT"].Value)));
+                                   }
+                               }
+                               else if (itmPiece.SubItems.Count > I_COL_PIECE_FABRICANT)
+                               {
+                                   itmPiece.SubItems[I_COL_PIECE_FABRICANT].Text = string.Empty;
+                               }
+                               else
+                               {
+                                   itmPiece.SubItems.Insert(I_COL_PIECE_FABRICANT, new ListViewItem.ListViewSubItem(null, string.Empty));
+                               }
+                               if (!(rstPiece.Fields["DESC_FR"].Value is DBNull))
+                               {
+                                   if (itmPiece.SubItems.Count > I_COL_PIECE_)
+                                   {
+                                       itmPiece.SubItems[I_COL_PIECE_DESCR_FR].Text = Conversions.ToString(rstPiece.Fields["DESC_FR"].Value);
+                                   }
+                                   else
+                                   {
+                                       itmPiece.SubItems.Insert(I_COL_PIECE_DESCR_FR, new ListViewItem.ListViewSubItem(null, Conversions.ToString(rstPiece.Fields["DESC_FR"].Value)));
+                                   }
+                               }
+                               else if (itmPiece.SubItems.Count > I_COL_PIECE_DESCR_FR)
+                               {
+                                   itmPiece.SubItems[I_COL_PIECE_DESCR_FR].Text = string.Empty;
+                               }
+                               else
+                               {
+                                   itmPiece.SubItems.Insert(I_COL_PIECE_DESCR_FR, new ListViewItem.ListViewSubItem(null, string.Empty));
+                               }
+
+                               if (!(rstPiece.Fields["DESC_EN"].Value is DBNull))
+                               {
+                                   if (itmPiece.SubItems.Count > I_COL_PIECE_)
+                                   {
+                                       itmPiece.SubItems[I_COL_PIECE_DESCR_EN].Text = Conversions.ToString(rstPiece.Fields["DESC_EN"].Value);
+                                   }
+                                   else
+                                   {
+                                       itmPiece.SubItems.Insert(I_COL_PIECE_DESCR_EN, new ListViewItem.ListViewSubItem(null, Conversions.ToString(rstPiece.Fields["DESC_EN"].Value)));
+                                   }
+                               }
+                               else if (itmPiece.SubItems.Count > I_COL_PIECE_DESCR_EN)
+                               {
+                                   itmPiece.SubItems[I_COL_PIECE_DESCR_EN].Text = string.Empty;
+                               }
+                               else
+                               {
+                                   itmPiece.SubItems.Insert(I_COL_PIECE_DESCR_EN, new ListViewItem.ListViewSubItem(null, string.Empty));
+                               }
+                               itmPiece.Tag = rstPiece.Fields["CATEGORIE"].Value;
+                               rstPiece.MoveNext();
+                           }
+                           rstPiece.Close();
+                           rstPiece = null;
+                           if (lvwPieces.Items.Count > 0)
+                           {
+                               lvwPieces.Visible = true;
+                               lvwPieces.Focus();
+                           }
+                           else
+                           {
+                               Interaction.MsgBox("Aucun enregistrement trouvé!");
+                           }
+                       }
+                       return;
+                   }
+                   catch (Exception ex) { AfficherErreur("CatalogueMec", "cmdRechercherPiece_Click", ex); }
+            */
         }
         public void AfficherForm(string sCategorie, string sNomFab, string sNoItem)
         {
             try
             {
                 short X;
-               BarrerChamps_piece(true);
-               MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
-               RemplirComboCategorie();
+                BarrerChamps_piece(true);
+                MontrerControles(enumModeCatalogueMec.MODE_INACTIF);
+                RemplirComboCategorie();
                 if (!string.IsNullOrEmpty(sCategorie))
                 {
                     for (X = 0; X <= (short)(cmbCategorie.Items.Count - 1); X++)
                     {
                         if ((cmbCategorie.Items[X].ToString() ?? "") == (sCategorie ?? ""))
                         {
-                           cmbCategorie.SelectedIndex = X;
+                            cmbCategorie.SelectedIndex = X;
                             break;
                         }
                     }
@@ -4051,7 +4139,7 @@ namespace ControleurServeur
                     {
                         if ((cmbFabricant.Items[X].ToString() ?? "") == (sNomFab ?? ""))
                         {
-                           cmbFabricant.SelectedIndex = X;
+                            cmbFabricant.SelectedIndex = X;
                             break;
                         }
                     }
@@ -4062,12 +4150,12 @@ namespace ControleurServeur
                     {
                         if ((cmbNoItem.Items[X].ToString() ?? "") == (sNoItem ?? ""))
                         {
-                           cmbNoItem.SelectedIndex = X;
+                            cmbNoItem.SelectedIndex = X;
                             break;
                         }
                     }
                 }
-               Show();
+                Show();
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "AfficherForm", ex); }
@@ -4083,25 +4171,25 @@ namespace ControleurServeur
             rstNoItem = new ADODB.Recordset();
             if (sFabricant == "-- CHOISIR TOUS --")
             {
-                if (cmbCategorie.Text == "Équipements et outillages - Sécurité/nettoyage" |cmbCategorie.Text == "Quincaillerie - Boulons Hex. (Bolts) 1/4-20" |cmbCategorie.Text == "Quincaillerie - Rondelle plate (Washer)" |sChoisirTous == ")")
+                if (cmbCategorie.Text == "Équipements et outillages - Sécurité/nettoyage" | cmbCategorie.Text == "Quincaillerie - Boulons Hex. (Bolts) 1/4-20" | cmbCategorie.Text == "Quincaillerie - Rondelle plate (Washer)" | sChoisirTous == ")")
                 {
                     rstNoItem.Open("SELECT PIECE FROM CatalogueMec WHERE CATEGORIE = '" + sCategorie + "' ORDER BY TRIM(PIECE)", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 }
                 else
                 {
-                    rstNoItem.Open("SELECT PIECE FROM CatalogueMec WHERE CATEGORIE = '" + sCategorie + "'" +sChoisirTous + " ORDER BY TRIM(PIECE)", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                    rstNoItem.Open("SELECT PIECE FROM CatalogueMec WHERE CATEGORIE = '" + sCategorie + "'" + sChoisirTous + " ORDER BY TRIM(PIECE)", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 }
             }
             else
             {
                 rstNoItem.Open("SELECT PIECE FROM CatalogueMec WHERE CATEGORIE = '" + sCategorie + "' AND FABRICANT = '" + sFabricant + "' ORDER BY TRIM(PIECE)", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
             }
-           cmbNoItem.Items.Clear();
+            cmbNoItem.Items.Clear();
             while (!rstNoItem.EOF)
             {
                 if (!(rstNoItem.Fields["PIECE"].Value is DBNull))
                 {
-                   cmbNoItem.Items.Add(Strings.Trim(Conversions.ToString(rstNoItem.Fields["PIECE"].Value)));
+                    cmbNoItem.Items.Add(Strings.Trim(Conversions.ToString(rstNoItem.Fields["PIECE"].Value)));
                 }
                 rstNoItem.MoveNext();
             }
@@ -4115,15 +4203,15 @@ namespace ControleurServeur
                     {
                         if ((cmbNoItem.Items[X].ToString() ?? "") == (m_sSelectNoItem ?? ""))
                         {
-                           cmbNoItem.SelectedIndex = X;
-                           m_sSelectNoItem = "";
+                            cmbNoItem.SelectedIndex = X;
+                            m_sSelectNoItem = "";
                             break;
                         }
                     }
                 }
                 else
                 {
-                   cmbNoItem.SelectedIndex = 0;
+                    cmbNoItem.SelectedIndex = 0;
                 }
             }
             return;
@@ -4179,227 +4267,84 @@ namespace ControleurServeur
         }
         public void RemplirListViewFournisseur()
         {
-            /*       try
-                   {
-                       ADODB.Recordset rstPieceFRS;
-                       ADODB.Recordset rstContact;
-                       short X;
-                       ListViewItem itmFRS;
-                       Color lCouleur;
-                      lvwfournisseur.Items.Clear();
-                       lvwfournisseur.Visible = true;
-                      CalculerPrixReel(txtNoItem.Text);
-                       rstPieceFRS = new ADODB.Recordset();
-                       rstPieceFRS.Open("SELECT PiecesFRS.*, FOURNISSEUR.NomFournisseur FROM PiecesFRS INNER JOIN Fournisseur ON PiecesFRS.IDFRS = Fournisseur.IDFRS WHERE PIECE = '" + Strings.Replace(cmbNoItem.Text, "'", "''") + "' AND Type = 'M' ORDER BY PrixReel", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
-                       rstContact = new ADODB.Recordset();
-                       while (!rstPieceFRS.EOF)
-                       {
-                           if (Conversions.ToBoolean(Operators.ConditionalCompareObjectEqual(rstPieceFRS.Fields["DeviseMonétaire"].Value, "CAN", false)))
-                           {
-                               lCouleur = (COLOR_ROUGE);
-                           }
-                           else
-                           {
-                               lCouleur = (COLOR_BLEU);
-                           }
-                           itmFRS =lvwfournisseur.Items.Add(string.Empty);
-                           itmFRS.Text = Conversions.ToString(rstPieceFRS.Fields["NomFournisseur"].Value);
-                           itmFRS.ForeColor = (lCouleur);
-                           itmFRS.Tag = rstPieceFRS.Fields["NoEnreg"].Value;
-                           if (!string.IsNullOrEmpty($"{rstPieceFRS.Fields["PERS_RESS"].Value}".Trim()))
-                           {
-                               rstContact.Open("SELECT NomContact FROM Contact WHERE IDContact = " + rstPieceFRS.Fields["PERS_RESS"].Value, odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
-                               if (!rstContact.EOF)
-                               {
-                                   if (itmFRS.SubItems.Count > I_COL_FRS_PERS_RESS)
-                                   {
-                                       itmFRS.SubItems[I_COL_FRS_PERS_RESS].Text = Conversions.ToString(rstContact.Fields["NomContact"].Value);
-                                   }
-                                   else
-                                   {
-                                       itmFRS.SubItems.Insert(I_COL_FRS_PERS_RESS, new ListViewItem.ListViewSubItem(null, (rstContact.Fields["NomContact"].Value)));
-                                   }
-                               }
-                               else if (itmFRS.SubItems.Count > I_COL_FRS_PERS_RESS)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_PERS_RESS].Text = string.Empty;
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_PERS_RESS, new ListViewItem.ListViewSubItem(null, string.Empty));
-                               }
-                               itmFRS.SubItems[I_COL_FRS_PERS_RESS].ForeColor = (lCouleur);
-                               rstContact.Close();
-                           }
-                           if (!(rstPieceFRS.Fields["Date"].Value is DBNull))
-                           {
-                               if (itmFRS.SubItems.Count > I_COL_FRS_DATE)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_DATE].Text = (rstPieceFRS.Fields["Date"].Value);
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_DATE, new ListViewItem.ListViewSubItem(null,$"{rstPieceFRS.Fields["Date"].Value}"));
-                               }
-                           }
-                           else if (itmFRS.SubItems.Count > I_COL_FRS_DATE)
-                           {
-                               itmFRS.SubItems[I_COL_FRS_DATE].Text = string.Empty;
-                           }
-                           else
-                           {
-                               itmFRS.SubItems.Insert(I_COL_FRS_DATE, new ListViewItem.ListViewSubItem(null, string.Empty));
-                           }
-                           itmFRS.SubItems[I_COL_FRS_DATE].ForeColor = (lCouleur);
-                           if (!(rstPieceFRS.Fields["Entrer_par"].Value is DBNull))
-                           {
-                               if (itmFRS.SubItems.Count > I_COL_FRS_ENTRER_PAR)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_ENTRER_PAR].Text = (rstPieceFRS.Fields["entrer_par"].Value);
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_ENTRER_PAR, new ListViewItem.ListViewSubItem(null, $"{rstPieceFRS.Fields["entrer_par"].Value}"));
-                               }
-                           }
-                           else if (itmFRS.SubItems.Count > I_COL_FRS_ENTRER_PAR)
-                           {
-                               itmFRS.SubItems[I_COL_FRS_ENTRER_PAR].Text = string.Empty;
-                           }
-                           else
-                           {
-                               itmFRS.SubItems.Insert(I_COL_FRS_ENTRER_PAR, new ListViewItem.ListViewSubItem(null, string.Empty));
-                           }
-                           itmFRS.SubItems[I_COL_FRS_ENTRER_PAR].ForeColor = (lCouleur);
-                           if (!(rstPieceFRS.Fields["Valide"].Value is DBNull))
-                           {
-                               if (itmFRS.SubItems.Count > I_COL_FRS_VALIDE)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_VALIDE].Text = (rstPieceFRS.Fields["Valide"].Value);
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_VALIDE, new ListViewItem.ListViewSubItem(null, $"{rstPieceFRS.Fields["Valide"].Value}"));
-                               }
-                               itmFRS.SubItems[I_COL_FRS_VALIDE].ForeColor = (lCouleur);
-                           }
-                           else if (itmFRS.SubItems.Count > I_COL_FRS_VALIDE)
-                           {
-                               itmFRS.SubItems[I_COL_FRS_VALIDE].Text = string.Empty;
-                           }
-                           else
-                           {
-                               itmFRS.SubItems.Insert(I_COL_FRS_VALIDE, new ListViewItem.ListViewSubItem(null, string.Empty));
-                           }
-                           if ((!(rstPieceFRS.Fields["PRIX_LIST"].Value is DBNull) || (rstPieceFRS.Fields["PRIX_LIST"].Value!=string.Empty)))
-                           {
-                               if (itmFRS.SubItems.Count > I_COL_FRS_PRIX_LIST)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_PRIX_LIST].Text = Conversion_Renamed(rstPieceFRS.Fields["prix_list"].Value, EnumConvert.MODE_ARGENT, 4);
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_PRIX_LIST, new ListViewItem.ListViewSubItem(null, Conversion_Renamed((rstPieceFRS.Fields["prix_list"].Value), EnumConvert.MODE_ARGENT, 4)));
-                               }
-                               itmFRS.SubItems[I_COL_FRS_PRIX_LIST].ForeColor = (lCouleur);
-                           }
-                           else if (itmFRS.SubItems.Count > I_COL_FRS_PRIX_LIST)
-                           {
-                               itmFRS.SubItems[I_COL_FRS_PRIX_LIST].Text = string.Empty;
-                           }
-                           else
-                           {
-                               itmFRS.SubItems.Insert(I_COL_FRS_PRIX_LIST, new ListViewItem.ListViewSubItem(null, string.Empty));
-                           }
-                           if (!string.IsNullOrEmpty(Strings.Trim(Conversions.ToString(rstPieceFRS.Fields["ESCOMPTE"].Value))))
-                           {
-                               if (itmFRS.SubItems.Count > I_COL_FRS_ESCOMPTE)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_ESCOMPTE].Text = Conversion_Renamed(Strings.Replace(Conversions.ToString(rstPieceFRS.Fields["ESCOMPTE"].Value), "_", string.Empty), EnumConvert.MODE_POURCENT);
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_ESCOMPTE, new ListViewItem.ListViewSubItem(null, Conversion_Renamed(Strings.Replace(Conversions.ToString(rstPieceFRS.Fields["ESCOMPTE"].Value), "_", string.Empty), EnumConvert.MODE_POURCENT)));
-                               }
-                           }
-                           else if (itmFRS.SubItems.Count > I_COL_FRS_ESCOMPTE)
-                           {
-                               itmFRS.SubItems[I_COL_FRS_ESCOMPTE].Text = string.Empty;
-                           }
-                           else
-                           {
-                               itmFRS.SubItems.Insert(I_COL_FRS_ESCOMPTE, new ListViewItem.ListViewSubItem(null, string.Empty));
-                           }
-                           itmFRS.SubItems[I_COL_FRS_ESCOMPTE].ForeColor = (lCouleur);
-                           if (rstPieceFRS.Fields["PRIX_NET"].Value != string.Empty)
-                           {
-                               if (itmFRS.SubItems.Count > I_COL_FRS_PRIX_NET)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_PRIX_NET].Text = Conversion_Renamed(Math.Round(double.Parse(Strings.Replace(Conversions.ToString(rstPieceFRS.Fields["PRIX_NET"].Value), ".", ",")), 4).ToString(), EnumConvert.MODE_ARGENT, 4);
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_PRIX_NET, new ListViewItem.ListViewSubItem(null, Conversion_Renamed(Math.Round(double.Parse(Strings.Replace(Conversions.ToString(rstPieceFRS.Fields["PRIX_NET"].Value), ".", ",")), 4).ToString(), EnumConvert.MODE_ARGENT, 4)));
-                               }
-                           }
-                           else if (itmFRS.SubItems.Count > I_COL_FRS_PRIX_NET)
-                           {
-                               itmFRS.SubItems[I_COL_FRS_PRIX_NET].Text = string.Empty;
-                           }
-                           else
-                           {
-                               itmFRS.SubItems.Insert(I_COL_FRS_PRIX_NET, new ListViewItem.ListViewSubItem(null, string.Empty));
-                           }
-                           itmFRS.SubItems[I_COL_FRS_PRIX_NET].ForeColor = (lCouleur);
-                           if (rstPieceFRS.Fields["PRIX_SP"].Value != string.Empty)
-                           {
-                               if (itmFRS.SubItems.Count > I_COL_FRS_PRIX_SP)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_PRIX_SP].Text = Conversion_Renamed(Conversions.ToString(Math.Round(rstPieceFRS.Fields["PRIX_SP"].Value, 4)), EnumConvert.MODE_ARGENT, 4);
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_PRIX_SP, new ListViewItem.ListViewSubItem(null, Conversion_Renamed(Conversions.ToString(Math.Round(rstPieceFRS.Fields["PRIX_SP"].Value, 4)), EnumConvert.MODE_ARGENT, 4)));
-                               }
-                           }
-                           else if (itmFRS.SubItems.Count > I_COL_FRS_PRIX_SP)
-                           {
-                               itmFRS.SubItems[I_COL_FRS_PRIX_SP].Text = string.Empty;
-                           }
-                           else
-                           {
-                               itmFRS.SubItems.Insert(I_COL_FRS_PRIX_SP, new ListViewItem.ListViewSubItem(null, string.Empty));
-                           }
-                           itmFRS.SubItems[I_COL_FRS_PRIX_SP].ForeColor = (lCouleur);
-                           if ((bool)rstPieceFRS.Fields["QUOTER"].Value == true)
-                           {
-                               if (itmFRS.SubItems.Count > I_COL_FRS_QUOTER)
-                               {
-                                   itmFRS.SubItems[I_COL_FRS_QUOTER].Text = "Oui";
-                               }
-                               else
-                               {
-                                   itmFRS.SubItems.Insert(I_COL_FRS_QUOTER, new ListViewItem.ListViewSubItem(null, "Oui"));
-                               }
-                           }
-                           else if (itmFRS.SubItems.Count > I_COL_FRS_QUOTER)
-                           {
-                               itmFRS.SubItems[I_COL_FRS_QUOTER].Text = "Non";
-                           }
-                           else
-                           {
-                               itmFRS.SubItems.Insert(I_COL_FRS_QUOTER, new ListViewItem.ListViewSubItem(null, "Non"));
-                           }
-                           itmFRS.SubItems[I_COL_FRS_QUOTER].ForeColor = (lCouleur);
-                           rstPieceFRS.MoveNext();
-                       }
-                      lvwfournisseur.Refresh();
-                       rstPieceFRS.Close();
-                       rstPieceFRS = null;
-                       rstContact = null;
-                       return;
-                   }
-                   catch (ExceptiON ex) { AfficherErreur("CatalogueMec", "RemplirListViewFournisseur", ex); }*/
+            lvwfournisseur.Columns.Clear();
+            lvwfournisseur.Columns.Add("Fournisseur");
+            lvwfournisseur.Columns.Add("Pers. Ress.");
+            lvwfournisseur.Columns.Add("Date");
+            lvwfournisseur.Columns.Add("Par");
+            lvwfournisseur.Columns.Add("Valide");
+            lvwfournisseur.Columns.Add("Prix listé");
+            lvwfournisseur.Columns.Add("Escompte");
+            lvwfournisseur.Columns.Add("Prix net");
+            lvwfournisseur.Columns.Add("Prix spécial");
+            lvwfournisseur.Columns.Add("Quoter");
+            lvwfournisseur.Columns.Add("Position");
+            ADODB.Recordset rd = new ADODB.Recordset();
+            Color lCouleur;
+            lvwfournisseur.Items.Clear();
+            lvwfournisseur.Visible = true;
+            CalculerPrixReel(txtNoItem.Text);
+            rd.Open("SELECT DISTINCT [NOMFOURNISSEUR],'',[PERS_RESS],[DATE],[ENTRER_PAR],[VALIDE],[PRIX_LIST],[ESCOMPTE],[PRIX_NET],[PRIX_SP]," +
+                "[QUOTER],[DEVISEMONÉTAIRE], PIECESFRS.[NOENREG] ,[PRIXREEL] FROM [DBO].[PIECESFRS] " +
+                "INNER JOIN FOURNISSEUR ON PIECESFRS.IDFRS = FOURNISSEUR.IDFRS " +
+                " WHERE PIECE = '" + cmbNoItem.Text +
+                "' AND TYPE = 'M' ORDER BY PRIXREEL", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+            if (rd.EOF) return; ///pour pas planter par une erreur SQl avec champs vide vue que c le firstStart
+            while (!rd.EOF)
+            {
+                ListViewItem itm = lvwfournisseur.Items.Add(string.Empty);
+                if (rd.Fields["DeviseMonétaire"].Value == "CAN")
+                {
+                    lCouleur = (COLOR_ROUGE);
+                }
+                else
+                {
+                    lCouleur = (COLOR_BLEU);
+                }
+                itm.SubItems.Insert(0, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[0].Value}"));
+                if (rd.Fields[2].Value is DBNull)
+                {
+                    itm.SubItems.Insert(1, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[2].Value}"));
+                }
+                else
+                {
+                    itm.SubItems.Insert(1, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[1].Value}"));
+                    itm.ForeColor = (lCouleur);
+                }
+                itm.SubItems.Insert(2, new ListViewItem.ListViewSubItem(null, rd.Fields[3].Value));
+                itm.SubItems.Insert(3, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[4].Value}"));
+                itm.SubItems.Insert(4, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[5].Value}"));
+                if ($"{rd.Fields[6].Value}" == "0")
+                { itm.SubItems.Insert(5, new ListViewItem.ListViewSubItem(null, $"0.00$")); }
+                else { 
+                itm.SubItems.Insert(5, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[6].Value}$"));
+                }
+                if (rd.Fields[7].Value == "0")
+                {
+                    itm.SubItems.Insert(6, new ListViewItem.ListViewSubItem(null, $"0.00%"));
+                }else{
+                    itm.SubItems.Insert(6, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[7].Value}%"));
+
+                }
+                itm.SubItems.Insert(7, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[8].Value}$"));
+                if (rd.Fields[8].Value == "0") { itm.SubItems.Insert(7, new ListViewItem.ListViewSubItem(null, $"0.00$")); }
+                itm.SubItems.Insert(8, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[9].Value}"));
+                if ((bool)rd.Fields[10].Value == true)
+                {
+                    itm.SubItems.Insert(9, new ListViewItem.ListViewSubItem(null, $"Oui"));
+
+                }
+                else
+                {
+                    itm.SubItems.Insert(9, new ListViewItem.ListViewSubItem(null, $"Non"));
+
+                }
+                itm.SubItems.Insert(10, new ListViewItem.ListViewSubItem(null, $"{rd.Fields[12].Value}"));
+                rd.MoveNext();
+            }
+            rd.Close();
+            rd = null;
+            return;
         }
         private void lvwDescription_Leave(object eventSender, EventArgs eventArgs)
         {
@@ -4407,7 +4352,7 @@ namespace ControleurServeur
             {
                 if (lvwDescription.Visible == true)
                 {
-                   lvwDescription.Visible = false;
+                    lvwDescription.Visible = false;
                 }
                 return;
             }
@@ -4419,7 +4364,7 @@ namespace ControleurServeur
             {
                 if (lvwRechercheJob.Visible == true)
                 {
-                   lvwRechercheJob.Visible = false;
+                    lvwRechercheJob.Visible = false;
                 }
                 return;
             }
@@ -4431,7 +4376,7 @@ namespace ControleurServeur
             {
                 if (lvwRechercheAchat.Visible == true)
                 {
-                   lvwRechercheAchat.Visible = false;
+                    lvwRechercheAchat.Visible = false;
                 }
                 return;
             }
@@ -4443,7 +4388,7 @@ namespace ControleurServeur
             {
                 if (lvwFabricant.Visible == true)
                 {
-                   lvwFabricant.Visible = false;
+                    lvwFabricant.Visible = false;
                 }
                 return;
             }
@@ -4455,7 +4400,7 @@ namespace ControleurServeur
             {
                 if (lvwfournisseur.Items.Count > 0)
                 {
-                   ModifierFournisseur();
+                    ModifierFournisseur();
                 }
                 return;
             }
@@ -4471,7 +4416,7 @@ namespace ControleurServeur
                 {
                     if (KeyCode == (int)Keys.Delete)
                     {
-                       SupprimerFournisseur();
+                        SupprimerFournisseur();
                     }
                 }
                 return;
@@ -4482,10 +4427,10 @@ namespace ControleurServeur
         {
             try
             {
-               BarrerChamps_piece(true);
-               MontrerControles(enumModeCatalogueMec.MODE_AJOUT_MODIF_FRS);
-               m_bAjout = false;
-               AfficherFRS();
+                BarrerChamps_piece(true);
+                MontrerControles(enumModeCatalogueMec.MODE_AJOUT_MODIF_FRS);
+                m_bAjout = false;
+                AfficherFRS();
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "ModifierFournisseur", ex); }
@@ -4494,10 +4439,10 @@ namespace ControleurServeur
         {
             try
             {
-                if (Interaction.MsgBox("Voulez-vous vraiment effacer le fournisseur " +lvwfournisseur.FocusedItem.Text + "?", MsgBoxStyle.YesNo) == MsgBoxResult.Yes)
+                if (Interaction.MsgBox("Voulez-vous vraiment effacer le fournisseur " + lvwfournisseur.FocusedItem.Text + "?", MsgBoxStyle.YesNo) == MsgBoxResult.Yes)
                 {
                     odbc.Execute("DELETE FROM PiecesFRS WHERE NoEnreg = " + lvwfournisseur.FocusedItem.Tag, out sortie, -1);
-                   RemplirListViewFournisseur();
+                    RemplirListViewFournisseur();
                 }
                 return;
             }
@@ -4510,12 +4455,12 @@ namespace ControleurServeur
                 ListViewItem itmPieces;
                 short X;
                 Cursor.Current = Cursors.WaitCursor;
-                itmPieces =lvwPieces.FocusedItem;
-               m_sSelectCategorie = Conversions.ToString(itmPieces.Tag).Trim();
-               m_sSelectFabricant = itmPieces.SubItems[I_COL_PIECE_FABRICANT].Text.Trim();
-               m_sSelectNoItem = itmPieces.Text.Trim();
-               RemplirComboCategorie();
-               lvwPieces.Visible = false;
+                itmPieces = lvwPieces.FocusedItem;
+                m_sSelectCategorie = Conversions.ToString(itmPieces.Tag).Trim();
+                m_sSelectFabricant = itmPieces.SubItems[I_COL_PIECE_FABRICANT].Text.Trim();
+                m_sSelectNoItem = itmPieces.Text.Trim();
+                RemplirComboCategorie();
+                lvwPieces.Visible = false;
                 Cursor.Current = Cursors.Default;
                 return;
             }
@@ -4527,7 +4472,7 @@ namespace ControleurServeur
             {
                 if (lvwPieces.Visible == true)
                 {
-                   lvwPieces.Visible = false;
+                    lvwPieces.Visible = false;
                 }
                 return;
             }
@@ -4539,7 +4484,7 @@ namespace ControleurServeur
             {
                 if (mskEscompte.Enabled == true)
                 {
-                   mskEscompte.Mask = "0,####";
+                    mskEscompte.Mask = "0,####";
                 }
                 return;
             }
@@ -4549,12 +4494,12 @@ namespace ControleurServeur
         {
             try
             {
-               mskEscompte.Mask = string.Empty;
+                mskEscompte.Mask = string.Empty;
                 if (mskEscompte.Text == "0,____")
                 {
-                   mskEscompte.Text = string.Empty;
+                    mskEscompte.Text = string.Empty;
                 }
-               CalculerPrixNet();
+                CalculerPrixNet();
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "mskEscompte_LostFocus", ex); }
@@ -4563,7 +4508,7 @@ namespace ControleurServeur
         {
             if (Conversions.ToBoolean(((dynamic)eventSender).Checked))
             {
-               AfficherDrapeau();
+                AfficherDrapeau();
                 return;
             }
         }
@@ -4573,28 +4518,28 @@ namespace ControleurServeur
             {
                 if (optCAN.Checked == true)
                 {
-                   imgCanada.Visible = true;
-                   imgEU.Visible = false;
-                   imgSpain.Visible = false;
-                   lblDevise1.Visible = false;
-                   txtTauxChange.Visible = false;
-                   lblDevise2.Visible = false;
+                    imgCanada.Visible = true;
+                    imgEU.Visible = false;
+                    imgSpain.Visible = false;
+                    lblDevise1.Visible = false;
+                    txtTauxChange.Visible = false;
+                    lblDevise2.Visible = false;
                 }
                 else
                 {
                     if (optUSA.Checked == true)
                     {
-                       imgEU.Visible = true;
-                       imgCanada.Visible = false;
-                       imgSpain.Visible = false;
+                        imgEU.Visible = true;
+                        imgCanada.Visible = false;
+                        imgSpain.Visible = false;
                     }
                     else
                     {
-                       imgSpain.Visible = true;
-                       imgCanada.Visible = false;
-                       imgEU.Visible = false;
+                        imgSpain.Visible = true;
+                        imgCanada.Visible = false;
+                        imgEU.Visible = false;
                     }
-                   AfficherTauxChange();
+                    AfficherTauxChange();
                 }
                 return;
             }
@@ -4609,17 +4554,17 @@ namespace ControleurServeur
                 rstConfig.Open("SELECT TauxAmericain, TauxEspagnol FROM Config", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 if (optUSA.Checked == true)
                 {
-                   lblDevise2.Text = "$ USA";
-                   txtTauxChange.Text = Conversions.ToString(rstConfig.Fields["TauxAmericain"].Value);
+                    lblDevise2.Text = "$ USA";
+                    txtTauxChange.Text = Conversions.ToString(rstConfig.Fields["TauxAmericain"].Value);
                 }
                 else
                 {
-                   lblDevise2.Text = "$ SPA";
-                   txtTauxChange.Text = Conversions.ToString(rstConfig.Fields["TauxEspagnol"].Value);
+                    lblDevise2.Text = "$ SPA";
+                    txtTauxChange.Text = Conversions.ToString(rstConfig.Fields["TauxEspagnol"].Value);
                 }
-               lblDevise1.Visible = true;
-               txtTauxChange.Visible = true;
-               lblDevise2.Visible = true;
+                lblDevise1.Visible = true;
+                txtTauxChange.Visible = true;
+                lblDevise2.Visible = true;
                 rstConfig.Close();
                 rstConfig = null;
                 return;
@@ -4630,7 +4575,7 @@ namespace ControleurServeur
         {
             if (((dynamic)eventSender).Checked)
             {
-               AfficherDrapeau();
+                AfficherDrapeau();
                 return;
             }
         }
@@ -4638,7 +4583,7 @@ namespace ControleurServeur
         {
             if (Conversions.ToBoolean(((dynamic)eventSender).Checked))
             {
-               AfficherDrapeau();
+                AfficherDrapeau();
                 return;
             }
         }
@@ -4648,7 +4593,7 @@ namespace ControleurServeur
             {
                 if (m_eMode == (int)EnumModeCatalogueElec.MODE_AJOUT_MODIF_ELEC)
                 {
-                   txtNoItemGRB.Text += "GRB";
+                    txtNoItemGRB.Text += "GRB";
                 }
                 return;
             }
@@ -4660,11 +4605,11 @@ namespace ControleurServeur
             {
                 if (!string.IsNullOrEmpty(txtPrixList.Text))
                 {
-                   txtPrixList.Text.Replace(".", ",");
+                    txtPrixList.Text.Replace(".", ",");
                     if (!IsNumeric(txtPrixList.Text))
                     {
                         Interaction.MsgBox("Valeur non numérique!", MsgBoxStyle.OkOnly, "Erreur");
-                       txtPrixList.Text = string.Empty;
+                        txtPrixList.Text = string.Empty;
                     }
                 }
                 return;
@@ -4677,12 +4622,12 @@ namespace ControleurServeur
             {
                 if (txtPrixNet.Text.Length > 0)
                 {
-                   txtPrixSpecial.Text = string.Empty;
-                   txtPrixSpecial.Enabled = false;
+                    txtPrixSpecial.Text = string.Empty;
+                    txtPrixSpecial.Enabled = false;
                 }
                 else
                 {
-                   txtPrixSpecial.Enabled = true;
+                    txtPrixSpecial.Enabled = true;
                 }
                 return;
             }
@@ -4694,15 +4639,15 @@ namespace ControleurServeur
             {
                 if (txtPrixSpecial.Text.Length > 0)
                 {
-                   mskEscompte.Text = string.Empty;
-                   txtPrixNet.Text = string.Empty;
-                   mskEscompte.Enabled = false;
-                   txtPrixNet.Enabled = false;
+                    mskEscompte.Text = string.Empty;
+                    txtPrixNet.Text = string.Empty;
+                    mskEscompte.Enabled = false;
+                    txtPrixNet.Enabled = false;
                 }
                 else
                 {
-                   mskEscompte.Enabled = true;
-                   txtPrixNet.Enabled = true;
+                    mskEscompte.Enabled = true;
+                    txtPrixNet.Enabled = true;
                 }
                 return;
             }
@@ -4712,7 +4657,7 @@ namespace ControleurServeur
         {
             try
             {
-               CalculerPrixNet();
+                CalculerPrixNet();
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "txtPrixNet_GotFocus", ex); }
@@ -4726,8 +4671,8 @@ namespace ControleurServeur
                 string sPrix;
                 if (txtPrixNet.ReadOnly == false)
                 {
-                   mskEscompte.Text = Strings.Replace(mskEscompte.Text, "_", string.Empty);
-                   mskEscompte.Text = Strings.Replace(mskEscompte.Text, ".", ",");
+                    mskEscompte.Text = Strings.Replace(mskEscompte.Text, "_", string.Empty);
+                    mskEscompte.Text = Strings.Replace(mskEscompte.Text, ".", ",");
                     if (!string.IsNullOrEmpty(mskEscompte.Text))
                     {
                         dblEscompte = double.Parse(mskEscompte.Text);
@@ -4752,8 +4697,8 @@ namespace ControleurServeur
                     {
                         dblPrix = 0d;
                     }
-                   txtPrixNet.Text = Math.Round(dblPrix * (1d - dblEscompte), 4).ToString();
-                   txtPrixNet.Text = Strings.Replace(txtPrixNet.Text, ".", ",");
+                    txtPrixNet.Text = Math.Round(dblPrix * (1d - dblEscompte), 4).ToString();
+                    txtPrixNet.Text = Strings.Replace(txtPrixNet.Text, ".", ",");
                 }
                 return;
             }
@@ -4765,7 +4710,7 @@ namespace ControleurServeur
             {
                 if (txtPrixNet.Text == "$0,00")
                 {
-                   txtPrixNet.Text = string.Empty;
+                    txtPrixNet.Text = string.Empty;
                 }
                 return;
             }
@@ -4777,9 +4722,9 @@ namespace ControleurServeur
             {
                 if (mskValide.Text.Length == 10)
                 {
-                   mskValide.Text = Droite(mskValide.Text, 8);
+                    mskValide.Text = Droite(mskValide.Text, 8);
                 }
-               mskValide.Mask = "##-##-##";
+                mskValide.Mask = "##-##-##";
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "mskValide_GotFocus", ex); }
@@ -4788,19 +4733,19 @@ namespace ControleurServeur
         {
             try
             {
-               mskValide.Mask = string.Empty;
+                mskValide.Mask = string.Empty;
 
                 if (mskValide.Text == "__-__-__")
                 {
 
-                   mskValide.Text = string.Empty;
+                    mskValide.Text = string.Empty;
                 }
 
                 else if (mskValide.Text.Length == 8)
                 {
                     if (Information.IsDate(mskValide.Text))
                     {
-                       mskValide.Text = System.Threading.Thread.CurrentThread.CurrentCulture.Calendar.GetYear(DateAndTime.DateSerial(Conversions.ToInteger(Strings.Left(mskValide.Text, 2)), Conversions.ToInteger(Strings.Mid(mskValide.Text, 4, 2)), Conversions.ToInteger(Droite(mskValide.Text, 2)))) + Strings.Mid(mskValide.Text, 3, 8);
+                        mskValide.Text = System.Threading.Thread.CurrentThread.CurrentCulture.Calendar.GetYear(DateAndTime.DateSerial(Conversions.ToInteger(Strings.Left(mskValide.Text, 2)), Conversions.ToInteger(Strings.Mid(mskValide.Text, 4, 2)), Conversions.ToInteger(Droite(mskValide.Text, 2)))) + Strings.Mid(mskValide.Text, 3, 8);
                     }
                 }
                 return;
@@ -4811,15 +4756,15 @@ namespace ControleurServeur
         {
             try
             {
-               txtCategorie.Text =cmbCategorie.Text;
+                txtCategorie.Text = cmbCategorie.Text;
                 Cursor.Current = Cursors.WaitCursor;
-               m_bBloqueDescription = true;
-               m_bRempliManuel = true;
-               cmbFabricant.Items.Clear();
-               cmbNoItem.Items.Clear();
-               ViderChamps_piece();
-               RemplirComboFabricant();
-               m_bBloqueDescription = false;
+                m_bBloqueDescription = true;
+                m_bRempliManuel = true;
+                cmbFabricant.Items.Clear();
+                cmbNoItem.Items.Clear();
+                ViderChamps_piece();
+                RemplirComboFabricant();
+                m_bBloqueDescription = false;
                 Cursor.Current = Cursors.Default;
                 return;
                 return;
@@ -4832,14 +4777,14 @@ namespace ControleurServeur
             {
                 ADODB.Recordset rstCatalogueMec;
                 short X;
-               cmbCategorie.Items.Clear();
+                cmbCategorie.Items.Clear();
                 rstCatalogueMec = new ADODB.Recordset();
                 rstCatalogueMec.Open("SELECT DISTINCT CATEGORIE FROM CatalogueMec ORDER BY CATEGORIE", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 while (!rstCatalogueMec.EOF)
                 {
                     if (!(rstCatalogueMec.Fields["CATEGORIE"].Value is DBNull))
                     {
-                       cmbCategorie.Items.Add(Strings.Trim(Conversions.ToString(rstCatalogueMec.Fields["CATEGORIE"].Value)));
+                        cmbCategorie.Items.Add(Strings.Trim(Conversions.ToString(rstCatalogueMec.Fields["CATEGORIE"].Value)));
                     }
                     rstCatalogueMec.MoveNext();
                 }
@@ -4855,15 +4800,15 @@ namespace ControleurServeur
                         {
                             if ((cmbCategorie.Items[X].ToString() ?? "") == (m_sSelectCategorie ?? ""))
                             {
-                               cmbCategorie.SelectedIndex = X;
-                               m_sSelectCategorie = "";
+                                cmbCategorie.SelectedIndex = X;
+                                m_sSelectCategorie = "";
                                 break;
                             }
                         }
                     }
                     else
                     {
-                       cmbCategorie.SelectedIndex = 0;
+                        cmbCategorie.SelectedIndex = 0;
                     }
                 }
                 return;
@@ -4876,20 +4821,20 @@ namespace ControleurServeur
             string sPiece;
             string sCategorie;
             string sFabricant;
-            if (m_collPieceDescFR.Count > 0)m_collPieceDescFR.Clear();
-           cmbDescriptionFR.Items.Clear();
+            if (m_collPieceDescFR.Count > 0) m_collPieceDescFR.Clear();
+            cmbDescriptionFR.Items.Clear();
             sCategorie = Strings.Replace(cmbCategorie.Text, "'", "''");
             sFabricant = Strings.Replace(cmbFabricant.Text, "'", "''");
             rstCatMec = new ADODB.Recordset();
             if (sFabricant == "-- CHOISIR TOUS --")
             {
-                if (cmbCategorie.Text == "Équipements et outillages - Sécurité/nettoyage" |cmbCategorie.Text == "Quincaillerie - Boulons Hex. (Bolts) 1/4-20" |cmbCategorie.Text == "Quincaillerie - Rondelle plate (Washer)" |sChoisirTous == ")")
+                if (cmbCategorie.Text == "Équipements et outillages - Sécurité/nettoyage" | cmbCategorie.Text == "Quincaillerie - Boulons Hex. (Bolts) 1/4-20" | cmbCategorie.Text == "Quincaillerie - Rondelle plate (Washer)" | sChoisirTous == ")")
                 {
                     rstCatMec.Open("SELECT * FROM CatalogueMec WHERE CATEGORIE = '" + sCategorie + "' ORDER BY TRIM(PIECE)", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 }
                 else
                 {
-                    rstCatMec.Open("SELECT * FROM CatalogueMec WHERE CATEGORIE = '" + sCategorie + "'" +sChoisirTous + " ORDER BY TRIM(PIECE)", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
+                    rstCatMec.Open("SELECT * FROM CatalogueMec WHERE CATEGORIE = '" + sCategorie + "'" + sChoisirTous + " ORDER BY TRIM(PIECE)", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 }
             }
             else
@@ -4903,9 +4848,9 @@ namespace ControleurServeur
                 {
                     if (rstCatMec.Fields["DESC_FR"].Value != string.Empty)
                     {
-                       cmbDescriptionFR.Items.Add(rstCatMec.Fields["DESC_FR"].Value);
+                        cmbDescriptionFR.Items.Add(rstCatMec.Fields["DESC_FR"].Value);
                         sPiece = Conversions.ToString(rstCatMec.Fields["PIECE"].Value);
-                       m_collPieceDescFR.Add(sPiece);
+                        m_collPieceDescFR.Add(sPiece);
                     }
                 }
                 rstCatMec.MoveNext();
@@ -4920,13 +4865,13 @@ namespace ControleurServeur
             {
                 Program.fournisseurs.Clear();
                 ADODB.Recordset rstPieceFRS;
-               cmbfrs.Items.Clear();
+                cmbfrs.Items.Clear();
                 rstPieceFRS = new ADODB.Recordset();
                 rstPieceFRS.Open("SELECT * FROM Fournisseur WHERE Supprimé= 0   ORDER BY NomFournisseur", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
                 while (!rstPieceFRS.EOF)
                 {
                     Program.fournisseurs.Add(new ListItem($"{rstPieceFRS.Fields["NomFournisseur"].Value}", $"{rstPieceFRS.Fields["IDFRS"].Value}"));
-                   cmbfrs.Items.Add($"{ rstPieceFRS.Fields["IDFRS"].Value}-{rstPieceFRS.Fields["NomFournisseur"].Value}");
+                    cmbfrs.Items.Add($"{rstPieceFRS.Fields["IDFRS"].Value}-{rstPieceFRS.Fields["NomFournisseur"].Value}");
                     rstPieceFRS.MoveNext();
                 }
                 rstPieceFRS.Close();
@@ -4939,7 +4884,7 @@ namespace ControleurServeur
         {
             try
             {
-               txtPrixSpecial.Text = Strings.Replace(txtPrixSpecial.Text, ".", ",");
+                txtPrixSpecial.Text = Strings.Replace(txtPrixSpecial.Text, ".", ",");
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "txtPrixSpecial_LostFocus", ex); }
@@ -4951,14 +4896,14 @@ namespace ControleurServeur
                 ADODB.Recordset rstLocalisation;
                 rstLocalisation = new ADODB.Recordset();
                 rstLocalisation.Open("SELECT DISTINCT Localisation FROM InventaireMec", odbc, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic);
-               cmbLocalisation.Items.Clear();
+                cmbLocalisation.Items.Clear();
                 while (!rstLocalisation.EOF)
                 {
                     if (!(rstLocalisation.Fields["Localisation"].Value is DBNull))
                     {
                         if (!string.IsNullOrEmpty(Conversions.ToString(rstLocalisation.Fields["Localisation"].Value).Trim()))
                         {
-                           cmbLocalisation.Items.Add(rstLocalisation.Fields["Localisation"].Value);
+                            cmbLocalisation.Items.Add(rstLocalisation.Fields["Localisation"].Value);
                         }
                     }
                     rstLocalisation.MoveNext();
@@ -4973,10 +4918,10 @@ namespace ControleurServeur
         {
             try
             {
-               txtQuantitéBoite.Text = Strings.Replace(txtQuantitéBoite.Text, ".", ",");
-                if (!IsNumeric(txtQuantitéBoite.Text) |txtQuantitéBoite.Text == "0")
+                txtQuantitéBoite.Text = Strings.Replace(txtQuantitéBoite.Text, ".", ",");
+                if (!IsNumeric(txtQuantitéBoite.Text) | txtQuantitéBoite.Text == "0")
                 {
-                   txtQuantitéBoite.Text = "1";
+                    txtQuantitéBoite.Text = "1";
                 }
                 return;
             }
@@ -4986,7 +4931,7 @@ namespace ControleurServeur
         {
             try
             {
-               txtQuantiteCommande.Text =txtQuantiteCommande.Text.Replace(".", ",");
+                txtQuantiteCommande.Text = txtQuantiteCommande.Text.Replace(".", ",");
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "txtQuantiteCommande_LostFocus", ex); }
@@ -4995,7 +4940,7 @@ namespace ControleurServeur
         {
             try
             {
-               txtQuantiteMinimum.Text =txtQuantiteMinimum.Text.Replace(".", ",");
+                txtQuantiteMinimum.Text = txtQuantiteMinimum.Text.Replace(".", ",");
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "txtQuantiteMinimum_LostFocus", ex); }
@@ -5004,7 +4949,7 @@ namespace ControleurServeur
         {
             try
             {
-               txtQuantiteStock.Text =txtQuantiteStock.Text.Replace(".", ",");
+                txtQuantiteStock.Text = txtQuantiteStock.Text.Replace(".", ",");
                 return;
             }
             catch (Exception ex) { AfficherErreur("CatalogueMec", "txtQuantiteStock_LostFocus", ex); }

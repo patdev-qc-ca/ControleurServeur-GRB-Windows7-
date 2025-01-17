@@ -146,7 +146,14 @@ namespace ControleurServeur
             linkLabel2.Text = "AutoGRB";
             sqlodbc.Open($"Provider=SQLOLEDB;Data Source=production\\sqlexpress;Initial Catalog=autogrb;", "sa", "$NK#Bpl9YCm!0EKeZLdzp$Qetrz9g9bdQK7LO8L!u4oyv4rO2AOEvceyu8XIo", -1);
             linkLabel5.Text = "\\\\GRB-DC\\d$\\GRB\\bdgrb\\SEEGRB\\data.mdb".ToLower();
+            try
+            {
             mdbodbc.Open($"Provider=Microsoft.Jet.OLEDB.4.0;User ID = Admin;Data Source={linkLabel5.Text};Persist Security Info=False", "Admin", string.Empty, -1);
+            }catch(Exception ex)
+            {
+                Program.AfficherErreur("SynchoniserPunch", "SynchoniserPunch_Load", ex);
+                return;
+            }
             linkLabel3.Text = sqlodbc.Provider;
             linkLabel5.Enabled = false;
             linkLabel1.Text = TouverDernieretDateSQL();

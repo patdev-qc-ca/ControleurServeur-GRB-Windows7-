@@ -28,7 +28,6 @@ namespace ControleurServeur
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewApercuProjet));
             lblTitreRapport = new System.Windows.Forms.Label();
             lblTitreNoProjet = new System.Windows.Forms.Label();
             lblNumero = new System.Windows.Forms.Label();
@@ -314,7 +313,7 @@ namespace ControleurServeur
             lblTotalElecProj0.Name = "lblTotalElecProj0";
             lblTotalElecProj0.Size = new System.Drawing.Size(118, 14);
             lblTotalElecProj0.TabIndex = 364;
-            lblTotalElecProj0.Text = "lblTotalElecProj0";
+            lblTotalElecProj0.Text = "0.00";
             // 
             // lblTitrePiecesElec
             // 
@@ -377,7 +376,7 @@ namespace ControleurServeur
             lblTotalElecSoum0.Name = "lblTotalElecSoum0";
             lblTotalElecSoum0.Size = new System.Drawing.Size(118, 14);
             lblTotalElecSoum0.TabIndex = 369;
-            lblTotalElecSoum0.Text = "lblTotalElecSoum0";
+            lblTotalElecSoum0.Text = "0.00";
             // 
             // lblTitreTempsMecDessin
             // 
@@ -645,7 +644,7 @@ namespace ControleurServeur
             lblTitreHeuresProj.Name = "lblTitreHeuresProj";
             lblTitreHeuresProj.Size = new System.Drawing.Size(120, 13);
             lblTitreHeuresProj.TabIndex = 393;
-            lblTitreHeuresProj.Text = "Hrs";
+            lblTitreHeuresProj.Text = "0.00";
             lblTitreHeuresProj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitreArgentProj
@@ -657,7 +656,7 @@ namespace ControleurServeur
             lblTitreArgentProj.Name = "lblTitreArgentProj";
             lblTitreArgentProj.Size = new System.Drawing.Size(119, 13);
             lblTitreArgentProj.TabIndex = 394;
-            lblTitreArgentProj.Text = "$";
+            lblTitreArgentProj.Text = "0.00";
             lblTitreArgentProj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitreRevenus
@@ -902,7 +901,7 @@ namespace ControleurServeur
             lblHeuresElecTotalProj0.Name = "lblHeuresElecTotalProj0";
             lblHeuresElecTotalProj0.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecTotalProj0.TabIndex = 415;
-            lblHeuresElecTotalProj0.Text = "lblHeuresElecTotalProj0";
+            lblHeuresElecTotalProj0.Text = "0.00";
             // 
             // lblDate
             // 
@@ -936,7 +935,7 @@ namespace ControleurServeur
             lblHeuresElecProgInterfaceSoum.Name = "lblHeuresElecProgInterfaceSoum";
             lblHeuresElecProgInterfaceSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecProgInterfaceSoum.TabIndex = 423;
-            lblHeuresElecProgInterfaceSoum.Text = "lblHeuresElecProgInterfaceSoum";
+            lblHeuresElecProgInterfaceSoum.Text = "0.00";
             // 
             // lblArgentElecProgAutomateSoum
             // 
@@ -947,7 +946,7 @@ namespace ControleurServeur
             lblArgentElecProgAutomateSoum.Name = "lblArgentElecProgAutomateSoum";
             lblArgentElecProgAutomateSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecProgAutomateSoum.TabIndex = 424;
-            lblArgentElecProgAutomateSoum.Text = "lblArgentElecProgAutomateSoum";
+            lblArgentElecProgAutomateSoum.Text = "0.00";
             // 
             // lblHeuresElecProgAutomateSoum
             // 
@@ -958,7 +957,7 @@ namespace ControleurServeur
             lblHeuresElecProgAutomateSoum.Name = "lblHeuresElecProgAutomateSoum";
             lblHeuresElecProgAutomateSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecProgAutomateSoum.TabIndex = 425;
-            lblHeuresElecProgAutomateSoum.Text = "lblHeuresElecProgAutomateSoum";
+            lblHeuresElecProgAutomateSoum.Text = "0.00";
             // 
             // lblArgentElecProgRobotSoum
             // 
@@ -969,7 +968,7 @@ namespace ControleurServeur
             lblArgentElecProgRobotSoum.Name = "lblArgentElecProgRobotSoum";
             lblArgentElecProgRobotSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecProgRobotSoum.TabIndex = 426;
-            lblArgentElecProgRobotSoum.Text = "lblArgentElecProgRobotSoum";
+            lblArgentElecProgRobotSoum.Text = "0.00";
             // 
             // lblHeuresElecProgRobotSoum
             // 
@@ -980,7 +979,7 @@ namespace ControleurServeur
             lblHeuresElecProgRobotSoum.Name = "lblHeuresElecProgRobotSoum";
             lblHeuresElecProgRobotSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecProgRobotSoum.TabIndex = 427;
-            lblHeuresElecProgRobotSoum.Text = "lblHeuresElecProgRobotSoum";
+            lblHeuresElecProgRobotSoum.Text = "0.00";
             // 
             // lblHeuresElecVisionSoum
             // 
@@ -991,7 +990,7 @@ namespace ControleurServeur
             lblHeuresElecVisionSoum.Name = "lblHeuresElecVisionSoum";
             lblHeuresElecVisionSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecVisionSoum.TabIndex = 428;
-            lblHeuresElecVisionSoum.Text = "lblHeuresElecVisionSoum";
+            lblHeuresElecVisionSoum.Text = "0.00";
             // 
             // lblArgentElecTestSoum
             // 
@@ -1002,7 +1001,7 @@ namespace ControleurServeur
             lblArgentElecTestSoum.Name = "lblArgentElecTestSoum";
             lblArgentElecTestSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecTestSoum.TabIndex = 429;
-            lblArgentElecTestSoum.Text = "lblArgentElecTestSoum";
+            lblArgentElecTestSoum.Text = "0.00";
             // 
             // lblArgentElecInstallationSoum
             // 
@@ -1013,7 +1012,7 @@ namespace ControleurServeur
             lblArgentElecInstallationSoum.Name = "lblArgentElecInstallationSoum";
             lblArgentElecInstallationSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecInstallationSoum.TabIndex = 430;
-            lblArgentElecInstallationSoum.Text = "lblArgentElecInstallationSoum";
+            lblArgentElecInstallationSoum.Text = "0.00";
             // 
             // lblHeuresElecInstallationSoum
             // 
@@ -1024,7 +1023,7 @@ namespace ControleurServeur
             lblHeuresElecInstallationSoum.Name = "lblHeuresElecInstallationSoum";
             lblHeuresElecInstallationSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecInstallationSoum.TabIndex = 431;
-            lblHeuresElecInstallationSoum.Text = "lblHeuresElecInstallationSoum";
+            lblHeuresElecInstallationSoum.Text = "0.00";
             // 
             // lblHeuresElecMiseServiceSoum
             // 
@@ -1035,7 +1034,7 @@ namespace ControleurServeur
             lblHeuresElecMiseServiceSoum.Name = "lblHeuresElecMiseServiceSoum";
             lblHeuresElecMiseServiceSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecMiseServiceSoum.TabIndex = 432;
-            lblHeuresElecMiseServiceSoum.Text = "lblHeuresElecMiseServiceSoum";
+            lblHeuresElecMiseServiceSoum.Text = "0.00";
             // 
             // lblArgentElecMiseServiceSoum
             // 
@@ -1046,7 +1045,7 @@ namespace ControleurServeur
             lblArgentElecMiseServiceSoum.Name = "lblArgentElecMiseServiceSoum";
             lblArgentElecMiseServiceSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecMiseServiceSoum.TabIndex = 433;
-            lblArgentElecMiseServiceSoum.Text = "lblArgentElecMiseServiceSoum";
+            lblArgentElecMiseServiceSoum.Text = "0.00";
             // 
             // lblHeuresElecFormationSoum
             // 
@@ -1057,7 +1056,7 @@ namespace ControleurServeur
             lblHeuresElecFormationSoum.Name = "lblHeuresElecFormationSoum";
             lblHeuresElecFormationSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecFormationSoum.TabIndex = 434;
-            lblHeuresElecFormationSoum.Text = "lblHeuresElecFormationSoum";
+            lblHeuresElecFormationSoum.Text = "0.00";
             // 
             // lblArgentElecFormationSoum
             // 
@@ -1068,7 +1067,7 @@ namespace ControleurServeur
             lblArgentElecFormationSoum.Name = "lblArgentElecFormationSoum";
             lblArgentElecFormationSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecFormationSoum.TabIndex = 435;
-            lblArgentElecFormationSoum.Text = "lblArgentElecFormationSoum";
+            lblArgentElecFormationSoum.Text = "0.00";
             // 
             // lblHeuresElecGestionSoum
             // 
@@ -1079,7 +1078,7 @@ namespace ControleurServeur
             lblHeuresElecGestionSoum.Name = "lblHeuresElecGestionSoum";
             lblHeuresElecGestionSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecGestionSoum.TabIndex = 436;
-            lblHeuresElecGestionSoum.Text = "lblHeuresElecGestionSoum";
+            lblHeuresElecGestionSoum.Text = "0.00";
             // 
             // lblArgentElecGestionSoum
             // 
@@ -1090,7 +1089,7 @@ namespace ControleurServeur
             lblArgentElecGestionSoum.Name = "lblArgentElecGestionSoum";
             lblArgentElecGestionSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecGestionSoum.TabIndex = 437;
-            lblArgentElecGestionSoum.Text = "lblArgentElecGestionSoum";
+            lblArgentElecGestionSoum.Text = "0.00";
             // 
             // lblHeuresElecShippingSoum
             // 
@@ -1101,7 +1100,7 @@ namespace ControleurServeur
             lblHeuresElecShippingSoum.Name = "lblHeuresElecShippingSoum";
             lblHeuresElecShippingSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecShippingSoum.TabIndex = 438;
-            lblHeuresElecShippingSoum.Text = "lblHeuresElecShippingSoum";
+            lblHeuresElecShippingSoum.Text = "0.00";
             // 
             // lblArgentElecShippingSoum
             // 
@@ -1112,7 +1111,7 @@ namespace ControleurServeur
             lblArgentElecShippingSoum.Name = "lblArgentElecShippingSoum";
             lblArgentElecShippingSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecShippingSoum.TabIndex = 439;
-            lblArgentElecShippingSoum.Text = "lblArgentElecShippingSoum";
+            lblArgentElecShippingSoum.Text = "0.00";
             // 
             // lblPiecesElecSoum
             // 
@@ -1123,7 +1122,7 @@ namespace ControleurServeur
             lblPiecesElecSoum.Name = "lblPiecesElecSoum";
             lblPiecesElecSoum.Size = new System.Drawing.Size(118, 14);
             lblPiecesElecSoum.TabIndex = 440;
-            lblPiecesElecSoum.Text = "lblPiecesElecSoum";
+            lblPiecesElecSoum.Text = "0.00";
             // 
             // lblImprevuElecSoum
             // 
@@ -1134,7 +1133,7 @@ namespace ControleurServeur
             lblImprevuElecSoum.Name = "lblImprevuElecSoum";
             lblImprevuElecSoum.Size = new System.Drawing.Size(118, 14);
             lblImprevuElecSoum.TabIndex = 441;
-            lblImprevuElecSoum.Text = "lblImprevuElecSoum";
+            lblImprevuElecSoum.Text = "0.00";
             // 
             // lblAutresElecSoum
             // 
@@ -1145,7 +1144,7 @@ namespace ControleurServeur
             lblAutresElecSoum.Name = "lblAutresElecSoum";
             lblAutresElecSoum.Size = new System.Drawing.Size(118, 14);
             lblAutresElecSoum.TabIndex = 442;
-            lblAutresElecSoum.Text = "lblAutresElecSoum";
+            lblAutresElecSoum.Text = "0.00";
             // 
             // lblArgentElecAssemblageProj
             // 
@@ -1156,7 +1155,7 @@ namespace ControleurServeur
             lblArgentElecAssemblageProj.Name = "lblArgentElecAssemblageProj";
             lblArgentElecAssemblageProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecAssemblageProj.TabIndex = 443;
-            lblArgentElecAssemblageProj.Text = "lblArgentElecAssemblageProj";
+            lblArgentElecAssemblageProj.Text = "0.00";
             // 
             // lblArgentElecRechercheProj
             // 
@@ -1167,7 +1166,7 @@ namespace ControleurServeur
             lblArgentElecRechercheProj.Name = "lblArgentElecRechercheProj";
             lblArgentElecRechercheProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecRechercheProj.TabIndex = 444;
-            lblArgentElecRechercheProj.Text = "lblArgentElecRechercheProj";
+            lblArgentElecRechercheProj.Text = "0.00";
             // 
             // lblImprevuElecProj
             // 
@@ -1178,7 +1177,7 @@ namespace ControleurServeur
             lblImprevuElecProj.Name = "lblImprevuElecProj";
             lblImprevuElecProj.Size = new System.Drawing.Size(118, 14);
             lblImprevuElecProj.TabIndex = 445;
-            lblImprevuElecProj.Text = "lblImprevuElecProj";
+            lblImprevuElecProj.Text = "0.00";
             // 
             // lblPiecesElecProj
             // 
@@ -1189,7 +1188,7 @@ namespace ControleurServeur
             lblPiecesElecProj.Name = "lblPiecesElecProj";
             lblPiecesElecProj.Size = new System.Drawing.Size(118, 14);
             lblPiecesElecProj.TabIndex = 446;
-            lblPiecesElecProj.Text = "lblPiecesElecProj";
+            lblPiecesElecProj.Text = "0.00";
             // 
             // lblAutresElecProj
             // 
@@ -1200,7 +1199,7 @@ namespace ControleurServeur
             lblAutresElecProj.Name = "lblAutresElecProj";
             lblAutresElecProj.Size = new System.Drawing.Size(118, 14);
             lblAutresElecProj.TabIndex = 447;
-            lblAutresElecProj.Text = "lblAutresElecProj";
+            lblAutresElecProj.Text = "0.00";
             // 
             // lblArgentElecTotalSoum
             // 
@@ -1211,7 +1210,7 @@ namespace ControleurServeur
             lblArgentElecTotalSoum.Name = "lblArgentElecTotalSoum";
             lblArgentElecTotalSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecTotalSoum.TabIndex = 448;
-            lblArgentElecTotalSoum.Text = "lblArgentElecTotalSoum";
+            lblArgentElecTotalSoum.Text = "0.00";
             // 
             // lblArgentElecTotalProj
             // 
@@ -1222,7 +1221,7 @@ namespace ControleurServeur
             lblArgentElecTotalProj.Name = "lblArgentElecTotalProj";
             lblArgentElecTotalProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecTotalProj.TabIndex = 449;
-            lblArgentElecTotalProj.Text = "lblArgentElecTotalProj";
+            lblArgentElecTotalProj.Text = "0.00";
             // 
             // lblHeuresMecDessinSoum
             // 
@@ -1233,7 +1232,7 @@ namespace ControleurServeur
             lblHeuresMecDessinSoum.Name = "lblHeuresMecDessinSoum";
             lblHeuresMecDessinSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecDessinSoum.TabIndex = 450;
-            lblHeuresMecDessinSoum.Text = "lblHeuresMecDessinSoum";
+            lblHeuresMecDessinSoum.Text = "0.00";
             // 
             // lblArgentMecDessinSoum
             // 
@@ -1244,7 +1243,7 @@ namespace ControleurServeur
             lblArgentMecDessinSoum.Name = "lblArgentMecDessinSoum";
             lblArgentMecDessinSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecDessinSoum.TabIndex = 451;
-            lblArgentMecDessinSoum.Text = "lblArgentMecDessinSoum";
+            lblArgentMecDessinSoum.Text = "0.00";
             // 
             // lblHeuresMecCoupeSoum
             // 
@@ -1255,7 +1254,7 @@ namespace ControleurServeur
             lblHeuresMecCoupeSoum.Name = "lblHeuresMecCoupeSoum";
             lblHeuresMecCoupeSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecCoupeSoum.TabIndex = 452;
-            lblHeuresMecCoupeSoum.Text = "lblHeuresMecCoupeSoum";
+            lblHeuresMecCoupeSoum.Text = "0.00";
             // 
             // lblArgentMecCoupeSoum
             // 
@@ -1266,7 +1265,7 @@ namespace ControleurServeur
             lblArgentMecCoupeSoum.Name = "lblArgentMecCoupeSoum";
             lblArgentMecCoupeSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecCoupeSoum.TabIndex = 453;
-            lblArgentMecCoupeSoum.Text = "lblArgentMecCoupeSoum";
+            lblArgentMecCoupeSoum.Text = "0.00";
             // 
             // lblHeuresMecMachinageSoum
             // 
@@ -1277,7 +1276,7 @@ namespace ControleurServeur
             lblHeuresMecMachinageSoum.Name = "lblHeuresMecMachinageSoum";
             lblHeuresMecMachinageSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecMachinageSoum.TabIndex = 454;
-            lblHeuresMecMachinageSoum.Text = "lblHeuresMecMachinageSoum";
+            lblHeuresMecMachinageSoum.Text = "0.00";
             // 
             // lblArgentMecMachinageSoum
             // 
@@ -1288,7 +1287,7 @@ namespace ControleurServeur
             lblArgentMecMachinageSoum.Name = "lblArgentMecMachinageSoum";
             lblArgentMecMachinageSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecMachinageSoum.TabIndex = 455;
-            lblArgentMecMachinageSoum.Text = "lblArgentMecMachinageSoum";
+            lblArgentMecMachinageSoum.Text = "0.00";
             // 
             // lblHeuresMecSoudureSoum
             // 
@@ -1299,7 +1298,7 @@ namespace ControleurServeur
             lblHeuresMecSoudureSoum.Name = "lblHeuresMecSoudureSoum";
             lblHeuresMecSoudureSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecSoudureSoum.TabIndex = 456;
-            lblHeuresMecSoudureSoum.Text = "lblHeuresMecSoudureSoum";
+            lblHeuresMecSoudureSoum.Text = "0.00";
             // 
             // lblArgentMecSoudureSoum
             // 
@@ -1310,7 +1309,7 @@ namespace ControleurServeur
             lblArgentMecSoudureSoum.Name = "lblArgentMecSoudureSoum";
             lblArgentMecSoudureSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecSoudureSoum.TabIndex = 457;
-            lblArgentMecSoudureSoum.Text = "lblArgentMecSoudureSoum";
+            lblArgentMecSoudureSoum.Text = "0.00";
             // 
             // lblHeuresMecAssemblageSoum
             // 
@@ -1321,7 +1320,7 @@ namespace ControleurServeur
             lblHeuresMecAssemblageSoum.Name = "lblHeuresMecAssemblageSoum";
             lblHeuresMecAssemblageSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecAssemblageSoum.TabIndex = 458;
-            lblHeuresMecAssemblageSoum.Text = "lblHeuresMecAssemblageSoum";
+            lblHeuresMecAssemblageSoum.Text = "0.00";
             // 
             // lblArgentMecAssemblageSoum
             // 
@@ -1332,7 +1331,7 @@ namespace ControleurServeur
             lblArgentMecAssemblageSoum.Name = "lblArgentMecAssemblageSoum";
             lblArgentMecAssemblageSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecAssemblageSoum.TabIndex = 459;
-            lblArgentMecAssemblageSoum.Text = "lblArgentMecAssemblageSoum";
+            lblArgentMecAssemblageSoum.Text = "0.00";
             // 
             // lblHeuresMecPeintureSoum
             // 
@@ -1343,7 +1342,7 @@ namespace ControleurServeur
             lblHeuresMecPeintureSoum.Name = "lblHeuresMecPeintureSoum";
             lblHeuresMecPeintureSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecPeintureSoum.TabIndex = 460;
-            lblHeuresMecPeintureSoum.Text = "lblHeuresMecPeintureSoum";
+            lblHeuresMecPeintureSoum.Text = "0.00";
             // 
             // lblArgentMecPeintureSoum
             // 
@@ -1354,7 +1353,7 @@ namespace ControleurServeur
             lblArgentMecPeintureSoum.Name = "lblArgentMecPeintureSoum";
             lblArgentMecPeintureSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecPeintureSoum.TabIndex = 461;
-            lblArgentMecPeintureSoum.Text = "lblArgentMecPeintureSoum";
+            lblArgentMecPeintureSoum.Text = "0.00";
             // 
             // lblHeuresMecTestSoum
             // 
@@ -1365,7 +1364,7 @@ namespace ControleurServeur
             lblHeuresMecTestSoum.Name = "lblHeuresMecTestSoum";
             lblHeuresMecTestSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecTestSoum.TabIndex = 462;
-            lblHeuresMecTestSoum.Text = "lblHeuresMecTestSoum";
+            lblHeuresMecTestSoum.Text = "0.00";
             // 
             // lblAutresMecProj
             // 
@@ -1376,7 +1375,7 @@ namespace ControleurServeur
             lblAutresMecProj.Name = "lblAutresMecProj";
             lblAutresMecProj.Size = new System.Drawing.Size(118, 14);
             lblAutresMecProj.TabIndex = 463;
-            lblAutresMecProj.Text = "lblAutresMecProj";
+            lblAutresMecProj.Text = "0.00";
             // 
             // lblTitreProfitTotal
             // 
@@ -1400,7 +1399,7 @@ namespace ControleurServeur
             lblArgentElecDessinSoum.Name = "lblArgentElecDessinSoum";
             lblArgentElecDessinSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecDessinSoum.TabIndex = 466;
-            lblArgentElecDessinSoum.Text = "lblArgentElecDessinSoum";
+            lblArgentElecDessinSoum.Text = "0.00";
             // 
             // lblHeuresElecDessinSoum
             // 
@@ -1411,7 +1410,7 @@ namespace ControleurServeur
             lblHeuresElecDessinSoum.Name = "lblHeuresElecDessinSoum";
             lblHeuresElecDessinSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecDessinSoum.TabIndex = 467;
-            lblHeuresElecDessinSoum.Text = "lblHeuresElecDessinSoum";
+            lblHeuresElecDessinSoum.Text = "0.00";
             // 
             // lblArgentElecFabricationSoum
             // 
@@ -1422,7 +1421,7 @@ namespace ControleurServeur
             lblArgentElecFabricationSoum.Name = "lblArgentElecFabricationSoum";
             lblArgentElecFabricationSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecFabricationSoum.TabIndex = 468;
-            lblArgentElecFabricationSoum.Text = "lblArgentElecFabricationSoum";
+            lblArgentElecFabricationSoum.Text = "0.00";
             // 
             // lblHeuresElecFabricationSoum
             // 
@@ -1433,7 +1432,7 @@ namespace ControleurServeur
             lblHeuresElecFabricationSoum.Name = "lblHeuresElecFabricationSoum";
             lblHeuresElecFabricationSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecFabricationSoum.TabIndex = 469;
-            lblHeuresElecFabricationSoum.Text = "lblHeuresElecFabricationSoum";
+            lblHeuresElecFabricationSoum.Text = "0.00";
             // 
             // lblArgentElecAssemblageSoum
             // 
@@ -1444,7 +1443,7 @@ namespace ControleurServeur
             lblArgentElecAssemblageSoum.Name = "lblArgentElecAssemblageSoum";
             lblArgentElecAssemblageSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecAssemblageSoum.TabIndex = 470;
-            lblArgentElecAssemblageSoum.Text = "lblArgentElecAssemblageSoum";
+            lblArgentElecAssemblageSoum.Text = "0.00";
             // 
             // lblHeuresElecAssemblageSoum
             // 
@@ -1455,7 +1454,7 @@ namespace ControleurServeur
             lblHeuresElecAssemblageSoum.Name = "lblHeuresElecAssemblageSoum";
             lblHeuresElecAssemblageSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecAssemblageSoum.TabIndex = 471;
-            lblHeuresElecAssemblageSoum.Text = "lblHeuresElecAssemblageSoum";
+            lblHeuresElecAssemblageSoum.Text = "0.00";
             // 
             // lblArgentElecProgInterfaceSoum
             // 
@@ -1466,7 +1465,7 @@ namespace ControleurServeur
             lblArgentElecProgInterfaceSoum.Name = "lblArgentElecProgInterfaceSoum";
             lblArgentElecProgInterfaceSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecProgInterfaceSoum.TabIndex = 472;
-            lblArgentElecProgInterfaceSoum.Text = "lblArgentElecProgInterfaceSoum";
+            lblArgentElecProgInterfaceSoum.Text = "0.00";
             // 
             // lblArgentElecVisionSoum
             // 
@@ -1477,7 +1476,7 @@ namespace ControleurServeur
             lblArgentElecVisionSoum.Name = "lblArgentElecVisionSoum";
             lblArgentElecVisionSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentElecVisionSoum.TabIndex = 473;
-            lblArgentElecVisionSoum.Text = "lblArgentElecVisionSoum";
+            lblArgentElecVisionSoum.Text = "0.00";
             // 
             // lblHeuresElecTestSoum
             // 
@@ -1488,7 +1487,7 @@ namespace ControleurServeur
             lblHeuresElecTestSoum.Name = "lblHeuresElecTestSoum";
             lblHeuresElecTestSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecTestSoum.TabIndex = 474;
-            lblHeuresElecTestSoum.Text = "lblHeuresElecTestSoum";
+            lblHeuresElecTestSoum.Text = "0.00";
             // 
             // lblHeuresElecMiseServiceProj
             // 
@@ -1499,7 +1498,7 @@ namespace ControleurServeur
             lblHeuresElecMiseServiceProj.Name = "lblHeuresElecMiseServiceProj";
             lblHeuresElecMiseServiceProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecMiseServiceProj.TabIndex = 475;
-            lblHeuresElecMiseServiceProj.Text = "lblHeuresElecMiseServiceProj";
+            lblHeuresElecMiseServiceProj.Text = "0.00";
             // 
             // lblArgentElecMiseServiceProj
             // 
@@ -1510,7 +1509,7 @@ namespace ControleurServeur
             lblArgentElecMiseServiceProj.Name = "lblArgentElecMiseServiceProj";
             lblArgentElecMiseServiceProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecMiseServiceProj.TabIndex = 476;
-            lblArgentElecMiseServiceProj.Text = "lblArgentElecMiseServiceProj";
+            lblArgentElecMiseServiceProj.Text = "0.00";
             // 
             // lblHeuresElecFormationProj
             // 
@@ -1521,7 +1520,7 @@ namespace ControleurServeur
             lblHeuresElecFormationProj.Name = "lblHeuresElecFormationProj";
             lblHeuresElecFormationProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecFormationProj.TabIndex = 477;
-            lblHeuresElecFormationProj.Text = "lblHeuresElecFormationProj";
+            lblHeuresElecFormationProj.Text = "0.00";
             // 
             // lblArgentElecFormationProj
             // 
@@ -1532,7 +1531,7 @@ namespace ControleurServeur
             lblArgentElecFormationProj.Name = "lblArgentElecFormationProj";
             lblArgentElecFormationProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecFormationProj.TabIndex = 478;
-            lblArgentElecFormationProj.Text = "lblArgentElecFormationProj";
+            lblArgentElecFormationProj.Text = "0.00";
             // 
             // lblHeuresElecGestionProj
             // 
@@ -1543,7 +1542,7 @@ namespace ControleurServeur
             lblHeuresElecGestionProj.Name = "lblHeuresElecGestionProj";
             lblHeuresElecGestionProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecGestionProj.TabIndex = 479;
-            lblHeuresElecGestionProj.Text = "lblHeuresElecGestionProj";
+            lblHeuresElecGestionProj.Text = "0.00";
             // 
             // lblTotalForfaitProj
             // 
@@ -1565,7 +1564,7 @@ namespace ControleurServeur
             lblHeuresElecTotalProj.Name = "lblHeuresElecTotalProj";
             lblHeuresElecTotalProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecTotalProj.TabIndex = 482;
-            lblHeuresElecTotalProj.Text = "lblHeuresElecTotalProj";
+            lblHeuresElecTotalProj.Text = "0.00";
             // 
             // lblHeuresMecTotalProj
             // 
@@ -1576,7 +1575,7 @@ namespace ControleurServeur
             lblHeuresMecTotalProj.Name = "lblHeuresMecTotalProj";
             lblHeuresMecTotalProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecTotalProj.TabIndex = 483;
-            lblHeuresMecTotalProj.Text = "lblHeuresMecTotalProj";
+            lblHeuresMecTotalProj.Text = "0.00";
             // 
             // lblGrandTotalProj
             // 
@@ -1587,7 +1586,7 @@ namespace ControleurServeur
             lblGrandTotalProj.Name = "lblGrandTotalProj";
             lblGrandTotalProj.Size = new System.Drawing.Size(118, 14);
             lblGrandTotalProj.TabIndex = 484;
-            lblGrandTotalProj.Text = "lblGrandTotalProj";
+            lblGrandTotalProj.Text = "0.00";
             // 
             // lblTotalMecProj
             // 
@@ -1598,7 +1597,7 @@ namespace ControleurServeur
             lblTotalMecProj.Name = "lblTotalMecProj";
             lblTotalMecProj.Size = new System.Drawing.Size(118, 14);
             lblTotalMecProj.TabIndex = 486;
-            lblTotalMecProj.Text = "lblTotalMecProj";
+            lblTotalMecProj.Text = "0.00";
             // 
             // lblProfitSoum
             // 
@@ -1609,7 +1608,7 @@ namespace ControleurServeur
             lblProfitSoum.Name = "lblProfitSoum";
             lblProfitSoum.Size = new System.Drawing.Size(118, 14);
             lblProfitSoum.TabIndex = 487;
-            lblProfitSoum.Text = "lblProfitSoum";
+            lblProfitSoum.Text = "0.00";
             // 
             // lblProfitProj
             // 
@@ -1620,7 +1619,7 @@ namespace ControleurServeur
             lblProfitProj.Name = "lblProfitProj";
             lblProfitProj.Size = new System.Drawing.Size(118, 14);
             lblProfitProj.TabIndex = 488;
-            lblProfitProj.Text = "lblProfitProj";
+            lblProfitProj.Text = "0.00";
             // 
             // lblArgentElecVisionProj
             // 
@@ -1631,7 +1630,7 @@ namespace ControleurServeur
             lblArgentElecVisionProj.Name = "lblArgentElecVisionProj";
             lblArgentElecVisionProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecVisionProj.TabIndex = 489;
-            lblArgentElecVisionProj.Text = "lblArgentElecVisionProj";
+            lblArgentElecVisionProj.Text = "0.00";
             // 
             // lblHeuresElecTestProj
             // 
@@ -1642,7 +1641,7 @@ namespace ControleurServeur
             lblHeuresElecTestProj.Name = "lblHeuresElecTestProj";
             lblHeuresElecTestProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecTestProj.TabIndex = 490;
-            lblHeuresElecTestProj.Text = "lblHeuresElecTestProj";
+            lblHeuresElecTestProj.Text = "0.00";
             // 
             // lblArgentElecTestProj
             // 
@@ -1653,7 +1652,7 @@ namespace ControleurServeur
             lblArgentElecTestProj.Name = "lblArgentElecTestProj";
             lblArgentElecTestProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecTestProj.TabIndex = 491;
-            lblArgentElecTestProj.Text = "lblArgentElecTestProj";
+            lblArgentElecTestProj.Text = "0.00";
             // 
             // lblArgentMecTestSoum
             // 
@@ -1664,7 +1663,7 @@ namespace ControleurServeur
             lblArgentMecTestSoum.Name = "lblArgentMecTestSoum";
             lblArgentMecTestSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecTestSoum.TabIndex = 492;
-            lblArgentMecTestSoum.Text = "lblArgentMecTestSoum";
+            lblArgentMecTestSoum.Text = "0.00";
             // 
             // lblHeuresMecInstallationSoum
             // 
@@ -1675,7 +1674,7 @@ namespace ControleurServeur
             lblHeuresMecInstallationSoum.Name = "lblHeuresMecInstallationSoum";
             lblHeuresMecInstallationSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecInstallationSoum.TabIndex = 493;
-            lblHeuresMecInstallationSoum.Text = "lblHeuresMecInstallationSoum";
+            lblHeuresMecInstallationSoum.Text = "0.00";
             // 
             // lblArgentMecInstallationSoum
             // 
@@ -1686,7 +1685,7 @@ namespace ControleurServeur
             lblArgentMecInstallationSoum.Name = "lblArgentMecInstallationSoum";
             lblArgentMecInstallationSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecInstallationSoum.TabIndex = 494;
-            lblArgentMecInstallationSoum.Text = "lblArgentMecInstallationSoum";
+            lblArgentMecInstallationSoum.Text = "0.00";
             // 
             // lblHeuresMecFormationSoum
             // 
@@ -1697,7 +1696,7 @@ namespace ControleurServeur
             lblHeuresMecFormationSoum.Name = "lblHeuresMecFormationSoum";
             lblHeuresMecFormationSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecFormationSoum.TabIndex = 495;
-            lblHeuresMecFormationSoum.Text = "lblHeuresMecFormationSoum";
+            lblHeuresMecFormationSoum.Text = "0.00";
             // 
             // lblArgentMecFormationSoum
             // 
@@ -1708,7 +1707,7 @@ namespace ControleurServeur
             lblArgentMecFormationSoum.Name = "lblArgentMecFormationSoum";
             lblArgentMecFormationSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecFormationSoum.TabIndex = 496;
-            lblArgentMecFormationSoum.Text = "lblArgentMecFormationSoum";
+            lblArgentMecFormationSoum.Text = "0.00";
             // 
             // lblHeuresMecGestionSoum
             // 
@@ -1719,7 +1718,7 @@ namespace ControleurServeur
             lblHeuresMecGestionSoum.Name = "lblHeuresMecGestionSoum";
             lblHeuresMecGestionSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecGestionSoum.TabIndex = 497;
-            lblHeuresMecGestionSoum.Text = "lblHeuresMecGestionSoum";
+            lblHeuresMecGestionSoum.Text = "0.00";
             // 
             // lblArgentMecGestionSoum
             // 
@@ -1730,7 +1729,7 @@ namespace ControleurServeur
             lblArgentMecGestionSoum.Name = "lblArgentMecGestionSoum";
             lblArgentMecGestionSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecGestionSoum.TabIndex = 498;
-            lblArgentMecGestionSoum.Text = "lblArgentMecGestionSoum";
+            lblArgentMecGestionSoum.Text = "0.00";
             // 
             // lblHeuresMecShippingSoum
             // 
@@ -1741,7 +1740,7 @@ namespace ControleurServeur
             lblHeuresMecShippingSoum.Name = "lblHeuresMecShippingSoum";
             lblHeuresMecShippingSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecShippingSoum.TabIndex = 499;
-            lblHeuresMecShippingSoum.Text = "lblHeuresMecShippingSoum";
+            lblHeuresMecShippingSoum.Text = "0.00";
             // 
             // lblArgentMecShippingSoum
             // 
@@ -1752,7 +1751,7 @@ namespace ControleurServeur
             lblArgentMecShippingSoum.Name = "lblArgentMecShippingSoum";
             lblArgentMecShippingSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecShippingSoum.TabIndex = 500;
-            lblArgentMecShippingSoum.Text = "lblArgentMecShippingSoum";
+            lblArgentMecShippingSoum.Text = "0.00";
             // 
             // lblHeuresMecFormationProj
             // 
@@ -1763,7 +1762,7 @@ namespace ControleurServeur
             lblHeuresMecFormationProj.Name = "lblHeuresMecFormationProj";
             lblHeuresMecFormationProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecFormationProj.TabIndex = 501;
-            lblHeuresMecFormationProj.Text = "lblHeuresMecFormationProj";
+            lblHeuresMecFormationProj.Text = "0.00";
             // 
             // lblArgentMecFormationProj
             // 
@@ -1774,7 +1773,7 @@ namespace ControleurServeur
             lblArgentMecFormationProj.Name = "lblArgentMecFormationProj";
             lblArgentMecFormationProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecFormationProj.TabIndex = 502;
-            lblArgentMecFormationProj.Text = "lblArgentMecFormationProj";
+            lblArgentMecFormationProj.Text = "0.00";
             // 
             // lblHeuresMecGestionProj
             // 
@@ -1785,7 +1784,7 @@ namespace ControleurServeur
             lblHeuresMecGestionProj.Name = "lblHeuresMecGestionProj";
             lblHeuresMecGestionProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecGestionProj.TabIndex = 503;
-            lblHeuresMecGestionProj.Text = "lblHeuresMecGestionProj";
+            lblHeuresMecGestionProj.Text = "0.00";
             // 
             // lblArgentMecGestionProj
             // 
@@ -1796,7 +1795,7 @@ namespace ControleurServeur
             lblArgentMecGestionProj.Name = "lblArgentMecGestionProj";
             lblArgentMecGestionProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecGestionProj.TabIndex = 504;
-            lblArgentMecGestionProj.Text = "lblArgentMecGestionProj";
+            lblArgentMecGestionProj.Text = "0.00";
             // 
             // lblArgentMecShippingProj
             // 
@@ -1807,7 +1806,7 @@ namespace ControleurServeur
             lblArgentMecShippingProj.Name = "lblArgentMecShippingProj";
             lblArgentMecShippingProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecShippingProj.TabIndex = 505;
-            lblArgentMecShippingProj.Text = "lblArgentMecShippingProj";
+            lblArgentMecShippingProj.Text = "0.00";
             // 
             // lblArgentElecInstallationProj
             // 
@@ -1818,7 +1817,7 @@ namespace ControleurServeur
             lblArgentElecInstallationProj.Name = "lblArgentElecInstallationProj";
             lblArgentElecInstallationProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecInstallationProj.TabIndex = 506;
-            lblArgentElecInstallationProj.Text = "lblArgentElecInstallationProj";
+            lblArgentElecInstallationProj.Text = "0.00";
             // 
             // lblHeuresElecInstallationProj
             // 
@@ -1829,7 +1828,7 @@ namespace ControleurServeur
             lblHeuresElecInstallationProj.Name = "lblHeuresElecInstallationProj";
             lblHeuresElecInstallationProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecInstallationProj.TabIndex = 507;
-            lblHeuresElecInstallationProj.Text = "lblHeuresElecInstallationProj";
+            lblHeuresElecInstallationProj.Text = "0.00";
             // 
             // lblPiecesMecSoum
             // 
@@ -1840,7 +1839,7 @@ namespace ControleurServeur
             lblPiecesMecSoum.Name = "lblPiecesMecSoum";
             lblPiecesMecSoum.Size = new System.Drawing.Size(118, 14);
             lblPiecesMecSoum.TabIndex = 508;
-            lblPiecesMecSoum.Text = "lblPiecesMecSoum";
+            lblPiecesMecSoum.Text = "0.00";
             // 
             // lblImprevuMecSoum
             // 
@@ -1851,7 +1850,7 @@ namespace ControleurServeur
             lblImprevuMecSoum.Name = "lblImprevuMecSoum";
             lblImprevuMecSoum.Size = new System.Drawing.Size(118, 14);
             lblImprevuMecSoum.TabIndex = 509;
-            lblImprevuMecSoum.Text = "lblImprevuMecSoum";
+            lblImprevuMecSoum.Text = "0.00";
             // 
             // lblAutresMecSoum
             // 
@@ -1862,7 +1861,7 @@ namespace ControleurServeur
             lblAutresMecSoum.Name = "lblAutresMecSoum";
             lblAutresMecSoum.Size = new System.Drawing.Size(118, 14);
             lblAutresMecSoum.TabIndex = 510;
-            lblAutresMecSoum.Text = "lblAutresMecSoum";
+            lblAutresMecSoum.Text = "0.00";
             // 
             // lblHeuresMecDessinProj
             // 
@@ -1873,7 +1872,7 @@ namespace ControleurServeur
             lblHeuresMecDessinProj.Name = "lblHeuresMecDessinProj";
             lblHeuresMecDessinProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecDessinProj.TabIndex = 512;
-            lblHeuresMecDessinProj.Text = "lblHeuresMecDessinProj";
+            lblHeuresMecDessinProj.Text = "0.00";
             // 
             // lblArgentMecDessinProj
             // 
@@ -1884,7 +1883,7 @@ namespace ControleurServeur
             lblArgentMecDessinProj.Name = "lblArgentMecDessinProj";
             lblArgentMecDessinProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecDessinProj.TabIndex = 513;
-            lblArgentMecDessinProj.Text = "lblArgentMecDessinProj";
+            lblArgentMecDessinProj.Text = "0.00";
             // 
             // lblHeuresMecCoupeProj
             // 
@@ -1895,7 +1894,7 @@ namespace ControleurServeur
             lblHeuresMecCoupeProj.Name = "lblHeuresMecCoupeProj";
             lblHeuresMecCoupeProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecCoupeProj.TabIndex = 514;
-            lblHeuresMecCoupeProj.Text = "lblHeuresMecCoupeProj";
+            lblHeuresMecCoupeProj.Text = "0.00";
             // 
             // lblArgentMecCoupeProj
             // 
@@ -1906,7 +1905,7 @@ namespace ControleurServeur
             lblArgentMecCoupeProj.Name = "lblArgentMecCoupeProj";
             lblArgentMecCoupeProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecCoupeProj.TabIndex = 515;
-            lblArgentMecCoupeProj.Text = "lblArgentMecCoupeProj";
+            lblArgentMecCoupeProj.Text = "0.00";
             // 
             // lblArgentMecMachinageProj
             // 
@@ -1917,7 +1916,7 @@ namespace ControleurServeur
             lblArgentMecMachinageProj.Name = "lblArgentMecMachinageProj";
             lblArgentMecMachinageProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecMachinageProj.TabIndex = 516;
-            lblArgentMecMachinageProj.Text = "lblArgentMecMachinageProj";
+            lblArgentMecMachinageProj.Text = "0.00";
             // 
             // lblHeuresMecMachinageProj
             // 
@@ -1928,7 +1927,7 @@ namespace ControleurServeur
             lblHeuresMecMachinageProj.Name = "lblHeuresMecMachinageProj";
             lblHeuresMecMachinageProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecMachinageProj.TabIndex = 517;
-            lblHeuresMecMachinageProj.Text = "lblHeuresMecMachinageProj";
+            lblHeuresMecMachinageProj.Text = "0.00";
             // 
             // lblHeuresMecSoudureProj
             // 
@@ -1939,7 +1938,7 @@ namespace ControleurServeur
             lblHeuresMecSoudureProj.Name = "lblHeuresMecSoudureProj";
             lblHeuresMecSoudureProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecSoudureProj.TabIndex = 518;
-            lblHeuresMecSoudureProj.Text = "lblHeuresMecSoudureProj";
+            lblHeuresMecSoudureProj.Text = "0.00";
             // 
             // lblArgentMecSoudureProj
             // 
@@ -1950,7 +1949,7 @@ namespace ControleurServeur
             lblArgentMecSoudureProj.Name = "lblArgentMecSoudureProj";
             lblArgentMecSoudureProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecSoudureProj.TabIndex = 519;
-            lblArgentMecSoudureProj.Text = "lblArgentMecSoudureProj";
+            lblArgentMecSoudureProj.Text = "0.00";
             // 
             // lblHeuresMecAssemblageProj
             // 
@@ -1961,7 +1960,7 @@ namespace ControleurServeur
             lblHeuresMecAssemblageProj.Name = "lblHeuresMecAssemblageProj";
             lblHeuresMecAssemblageProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecAssemblageProj.TabIndex = 520;
-            lblHeuresMecAssemblageProj.Text = "lblHeuresMecAssemblageProj";
+            lblHeuresMecAssemblageProj.Text = "0.00";
             // 
             // lblArgentMecAssemblageProj
             // 
@@ -1972,7 +1971,7 @@ namespace ControleurServeur
             lblArgentMecAssemblageProj.Name = "lblArgentMecAssemblageProj";
             lblArgentMecAssemblageProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecAssemblageProj.TabIndex = 521;
-            lblArgentMecAssemblageProj.Text = "lblArgentMecAssemblageProj";
+            lblArgentMecAssemblageProj.Text = "0.00";
             // 
             // lblHeuresMecPeintureProj
             // 
@@ -1983,7 +1982,7 @@ namespace ControleurServeur
             lblHeuresMecPeintureProj.Name = "lblHeuresMecPeintureProj";
             lblHeuresMecPeintureProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecPeintureProj.TabIndex = 522;
-            lblHeuresMecPeintureProj.Text = "lblHeuresMecPeintureProj";
+            lblHeuresMecPeintureProj.Text = "0.00";
             // 
             // lblArgentMecPeintureProj
             // 
@@ -1994,7 +1993,7 @@ namespace ControleurServeur
             lblArgentMecPeintureProj.Name = "lblArgentMecPeintureProj";
             lblArgentMecPeintureProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecPeintureProj.TabIndex = 523;
-            lblArgentMecPeintureProj.Text = "lblArgentMecPeintureProj";
+            lblArgentMecPeintureProj.Text = "0.00";
             // 
             // lblHeuresMecTestProj
             // 
@@ -2005,7 +2004,7 @@ namespace ControleurServeur
             lblHeuresMecTestProj.Name = "lblHeuresMecTestProj";
             lblHeuresMecTestProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecTestProj.TabIndex = 524;
-            lblHeuresMecTestProj.Text = "lblHeuresMecTestProj";
+            lblHeuresMecTestProj.Text = "0.00";
             // 
             // lblArgentMecTestProj
             // 
@@ -2016,7 +2015,7 @@ namespace ControleurServeur
             lblArgentMecTestProj.Name = "lblArgentMecTestProj";
             lblArgentMecTestProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecTestProj.TabIndex = 525;
-            lblArgentMecTestProj.Text = "lblArgentMecTestProj";
+            lblArgentMecTestProj.Text = "0.00";
             // 
             // lblHeuresMecInstallationProj
             // 
@@ -2027,7 +2026,7 @@ namespace ControleurServeur
             lblHeuresMecInstallationProj.Name = "lblHeuresMecInstallationProj";
             lblHeuresMecInstallationProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecInstallationProj.TabIndex = 526;
-            lblHeuresMecInstallationProj.Text = "lblHeuresMecInstallationProj";
+            lblHeuresMecInstallationProj.Text = "0.00";
             // 
             // lblDescription
             // 
@@ -2105,7 +2104,7 @@ namespace ControleurServeur
             lblHeuresElecTotalSoum.Name = "lblHeuresElecTotalSoum";
             lblHeuresElecTotalSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecTotalSoum.TabIndex = 533;
-            lblHeuresElecTotalSoum.Text = "lblHeuresElecTotalSoum";
+            lblHeuresElecTotalSoum.Text = "0.00";
             // 
             // lblHeuresMecTotalSoum
             // 
@@ -2116,7 +2115,7 @@ namespace ControleurServeur
             lblHeuresMecTotalSoum.Name = "lblHeuresMecTotalSoum";
             lblHeuresMecTotalSoum.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecTotalSoum.TabIndex = 534;
-            lblHeuresMecTotalSoum.Text = "lblHeuresMecTotalSoum";
+            lblHeuresMecTotalSoum.Text = "0.00";
             // 
             // lblTotalHeuresSoum
             // 
@@ -2127,7 +2126,7 @@ namespace ControleurServeur
             lblTotalHeuresSoum.Name = "lblTotalHeuresSoum";
             lblTotalHeuresSoum.Size = new System.Drawing.Size(118, 14);
             lblTotalHeuresSoum.TabIndex = 535;
-            lblTotalHeuresSoum.Text = "lblTotalHeuresSoum";
+            lblTotalHeuresSoum.Text = "0.00";
             // 
             // lblGrandTotalSoum
             // 
@@ -2138,7 +2137,7 @@ namespace ControleurServeur
             lblGrandTotalSoum.Name = "lblGrandTotalSoum";
             lblGrandTotalSoum.Size = new System.Drawing.Size(118, 14);
             lblGrandTotalSoum.TabIndex = 536;
-            lblGrandTotalSoum.Text = "lblGrandTotalSoum";
+            lblGrandTotalSoum.Text = "0.00";
             // 
             // lblTotalMecSoum
             // 
@@ -2149,6 +2148,7 @@ namespace ControleurServeur
             lblTotalMecSoum.Name = "lblTotalMecSoum";
             lblTotalMecSoum.Size = new System.Drawing.Size(118, 14);
             lblTotalMecSoum.TabIndex = 538;
+            lblTotalMecSoum.Text = "0.00";
             // 
             // lblHeuresElecDessinProj
             // 
@@ -2159,7 +2159,7 @@ namespace ControleurServeur
             lblHeuresElecDessinProj.Name = "lblHeuresElecDessinProj";
             lblHeuresElecDessinProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecDessinProj.TabIndex = 539;
-            lblHeuresElecDessinProj.Text = "lblHeuresElecDessinProj";
+            lblHeuresElecDessinProj.Text = "0.00";
             // 
             // lblArgentElecDessinProj
             // 
@@ -2170,7 +2170,7 @@ namespace ControleurServeur
             lblArgentElecDessinProj.Name = "lblArgentElecDessinProj";
             lblArgentElecDessinProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecDessinProj.TabIndex = 540;
-            lblArgentElecDessinProj.Text = "lblArgentElecDessinProj";
+            lblArgentElecDessinProj.Text = "0.00";
             // 
             // lblHeuresElecFabricationProj
             // 
@@ -2181,7 +2181,7 @@ namespace ControleurServeur
             lblHeuresElecFabricationProj.Name = "lblHeuresElecFabricationProj";
             lblHeuresElecFabricationProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecFabricationProj.TabIndex = 541;
-            lblHeuresElecFabricationProj.Text = "lblHeuresElecFabricationProj";
+            lblHeuresElecFabricationProj.Text = "0.00";
             // 
             // lblArgentElecFabricationProj
             // 
@@ -2192,7 +2192,7 @@ namespace ControleurServeur
             lblArgentElecFabricationProj.Name = "lblArgentElecFabricationProj";
             lblArgentElecFabricationProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecFabricationProj.TabIndex = 542;
-            lblArgentElecFabricationProj.Text = "lblArgentElecFabricationProj";
+            lblArgentElecFabricationProj.Text = "0.00";
             // 
             // lblHeuresElecAssemblageProj
             // 
@@ -2203,7 +2203,7 @@ namespace ControleurServeur
             lblHeuresElecAssemblageProj.Name = "lblHeuresElecAssemblageProj";
             lblHeuresElecAssemblageProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecAssemblageProj.TabIndex = 543;
-            lblHeuresElecAssemblageProj.Text = "lblHeuresElecAssemblageProj";
+            lblHeuresElecAssemblageProj.Text = "0.00";
             // 
             // lblHeuresElecProgInterfaceProj
             // 
@@ -2214,7 +2214,7 @@ namespace ControleurServeur
             lblHeuresElecProgInterfaceProj.Name = "lblHeuresElecProgInterfaceProj";
             lblHeuresElecProgInterfaceProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecProgInterfaceProj.TabIndex = 544;
-            lblHeuresElecProgInterfaceProj.Text = "lblHeuresElecProgInterfaceProj";
+            lblHeuresElecProgInterfaceProj.Text = "0.00";
             // 
             // lblArgentElecProgInterfaceProj
             // 
@@ -2225,7 +2225,7 @@ namespace ControleurServeur
             lblArgentElecProgInterfaceProj.Name = "lblArgentElecProgInterfaceProj";
             lblArgentElecProgInterfaceProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecProgInterfaceProj.TabIndex = 545;
-            lblArgentElecProgInterfaceProj.Text = "lblArgentElecProgInterfaceProj";
+            lblArgentElecProgInterfaceProj.Text = "0.00";
             // 
             // lblArgentElecProgAutomateProj
             // 
@@ -2236,7 +2236,7 @@ namespace ControleurServeur
             lblArgentElecProgAutomateProj.Name = "lblArgentElecProgAutomateProj";
             lblArgentElecProgAutomateProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecProgAutomateProj.TabIndex = 546;
-            lblArgentElecProgAutomateProj.Text = "lblArgentElecProgAutomateProj";
+            lblArgentElecProgAutomateProj.Text = "0.00";
             // 
             // lblHeuresElecProgAutomateProj
             // 
@@ -2247,7 +2247,7 @@ namespace ControleurServeur
             lblHeuresElecProgAutomateProj.Name = "lblHeuresElecProgAutomateProj";
             lblHeuresElecProgAutomateProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecProgAutomateProj.TabIndex = 547;
-            lblHeuresElecProgAutomateProj.Text = "lblHeuresElecProgAutomateProj";
+            lblHeuresElecProgAutomateProj.Text = "0.00";
             // 
             // lblHeuresElecProgRobotProj
             // 
@@ -2258,7 +2258,7 @@ namespace ControleurServeur
             lblHeuresElecProgRobotProj.Name = "lblHeuresElecProgRobotProj";
             lblHeuresElecProgRobotProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecProgRobotProj.TabIndex = 548;
-            lblHeuresElecProgRobotProj.Text = "lblHeuresElecProgRobotProj";
+            lblHeuresElecProgRobotProj.Text = "0.00";
             // 
             // lblArgentElecProgRobotProj
             // 
@@ -2269,7 +2269,7 @@ namespace ControleurServeur
             lblArgentElecProgRobotProj.Name = "lblArgentElecProgRobotProj";
             lblArgentElecProgRobotProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecProgRobotProj.TabIndex = 549;
-            lblArgentElecProgRobotProj.Text = "lblArgentElecProgRobotProj";
+            lblArgentElecProgRobotProj.Text = "0.00";
             // 
             // lblHeuresElecVisionProj
             // 
@@ -2280,7 +2280,7 @@ namespace ControleurServeur
             lblHeuresElecVisionProj.Name = "lblHeuresElecVisionProj";
             lblHeuresElecVisionProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecVisionProj.TabIndex = 550;
-            lblHeuresElecVisionProj.Text = "lblHeuresElecVisionProj";
+            lblHeuresElecVisionProj.Text = "0.00";
             // 
             // lblArgentMecTotalSoum
             // 
@@ -2291,7 +2291,7 @@ namespace ControleurServeur
             lblArgentMecTotalSoum.Name = "lblArgentMecTotalSoum";
             lblArgentMecTotalSoum.Size = new System.Drawing.Size(118, 14);
             lblArgentMecTotalSoum.TabIndex = 551;
-            lblArgentMecTotalSoum.Text = "lblArgentMecTotalSoum";
+            lblArgentMecTotalSoum.Text = "0.00";
             // 
             // lblArgentMecTotalProj
             // 
@@ -2302,7 +2302,7 @@ namespace ControleurServeur
             lblArgentMecTotalProj.Name = "lblArgentMecTotalProj";
             lblArgentMecTotalProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecTotalProj.TabIndex = 552;
-            lblArgentMecTotalProj.Text = "lblArgentMecTotalProj";
+            lblArgentMecTotalProj.Text = "0.00";
             // 
             // lblArgentElecGestionProj
             // 
@@ -2313,7 +2313,7 @@ namespace ControleurServeur
             lblArgentElecGestionProj.Name = "lblArgentElecGestionProj";
             lblArgentElecGestionProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecGestionProj.TabIndex = 554;
-            lblArgentElecGestionProj.Text = "lblArgentElecGestionProj";
+            lblArgentElecGestionProj.Text = "0.00";
             // 
             // lblHeuresElecShippingProj
             // 
@@ -2324,7 +2324,7 @@ namespace ControleurServeur
             lblHeuresElecShippingProj.Name = "lblHeuresElecShippingProj";
             lblHeuresElecShippingProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecShippingProj.TabIndex = 555;
-            lblHeuresElecShippingProj.Text = "lblHeuresElecShippingProj";
+            lblHeuresElecShippingProj.Text = "0.00";
             // 
             // lblArgentElecShippingProj
             // 
@@ -2335,7 +2335,7 @@ namespace ControleurServeur
             lblArgentElecShippingProj.Name = "lblArgentElecShippingProj";
             lblArgentElecShippingProj.Size = new System.Drawing.Size(118, 14);
             lblArgentElecShippingProj.TabIndex = 556;
-            lblArgentElecShippingProj.Text = "lblArgentElecShippingProj";
+            lblArgentElecShippingProj.Text = "0.00";
             // 
             // lblHeuresElecRechercheProj
             // 
@@ -2346,7 +2346,7 @@ namespace ControleurServeur
             lblHeuresElecRechercheProj.Name = "lblHeuresElecRechercheProj";
             lblHeuresElecRechercheProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresElecRechercheProj.TabIndex = 557;
-            lblHeuresElecRechercheProj.Text = "lblHeuresElecRechercheProj";
+            lblHeuresElecRechercheProj.Text = "0.00";
             // 
             // lblArgentMecInstallationProj
             // 
@@ -2357,7 +2357,7 @@ namespace ControleurServeur
             lblArgentMecInstallationProj.Name = "lblArgentMecInstallationProj";
             lblArgentMecInstallationProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecInstallationProj.TabIndex = 558;
-            lblArgentMecInstallationProj.Text = "lblArgentMecInstallationProj";
+            lblArgentMecInstallationProj.Text = "0.00";
             // 
             // lblHeuresMecShippingProj
             // 
@@ -2368,7 +2368,7 @@ namespace ControleurServeur
             lblHeuresMecShippingProj.Name = "lblHeuresMecShippingProj";
             lblHeuresMecShippingProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecShippingProj.TabIndex = 559;
-            lblHeuresMecShippingProj.Text = "lblHeuresMecShippingProj";
+            lblHeuresMecShippingProj.Text = "0.00";
             // 
             // lblHeuresMecRechercheProj
             // 
@@ -2379,7 +2379,7 @@ namespace ControleurServeur
             lblHeuresMecRechercheProj.Name = "lblHeuresMecRechercheProj";
             lblHeuresMecRechercheProj.Size = new System.Drawing.Size(118, 14);
             lblHeuresMecRechercheProj.TabIndex = 560;
-            lblHeuresMecRechercheProj.Text = "lblHeuresMecRechercheProj";
+            lblHeuresMecRechercheProj.Text = "0.00";
             // 
             // lblArgentMecRechercheProj
             // 
@@ -2390,7 +2390,7 @@ namespace ControleurServeur
             lblArgentMecRechercheProj.Name = "lblArgentMecRechercheProj";
             lblArgentMecRechercheProj.Size = new System.Drawing.Size(118, 14);
             lblArgentMecRechercheProj.TabIndex = 561;
-            lblArgentMecRechercheProj.Text = "lblArgentMecRechercheProj";
+            lblArgentMecRechercheProj.Text = "0.00";
             // 
             // lblPiecesMecProj
             // 
@@ -2401,7 +2401,7 @@ namespace ControleurServeur
             lblPiecesMecProj.Name = "lblPiecesMecProj";
             lblPiecesMecProj.Size = new System.Drawing.Size(118, 14);
             lblPiecesMecProj.TabIndex = 562;
-            lblPiecesMecProj.Text = "lblPiecesMecProj";
+            lblPiecesMecProj.Text = "0.00";
             // 
             // lblImprevuMecProj
             // 
@@ -2412,7 +2412,7 @@ namespace ControleurServeur
             lblImprevuMecProj.Name = "lblImprevuMecProj";
             lblImprevuMecProj.Size = new System.Drawing.Size(118, 14);
             lblImprevuMecProj.TabIndex = 563;
-            lblImprevuMecProj.Text = "lblImprevuMecProj";
+            lblImprevuMecProj.Text = "0.00";
             // 
             // lblTitreProj
             // 
@@ -2489,7 +2489,7 @@ namespace ControleurServeur
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(118, 14);
             label4.TabIndex = 598;
-            label4.Text = "lblHeuresMecTotalProj";
+            label4.Text = "0.00";
             // 
             // ViewApercuProjet
             // 
@@ -2695,7 +2695,6 @@ namespace ControleurServeur
             Controls.Add(lblNumero);
             Controls.Add(lblTitreNoProjet);
             Controls.Add(lblTitreRapport);
-            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
             Margin = new System.Windows.Forms.Padding(3, 21, 3, 21);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -2709,207 +2708,207 @@ namespace ControleurServeur
 
         }
         #endregion
-        internal static  System.Windows.Forms.Label Label2;
-        internal static Label lblTitreRapport;
-        internal static Label lblTitreNoProjet;
-        internal static Label lblNumero;
-        internal static Label lblTitreClient;
-        internal static Label lblClient;
-        internal static Label lblTitreDescription;
-        internal static Label lblTotalElecProj0;
-        internal static Label lblTitrePiecesElec;
-        internal static Label lblTitreImprevuElec;
-        internal static Label lblTitreAutresElec;
-        internal static Label lblTitreTotalElec;
-        internal static Label lblTotalElecSoum0;
-        internal static Label lblTitreTempsMecDessin;
-        internal static Label lblTitreTempsMecCoupe;
-        internal static Label lblTitreTempsMecMachinage;
-        internal static Label lblTitreTempsMecSoudure;
-        internal static Label lblTitreTempsMecAssemblage;
-        internal static Label lblTitreTempsMecPeinture;
-        internal static Label lblTitreTempsMecTest;
-        internal static Label lblTitreTempsMecInstallation;
-        internal static Label lblTitreTempsMecFormation;
-        internal static Label lblTitreTempsMecGestion;
-        internal static Label lblTitreTempsMecShipping;
-        internal static Label lblTitrePiecesMec;
-        internal static Label lblTitreTempsMecTotal;
-        internal static Label lblTitreImprevuMec;
-        internal static Label lblTitreAutresMec;
-        internal static Label lblTitreTotalMec;
-        internal static Label label1;
-        internal static Label lblTitreDate;
-        internal static Label lblTitreSoum;
-        internal static Label lblTitreHeuresSoum;
-        internal static Label lblTitreArgentSoum;
-        internal static Label lblTitreHeuresProj;
-        internal static Label lblTitreArgentProj;
-        internal static Label lblTitreRevenus;
-        internal static Label lblTitreForfaitElec;
-        internal static Label lblTitreForfaitMec;
-        internal static Label lblTitreTotalForfait;
-        internal static Label lblTitreDepenses;
-        internal static Label lblTitreTempsElecDessin;
-        internal static Label lblTitreTempsElecFabrication;
-        internal static Label lblTitreTempsElecAssemblage;
-        internal static Label lblTitreTempsElecProgInterface;
-        internal static Label lblTitreTempsElecProgAutomate;
-        internal static Label lblTitreTempsElecProgRobot;
-        internal static Label lblTitreTempsElecVision;
-        internal static Label lblTitreTempsElecTest;
-        internal static Label lblTitreTempsElecInstallation;
-        internal static Label lblTitreTempsElecMiseService;
-        internal static Label lblTitreTempsElecFormation;
-        internal static Label lblTitreTempsElecGestion;
-        internal static Label lblTitreTempsElecShipping;
-        internal static Label lblTitreTempsElecTotal;
-        internal static Label lblHeuresElecTotalProj0;
-        internal static Label lblDate;
-        internal static Label label3;
-        internal static Label label5;
-        internal static Label lblHeuresElecProgInterfaceSoum;
-        internal static Label lblArgentElecProgAutomateSoum;
-        internal static Label lblHeuresElecProgAutomateSoum;
-        internal static Label lblArgentElecProgRobotSoum;
-        internal static Label lblHeuresElecProgRobotSoum;
-        internal static Label lblHeuresElecVisionSoum;
-        internal static Label lblArgentElecTestSoum;
-        internal static Label lblArgentElecInstallationSoum;
-        internal static Label lblHeuresElecInstallationSoum;
-        internal static Label lblHeuresElecMiseServiceSoum;
-        internal static Label lblArgentElecMiseServiceSoum;
-        internal static Label lblHeuresElecFormationSoum;
-        internal static Label lblArgentElecFormationSoum;
-        internal static Label lblHeuresElecGestionSoum;
-        internal static Label lblArgentElecGestionSoum;
-        internal static Label lblHeuresElecShippingSoum;
-        internal static Label lblArgentElecShippingSoum;
-        internal static Label lblPiecesElecSoum;
-        internal static Label lblImprevuElecSoum;
-        internal static Label lblAutresElecSoum;
-        internal static Label lblArgentElecAssemblageProj;
-        internal static Label lblArgentElecRechercheProj;
-        internal static Label lblImprevuElecProj;
-        internal static Label lblPiecesElecProj;
-        internal static Label lblAutresElecProj;
-        internal static Label lblArgentElecTotalSoum;
-        internal static Label lblArgentElecTotalProj;
-        internal static Label lblHeuresMecDessinSoum;
-        internal static Label lblArgentMecDessinSoum;
-        internal static Label lblHeuresMecCoupeSoum;
-        internal static Label lblArgentMecCoupeSoum;
-        internal static Label lblHeuresMecMachinageSoum;
-        internal static Label lblArgentMecMachinageSoum;
-        internal static Label lblHeuresMecSoudureSoum;
-        internal static Label lblArgentMecSoudureSoum;
-        internal static Label lblHeuresMecAssemblageSoum;
-        internal static Label lblArgentMecAssemblageSoum;
-        internal static Label lblHeuresMecPeintureSoum;
-        internal static Label lblArgentMecPeintureSoum;
-        internal static Label lblHeuresMecTestSoum;
-        internal static Label lblAutresMecProj;
-        internal static Label lblTitreProfitTotal;
-        internal static Label lblArgentElecDessinSoum;
-        internal static Label lblHeuresElecDessinSoum;
-        internal static Label lblArgentElecFabricationSoum;
-        internal static Label lblHeuresElecFabricationSoum;
-        internal static Label lblArgentElecAssemblageSoum;
-        internal static Label lblHeuresElecAssemblageSoum;
-        internal static Label lblArgentElecProgInterfaceSoum;
-        internal static Label lblArgentElecVisionSoum;
-        internal static Label lblHeuresElecTestSoum;
-        internal static Label lblHeuresElecMiseServiceProj;
-        internal static Label lblArgentElecMiseServiceProj;
-        internal static Label lblHeuresElecFormationProj;
-        internal static Label lblArgentElecFormationProj;
-        internal static Label lblHeuresElecGestionProj;
-        internal static Label lblTotalForfaitProj;
-        internal static Label lblHeuresElecTotalProj;
-        internal static Label lblHeuresMecTotalProj;
-        internal static Label lblGrandTotalProj;
-        internal static Label lblTotalMecProj;
-        internal static Label lblProfitSoum;
+        internal static    System.Windows.Forms.Label Label2;
+        internal static  Label lblTitreRapport;
+        internal static  Label lblTitreNoProjet;
+        internal static  Label lblNumero;
+        internal static  Label lblTitreClient;
+        internal static  Label lblClient;
+        internal static  Label lblTitreDescription;
+        internal static  Label lblTotalElecProj0;
+        internal static  Label lblTitrePiecesElec;
+        internal static  Label lblTitreImprevuElec;
+        internal static  Label lblTitreAutresElec;
+        internal static  Label lblTitreTotalElec;
+        internal static  Label lblTotalElecSoum0;
+        internal static  Label lblTitreTempsMecDessin;
+        internal static  Label lblTitreTempsMecCoupe;
+        internal static  Label lblTitreTempsMecMachinage;
+        internal static  Label lblTitreTempsMecSoudure;
+        internal static  Label lblTitreTempsMecAssemblage;
+        internal static  Label lblTitreTempsMecPeinture;
+        internal static  Label lblTitreTempsMecTest;
+        internal static  Label lblTitreTempsMecInstallation;
+        internal static  Label lblTitreTempsMecFormation;
+        internal static  Label lblTitreTempsMecGestion;
+        internal static  Label lblTitreTempsMecShipping;
+        internal static  Label lblTitrePiecesMec;
+        internal static  Label lblTitreTempsMecTotal;
+        internal static  Label lblTitreImprevuMec;
+        internal static  Label lblTitreAutresMec;
+        internal static  Label lblTitreTotalMec;
+        internal static  Label label1;
+        internal static  Label lblTitreDate;
+        internal static  Label lblTitreSoum;
+        internal static  Label lblTitreHeuresSoum;
+        internal static  Label lblTitreArgentSoum;
+        internal static  Label lblTitreHeuresProj;
+        internal static  Label lblTitreArgentProj;
+        internal static  Label lblTitreRevenus;
+        internal static  Label lblTitreForfaitElec;
+        internal static  Label lblTitreForfaitMec;
+        internal static  Label lblTitreTotalForfait;
+        internal static  Label lblTitreDepenses;
+        internal static  Label lblTitreTempsElecDessin;
+        internal static  Label lblTitreTempsElecFabrication;
+        internal static  Label lblTitreTempsElecAssemblage;
+        internal static  Label lblTitreTempsElecProgInterface;
+        internal static  Label lblTitreTempsElecProgAutomate;
+        internal static  Label lblTitreTempsElecProgRobot;
+        internal static  Label lblTitreTempsElecVision;
+        internal static  Label lblTitreTempsElecTest;
+        internal static  Label lblTitreTempsElecInstallation;
+        internal static  Label lblTitreTempsElecMiseService;
+        internal static  Label lblTitreTempsElecFormation;
+        internal static  Label lblTitreTempsElecGestion;
+        internal static  Label lblTitreTempsElecShipping;
+        internal static  Label lblTitreTempsElecTotal;
+        internal static  Label lblHeuresElecTotalProj0;
+        internal static  Label lblDate;
+        internal static  Label label3;
+        internal static  Label label5;
+        internal static  Label lblHeuresElecProgInterfaceSoum;
+        internal static  Label lblArgentElecProgAutomateSoum;
+        internal static  Label lblHeuresElecProgAutomateSoum;
+        internal static  Label lblArgentElecProgRobotSoum;
+        internal static  Label lblHeuresElecProgRobotSoum;
+        internal static  Label lblHeuresElecVisionSoum;
+        internal static  Label lblArgentElecTestSoum;
+        internal static  Label lblArgentElecInstallationSoum;
+        internal static  Label lblHeuresElecInstallationSoum;
+        internal static  Label lblHeuresElecMiseServiceSoum;
+        internal static  Label lblArgentElecMiseServiceSoum;
+        internal static  Label lblHeuresElecFormationSoum;
+        internal static  Label lblArgentElecFormationSoum;
+        internal static  Label lblHeuresElecGestionSoum;
+        internal static  Label lblArgentElecGestionSoum;
+        internal static  Label lblHeuresElecShippingSoum;
+        internal static  Label lblArgentElecShippingSoum;
+        internal static  Label lblPiecesElecSoum;
+        internal static  Label lblImprevuElecSoum;
+        internal static  Label lblAutresElecSoum;
+        internal static  Label lblArgentElecAssemblageProj;
+        internal static  Label lblArgentElecRechercheProj;
+        internal static  Label lblImprevuElecProj;
+        internal static  Label lblPiecesElecProj;
+        internal static  Label lblAutresElecProj;
+        internal static  Label lblArgentElecTotalSoum;
+        internal static  Label lblArgentElecTotalProj;
+        internal static  Label lblHeuresMecDessinSoum;
+        internal static  Label lblArgentMecDessinSoum;
+        internal static  Label lblHeuresMecCoupeSoum;
+        internal static  Label lblArgentMecCoupeSoum;
+        internal static  Label lblHeuresMecMachinageSoum;
+        internal static  Label lblArgentMecMachinageSoum;
+        internal static  Label lblHeuresMecSoudureSoum;
+        internal static  Label lblArgentMecSoudureSoum;
+        internal static  Label lblHeuresMecAssemblageSoum;
+        internal static  Label lblArgentMecAssemblageSoum;
+        internal static  Label lblHeuresMecPeintureSoum;
+        internal static  Label lblArgentMecPeintureSoum;
+        internal static  Label lblHeuresMecTestSoum;
+        internal static  Label lblAutresMecProj;
+        internal static  Label lblTitreProfitTotal;
+        internal static  Label lblArgentElecDessinSoum;
+        internal static  Label lblHeuresElecDessinSoum;
+        internal static  Label lblArgentElecFabricationSoum;
+        internal static  Label lblHeuresElecFabricationSoum;
+        internal static  Label lblArgentElecAssemblageSoum;
+        internal static  Label lblHeuresElecAssemblageSoum;
+        internal static  Label lblArgentElecProgInterfaceSoum;
+        internal static  Label lblArgentElecVisionSoum;
+        internal static  Label lblHeuresElecTestSoum;
+        internal static  Label lblHeuresElecMiseServiceProj;
+        internal static  Label lblArgentElecMiseServiceProj;
+        internal static  Label lblHeuresElecFormationProj;
+        internal static  Label lblArgentElecFormationProj;
+        internal static  Label lblHeuresElecGestionProj;
+        internal static  Label lblTotalForfaitProj;
+        internal static  Label lblHeuresElecTotalProj;
+        internal static  Label lblHeuresMecTotalProj;
+        internal static  Label lblGrandTotalProj;
+        internal static  Label lblTotalMecProj;
+        internal static  Label lblProfitSoum;
         internal static  System.Windows.Forms.Label lblProjetMec;
-        internal static Label lblProfitProj;
-        internal static Label lblArgentElecVisionProj;
-        internal static Label lblHeuresElecTestProj;
-        internal static Label lblArgentElecTestProj;
-        internal static Label lblArgentMecTestSoum;
-        internal static Label lblHeuresMecInstallationSoum;
-        internal static Label lblArgentMecInstallationSoum;
-        internal static Label lblHeuresMecFormationSoum;
-        internal static Label lblArgentMecFormationSoum;
-        internal static Label lblHeuresMecGestionSoum;
-        internal static Label lblArgentMecGestionSoum;
-        internal static Label lblHeuresMecShippingSoum;
-        internal static Label lblArgentMecShippingSoum;
-        internal static Label lblHeuresMecFormationProj;
-        internal static Label lblArgentMecFormationProj;
-        internal static Label lblHeuresMecGestionProj;
-        internal static Label lblArgentMecGestionProj;
-        internal static Label lblArgentMecShippingProj;
-        internal static Label lblArgentElecInstallationProj;
-        internal static Label lblHeuresElecInstallationProj;
-        internal static Label lblPiecesMecSoum;
-        internal static Label lblImprevuMecSoum;
-        internal static Label lblAutresMecSoum;
-        internal static Label lblHeuresMecDessinProj;
-        internal static Label lblArgentMecDessinProj;
-        internal static Label lblHeuresMecCoupeProj;
-        internal static Label lblArgentMecCoupeProj;
-        internal static Label lblArgentMecMachinageProj;
-        internal static Label lblHeuresMecMachinageProj;
-        internal static Label lblHeuresMecSoudureProj;
-        internal static Label lblArgentMecSoudureProj;
-        internal static Label lblHeuresMecAssemblageProj;
-        internal static Label lblArgentMecAssemblageProj;
-        internal static Label lblHeuresMecPeintureProj;
-        internal static Label lblArgentMecPeintureProj;
-        internal static Label lblHeuresMecTestProj;
-        internal static Label lblArgentMecTestProj;
-        internal static Label lblHeuresMecInstallationProj;
-        internal static Label lblDescription;
-        internal static Label lblForfaitMecSoum;
-        internal static Label lblForfaitElecSoum;
-        internal static Label lblTotalForfaitSoum;
-        internal static Label lblForfaitElecProj;
-        internal static Label lblForfaitMecProj;
-        internal static Label lblHeuresElecTotalSoum;
-        internal static Label lblHeuresMecTotalSoum;
-        internal static Label lblTotalHeuresSoum;
-        internal static Label lblGrandTotalSoum;
-        internal static Label lblTotalMecSoum;
-        internal static Label lblHeuresElecDessinProj;
-        internal static Label lblArgentElecDessinProj;
-        internal static Label lblHeuresElecFabricationProj;
-        internal static Label lblArgentElecFabricationProj;
-        internal static Label lblHeuresElecAssemblageProj;
-        internal static Label lblHeuresElecProgInterfaceProj;
-        internal static Label lblArgentElecProgInterfaceProj;
-        internal static Label lblArgentElecProgAutomateProj;
-        internal static Label lblHeuresElecProgAutomateProj;
-        internal static Label lblHeuresElecProgRobotProj;
-        internal static Label lblArgentElecProgRobotProj;
-        internal static Label lblHeuresElecVisionProj;
-        internal static Label lblArgentMecTotalSoum;
-        internal static Label lblArgentMecTotalProj;
-        internal static Label lblArgentElecGestionProj;
-        internal static Label lblHeuresElecShippingProj;
-        internal static Label lblArgentElecShippingProj;
-        internal static Label lblHeuresElecRechercheProj;
-        internal static Label lblArgentMecInstallationProj;
-        internal static Label lblHeuresMecShippingProj;
-        internal static Label lblHeuresMecRechercheProj;
-        internal static Label lblArgentMecRechercheProj;
-        internal static Label lblPiecesMecProj;
-        internal static Label lblImprevuMecProj;
-        internal static Label lblTitreProj;
-        internal static Label lblTitreTotal;
-        internal static StatusStrip statusStrip1;
-        internal static ToolStripStatusLabel toolStripStatusLabel1;
-        internal static Label label4;
-        internal static ToolStripStatusLabel toolStripStatusLabel2;
+        internal static  Label lblProfitProj;
+        internal static  Label lblArgentElecVisionProj;
+        internal static  Label lblHeuresElecTestProj;
+        internal static  Label lblArgentElecTestProj;
+        internal static  Label lblArgentMecTestSoum;
+        internal static  Label lblHeuresMecInstallationSoum;
+        internal static  Label lblArgentMecInstallationSoum;
+        internal static  Label lblHeuresMecFormationSoum;
+        internal static  Label lblArgentMecFormationSoum;
+        internal static  Label lblHeuresMecGestionSoum;
+        internal static  Label lblArgentMecGestionSoum;
+        internal static  Label lblHeuresMecShippingSoum;
+        internal static  Label lblArgentMecShippingSoum;
+        internal static  Label lblHeuresMecFormationProj;
+        internal static  Label lblArgentMecFormationProj;
+        internal static  Label lblHeuresMecGestionProj;
+        internal static  Label lblArgentMecGestionProj;
+        internal static  Label lblArgentMecShippingProj;
+        internal static  Label lblArgentElecInstallationProj;
+        internal static  Label lblHeuresElecInstallationProj;
+        internal static  Label lblPiecesMecSoum;
+        internal static  Label lblImprevuMecSoum;
+        internal static  Label lblAutresMecSoum;
+        internal static  Label lblHeuresMecDessinProj;
+        internal static  Label lblArgentMecDessinProj;
+        internal static  Label lblHeuresMecCoupeProj;
+        internal static  Label lblArgentMecCoupeProj;
+        internal static  Label lblArgentMecMachinageProj;
+        internal static  Label lblHeuresMecMachinageProj;
+        internal static  Label lblHeuresMecSoudureProj;
+        internal static  Label lblArgentMecSoudureProj;
+        internal static  Label lblHeuresMecAssemblageProj;
+        internal static  Label lblArgentMecAssemblageProj;
+        internal static  Label lblHeuresMecPeintureProj;
+        internal static  Label lblArgentMecPeintureProj;
+        internal static  Label lblHeuresMecTestProj;
+        internal static  Label lblArgentMecTestProj;
+        internal static  Label lblHeuresMecInstallationProj;
+        internal static  Label lblDescription;
+        internal static  Label lblForfaitMecSoum;
+        internal static  Label lblForfaitElecSoum;
+        internal static  Label lblTotalForfaitSoum;
+        internal static  Label lblForfaitElecProj;
+        internal static  Label lblForfaitMecProj;
+        internal static  Label lblHeuresElecTotalSoum;
+        internal static  Label lblHeuresMecTotalSoum;
+        internal static  Label lblTotalHeuresSoum;
+        internal static  Label lblGrandTotalSoum;
+        internal static  Label lblTotalMecSoum;
+        internal static  Label lblHeuresElecDessinProj;
+        internal static  Label lblArgentElecDessinProj;
+        internal static  Label lblHeuresElecFabricationProj;
+        internal static  Label lblArgentElecFabricationProj;
+        internal static  Label lblHeuresElecAssemblageProj;
+        internal static  Label lblHeuresElecProgInterfaceProj;
+        internal static  Label lblArgentElecProgInterfaceProj;
+        internal static  Label lblArgentElecProgAutomateProj;
+        internal static  Label lblHeuresElecProgAutomateProj;
+        internal static  Label lblHeuresElecProgRobotProj;
+        internal static  Label lblArgentElecProgRobotProj;
+        internal static  Label lblHeuresElecVisionProj;
+        internal static  Label lblArgentMecTotalSoum;
+        internal static  Label lblArgentMecTotalProj;
+        internal static  Label lblArgentElecGestionProj;
+        internal static  Label lblHeuresElecShippingProj;
+        internal static  Label lblArgentElecShippingProj;
+        internal static  Label lblHeuresElecRechercheProj;
+        internal static  Label lblArgentMecInstallationProj;
+        internal static  Label lblHeuresMecShippingProj;
+        internal static  Label lblHeuresMecRechercheProj;
+        internal static  Label lblArgentMecRechercheProj;
+        internal static  Label lblPiecesMecProj;
+        internal static  Label lblImprevuMecProj;
+        internal static  Label lblTitreProj;
+        internal static  Label lblTitreTotal;
+        internal static  StatusStrip statusStrip1;
+        internal static  ToolStripStatusLabel toolStripStatusLabel1;
+        internal static  Label label4;
+        internal static  ToolStripStatusLabel toolStripStatusLabel2;
 
         public ViewApercuProjet()
         {
@@ -2939,7 +2938,7 @@ namespace ControleurServeur
         private ADODB.Recordset rstSoumMec;
         private ADODB.Recordset rstProjetPieces;
         private dynamic dblTotalPieces;
-        internal static Label lblTotalHeuresProj;
+        internal static  Label lblTotalHeuresProj;
         private void RemplirRapportElectrique(string noProjet)
         {
             try
@@ -3188,35 +3187,35 @@ namespace ControleurServeur
                     }
                     else
                     {
-                        lblHeuresElecDessinSoum.Text = "---";
-                        lblArgentElecDessinSoum.Text = "---";
-                        lblHeuresElecFabricationSoum.Text = "---";
-                        lblArgentElecFabricationSoum.Text = "---";
-                        lblHeuresElecAssemblageSoum.Text = "---";
-                        lblArgentElecAssemblageSoum.Text = "---";
-                        lblHeuresElecProgInterfaceSoum.Text = "---";
-                        lblArgentElecProgInterfaceSoum.Text = "---";
-                        lblHeuresElecProgAutomateSoum.Text = "---";
-                        lblArgentElecProgAutomateSoum.Text = "---";
-                        lblHeuresElecProgRobotSoum.Text = "---";
-                        lblArgentElecProgRobotSoum.Text = "---";
-                        lblHeuresElecVisionSoum.Text = "---";
-                        lblArgentElecVisionSoum.Text = "---";
-                        lblHeuresElecTestSoum.Text = "---";
-                        lblArgentElecTestSoum.Text = "---";
-                        lblHeuresElecInstallationSoum.Text = "---";
-                        lblArgentElecInstallationSoum.Text = "---";
-                        lblHeuresElecMiseServiceSoum.Text = "---";
-                        lblArgentElecMiseServiceSoum.Text = "---";
-                        lblHeuresElecFormationSoum.Text = "---";
-                        lblArgentElecFormationSoum.Text = "---";
-                        lblHeuresElecGestionSoum.Text = "---";
-                        lblArgentElecGestionSoum.Text = "---";
-                        lblHeuresElecGestionSoum.Text = "---";
-                        lblArgentElecGestionSoum.Text = "---";
-                        lblPiecesElecSoum.Text = "---";
-                        lblImprevuElecSoum.Text = "---";
-                        lblAutresElecSoum.Text = "---";
+                        lblHeuresElecDessinSoum.Text = "0.00";
+                        lblArgentElecDessinSoum.Text = "0.00";
+                        lblHeuresElecFabricationSoum.Text = "0.00";
+                        lblArgentElecFabricationSoum.Text = "0.00";
+                        lblHeuresElecAssemblageSoum.Text = "0.00";
+                        lblArgentElecAssemblageSoum.Text = "0.00";
+                        lblHeuresElecProgInterfaceSoum.Text = "0.00";
+                        lblArgentElecProgInterfaceSoum.Text = "0.00";
+                        lblHeuresElecProgAutomateSoum.Text = "0.00";
+                        lblArgentElecProgAutomateSoum.Text = "0.00";
+                        lblHeuresElecProgRobotSoum.Text = "0.00";
+                        lblArgentElecProgRobotSoum.Text = "0.00";
+                        lblHeuresElecVisionSoum.Text = "0.00";
+                        lblArgentElecVisionSoum.Text = "0.00";
+                        lblHeuresElecTestSoum.Text = "0.00";
+                        lblArgentElecTestSoum.Text = "0.00";
+                        lblHeuresElecInstallationSoum.Text = "0.00";
+                        lblArgentElecInstallationSoum.Text = "0.00";
+                        lblHeuresElecMiseServiceSoum.Text = "0.00";
+                        lblArgentElecMiseServiceSoum.Text = "0.00";
+                        lblHeuresElecFormationSoum.Text = "0.00";
+                        lblArgentElecFormationSoum.Text = "0.00";
+                        lblHeuresElecGestionSoum.Text = "0.00";
+                        lblArgentElecGestionSoum.Text = "0.00";
+                        lblHeuresElecGestionSoum.Text = "0.00";
+                        lblArgentElecGestionSoum.Text = "0.00";
+                        lblPiecesElecSoum.Text = "0.00";
+                        lblImprevuElecSoum.Text = "0.00";
+                        lblAutresElecSoum.Text = "0.00";
                     }
                     RemplirTempsReelsElec("E" + noProjet);
                     if (!(rstProjetElec.Fields["MontantForfait"].Value is DBNull)) { lblForfaitElecProj.Text =rstProjetElec.Fields["MontantForfait"].Value; } else { lblForfaitElecProj.Text="0"; }
@@ -3253,8 +3252,8 @@ namespace ControleurServeur
                         dblTotalResteTemps = dblPrixEmballage;
                         if (IsNumeric(rstProjetElec.Fields["total_manuel"].Value)) { dblTotalManuel = double.Parse(rstProjetElec.Fields["total_manuel"].Value); } else { dblTotalManuel = 0d; }
                         lblAutresElecProj.Text = (dblTotalResteTemps + dblTotalManuel).ToString();
-                        if (lblHeuresElecDessinSoum.Text!= "---") { dblTotal = double.Parse(lblHeuresElecDessinSoum.Text) + double.Parse(lblHeuresElecFabricationSoum.Text) + double.Parse(lblHeuresElecAssemblageSoum.Text) + double.Parse(lblHeuresElecProgInterfaceSoum.Text) + double.Parse(lblHeuresElecProgAutomateSoum.Text) + double.Parse(lblHeuresElecProgRobotSoum.Text) + double.Parse(lblHeuresElecVisionSoum.Text) + double.Parse(lblHeuresElecTestSoum.Text) + double.Parse(lblHeuresElecInstallationSoum.Text) + double.Parse(lblHeuresElecMiseServiceSoum.Text) + double.Parse(lblHeuresElecFormationSoum.Text) + double.Parse(lblHeuresElecGestionSoum.Text) + double.Parse(lblHeuresElecShippingSoum.Text); lblHeuresElecTotalSoum.Text = dblTotal.ToString(); } else { lblHeuresElecTotalSoum.Text = "---"; }
-                        if (lblArgentElecDessinSoum.Text!= "---") 
+                        if (lblHeuresElecDessinSoum.Text!= "0.00") { dblTotal = double.Parse(lblHeuresElecDessinSoum.Text) + double.Parse(lblHeuresElecFabricationSoum.Text) + double.Parse(lblHeuresElecAssemblageSoum.Text) + double.Parse(lblHeuresElecProgInterfaceSoum.Text) + double.Parse(lblHeuresElecProgAutomateSoum.Text) + double.Parse(lblHeuresElecProgRobotSoum.Text) + double.Parse(lblHeuresElecVisionSoum.Text) + double.Parse(lblHeuresElecTestSoum.Text) + double.Parse(lblHeuresElecInstallationSoum.Text) + double.Parse(lblHeuresElecMiseServiceSoum.Text) + double.Parse(lblHeuresElecFormationSoum.Text) + double.Parse(lblHeuresElecGestionSoum.Text) + double.Parse(lblHeuresElecShippingSoum.Text); lblHeuresElecTotalSoum.Text = dblTotal.ToString(); } else { lblHeuresElecTotalSoum.Text = "0.00"; }
+                        if (lblArgentElecDessinSoum.Text!= "0.00") 
                         { dblTotal = double.Parse(lblArgentElecDessinSoum.Text) + double.Parse(lblArgentElecFabricationSoum.Text) 
                                 + double.Parse(lblArgentElecAssemblageSoum.Text) + double.Parse(lblArgentElecProgInterfaceSoum.Text) 
                                 + double.Parse(lblArgentElecProgAutomateSoum.Text) + double.Parse(lblArgentElecProgRobotSoum.Text) 
@@ -3262,7 +3261,7 @@ namespace ControleurServeur
                                 + double.Parse(lblArgentElecInstallationSoum.Text) + double.Parse(lblArgentElecMiseServiceSoum.Text) 
                                 + double.Parse(lblArgentElecFormationSoum.Text) + double.Parse(lblArgentElecGestionSoum.Text) 
                                 + double.Parse(lblArgentElecShippingSoum.Text); lblArgentElecTotalSoum.Text = dblTotal.ToString(); 
-                        } else { lblArgentElecTotalSoum.Text = "---"; }
+                        } else { lblArgentElecTotalSoum.Text = "0.00"; }
                         dblTotal = double.Parse(lblHeuresElecDessinProj.Text) + double.Parse(lblHeuresElecFabricationProj.Text) 
                             + double.Parse(lblHeuresElecAssemblageProj.Text) + double.Parse(lblHeuresElecProgInterfaceProj.Text) 
                             + double.Parse(lblHeuresElecProgAutomateProj.Text) + double.Parse(lblHeuresElecProgRobotProj.Text) 
@@ -3279,11 +3278,11 @@ namespace ControleurServeur
                             + double.Parse(lblArgentElecFormationProj.Text) + double.Parse(lblArgentElecGestionProj.Text) 
                             + double.Parse(lblArgentElecShippingProj.Text) + double.Parse(lblArgentElecRechercheProj.Text); 
                         lblArgentElecTotalProj.Text = dblTotal.ToString();
-                        if (lblArgentElecTotalSoum.Text != "---") {
+                        if (lblArgentElecTotalSoum.Text != "0.00") {
                             dblTotal = double.Parse(lblArgentElecTotalSoum.Text) + double.Parse(lblPiecesElecSoum.Text) 
                                 + double.Parse(lblImprevuElecSoum.Text) + double.Parse(lblAutresElecSoum.Text); 
                             lblTotalElecSoum0.Text = dblTotal.ToString(); 
-                        } else { lblTotalElecSoum0.Text = "---"; }
+                        } else { lblTotalElecSoum0.Text = "0.00"; }
                         dblTotal = double.Parse(lblArgentElecTotalProj.Text) + double.Parse(lblPiecesElecProj.Text) 
                             + double.Parse(lblImprevuElecProj.Text) + double.Parse(lblAutresElecProj.Text);
                         lblTotalElecProj0.Text = dblTotal.ToString();
@@ -3370,31 +3369,31 @@ namespace ControleurServeur
                     }
                     else
                     {
-                        lblHeuresMecDessinSoum.Text  = "---";
-                        lblArgentMecDessinSoum.Text  = "---";
-                        lblHeuresMecCoupeSoum.Text  = "---";
-                        lblArgentMecCoupeSoum.Text  = "---";
-                        lblHeuresMecMachinageSoum.Text  = "---";
-                        lblArgentMecMachinageSoum.Text  = "---";
-                        lblHeuresMecSoudureSoum.Text  = "---";
-                        lblArgentMecSoudureSoum.Text  = "---";
-                        lblHeuresMecAssemblageSoum.Text  = "---";
-                        lblArgentMecAssemblageSoum.Text  = "---";
-                        lblHeuresMecPeintureSoum.Text  = "---";
-                        lblArgentMecPeintureSoum.Text  = "---";
-                        lblHeuresMecTestSoum.Text  = "---";
-                        lblArgentMecTestSoum.Text  = "---";
-                        lblHeuresMecInstallationSoum.Text  = "---";
-                        lblArgentMecInstallationSoum.Text  = "---";
-                        lblHeuresMecFormationSoum.Text  = "---";
-                        lblArgentMecFormationSoum.Text  = "---";
-                        lblHeuresMecGestionSoum.Text  = "---";
-                        lblArgentMecGestionSoum.Text  = "---";
-                        lblHeuresMecShippingSoum.Text  = "---";
-                        lblArgentMecShippingSoum.Text  = "---";
-                        lblPiecesMecSoum.Text  = "---";
-                        lblImprevuMecSoum.Text  = "---";
-                        lblAutresMecSoum.Text  = "---";
+                        lblHeuresMecDessinSoum.Text  = "0.00";
+                        lblArgentMecDessinSoum.Text  = "0.00";
+                        lblHeuresMecCoupeSoum.Text  = "0.00";
+                        lblArgentMecCoupeSoum.Text  = "0.00";
+                        lblHeuresMecMachinageSoum.Text  = "0.00";
+                        lblArgentMecMachinageSoum.Text  = "0.00";
+                        lblHeuresMecSoudureSoum.Text  = "0.00";
+                        lblArgentMecSoudureSoum.Text  = "0.00";
+                        lblHeuresMecAssemblageSoum.Text  = "0.00";
+                        lblArgentMecAssemblageSoum.Text  = "0.00";
+                        lblHeuresMecPeintureSoum.Text  = "0.00";
+                        lblArgentMecPeintureSoum.Text  = "0.00";
+                        lblHeuresMecTestSoum.Text  = "0.00";
+                        lblArgentMecTestSoum.Text  = "0.00";
+                        lblHeuresMecInstallationSoum.Text  = "0.00";
+                        lblArgentMecInstallationSoum.Text  = "0.00";
+                        lblHeuresMecFormationSoum.Text  = "0.00";
+                        lblArgentMecFormationSoum.Text  = "0.00";
+                        lblHeuresMecGestionSoum.Text  = "0.00";
+                        lblArgentMecGestionSoum.Text  = "0.00";
+                        lblHeuresMecShippingSoum.Text  = "0.00";
+                        lblArgentMecShippingSoum.Text  = "0.00";
+                        lblPiecesMecSoum.Text  = "0.00";
+                        lblImprevuMecSoum.Text  = "0.00";
+                        lblAutresMecSoum.Text  = "0.00";
                     }
                     RemplirTempsReelsMec("M" + noProjet);
                     if (!(rstProjetMec.Fields["MontantForfait"].Value is DBNull)) { lblForfaitMecProj.Text = rstProjetMec.Fields["MontantForfait"].Value; } else { lblForfaitMecProj.Text  = "0"; }
@@ -3429,7 +3428,7 @@ namespace ControleurServeur
                         dblTotalResteTemps = dblPrixEmballage;
                         if (IsNumeric(rstProjetMec.Fields["total_manuel"].Value)) { dblTotalManuel = double.Parse(rstProjetMec.Fields["total_manuel"].Value); } else { dblTotalManuel = 0d; }
                         lblAutresMecProj.Text = (dblTotalResteTemps + dblTotalManuel).ToString();
-                        if (lblHeuresMecDessinSoum.Text!= "---")
+                        if (lblHeuresMecDessinSoum.Text!= "0.00")
                         {
                             dblTotal = double.Parse(lblHeuresMecDessinSoum.Text)
                                 + double.Parse(lblHeuresMecCoupeSoum.Text)
@@ -3446,9 +3445,9 @@ namespace ControleurServeur
                         }
                         else
                         {
-                            lblHeuresMecTotalSoum.Text  = "---";
+                            lblHeuresMecTotalSoum.Text  = "0.00";
                         }
-                        if (lblArgentMecDessinSoum.Text != "---")
+                        if (lblArgentMecDessinSoum.Text != "0.00")
                         {
                             dblTotal = double.Parse(lblArgentMecDessinSoum.Text)
                                 + double.Parse(lblArgentMecCoupeSoum.Text)
@@ -3465,7 +3464,7 @@ namespace ControleurServeur
                         }
                         else
                         {
-                            lblArgentMecTotalSoum.Text  = "---";
+                            lblArgentMecTotalSoum.Text  = "0.00";
                         }
                         dblTotal = double.Parse(lblHeuresMecDessinProj.Text) + double.Parse(lblHeuresMecCoupeProj.Text) 
                             + double.Parse(lblHeuresMecMachinageProj.Text) + double.Parse(lblHeuresMecSoudureProj.Text) 
@@ -3481,7 +3480,7 @@ namespace ControleurServeur
                             + double.Parse(lblArgentMecFormationProj.Text) + double.Parse(lblArgentMecGestionProj.Text) 
                             + double.Parse(lblArgentMecShippingProj.Text) + double.Parse(lblArgentMecRechercheProj.Text);
                         lblArgentMecTotalProj.Text = dblTotal.ToString();
-                        if (lblArgentMecTotalSoum.Text!= "---")
+                        if (lblArgentMecTotalSoum.Text!= "0.00")
                         {
                             dblTotal = double.Parse(lblArgentMecTotalSoum.Text) + double.Parse(lblPiecesMecSoum.Text) 
                                 + double.Parse(lblImprevuMecSoum.Text) + double.Parse(lblAutresMecSoum.Text);
@@ -3489,7 +3488,7 @@ namespace ControleurServeur
                         }
                         else
                         {
-                            lblTotalMecSoum.Text  = "---";
+                            lblTotalMecSoum.Text  = "0.00";
                         }
                         dblTotal = double.Parse(lblArgentMecTotalProj.Text) + double.Parse(lblPiecesMecProj.Text) 
                             + double.Parse(lblImprevuMecProj.Text) + double.Parse(lblAutresMecProj.Text);
@@ -3681,7 +3680,7 @@ namespace ControleurServeur
         }
         private void ViewAppercuProjet_Load(object sender, EventArgs e) => Text = $"production.grb.local/AutoGRB/Content/?viewProject&{lblNumero.Text}  [{ControleurServeur.Program.IdNomEmploye}] [{DateTime.Now.ToString()}]";
         Bitmap memoryImage;
-        internal static bool Orientation;
+        internal static  bool Orientation;
         private void ImpressionFormulaire(object sender, PrintPageEventArgs e) => e.Graphics.DrawImage(memoryImage, 0, 0);
         private void label3_Click(object sender, EventArgs e)
         {

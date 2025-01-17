@@ -75,16 +75,8 @@ namespace ControleurServeur
         internal static ToolStripMenuItem databaseWizzardToolStripMenuItem;
         internal static ToolStripMenuItem configurationDBToolStripMenuItem;
         internal static ToolStripMenuItem rapportsToolStripMenuItem;
-        internal static ToolStripMenuItem testsRapportsToolStripMenuItem;
         internal static ToolStripMenuItem outilsToolStripMenuItem1;
         internal static ToolStripMenuItem screenShotToolStripMenuItem;
-        internal static ToolStripMenuItem toolStripMenuItem1;
-        internal static ToolStripMenuItem toolStripMenuItem2;
-        internal static ToolStripMenuItem toolStripMenuItem3;
-        internal static ToolStripMenuItem toolStripMenuItem4;
-        internal static ToolStripMenuItem toolStripMenuItem5;
-        internal static ToolStripMenuItem toolStripMenuItem7;
-        internal static ToolStripMenuItem toolStripMenuItem6;
         internal static ToolStripMenuItem aideToolStripMenuItem;
         internal static ToolStripMenuItem àproposdeToolStripMenuItem;
         internal static ToolStripMenuItem lblVersion;
@@ -172,6 +164,12 @@ namespace ControleurServeur
         internal static ToolStripMenuItem facturationToolStripMenuItem;
         internal static ToolStripMenuItem toolStripMenuItem21;
         internal static ToolStripMenuItem toolStripMenuItem15;
+        internal static ToolStripMenuItem toolStripMenuItem2;
+        internal static ToolStripMenuItem toolStripMenuItem3;
+        internal static ToolStripMenuItem toolStripMenuItem4;
+        internal static ToolStripMenuItem toolStripMenuItem5;
+        internal static ToolStripMenuItem toolStripMenuItem7;
+        internal static ToolStripMenuItem toolStripMenuItem6;
         private System.ComponentModel.IContainer components = null;
 
         /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
@@ -278,7 +276,6 @@ namespace ControleurServeur
             configurationDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             CmdChangerDB = new System.Windows.Forms.ToolStripMenuItem();
             rapportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            testsRapportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             invenaireComptableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             électriqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             mécaniqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -290,13 +287,6 @@ namespace ControleurServeur
             billeteriebétaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             emailsSurExchangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             captureDécranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             aideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             àproposdeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             lblVersion = new System.Windows.Forms.ToolStripMenuItem();
@@ -327,6 +317,12 @@ namespace ControleurServeur
             contactsToolStripMenuItem = new System.Windows.Forms.LinkLabel();
             contactsPourVendeursToolStripMenuItem = new System.Windows.Forms.LinkLabel();
             listeDeDistributionToolStripMenuItem = new System.Windows.Forms.LinkLabel();
+            toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
@@ -480,7 +476,6 @@ namespace ControleurServeur
             // punchToolStripMenuItem1
             // 
             punchToolStripMenuItem1.BackColor = System.Drawing.Color.Black;
-            punchToolStripMenuItem1.Enabled = false;
             punchToolStripMenuItem1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
             punchToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             punchToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("punchToolStripMenuItem1.Image")));
@@ -492,7 +487,6 @@ namespace ControleurServeur
             // feuillesDeTempsToolStripMenuItem
             // 
             feuillesDeTempsToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            feuillesDeTempsToolStripMenuItem.Enabled = false;
             feuillesDeTempsToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
             feuillesDeTempsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             feuillesDeTempsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("feuillesDeTempsToolStripMenuItem.Image")));
@@ -523,7 +517,6 @@ namespace ControleurServeur
             // électriqueToolStripMenuItem
             // 
             électriqueToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            électriqueToolStripMenuItem.Enabled = false;
             électriqueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             électriqueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("électriqueToolStripMenuItem.Image")));
             électriqueToolStripMenuItem.Name = "électriqueToolStripMenuItem";
@@ -534,7 +527,6 @@ namespace ControleurServeur
             // mécaniqueToolStripMenuItem
             // 
             mécaniqueToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            mécaniqueToolStripMenuItem.Enabled = false;
             mécaniqueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             mécaniqueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mécaniqueToolStripMenuItem.Image")));
             mécaniqueToolStripMenuItem.Name = "mécaniqueToolStripMenuItem";
@@ -545,7 +537,6 @@ namespace ControleurServeur
             // sortieMatérielToolStripMenuItem
             // 
             sortieMatérielToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            sortieMatérielToolStripMenuItem.Enabled = false;
             sortieMatérielToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             sortieMatérielToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sortieMatérielToolStripMenuItem.Image")));
             sortieMatérielToolStripMenuItem.Name = "sortieMatérielToolStripMenuItem";
@@ -556,7 +547,6 @@ namespace ControleurServeur
             // retourMatérielToolStripMenuItem
             // 
             retourMatérielToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            retourMatérielToolStripMenuItem.Enabled = false;
             retourMatérielToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             retourMatérielToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("retourMatérielToolStripMenuItem.Image")));
             retourMatérielToolStripMenuItem.Name = "retourMatérielToolStripMenuItem";
@@ -567,7 +557,6 @@ namespace ControleurServeur
             // faireLinventairePhysiqueToolStripMenuItem
             // 
             faireLinventairePhysiqueToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            faireLinventairePhysiqueToolStripMenuItem.Enabled = false;
             faireLinventairePhysiqueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             faireLinventairePhysiqueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("faireLinventairePhysiqueToolStripMenuItem.Image")));
             faireLinventairePhysiqueToolStripMenuItem.Name = "faireLinventairePhysiqueToolStripMenuItem";
@@ -653,7 +642,7 @@ namespace ControleurServeur
             électriqueToolStripMenuItem6.ForeColor = System.Drawing.Color.White;
             électriqueToolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("électriqueToolStripMenuItem6.Image")));
             électriqueToolStripMenuItem6.Name = "électriqueToolStripMenuItem6";
-            électriqueToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            électriqueToolStripMenuItem6.Size = new System.Drawing.Size(134, 22);
             électriqueToolStripMenuItem6.Text = "Électrique";
             électriqueToolStripMenuItem6.Click += new System.EventHandler(électriqueToolStripMenuItem6_Click);
             // 
@@ -663,14 +652,14 @@ namespace ControleurServeur
             mécaniqueToolStripMenuItem6.ForeColor = System.Drawing.Color.White;
             mécaniqueToolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("mécaniqueToolStripMenuItem6.Image")));
             mécaniqueToolStripMenuItem6.Name = "mécaniqueToolStripMenuItem6";
-            mécaniqueToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            mécaniqueToolStripMenuItem6.Size = new System.Drawing.Size(134, 22);
             mécaniqueToolStripMenuItem6.Text = "Mécanique";
             mécaniqueToolStripMenuItem6.Click += new System.EventHandler(mécaniqueToolStripMenuItem6_Click);
             // 
             // toolStripMenuItem27
             // 
             toolStripMenuItem27.Name = "toolStripMenuItem27";
-            toolStripMenuItem27.Size = new System.Drawing.Size(177, 6);
+            toolStripMenuItem27.Size = new System.Drawing.Size(131, 6);
             // 
             // achatsToolStripMenuItem
             // 
@@ -757,7 +746,6 @@ namespace ControleurServeur
             // 
             employésToolStripMenuItem.AutoToolTip = true;
             employésToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            employésToolStripMenuItem.Enabled = false;
             employésToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
             employésToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             employésToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("employésToolStripMenuItem.Image")));
@@ -778,8 +766,8 @@ namespace ControleurServeur
             toolStripMenuItem8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             toolStripMenuItem8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem8.Image")));
             toolStripMenuItem8.Name = "toolStripMenuItem8";
-            toolStripMenuItem8.Size = new System.Drawing.Size(38, 20);
-            toolStripMenuItem8.Text = "I";
+            toolStripMenuItem8.Size = new System.Drawing.Size(44, 20);
+            toolStripMenuItem8.Text = "IT";
             // 
             // outilsToolStripMenuItem
             // 
@@ -1387,7 +1375,6 @@ namespace ControleurServeur
             rapportsToolStripMenuItem.AutoToolTip = true;
             rapportsToolStripMenuItem.BackColor = System.Drawing.Color.Black;
             rapportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            testsRapportsToolStripMenuItem,
             invenaireComptableToolStripMenuItem,
             cmdRéceptionTMensuelle,
             facturationToolStripMenuItem});
@@ -1399,23 +1386,14 @@ namespace ControleurServeur
             rapportsToolStripMenuItem.Text = "Comptabilité";
             rapportsToolStripMenuItem.Click += new System.EventHandler(rapportsToolStripMenuItem_Click);
             // 
-            // testsRapportsToolStripMenuItem
-            // 
-            testsRapportsToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            testsRapportsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            testsRapportsToolStripMenuItem.Name = "testsRapportsToolStripMenuItem";
-            testsRapportsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            testsRapportsToolStripMenuItem.Text = "Tests Rapports";
-            testsRapportsToolStripMenuItem.Click += new System.EventHandler(testsRapportsToolStripMenuItem_Click);
-            // 
             // invenaireComptableToolStripMenuItem
             // 
             invenaireComptableToolStripMenuItem.BackColor = System.Drawing.Color.Black;
             invenaireComptableToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             électriqueToolStripMenuItem1,
             mécaniqueToolStripMenuItem1});
-            invenaireComptableToolStripMenuItem.Enabled = false;
             invenaireComptableToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            invenaireComptableToolStripMenuItem.Image = global::ControleurServeur.Properties.Resources._00000236;
             invenaireComptableToolStripMenuItem.Name = "invenaireComptableToolStripMenuItem";
             invenaireComptableToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             invenaireComptableToolStripMenuItem.Text = "Invenaire Comptable";
@@ -1453,9 +1431,9 @@ namespace ControleurServeur
             // facturationToolStripMenuItem
             // 
             facturationToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            facturationToolStripMenuItem.Enabled = false;
             facturationToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
             facturationToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            facturationToolStripMenuItem.Image = global::ControleurServeur.Properties.Resources.Calculs;
             facturationToolStripMenuItem.Name = "facturationToolStripMenuItem";
             facturationToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             facturationToolStripMenuItem.Text = "Facturation";
@@ -1524,76 +1502,6 @@ namespace ControleurServeur
             captureDécranToolStripMenuItem.Name = "captureDécranToolStripMenuItem";
             captureDécranToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             captureDécranToolStripMenuItem.Text = "Capture d\'écran";
-            // 
-            // toolStripMenuItem1
-            // 
-            toolStripMenuItem1.BackColor = System.Drawing.Color.Black;
-            toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            toolStripMenuItem2,
-            toolStripMenuItem3,
-            toolStripMenuItem4,
-            toolStripMenuItem5,
-            toolStripMenuItem7,
-            toolStripMenuItem6});
-            toolStripMenuItem1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new System.Drawing.Size(68, 20);
-            toolStripMenuItem1.Text = "&Fenêtres";
-            // 
-            // toolStripMenuItem2
-            // 
-            toolStripMenuItem2.BackColor = System.Drawing.Color.Black;
-            toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
-            toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new System.Drawing.Size(194, 22);
-            toolStripMenuItem2.Text = "&Nouvelle fenêtre";
-            toolStripMenuItem2.Click += new System.EventHandler(toolStripMenuItem2_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            toolStripMenuItem3.BackColor = System.Drawing.Color.Black;
-            toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
-            toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new System.Drawing.Size(194, 22);
-            toolStripMenuItem3.Text = "&Cascade";
-            toolStripMenuItem3.Click += new System.EventHandler(toolStripMenuItem3_Click);
-            // 
-            // toolStripMenuItem4
-            // 
-            toolStripMenuItem4.BackColor = System.Drawing.Color.Black;
-            toolStripMenuItem4.ForeColor = System.Drawing.Color.White;
-            toolStripMenuItem4.Name = "toolStripMenuItem4";
-            toolStripMenuItem4.Size = new System.Drawing.Size(194, 22);
-            toolStripMenuItem4.Text = "Mosaïque &verticale";
-            toolStripMenuItem4.Click += new System.EventHandler(toolStripMenuItem4_Click);
-            // 
-            // toolStripMenuItem5
-            // 
-            toolStripMenuItem5.BackColor = System.Drawing.Color.Black;
-            toolStripMenuItem5.ForeColor = System.Drawing.Color.White;
-            toolStripMenuItem5.Name = "toolStripMenuItem5";
-            toolStripMenuItem5.Size = new System.Drawing.Size(194, 22);
-            toolStripMenuItem5.Text = "Mosaïque &horizontale";
-            toolStripMenuItem5.Click += new System.EventHandler(toolStripMenuItem5_Click);
-            // 
-            // toolStripMenuItem7
-            // 
-            toolStripMenuItem7.BackColor = System.Drawing.Color.Black;
-            toolStripMenuItem7.ForeColor = System.Drawing.Color.White;
-            toolStripMenuItem7.Name = "toolStripMenuItem7";
-            toolStripMenuItem7.Size = new System.Drawing.Size(194, 22);
-            toolStripMenuItem7.Text = "&Réorganiser les icônes";
-            toolStripMenuItem7.Click += new System.EventHandler(toolStripMenuItem7_Click);
-            // 
-            // toolStripMenuItem6
-            // 
-            toolStripMenuItem6.BackColor = System.Drawing.Color.Black;
-            toolStripMenuItem6.ForeColor = System.Drawing.Color.White;
-            toolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem6.Image")));
-            toolStripMenuItem6.Name = "toolStripMenuItem6";
-            toolStripMenuItem6.Size = new System.Drawing.Size(194, 22);
-            toolStripMenuItem6.Text = "&Fermer tout";
             // 
             // aideToolStripMenuItem
             // 
@@ -1686,7 +1594,6 @@ namespace ControleurServeur
             toolStripMenuItem8,
             rapportsToolStripMenuItem,
             outilsToolStripMenuItem1,
-            toolStripMenuItem1,
             aideToolStripMenuItem,
             toolStripMenuItem17,
             lbldb,
@@ -1946,6 +1853,60 @@ namespace ControleurServeur
             listeDeDistributionToolStripMenuItem.Text = "Liste de distribution ";
             listeDeDistributionToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             listeDeDistributionToolStripMenuItem.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(cmdDistList_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            toolStripMenuItem2.BackColor = System.Drawing.Color.Black;
+            toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new System.Drawing.Size(194, 22);
+            toolStripMenuItem2.Text = "&Nouvelle fenêtre";
+            toolStripMenuItem2.Click += new System.EventHandler(toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            toolStripMenuItem3.BackColor = System.Drawing.Color.Black;
+            toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
+            toolStripMenuItem3.Name = "toolStripMenuItem3";
+            toolStripMenuItem3.Size = new System.Drawing.Size(194, 22);
+            toolStripMenuItem3.Text = "&Cascade";
+            toolStripMenuItem3.Click += new System.EventHandler(toolStripMenuItem3_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            toolStripMenuItem4.BackColor = System.Drawing.Color.Black;
+            toolStripMenuItem4.ForeColor = System.Drawing.Color.White;
+            toolStripMenuItem4.Name = "toolStripMenuItem4";
+            toolStripMenuItem4.Size = new System.Drawing.Size(194, 22);
+            toolStripMenuItem4.Text = "Mosaïque &verticale";
+            toolStripMenuItem4.Click += new System.EventHandler(toolStripMenuItem4_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            toolStripMenuItem5.BackColor = System.Drawing.Color.Black;
+            toolStripMenuItem5.ForeColor = System.Drawing.Color.White;
+            toolStripMenuItem5.Name = "toolStripMenuItem5";
+            toolStripMenuItem5.Size = new System.Drawing.Size(194, 22);
+            toolStripMenuItem5.Text = "Mosaïque &horizontale";
+            toolStripMenuItem5.Click += new System.EventHandler(toolStripMenuItem5_Click);
+            // 
+            // toolStripMenuItem7
+            // 
+            toolStripMenuItem7.BackColor = System.Drawing.Color.Black;
+            toolStripMenuItem7.ForeColor = System.Drawing.Color.White;
+            toolStripMenuItem7.Name = "toolStripMenuItem7";
+            toolStripMenuItem7.Size = new System.Drawing.Size(194, 22);
+            toolStripMenuItem7.Text = "&Réorganiser les icônes";
+            toolStripMenuItem7.Click += new System.EventHandler(toolStripMenuItem7_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            toolStripMenuItem6.BackColor = System.Drawing.Color.Black;
+            toolStripMenuItem6.ForeColor = System.Drawing.Color.White;
+            toolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem6.Image")));
+            toolStripMenuItem6.Name = "toolStripMenuItem6";
+            toolStripMenuItem6.Size = new System.Drawing.Size(194, 22);
+            toolStripMenuItem6.Text = "&Fermer tout";
             // 
             // Conteneur
             // 
@@ -2463,6 +2424,7 @@ namespace ControleurServeur
             domaine.MdiParent = this;
             domaine.ShowInTaskbar = false;
             domaine.Show();
+            domaine.Close();
         }
 
         internal static bool isDevelopper()

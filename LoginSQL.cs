@@ -417,7 +417,6 @@ namespace ControleurServeur
         {
             if (e.KeyCode == Keys.Enter)
             {
-                MessageBox.Show(txtPasswordUser.Text);
                 if (cmbUtilisateurs.Text == "") { return; }
                 try
                 {
